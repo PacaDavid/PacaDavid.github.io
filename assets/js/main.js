@@ -90,7 +90,6 @@ function insertNavigation(pageType = 'root', currentPage = '') {
                 <a href="${homePath}"><img src="${logoPath}" alt="Allergy Health Daily Logo" id="logo"></a>
                 <ul>
                     <li><a href="${blogPath}" ${currentPage === 'blog' ? 'class="active"' : ''}>Blogs</a></li>
-                    <li><a href="${quizPath}" ${currentPage === 'quiz' ? 'class="active"' : ''}>Find Out Your Allergy Personality</a></li>
                 </ul>
             </nav>
         </header>
@@ -112,7 +111,7 @@ function insertFooter(pageType = 'root') {
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <p>&copy; 2025 Allergy Health Daily. All rights reserved.</p>
+                        <p>&copy; 2025 Health Pet Insider. All rights reserved.</p>
                         <p>
                             <a href="${privacyPath}">Privacy Policy</a> | 
                             <a href="${termsPath}">Terms of Service</a>
