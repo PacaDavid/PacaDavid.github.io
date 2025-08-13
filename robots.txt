@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://allergyhealthdaily.com/sitemap.xml
+Sitemap: https://healthpetinsider.com/sitemap.xml
 
 # Crawl delay (optional - adjust as needed)
 Crawl-delay: 1
