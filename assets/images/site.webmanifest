@@ -1,0 +1,27 @@
+{
+    "name": "Allergy Health Daily",
+    "short_name": "AllergyDaily",
+    "description": "Your comprehensive source for allergy information, tips, and health guidance",
+    "icons": [
+        {
+            "src": "favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#2c5aa0",
+    "background_color": "#f9f9f9",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/"
+}
