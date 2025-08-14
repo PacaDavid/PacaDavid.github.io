@@ -32,6 +32,10 @@ body {
     line-height: 1.5em;
     margin-bottom: 30px;
   }
+  .scroll-banner{
+    background-color:#f4f9af;
+    overflow:hidden;
+    }
   .scroll-content {
     display: inline-block;
     white-space: nowrap;

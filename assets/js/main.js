@@ -87,12 +87,17 @@ function insertNavigation(pageType = 'root', currentPage = '') {
     const navigationHTML = `
         <header>
             <nav>
-                <a href="${homePath}"><img src="${logoPath}" alt="Allergy Health Daily Logo" id="logo"></a>
+                <a href="${homePath}"><img src="${logoPath}" alt="Health Pet Insider Logo" id="logo"></a>
                 <ul>
                     <li><a href="${blogPath}" ${currentPage === 'blog' ? 'class="active"' : ''}>Blogs</a></li>
                 </ul>
             </nav>
         </header>
+        <section class="scroll-banner py-2">
+            <div class="scroll-content">
+              <span>🐾  Pet Wellness Tips • 🐕  Allergy Relief Insights • 🐈  Nutrition Guides • 🐾  Happy & Healthy Pets • </span>
+            </div>
+          </section>
     `;
     
     // Insert navigation at the beginning of body
