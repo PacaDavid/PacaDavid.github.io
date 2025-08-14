@@ -95,8 +95,10 @@ function insertNavigation(pageType = 'root', currentPage = '') {
         </header>
         <section class="scroll-banner py-2">
             <div class="scroll-content">
-                <span>🐾  Pet Wellness Tips • 🐕  Allergy Relief Insights • 🐈  Nutrition Guides • 🐾  Happy & Healthy Pets • </span>
-                <span>🐾  Pet Wellness Tips • 🐕  Allergy Relief Insights • 🐈  Nutrition Guides • 🐾  Happy & Healthy Pets • </span>
+                <span>🐾  Pet Wellness Tips     •     🐕  Allergy Relief Insights     •     🐈  Nutrition Guides     •     🐾  Happy & Healthy Pets     •     </span>
+                <span>🐾  Pet Wellness Tips     •     🐕  Allergy Relief Insights     •     🐈  Nutrition Guides     •     🐾  Happy & Healthy Pets     •     </span>
+                <span>🐾  Pet Wellness Tips     •     🐕  Allergy Relief Insights     •     🐈  Nutrition Guides     •     🐾  Happy & Healthy Pets     •     </span>
+                <span>🐾  Pet Wellness Tips     •     🐕  Allergy Relief Insights     •     🐈  Nutrition Guides     •     🐾  Happy & Healthy Pets     •     </span>
             </div>
           </section>
     `;

@@ -5,23 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Health Pet Insider">
     <title>Health Pet Insider</title>
-    
+
     <!-- Prevent FOUC (Flash of Unstyled Content) -->
     <style>
-        body { visibility: hidden; opacity: 0; transition: opacity 0.3s ease; }
-        .no-js body { visibility: visible; opacity: 1; }
+        body {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .no-js body {
+            visibility: visible;
+            opacity: 1;
+        }
     </style>
     <script>document.documentElement.className += ' js';</script>
     <script src="https://static.runconverge.com/pixels/3XNqiu.js" async></script>
     <script>
-    window.cvg||(cvg=function(){cvg.process?cvg.process.apply(cvg,arguments):cvg.queue.push(arguments)},cvg.queue=[]);
-    cvg({method:"track",eventName:"$page_load"});
-    cvg({ method: "link_domain", domain: "pacagen.com" });
+        window.cvg || (cvg = function () { cvg.process ? cvg.process.apply(cvg, arguments) : cvg.queue.push(arguments) }, cvg.queue = []);
+        cvg({ method: "track", eventName: "$page_load" });
+        cvg({ method: "link_domain", domain: "pacagen.com" });
     </script>
-    
+
     <!-- Load main JavaScript -->
     <script src="assets/js/main.js" defer></script>
+    <style>
+        @font-face {
+            font-family: 'fraunces_120pt-light';
+            font-style: italic;
+            font-weight: 700;
+            src: url('//static.parastorage.com/fonts/v2/cd47248e-8b4a-4bac-9fdc-c6605c982a4d/v1/fraunces_120pt-light.woff2') format('woff2');
+            unicode-range: U+0020-007E, U+00A0-0148, U+014A-017E, U+018F, U+0192, U+01A0-01A1, U+01AF-01B0, U+01C4-01CC, U+01D9-01DA, U+01E6-01E7, U+01EA-01EB, U+01FA-021B, U+022A-022D, U+0230-0233, U+0237, U+0259, U+02B9-02BA, U+02BC, U+02C6-02C7, U+02D8-02DD, U+1E08-1E09, U+1E0C-1E0F, U+1E14-1E17, U+1E1C-1E1D, U+1E20-1E21, U+1E24-1E25, U+1E2A-1E2B, U+1E2E-1E2F, U+1E36-1E37, U+1E3A-1E3B, U+1E42-1E43, U+1E46-1E49, U+1E4C-1E53, U+1E5A-1E5B, U+1E5E-1E5F, U+1E62-1E65, U+1E6C-1E6F, U+1E78-1E7B, U+1E80-1E85, U+1E92-1E93, U+1E97, U+1E9E, U+1EA0-1EF9, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2032-2033, U+2039-203A, U+2044, U+2052, U+2070, U+2074, U+20A1, U+20A3-20A4, U+20A6-20A7, U+20A9, U+20AB-20AD, U+20B1-20B2, U+20B5, U+20B9-20BA, U+20BC-20BD, U+2116, U+2122, U+2212, U+2215, U+2219, U+2248, U+2260, U+2264-2265, U+27E8-27E9, U+E132-E133, U+FB00-FB04;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'fraunces_120pt-light';
+            font-style: italic;
+            font-weight: 400;
+            src: url('//static.parastorage.com/fonts/v2/95ea2f83-2652-4184-9e28-eb415df1ce37/v1/fraunces_120pt-light.woff2') format('woff2');
+            unicode-range: U+0020-007E, U+00A0-0148, U+014A-017E, U+018F, U+0192, U+01A0-01A1, U+01AF-01B0, U+01C4-01CC, U+01D9-01DA, U+01E6-01E7, U+01EA-01EB, U+01FA-021B, U+022A-022D, U+0230-0233, U+0237, U+0259, U+02B9-02BA, U+02BC, U+02C6-02C7, U+02D8-02DD, U+1E08-1E09, U+1E0C-1E0F, U+1E14-1E17, U+1E1C-1E1D, U+1E20-1E21, U+1E24-1E25, U+1E2A-1E2B, U+1E2E-1E2F, U+1E36-1E37, U+1E3A-1E3B, U+1E42-1E43, U+1E46-1E49, U+1E4C-1E53, U+1E5A-1E5B, U+1E5E-1E5F, U+1E62-1E65, U+1E6C-1E6F, U+1E78-1E7B, U+1E80-1E85, U+1E92-1E93, U+1E97, U+1E9E, U+1EA0-1EF9, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2032-2033, U+2039-203A, U+2044, U+2052, U+2070, U+2074, U+20A1, U+20A3-20A4, U+20A6-20A7, U+20A9, U+20AB-20AD, U+20B1-20B2, U+20B5, U+20B9-20BA, U+20BC-20BD, U+2116, U+2122, U+2212, U+2215, U+2219, U+2248, U+2260, U+2264-2265, U+27E8-27E9, U+E132-E133, U+FB00-FB04;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'fraunces_120pt-light';
+            font-style: normal;
+            font-weight: 400;
+            src: url('//static.parastorage.com/fonts/v2/7044e9d5-fe6a-465f-aef8-162a1e9d621f/v1/fraunces_120pt-light.woff2') format('woff2');
+            unicode-range: U+0020-007E, U+00A0-0148, U+014A-017E, U+018F, U+0192, U+01A0-01A1, U+01AF-01B0, U+01C4-01CC, U+01D9-01DA, U+01E6-01E7, U+01EA-01EB, U+01FA-021B, U+022A-022D, U+0230-0233, U+0237, U+0259, U+02B9-02BA, U+02BC, U+02C6-02C7, U+02D8-02DD, U+1E08-1E09, U+1E0C-1E0F, U+1E14-1E17, U+1E1C-1E1D, U+1E20-1E21, U+1E24-1E25, U+1E2A-1E2B, U+1E2E-1E2F, U+1E36-1E37, U+1E3A-1E3B, U+1E42-1E43, U+1E46-1E49, U+1E4C-1E53, U+1E5A-1E5B, U+1E5E-1E5F, U+1E62-1E65, U+1E6C-1E6F, U+1E78-1E7B, U+1E80-1E85, U+1E92-1E93, U+1E97, U+1E9E, U+1EA0-1EF9, U+2010, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2032-2033, U+2039-203A, U+2044, U+2052, U+2070, U+2074, U+20A1, U+20A3-20A4, U+20A6-20A7, U+20A9, U+20AB-20AD, U+20B1-20B2, U+20B5, U+20B9-20BA, U+20BC-20BD, U+2116, U+2122, U+2212, U+2215, U+2219, U+2248, U+2260, U+2264-2265, U+27E8-27E9, U+E132-E133, U+FB00-FB04;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'fraunces_120pt-light';
+            font-style: normal;
+            font-weight: 700;
+            src: url('//static.parastorage.com/fonts/v2/cea4f816-fb9e-4b48-819b-f9e087491784/v1/fraunces_120pt-light.woff2') format('woff2');
+            unicode-range: U+0020-007E, U+00A0-0148, U+014A-017E, U+018F, U+0192, U+01A0-01A1, U+01AF-01B0, U+01C4-01CC, U+01D9-01DA, U+01E6-01E7, U+01EA-01EB, U+01FA-021B, U+022A-022D, U+0230-0233, U+0237, U+0259, U+02B9-02BA, U+02BC, U+02C6-02C7, U+02D8-02DD, U+1E08-1E09, U+1E0C-1E0F, U+1E14-1E17, U+1E1C-1E1D, U+1E20-1E21, U+1E24-1E25, U+1E2A-1E2B, U+1E2E-1E2F, U+1E36-1E37, U+1E3A-1E3B, U+1E42-1E43, U+1E46-1E49, U+1E4C-1E53, U+1E5A-1E5B, U+1E5E-1E5F, U+1E62-1E65, U+1E6C-1E6F, U+1E78-1E7B, U+1E80-1E85, U+1E92-1E93, U+1E97, U+1E9E, U+1EA0-1EF9, U+2010, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2032-2033, U+2039-203A, U+2044, U+2052, U+2070, U+2074, U+20A1, U+20A3-20A4, U+20A6-20A7, U+20A9, U+20AB-20AD, U+20B1-20B2, U+20B5, U+20B9-20BA, U+20BC-20BD, U+2116, U+2122, U+2212, U+2215, U+2219, U+2248, U+2260, U+2264-2265, U+27E8-27E9, U+E132-E133, U+FB00-FB04;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'din-next-w01-light';
+            font-style: normal;
+            font-weight: 400;
+            src: url('//static.parastorage.com/fonts/v2/eca8b0cd-45d8-43cf-aee7-ca462bc5497c/v1/din-next-w10-light.woff2') format('woff2');
+            unicode-range: U+0401-040C, U+040E-044F, U+0451-045C, U+045E-045F, U+0490-0491, U+2116;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'din-next-w01-light';
+            font-style: normal;
+            font-weight: 400;
+            src: url('//static.parastorage.com/fonts/v2/eca8b0cd-45d8-43cf-aee7-ca462bc5497c/v1/din-next-w02-light.woff2') format('woff2');
+            unicode-range: U+000D, U+0100-010F, U+0111-0130, U+0132-0151, U+0154-015F, U+0162-0177, U+0179-017C, U+01FA-01FF, U+0218-021B, U+0237, U+02C9, U+02D8-02D9, U+02DB, U+02DD, U+0394, U+03A9, U+03C0, U+1E80-1E85, U+1EF2-1EF3, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2126, U+212E, U+2153-2154, U+215B-215E, U+2202, U+2206, U+220F, U+2211-2212, U+2215, U+2219-221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+F8FF, U+FB00-FB04;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'din-next-w01-light';
+            font-style: normal;
+            font-weight: 400;
+            src: url('//static.parastorage.com/fonts/v2/eca8b0cd-45d8-43cf-aee7-ca462bc5497c/v1/din-next-w01-light.woff2') format('woff2');
+            unicode-range: U+0020-007E, U+00A0-00FF, U+0110, U+0131, U+0152-0153, U+0160-0161, U+0178, U+017D-017E, U+0192, U+02C6-02C7, U+02DA, U+02DC, U+03BC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'helvetica-w01-light';
+            font-style: normal;
+            font-weight: 400;
+            src: url('//static.parastorage.com/fonts/v2/8eac109b-0fa9-42bf-a305-43e471e23779/v1/helvetica-w02-light.woff2') format('woff2');
+            unicode-range: U+0100-012B, U+012E-0137, U+0139-0149, U+014C-0151, U+0154-015F, U+0162-0177, U+0179-017C, U+0218-021B, U+0237, U+02C7, U+02C9, U+02D8-02DB, U+02DD, U+0394, U+03A9, U+03BC, U+03C0, U+2044, U+2113, U+2126, U+212E, U+2202, U+2206, U+220F, U+2211-2212, U+2215, U+2219-221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+E002, U+E004, U+E006, U+E008-E009, U+E00D, U+E00F, U+E011, U+E013, U+E015, U+E017, U+E01A, U+FB01-FB02;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'helvetica-w01-light';
+            font-style: normal;
+            font-weight: 400;
+            src: url('//static.parastorage.com/fonts/v2/8eac109b-0fa9-42bf-a305-43e471e23779/v1/helvetica-w01-light.woff2') format('woff2');
+            unicode-range: U+000D, U+0020-007E, U+00A0-00FF, U+0152-0153, U+0160-0161, U+0178, U+017D-017E, U+0192, U+02C6, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+20AC, U+2122;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'syne-extrabold';
+            font-style: normal;
+            font-weight: 800;
+            src: url('//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/syne/v22/8vIS7w4qzmVxsWxjBZRjr0FKM_24vg6gTY_vDE5YfqXtUw.woff2') format('woff2');
+            unicode-range: U+0370-03FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'syne-extrabold';
+            font-style: normal;
+            font-weight: 800;
+            src: url('//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/syne/v22/8vIS7w4qzmVxsWxjBZRjr0FKM_24vg6tTY_vDE5YfqXtUw.woff2') format('woff2');
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'syne-extrabold';
+            font-style: normal;
+            font-weight: 800;
+            src: url('//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/syne/v22/8vIS7w4qzmVxsWxjBZRjr0FKM_24vg6jTY_vDE5YfqU.woff2') format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            font-display: swap;
+        }
+    </style>
 </head>
+
 <body>
     <main>
         <section class="hero-section py-5">
@@ -30,106 +148,115 @@
             <div class="container">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6">
-                        <button class="btn btn-light rounded-pill mb-3 px-4 py-2 shadow-sm">Discover</button>
-                        <p class="mt-4 fs-5 fw-semibold">
-                          Welcome to Health Pet Insider, your trusted guide to all things pet wellness.
-                          Whether you're a new pet parent or a seasoned owner, our mission is to empower
-                          you with expert advice, in-depth articles, and practical tips to ensure your
-                          furry, feathered, or scaled friend lives their best life. From understanding
-                          common behaviors to navigating nutritional needs and finding the best products,
-                          we're here to help you every step of the way.
-                        </p>
+                        <a href="#welcome" class="custom-btn btn-sm shadow-sm">Discover</button>
+                            <p class="mt-4 fs-5 fw-semibold">
+                                Welcome to Health Pet Insider, your trusted guide to all things pet wellness.
+                                Whether you're a new pet parent or a seasoned owner, our mission is to empower
+                                you with expert advice, in-depth articles, and practical tips to ensure your
+                                furry, feathered, or scaled friend lives their best life. From understanding
+                                common behaviors to navigating nutritional needs and finding the best products,
+                                we're here to help you every step of the way.
+                            </p>
                     </div>
                     <div class="col-lg-6 position-relative text-center">
-                        <img src="assets/images/HPI-background.jpg" class="img-fluid rounded" alt="Cat and dog cuddling">
+                        <img src="assets/images/HPI-background.jpg" class="img-fluid rounded"
+                            alt="Cat and dog cuddling">
                         <!-- Optional paw prints as absolute positioned SVGs -->
                         <!--<img src="paw-print.svg" alt="" class="position-absolute" style="top:10%; right:5%; width:80px;">
                         <img src="paw-print.svg" alt="" class="position-absolute" style="top:0; right:0; width:80px;">-->
                     </div>
                 </div>
-              <a href="#welcome" class="custom-btn btn-lg">Learn More</a>
             </div>
-          </section>
-          
-          <!-- Welcome -->
-          <section id="welcome" class="welcome-section">
+        </section>
+
+        <!-- Welcome -->
+        <section id="welcome" class="welcome-section">
             <div class="container">
-              <h2>Welcome to Health Pet Insider</h2>
-              <p>We’re here to bring you trusted information, science-backed advice, and real-world tips to help keep your pets happy and healthy. From allergy management breakthroughs to daily care routines, our goal is to empower you with the knowledge and tools you need to give your furry friends the best life possible.</p>
+                <h2>What makes Health Pet Insider <i>Unique</i>?</h2>
+                <p>In a world full of pet information, what makes us different? Our unique approach is built on a simple
+                    foundation: blending professional expertise with genuine, real-world experience.
+
+                    Expert-Driven, Community-Focused: We're not just a collection of articles. Our content is a
+                    collaborative effort between veterinary professionals and dedicated pet owners, ensuring you get
+                    advice that is both medically sound and practically useful.</p>
             </div>
-          </section>
-          
-          <!-- Quotes -->
-          <section class="quote-section">
+        </section>
+
+        <!-- Quotes -->
+        <section class="quote-section">
             <div class="container">
-              <div class="row text-center g-5">
-                <div class="col-md-4">
-                  <p class="quote">"I never realized how much I didn’t know about my cat’s allergies until I found this site."</p>
-                  <p class="quote-author">— Jamie P.</p>
+                <div class="row text-center g-5">
+                    <div class="col-md-4">
+                        <p class="quote">"I never realized how much I didn’t know about my cat’s allergies until I found
+                            this site."</p>
+                        <p class="quote-author">— Jamie P.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="quote">"Clear, concise, and genuinely helpful — it’s my favorite resource for pet
+                            health."</p>
+                        <p class="quote-author">— Morgan L.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="quote">"Thanks to Health Pet Insider, my dog is finally living sneeze-free!"</p>
+                        <p class="quote-author">— Alex R.</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                  <p class="quote">"Clear, concise, and genuinely helpful — it’s my favorite resource for pet health."</p>
-                  <p class="quote-author">— Morgan L.</p>
-                </div>
-                <div class="col-md-4">
-                  <p class="quote">"Thanks to Health Pet Insider, my dog is finally living sneeze-free!"</p>
-                  <p class="quote-author">— Alex R.</p>
-                </div>
-              </div>
             </div>
-          </section> 
-          
-          <!-- Articles -->
-          <div class="container my-5" id="articles">
-            <div class="row g-4">
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <img src="article1.jpg" class="card-img-top" alt="Pet care">
-                  <div class="card-body">
-                    <h5 class="card-title">Allergy Relief for Pets</h5>
-                    <p class="card-text">Discover new allergen-neutralizing solutions for a healthier pet lifestyle.</p>
-                    <a href="#" class="btn btn-outline-primary">Read More</a>
-                  </div>
-                </div>
-              </div>
-              <!-- Repeat for more articles -->
-            </div>
-          </div>
-          
-          <!-- Quotes -->
-          <section class="quote-section">
-            <div class="container">
-              <div class="row text-center g-4">
-                <div class="col-md-4">
-                  <p class="quote">"The best resource for pet owners I've ever found."</p>
-                  <p>- Sarah M.</p>
-                </div>
-                <div class="col-md-4">
-                  <p class="quote">"I finally found answers to my dog's allergy issues."</p>
-                  <p>- Daniel K.</p>
-                </div>
-                <div class="col-md-4">
-                  <p class="quote">"Practical, trustworthy, and easy to follow."</p>
-                  <p>- Emily R.</p>
-                </div>
-              </div>
-            </div>
-          </section>
+        </section>
+
+        <!-- Articles -->
         <div class="container my-5" id="articles">
             <div class="row g-4">
-              <div class="col-md-4">
-                <div class="card shadow-sm">
-                  <img src="article1.jpg" class="card-img-top" alt="Pet care">
-                  <div class="card-body">
-                    <h5 class="card-title">Allergy Relief for Pets</h5>
-                    <p class="card-text">Discover new allergen-neutralizing solutions for a healthier pet lifestyle.</p>
-                    <a href="#" class="btn btn-outline-primary">Read More</a>
-                  </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="article1.jpg" class="card-img-top" alt="Pet care">
+                        <div class="card-body">
+                            <h5 class="card-title">Allergy Relief for Pets</h5>
+                            <p class="card-text">Discover new allergen-neutralizing solutions for a healthier pet
+                                lifestyle.</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <!-- Repeat for more articles -->
+                <!-- Repeat for more articles -->
             </div>
-          </div>
+        </div>
+
+        <!-- Quotes -->
+        <section class="quote-section">
+            <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-md-4">
+                        <p class="quote">"The best resource for pet owners I've ever found."</p>
+                        <p>- Sarah M.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="quote">"I finally found answers to my dog's allergy issues."</p>
+                        <p>- Daniel K.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="quote">"Practical, trustworthy, and easy to follow."</p>
+                        <p>- Emily R.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container my-5" id="articles">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="article1.jpg" class="card-img-top" alt="Pet care">
+                        <div class="card-body">
+                            <h5 class="card-title">Allergy Relief for Pets</h5>
+                            <p class="card-text">Discover new allergen-neutralizing solutions for a healthier pet
+                                lifestyle.</p>
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for more articles -->
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
@@ -141,50 +268,59 @@
                         </div>
                         <div class="col-12">
                             <article>
-                                <h4><a href="blog/egg-powder-for-cat-allergies.html">Can Feeding Egg Powder Help With Cat Allergies?</a></h4>
+                                <h4><a href="blog/egg-powder-for-cat-allergies.html">Can Feeding Egg Powder Help With
+                                        Cat Allergies?</a></h4>
                                 <p>Learn about the science behind egg powder and how it can help with cat allergies.</p>
                             </article>
                         </div>
-                        <div class="col-12"> 
+                        <div class="col-12">
                             <article>
-                                <h4><a href="blog/worst-cats-for-allergies.html">Allergic to Cats? A List Of Cat Breeds You Should Avoid</a></h4>
-                                <p>A list of cat breeds that are the worst for allergies, including Persian, British Longhair, and Himalayan.</p>
+                                <h4><a href="blog/worst-cats-for-allergies.html">Allergic to Cats? A List Of Cat Breeds
+                                        You Should Avoid</a></h4>
+                                <p>A list of cat breeds that are the worst for allergies, including Persian, British
+                                    Longhair, and Himalayan.</p>
                             </article>
                         </div>
-                        <div class="col-12"> 
+                        <div class="col-12">
                             <article>
                                 <h4><a href="blog/how-to-help-allergy-fatigue.html">How To Help Allergy Fatigue</a></h4>
-                                <p>Practical tips and strategies to help you overcome allergy-induced fatigue, specifically focusing on cat allergies.</p>
+                                <p>Practical tips and strategies to help you overcome allergy-induced fatigue,
+                                    specifically focusing on cat allergies.</p>
                             </article>
                         </div>
-                        <div class="col-12"> 
+                        <div class="col-12">
                             <article>
-                                <h4><a href="blog/understanding-fel-d-1.html">Understanding Fel d 1: The Cat Allergen</a></h4>
-                                <p>A deep dive into the science of Fel d 1, the primary cat allergen responsible for the majority of allergic responses to cats.</p>
+                                <h4><a href="blog/understanding-fel-d-1.html">Understanding Fel d 1: The Cat
+                                        Allergen</a></h4>
+                                <p>A deep dive into the science of Fel d 1, the primary cat allergen responsible for the
+                                    majority of allergic responses to cats.</p>
                             </article>
                         </div>
-                        <div class="col-12"> 
+                        <div class="col-12">
                             <article>
-                                <h4><a href="blog/dust-mite-allergies.html">Dust Mite Allergies: What You Need To Know</a></h4>
-                                <p>Learn about dust mite allergies, including what they are, how they affect you, and how to manage them.</p>
+                                <h4><a href="blog/dust-mite-allergies.html">Dust Mite Allergies: What You Need To
+                                        Know</a></h4>
+                                <p>Learn about dust mite allergies, including what they are, how they affect you, and
+                                    how to manage them.</p>
                             </article>
-                        </div>                            
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="row">
                         <div class="col-12">
                             <img src="assets/images/img-dog-silent.webp" alt="Dog Silent" class="img-fluid">
-                        </div>    
+                        </div>
                         <div class="col-12">
                             <h3>Everyone deals with pet allergies differently</h3>
                             <p>Take our quiz to find out your type!</p>
                             <a href="quiz.html" class="btn btn-primary">Take the quiz</a>
-                        </div>                            
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 </body>
+
 </html>
