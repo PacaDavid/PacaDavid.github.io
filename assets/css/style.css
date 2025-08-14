@@ -10,43 +10,83 @@ body {
     background-color: #f9f9f9;
     color: #333;
   }
-.hero-section {
-    background: url('HPI_background.jpg') no-repeat center center;
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    color: #2F2E2E;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    background-image: url('https://static.wixstatic.com/media/hero-image.jpg');
+    background-position: center center;
     background-size: cover;
-    padding: 100px 0;
-    color: white;
+    background-repeat: no-repeat;
     text-align: center;
-}
-.custom-btn {
-    background-color: #28a745;
-    color: white;
-    border-radius: 50px;
-    padding: 10px 30px;
-}
-.custom-btn:hover {
-    background-color: #218838;
-}
-/* Welcome */
-.welcome-section {
-    padding: 60px 0;
-    background-color: #fff;
-}
-
-.welcome-section h2 {
-    font-weight: bold;
+    padding: 100px 20px;
+    color: #FFFFFF;
+  }
+  .hero-section h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.2em;
     margin-bottom: 20px;
-}
+  }
+  .hero-section p {
+    font-size: 24px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+  }
+  .custom-btn {
+    background-color: #2A7F62;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 12px 35px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  .custom-btn:hover {
+    background-color: #256D54;
+  }
 
-/* Quotes */
-.quote-section {
-    background-color: #f1f1f1;
-    padding: 60px 0;
-}
+  /* Welcome Section */
+  .welcome-section {
+    background-color: #F7F7F7;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .welcome-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .welcome-section p {
+    font-size: 18px;
+    line-height: 1.6em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
-.quote {
+  /* Quote Section */
+  .quote-section {
+    background-color: #FFFFFF;
+    padding: 60px 20px;
+  }
+  .quote {
     font-style: italic;
-    font-size: 1.2rem;
-}
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #4A4A4A;
+  }
+  .quote-author {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #2F2E2E;
+  }
 
 main {
     min-height: 700px;
