@@ -148,7 +148,7 @@ img {
 
 /* Header and navigation */
 header {
-    background-color: #fefaf1;
+    background-color: #f4f2e0;
     color: white;
     padding: 0.75rem 0;
     border-bottom: 1px solid #e5e5e5;
@@ -299,12 +299,12 @@ section h3 {
 
 /* Footer */
 footer {
-    background-color: #fefaf1;
-    color: white;
+    background-color: #f4f2e0;
+    color: #284b40;
     text-align: center;
     padding: 1.5rem 0;
     font-size: 0.85rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 /* Responsive design */

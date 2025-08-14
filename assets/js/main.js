@@ -95,10 +95,10 @@ function insertNavigation(pageType = 'root', currentPage = '') {
         </header>
         <section class="scroll-banner py-2">
             <div class="scroll-content">
-                <span>🐾  Pet Wellness Tips     •     🐕  Allergy Relief Insights     •     🐈  Nutrition Guides     •     🐾  Happy & Healthy Pets     •     </span>
-                <span>🐾  Pet Wellness Tips     •     🐕  Allergy Relief Insights     •     🐈  Nutrition Guides     •     🐾  Happy & Healthy Pets     •     </span>
-                <span>🐾  Pet Wellness Tips     •     🐕  Allergy Relief Insights     •     🐈  Nutrition Guides     •     🐾  Happy & Healthy Pets     •     </span>
-                <span>🐾  Pet Wellness Tips     •     🐕  Allergy Relief Insights     •     🐈  Nutrition Guides     •     🐾  Happy & Healthy Pets     •     </span>
+                <span>🐾  Pet Wellness Tips &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; 🐕  Allergy Relief Insights &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; 🐈  Nutrition Guides &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; 🐾  Happy & Healthy Pets &nbsp;&nbsp;&nbsp;&nbsp;•</span>
+                <span>🐾  Pet Wellness Tips &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; 🐕  Allergy Relief Insights &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; 🐈  Nutrition Guides &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; 🐾  Happy & Healthy Pets &nbsp;&nbsp;&nbsp;&nbsp;•</span>
+                <span>🐾  Pet Wellness Tips &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; 🐕  Allergy Relief Insights &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; 🐈  Nutrition Guides &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; 🐾  Happy & Healthy Pets &nbsp;&nbsp;&nbsp;&nbsp;•</span>
+                <span>🐾  Pet Wellness Tips &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; 🐕  Allergy Relief Insights &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; 🐈  Nutrition Guides &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; 🐾  Happy & Healthy Pets &nbsp;&nbsp;&nbsp;&nbsp;•</span>
             </div>
           </section>
     `;
