@@ -79,7 +79,7 @@ function loadStylesheets(assetPath) {
 function insertNavigation(pageType = 'root', currentPage = '') {
     // Determine the correct paths based on page type
     const homePath = pageType === 'blog' ? '../index.html' : 'index.html';
-    const logoPath = pageType === 'blog' ? '../assets/images/allergyhealthdailylogo.png' : 'assets/images/allergyhealthdailylogo.png';
+    const logoPath = pageType === 'blog' ? '../assets/images/healthpetinsiderlogo.png' : 'assets/images/healthpetinsiderlogo.png';
     const blogPath = pageType === 'blog' ? 'index.html' : 'blog/index.html';
     const quizPath = pageType === 'blog' ? '../quiz.html' : 'quiz.html';
     
@@ -95,7 +95,8 @@ function insertNavigation(pageType = 'root', currentPage = '') {
         </header>
         <section class="scroll-banner py-2">
             <div class="scroll-content">
-              <span>🐾  Pet Wellness Tips • 🐕  Allergy Relief Insights • 🐈  Nutrition Guides • 🐾  Happy & Healthy Pets • </span>
+                <span>🐾  Pet Wellness Tips • 🐕  Allergy Relief Insights • 🐈  Nutrition Guides • 🐾  Happy & Healthy Pets • </span>
+                <span>🐾  Pet Wellness Tips • 🐕  Allergy Relief Insights • 🐈  Nutrition Guides • 🐾  Happy & Healthy Pets • </span>
             </div>
           </section>
     `;

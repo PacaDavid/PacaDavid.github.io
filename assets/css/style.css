@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f9af;
+    background-color: #f4ffbf !important;
     color: #333;
   }
 
@@ -33,7 +33,7 @@ body {
     margin-bottom: 30px;
   }
   .scroll-banner{
-    background-color:#f4f9af;
+    background-color:#fefaf1;
     overflow:hidden;
     }
   .scroll-content {
