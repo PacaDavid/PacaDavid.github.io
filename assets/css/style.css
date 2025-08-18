@@ -9,7 +9,6 @@ body {
     font-family: 'Lora', serif;
     margin: 2rem;
     line-height: 1.6;
-    color: #333;
 }
 h1 {
     font-weight: 600;
@@ -52,7 +51,7 @@ p {
 .scroll-content {
     display: inline-block;
     white-space: nowrap;
-    animation: scroll-left 20s linear infinite;
+    animation: scroll-left 60s linear infinite;
     font-size: 1.25rem;
     color: #234436;
     font-weight: 600;
@@ -62,7 +61,6 @@ p {
     from {
         transform: translateX(0);
     }
-
     to {
         transform: translateX(-50%);
     }
@@ -84,7 +82,7 @@ p {
 
 /* Welcome Section */
 .welcome-section {
-    background-color: #F7F7F7;
+    background-color: #f4ffbf;
     padding: 60px 20px;
     text-align: center;
 }
@@ -104,7 +102,7 @@ p {
 
 /* Quote Section */
 .quote-section {
-    background-color: #FFFFFF;
+    background-color: #FAFAFA;
     padding: 60px 20px;
 }
 
