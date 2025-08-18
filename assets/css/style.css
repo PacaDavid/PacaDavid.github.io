@@ -147,7 +147,7 @@ img {
 }
 
 /* Header and navigation */
-header {
+body > header {
     background-color: #f4f2e0;
     color: white;
     padding: 0.75rem 0;
