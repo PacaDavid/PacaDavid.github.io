@@ -5,15 +5,17 @@
     box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6 {
-font-family: 'Playfair Display', serif;
-font-weight: 700;
-letter-spacing: -0.5px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 /* Body Text */
 body, p, li, span, a {
-font-family: 'Lora', serif;
-font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #234436;
 }
 p {
     font-weight: 400;
