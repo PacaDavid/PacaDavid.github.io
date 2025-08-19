@@ -18,5 +18,7 @@ Disallow: /assets/css/
 # Allow important pages
 Allow: /blog/
 Allow: /advertorial*.html
-Allow: /quiz.html
+Allow: /5-ways-to-manage-allergens.html
+Allow: /5-must-have-products.html
+Allow: /love-your-cat-lose-the-allergies.html
 Allow: /index.html
