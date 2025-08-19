@@ -101,7 +101,7 @@ p {
 
 /* Quote Section */
 .quote-section {
-    background-color: #FAFAFA !important;
+    background-color: #fefaf0 !important;
     padding: 60px 20px;
 }
 
@@ -302,6 +302,13 @@ section h3 {
     background-color: #284b40;
     color: white;
 }
+.hover-social-card {
+    transition: all 0.3s ease;
+  }
+  .hover-social-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  }
 
 /* Footer */
 footer {

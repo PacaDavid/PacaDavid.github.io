@@ -88,7 +88,7 @@ function insertNavigation(pageType = 'root', currentPage = '') {
         <header>
             <nav>
                 <a href="${homePath}"><img src="${logoPath}" alt="Health Pet Insider Logo" id="logo"></a>
-                <ul>
+                <ul style="margin-bottom:0;">
                     <li><a href="${blogPath}" ${currentPage === 'blog' ? 'class="active"' : ''}>Blogs</a></li>
                 </ul>
             </nav>
