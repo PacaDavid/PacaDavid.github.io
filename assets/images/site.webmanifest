@@ -1,7 +1,7 @@
 {
-    "name": "Allergy Health Daily",
-    "short_name": "AllergyDaily",
-    "description": "Your comprehensive source for allergy information, tips, and health guidance",
+    "name": "Health Pet Insider",
+    "short_name": "HealthPetInsider",
+    "description": "Your comprehensive source for all things pet health.",
     "icons": [
         {
             "src": "favicon-16x16.png",
