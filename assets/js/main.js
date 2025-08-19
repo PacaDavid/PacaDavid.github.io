@@ -81,7 +81,6 @@ function insertNavigation(pageType = 'root', currentPage = '') {
     const homePath = pageType === 'blog' ? '../index.html' : 'index.html';
     const logoPath = pageType === 'blog' ? '../assets/images/healthpetinsiderlogo.png' : 'assets/images/healthpetinsiderlogo.png';
     const blogPath = pageType === 'blog' ? 'index.html' : 'blog/index.html';
-    const quizPath = pageType === 'blog' ? '../quiz.html' : 'quiz.html';
     
     // Create navigation HTML
     const navigationHTML = `

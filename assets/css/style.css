@@ -4,12 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: 'Merriweather', serif;
-}
-h1, h2, h3 {
-font-family: 'Merriweather', serif;
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Playfair Display', serif;
 font-weight: 700;
+letter-spacing: -0.5px;
+}
+
+/* Body Text */
+body, p, li, span, a {
+font-family: 'Lora', serif;
+font-weight: 400;
 }
 p {
     font-weight: 400;
