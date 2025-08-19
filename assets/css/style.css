@@ -21,6 +21,9 @@ p {
     font-weight: 400;
     font-size: 1.05rem;
 }
+.w-70 {
+    width: 70% !important;
+}
 
 /* Hero Section */
 .hero-section {
