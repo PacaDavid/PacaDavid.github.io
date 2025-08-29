@@ -21,4 +21,5 @@ Allow: /advertorial*.html
 Allow: /5-ways-to-manage-allergens.html
 Allow: /5-must-have-products.html
 Allow: /love-your-cat-lose-the-allergies.html
+Allow: /new-cat-parent-allergen-routine.html
 Allow: /index.html
