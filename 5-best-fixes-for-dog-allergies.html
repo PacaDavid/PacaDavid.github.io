@@ -200,6 +200,7 @@
                         <div class="article-content-image d-flex">
                             <img src="assets/images/pacagen-dans.png" class="article-img" alt="Dog allergy product">
                         </div>
+                        <div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
                     </li>
 
                     <li>
@@ -295,6 +296,16 @@
                 window.location.href = finalUrl;
             }, 200);
         }
+        document.addEventListener('DOMContentLoaded', function() {
+            const pacagenSprayShowcase = createProductShowcase({
+                image: 'dog_pink.png',
+                alt: 'Dog Allergen Neutralizing Spray',
+                description: 'Breaks down dog allergens on contact',
+                url: 'https://www.pacagen.com/products/dog-allergen-neutralizing-spray',
+                pageType: 'root'
+            });
+            document.getElementById('pacagen-spray-showcase').innerHTML = pacagenSprayShowcase;
+        });
     </script>
 </body>
 

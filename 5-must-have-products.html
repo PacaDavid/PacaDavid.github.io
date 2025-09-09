@@ -212,6 +212,8 @@
               just a few minutes allergens are reduced to harmless fragments. Safe, easy, and effective—this one’s essential
               for every allergic cat owner who refuses to sacrifice cuddles.
             </p>
+
+            <div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
       
             <!-- #3 Allergen Shampoo/Wipes -->
             <div class="article-content-image d-flex">
@@ -294,6 +296,16 @@
                 window.location.href = finalUrl;
             }, 200);
         }
+        document.addEventListener('DOMContentLoaded', function() {
+            const pacagenSprayShowcase = createProductShowcase({
+                image: 'canshand.png',
+                alt: 'Cat Allergen Neutralizing Spray',
+                description: 'Breaks down 98% of cat allergens on contact',
+                url: 'https://www.pacagen.com/products/cat-allergen-neutralizing-spray',
+                pageType: 'root'
+            });
+            document.getElementById('pacagen-spray-showcase').innerHTML = pacagenSprayShowcase;
+        });
     </script>
 </body>
 

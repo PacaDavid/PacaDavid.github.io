@@ -239,6 +239,7 @@
                 <p>If you're looking for a great allergen neutralizing spray, check out <a href="javascript:void(0)"
                         onclick="f('https://www.pacagen.com/products/cat-allergen-neutralizing-spray')">Pacagen</a>.
                     They made an allergen neutralizing spray for cat, dog, and even dust allergens.</p>
+                <div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
 
                 <div class="article-content-image d-flex">
                     <img src="assets/images/cat-on-couch.png" class="article-img" alt="Cat on Couch">
@@ -303,6 +304,16 @@
                 window.location.href = finalUrl;
             }, 200);
         }
+        document.addEventListener('DOMContentLoaded', function() {
+            const pacagenSprayShowcase = createProductShowcase({
+                image: 'canshand.png',
+                alt: 'Cat Allergen Neutralizing Spray',
+                description: 'Breaks down 98% of cat allergens on contact',
+                url: 'https://www.pacagen.com/products/cat-allergen-neutralizing-spray',
+                pageType: 'root'
+            });
+            document.getElementById('pacagen-spray-showcase').innerHTML = pacagenSprayShowcase;
+        });
     </script>
 </body>
 
