@@ -212,6 +212,8 @@
                     <a href="javascript:void(0)"
                             onclick="f('https://pacagen.com/products/cat-allergen-reducing-supplement')"><img src="assets/images/pacagen-CHS.png" class="article-img" style="border:1px black;" alt="Pacagen Cat Allergen Reducing Supplement"></a>
                 </div>
+                <div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center"></div>
+
                 <h2>Your First 30 Days: A Cat-Friendly Allergen Routine</h2>
                 <h3>Day 1:</h3>
                 <p>Introduce Pacagen to your cat’s daily food. Two scoops a day is all it takes. Can be added to
@@ -310,6 +312,18 @@
                 window.location.href = finalUrl;
             }, 200);
         }
+        // Initialize product showcases
+        document.addEventListener('DOMContentLoaded', function() {
+            // Insert Pacagen spray showcase
+            const pacagenSprayShowcase = createProductShowcase({
+                image: '/images/ChickenFlavor_V3.png',
+                alt: 'Cat Allergen Reducing Supplement',
+                description: 'A tasty cat supplement to end allergens where they start',
+                url: 'https://www.pacagen.com/products/cat-allergen-reducing-supplement',
+                pageType: 'root'
+            });
+            document.getElementById('pacagen-spray-showcase').innerHTML = pacagenSprayShowcase;
+        });
     </script>
 </body>
 
