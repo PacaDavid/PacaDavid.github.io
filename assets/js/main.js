@@ -118,7 +118,7 @@ function insertFooter(pageType = 'root') {
             <div class="container footer-HPI">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <p>&copy; 2025 Health Pet Insider. All rights reserved.</p>
+                        <p>&copy; 2026 Health Pet Insider. All rights reserved.</p>
                         <p>
                             <a href="${privacyPath}">Privacy Policy</a> | 
                             <a href="${termsPath}">Terms of Service</a>
