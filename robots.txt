@@ -22,4 +22,5 @@ Allow: /5-ways-to-manage-allergens.html
 Allow: /5-must-have-products.html
 Allow: /love-your-cat-lose-the-allergies.html
 Allow: /best-supplement-for-cat-allergies.html
+Allow: /best-cat-allergy-spray.html
 Allow: /index.html
