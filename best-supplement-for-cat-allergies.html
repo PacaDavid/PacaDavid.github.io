@@ -224,7 +224,22 @@ and these products do not support broader cat health.
 <strong>Pacagen uses a purpose-built protein-based approach</strong> designed for consistency,
 daily use, and reliable allergen reduction—without relying on egg antibodies.
 </p>
-<div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
+<div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3">
+    <a href="https://pacagen.com/products/cat-allergen-reducing-supplement" class="d-flex w-md-65 justify-content-center align-items-center text-decoration-none">
+        <div class="card p-2">
+            <div class="row mx-auto">
+                <div class="col-5 col-sm-4 col-md-3 p-0 px-md-2">
+                    <img src="/assets/images/ChickenFlavor_V3.png" class=" rounded-4" alt="Cat Allergen Reducing Supplement">
+                </div>
+                <div class="col-7 col-sm-8 col-md-9">
+                    <h3 class="card-title"><b>Cat Allergen Reducing Supplement</b></h3>
+                    <p class="card-reviews mb-1">★★★★★ &nbsp; 4.80 out of 5 stars (200+ reviews) </p>
+                    <p class="card-description mb-0">A tasty cat supplement to end allergens where they start</p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
 
 <h3>Pacagen vs Purina LiveClear</h3>
 <p>
@@ -302,44 +317,6 @@ Find more helpful healthy pet info on our <a href="../index.html">homepage</a> o
 
 </article>
 </main>
-<script>
-    function getCookie(name) {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(';').shift();
-        return '';
-    }
-
-    function f(baseUrl) {
-        cvg({ method: "track", eventName: "HealthPetInsiderPacagenClick" });
-
-        let uid = getCookie('__cvg_uid');
-        let sid = getCookie('__cvg_sid');
-
-        let finalUrl = baseUrl;
-        if (uid || sid) {
-            finalUrl += (finalUrl.includes('?') ? '&' : '?');
-            if (uid) finalUrl += `__cvg_uid=${encodeURIComponent(uid)}`;
-            if (uid && sid) finalUrl += '&';
-            if (sid) finalUrl += `__cvg_sid=${encodeURIComponent(sid)}`;
-        }
-
-        setTimeout(() => {
-            window.location.href = finalUrl;
-        }, 200);
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const pacagenSprayShowcase = createProductShowcase({
-            image: 'ChickenFlavor_V3.png',
-            alt: 'Cat Allergen Reducing Supplement',
-            description: 'A tasty cat supplement to end allergens where they start',
-            url: 'https://www.pacagen.com/products/cat-allergen-reducing-supplement',
-            pageType: 'root'
-        });
-        document.getElementById('pacagen-spray-showcase').innerHTML = pacagenSprayShowcase;
-    });
-</script>
 
 </body>
 </html>
