@@ -183,7 +183,7 @@
             </div>
             <div class="col-12 col-md-7">
               <img
-                src="assets/images/bestdogsprays.png"
+              src="assets/images/bestdogsprays.png"
                 alt="Best Dog Allergy Sprays In 2026, Compared"
               />
               <p class="mt-1 small-text">
@@ -225,7 +225,7 @@
             <ul>
               <li>
                 <strong>Targeted allergen neutralizers</strong> - bind and
-                neutralize allergens (like Can f 1) where they occur
+                neutralize allergens (like <a href="https://pacagen.com/blogs/dog-allergies/understanding-dog-allergens">Can f 1</a>) where they occur
               </li>
               <li>
                 <strong>Surface cleaners</strong> - remove allergens from
@@ -246,7 +246,7 @@
             </p>
             <div class="article-content-image d-flex mb-4">
               <img
-                src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Part_1_Graphic_1_dog.gif"
+                src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Hypo.png"
                 class="article-img"
                 alt="Dog allergies are caused by Can f 1 allergens in the air and on surfaces"
               />
@@ -284,13 +284,20 @@
               <li>Works on fabrics, furniture, and in the air</li>
               <li>Minimal irritation risk</li>
             </ul>
-            <p>
-              👉
-              <a
-                href="https://pacagen.com/products/dog-allergen-neutralizing-spray"
-                >Shop Pacagen Dog Allergen Neutralizing Spray For 15% Off.</a
-              >
-            </p>
+            <div class="d-flex justify-content-center mb-3">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Dog_Cover.png?v=1763065386"
+                  alt="Pacagen Dog Allergen Neutralizing Spray"
+                  style="max-width: 100%; height: auto;"
+                />
+              </div>
+              <div class="shop-button-wrapper">
+                <a
+                  href="https://pacagen.com/products/dog-allergen-neutralizing-spray"
+                  class="shop-button"
+                  >Shop Pacagen <span class="discount">— 15% Off</span></a
+                >
+              </div>
 
             <h3>2. Allerpet Dog Allergy Spray</h3>
             <p>
@@ -303,11 +310,20 @@
               <li>Can be helpful when paired with grooming</li>
               <li>Less targeted at Can f 1 specifically</li>
             </ul>
-            <p>
-              <a href="https://allerpet.com/product-for-dog-allergic-reactions/"
-                >Shop Allerpet for dogs.</a
-              >
-            </p>
+            <div class="d-flex justify-content-center mb-3">
+                <img
+                  src="https://image.chewy.com/catalog/general/images/allerpet-dog-dander-remover-12fl-oz-bottle/img-662096._AC_SX500_SY400_QL75_V1_.jpg"
+                  alt="Allerpet Dog Dander Remover"
+                  style="max-width: 15%; height: auto;"
+                />
+              </div>
+              <div class="shop-button-wrapper">
+                <a
+                  href="https://www.chewy.com/allerpet-dog-dander-remover/dp/137115"
+                  class="shop-button"
+                  >Shop Allerpet Dog Dander Remover</a
+                >
+              </div>
 
             <h3>3. Clorox & General Surface Cleaners</h3>
             <p>
@@ -322,54 +338,128 @@
               <li>May leave chemical residues</li>
               <li>Not designed for indoor air allergen reduction</li>
             </ul>
-            <p>
-              <a href="https://www.clorox.com/pure/">Shop Clorox Pure.</a>
-            </p>
+            <div class="d-flex justify-content-center mb-3">
+                <img
+                  src="assets/images/clorox.png"
+                  alt="Clorox Pure Allergen Neutralizer"
+                  style="max-width: 45%; height: auto;"
+                />
+              </div>
+              <div class="shop-button-wrapper">
+                <a href=" https://www.clorox.com/pure/" class="shop-button">Shop Clorox Pure</a>
+              </div>
 
             <h2 class="mt-4">
               The Best Dog Allergy Sprays — Side by Side Comparison
             </h2>
-
-            <div class="d-flex justify-content-center align-items-center mb-4">
-              <table class="comparison-table" border="1">
-                <tr>
-                  <th>Feature</th>
-                  <th>Pacagen</th>
-                  <th>Allerpet</th>
-                  <th>Clorox</th>
-                </tr>
-                <tr>
-                  <td>Direct Can f 1 Neutralization</td>
-                  <td>✅ Specific</td>
-                  <td>❌ No</td>
-                  <td>⚠️ Limited</td>
-                </tr>
-                <tr>
-                  <td>Airborne Allergen Reduction</td>
-                  <td>✅ Yes</td>
-                  <td>⚠️ Limited</td>
-                  <td>❌ No</td>
-                </tr>
-                <tr>
-                  <td>Safe for Daily Use</td>
-                  <td>✅ Yes</td>
-                  <td>⚠️ Grooming Use</td>
-                  <td>❌ Can Irritate</td>
-                </tr>
-                <tr>
-                  <td>Works on Soft Surfaces</td>
-                  <td>✅ Yes</td>
-                  <td>⚠️ Surface-only</td>
-                  <td>⚠️ Limited</td>
-                </tr>
-                <tr>
-                  <td><strong>Best Use Case</strong></td>
-                  <td>Daily allergen control</td>
-                  <td>Occasional grooming aid</td>
-                  <td>Hard-surface disinfection only</td>
-                </tr>
-              </table>
-            </div>
+            <div class="brand-selector">
+                <label for="brand-select">Compare Pacagen with:</label>
+                <select id="brand-select" onchange="updateComparison(this.value)">
+                  <option value="allerpet" selected>Allerpet</option>
+                  <option value="clorox">Clorox</option>
+                </select>
+              </div>
+  
+              <div class="d-flex justify-content-center align-items-center mb-4">
+                <div class="table-wrapper">
+                  <table class="comparison-table" id="comparison-table" border="1">
+                  <tr>
+                    <th>Feature</th>
+                    <th>Pacagen</th>
+                    <th class="col-allerpet">Allerpet</th>
+                    <th class="col-clorox">Clorox</th>
+                  </tr>
+                  <tr>
+                    <td>Direct Can f 1 Neutralization</td>
+                    <td class="sign-cell"><img src="assets/images/yes-sign.png" alt="Yes"></td>
+                    <td class="sign-cell col-allerpet"><img src="assets/images/no-sign.png" alt="No"></td>
+                    <td class="sign-cell col-clorox"><img src="assets/images/warning-sign.png" alt="Warning"> Limited</td>
+                  </tr>
+                  <tr>
+                    <td>Airborne Allergen Reduction</td>
+                    <td class="sign-cell"><img src="assets/images/yes-sign.png" alt="Yes"></td>
+                    <td class="sign-cell col-allerpet"><img src="assets/images/warning-sign.png" alt="No"> Limited</td>
+                    <td class="sign-cell col-clorox"><img src="assets/images/no-sign.png" alt="No"></td>
+                  </tr>
+                  <tr>
+                    <td>Safe for Daily Use</td>
+                    <td class="sign-cell"><img src="assets/images/yes-sign.png" alt="Yes"></td>
+                    <td class="sign-cell col-allerpet"><img src="assets/images/warning-sign.png" alt="Warning"> Grooming Use</td>
+                    <td class="sign-cell col-clorox"><img src="assets/images/no-sign.png" alt="No"></td>
+                  </tr>
+                  <tr>
+                    <td>Works on Soft Surfaces</td>
+                    <td class="sign-cell"><img src="assets/images/yes-sign.png" alt="Yes"></td>
+                    <td class="sign-cell col-allerpet"><img src="assets/images/warning-sign.png" alt="Warning"> Surface-only</td>
+                    <td class="sign-cell col-clorox"><img src="assets/images/warning-sign.png" alt="Warning"> Limited</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Best Use Case</strong></td>
+                    <td>Daily allergen control</td>
+                    <td class="col-allerpet">Occasional grooming aid</td>
+                    <td class="col-clorox">Hard-surface disinfection only</td>
+                  </tr>
+                </table>
+                </div>
+              </div>
+  
+              <script>
+                function updateComparison(selectedBrand) {
+                  const allerpetCells = document.querySelectorAll('.col-allerpet');
+                  const cloroxCells = document.querySelectorAll('.col-clorox');
+                  
+                  // On desktop, show all columns
+                  if (window.innerWidth >= 769) {
+                    allerpetCells.forEach(cell => {
+                      cell.style.display = 'table-cell';
+                    });
+                    cloroxCells.forEach(cell => {
+                      cell.style.display = 'table-cell';
+                    });
+                    return;
+                  }
+                  
+                  // On mobile, show only selected brand
+                  if (selectedBrand === 'allerpet') {
+                    allerpetCells.forEach(cell => {
+                      cell.style.display = 'table-cell';
+                    });
+                    cloroxCells.forEach(cell => {
+                      cell.style.display = 'none';
+                    });
+                  } else if (selectedBrand === 'clorox') {
+                    allerpetCells.forEach(cell => {
+                      cell.style.display = 'none';
+                    });
+                    cloroxCells.forEach(cell => {
+                      cell.style.display = 'table-cell';
+                    });
+                  }
+                }
+  
+                // Initialize on page load
+                function initializeComparison() {
+                  const brandSelect = document.getElementById('brand-select');
+                  if (brandSelect) {
+                    updateComparison(brandSelect.value);
+                  }
+                }
+  
+                // Initialize when DOM is ready
+                if (document.readyState === 'loading') {
+                  document.addEventListener('DOMContentLoaded', initializeComparison);
+                } else {
+                  initializeComparison();
+                }
+  
+                // Handle resize to update display
+                window.addEventListener('resize', function() {
+                  const brandSelect = document.getElementById('brand-select');
+                  if (brandSelect) {
+                    updateComparison(brandSelect.value);
+                  }
+                });
+              </script>
 
             <h2>Choosing the Right Spray for Your Home</h2>
             <ul>
@@ -398,7 +488,7 @@
                   <div class="row mx-auto">
                     <div class="col-5 col-sm-4 col-md-3 p-0 px-md-2">
                       <img
-                        src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/dogbottle.png"
+                        src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Effectiveness-DogSKUs.png"
                         class="rounded-4"
                         alt="Dog Allergen Neutralizing Spray"
                       />
@@ -451,7 +541,7 @@
               healthier, more breathable home.
             </p>
 
-            <h2>Best Dog Allergy Spray in 2026:</h2>
+            <h3>Best Dog Allergy Spray in 2026:</h3>
             <p>
               👉
               <a
