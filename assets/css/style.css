@@ -1537,3 +1537,91 @@ div[id$="-ad"].component-loaded {
         width: 90% !important;
     }
 }
+
+/* ============================================
+   Gift Layout Styles for gift pages
+   ============================================ */
+
+.gift-layout .body,
+.gift-layout body {
+    background-color: #fefaf1 !important;
+}
+
+.gift-layout .article-section {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.gift-layout .article-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.gift-layout .article-section .article-content-image {
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gift-layout .article-section .article-content-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.gift-layout .article-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #234436;
+    font-weight: 700;
+}
+
+.gift-layout .article-section p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.gift-layout .article-section .shop-button-wrapper {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+/* Optional: Gift price and retailer info */
+.gift-price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2A7F62;
+    margin-bottom: 0.5rem;
+}
+
+.gift-retailer {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .gift-layout .article-section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .gift-layout .article-section h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .gift-layout .w-70 {
+        width: 90% !important;
+    }
+}

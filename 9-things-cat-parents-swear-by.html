@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover 9 essential products that cat parents swear by - from interactive toys to allergen-reducing supplements.">
+    <meta name="keywords"
+        content="cat products, cat essentials, cat parents, cat toys, cat carriers, cat water fountain, cat grooming, cat supplements, Pacagen">
+
+    <title>9 "Why Didn't I Do This Sooner?" Things Cat Parents Swear By | Health Pet Insider</title>
+
+    <!-- Head components (FOUC prevention, tracking init) -->
+    <script src="assets/js/head-components.js"></script>
+    
+    <!-- Tracking utilities (makes f() and getCookie() available) -->
+    <script src="assets/js/tracking.js"></script>
+    
+    <!-- Component initialization helper (must load before bundles) -->
+    <script src="assets/js/component-init.js"></script>
+    
+    <!-- Main JavaScript (navigation, footer) -->
+    <script src="assets/js/main.js" defer></script>
+    
+    <!-- Component bundles -->
+    <script src="assets/js/article-components-bundle.js"></script>
+    <script src="assets/js/product-components-bundle.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="layout-group-c">
+
+<main>
+<article class="advertorial">
+<section class="w-70 mx-auto my-4">
+
+<!-- Fold component (title + author + date + image, no breadcrumb) -->
+<div id="article-fold"></div>
+
+<div id="content-section-1"></div>
+<div id="content-section-2"></div>
+<div id="content-section-3"></div>
+<div id="content-section-4"></div>
+<div id="content-section-5"></div>
+<div id="content-section-6"></div>
+<div id="content-section-7"></div>
+<div id="content-section-8"></div>
+<div id="content-section-9"></div>
+
+</section>
+
+<!-- Article footer component -->
+<div id="article-footer"></div>
+
+</article>
+</main>
+
+<script>
+    initComponentsWhenReady(function() {
+        const pageType = window.location.pathname.includes('/blog/') ? 'blog' : 'root';
+        
+        // 1. Create fold component
+        document.getElementById('article-fold').innerHTML = createFold({
+            title: '9 "Why Didn\'t I Do This Sooner?" Things Cat Parents Swear By',
+            authorName: 'Julie Arnold',
+            authorImage: 'JulieArnold.png',
+            imageSrc: 'woman-with-kittens.png',
+            imageAlt: 'Cat parent with cats',
+            imageCaption: 'Simple products that make life with cats easier, calmer, and more enjoyable.',
+            breadcrumb: false,
+            dateText: 'Updated on January 15, 2026',
+            pageType: pageType
+        });
+        
+        // 2. Create content sections with buttons
+        document.getElementById('content-section-1').innerHTML = createContentSection({
+            title: 'The Interactive Toy',
+            paragraphs: [
+                'A slow-moving, battery-powered toy that keeps cats engaged even when no one\'s home. The kind that doesn\'t get ignored after five minutes and somehow stays interesting.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Interactive Toys',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-2').innerHTML = createContentSection({
+            title: 'The Carry-All Cat Bag',
+            paragraphs: [
+                'A structured, breathable carrier that makes vet visits, short trips, and travel days feel less chaotic. Once cats feel secure inside, leaving the house stops being such a production.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Cat Carriers',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-3').innerHTML = createContentSection({
+            title: 'The Water Fountain',
+            paragraphs: [
+                'A quiet, stainless steel fountain that encourages cats to drink more water. Less refilling, fewer spills, and noticeably better hydration.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Water Fountains',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-4').innerHTML = createContentSection({
+            title: 'The Elevated Food Bowl',
+            paragraphs: [
+                'A simple raised bowl that\'s easier on a cat\'s neck and digestion. It also keeps feeding areas cleaner and looks nicer than expected.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Elevated Bowls',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-5').innerHTML = createContentSection({
+            title: 'The Gentle Grooming Brush',
+            paragraphs: [
+                'A soft brush cats tolerate instead of immediately running away from. Regular grooming suddenly feels possible instead of stressful.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Grooming Brushes',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-6').innerHTML = createContentSection({
+            title: 'The Quiet Daily Supplement',
+            paragraphs: [
+                'A tasteless powder mixed into food that works quietly in the background. No sprays. No behavior changes. Just a small daily habit that supports reducing allergens at the source.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Pacagen Supplement',
+                url: 'https://pacagen.com/products/cat-allergen-reducing-supplement'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-7').innerHTML = createContentSection({
+            title: 'The Low-Tracking Litter Mat',
+            paragraphs: [
+                'A textured mat that actually catches litter before it spreads across the house. One of those things you don\'t think about until you stop stepping on grit.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Litter Mats',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-8').innerHTML = createContentSection({
+            title: 'The Cozy Window Perch',
+            paragraphs: [
+                'A secure perch that gives cats their favorite thing: a sunny spot to watch the world. It frees up the couch and instantly becomes their go-to place.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Window Perches',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-9').innerHTML = createContentSection({
+            title: 'The Scratch Pad That Saved the Couch',
+            paragraphs: [
+                'A simple scratcher placed exactly where the cat already wanted to scratch. Turns out placement matters more than design.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Scratch Pads',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        // 3. Create article footer
+        document.getElementById('article-footer').innerHTML = createArticleFooter({
+            pageType: pageType
+        });
+    }, { waitForArticle: true });
+</script>
+
+</body>
+</html>
+

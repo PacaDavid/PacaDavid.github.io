@@ -39,41 +39,16 @@
 <!-- Fold component (title + author + date + image, no breadcrumb) -->
 <div id="article-fold"></div>
 
-<p>
-Welcoming a cat is exciting—but many new cat parents aren't prepared for cat allergens.
-Fel d 1, the protein in cat saliva, spreads easily and triggers sneezing, itchy eyes, and congestion.
-</p>
-
-<p>
-That's why reducing allergens at the source matters.
-<strong>
-<a href="https://pacagen.com/products/cat-allergen-reducing-supplement">Pacagen Cat Allergen-Reducing Supplement</a>
-</strong>
-helps neutralize Fel d 1 in your cat's saliva—so less allergen ends up on furniture, fabrics, and in the air.
-</p>
-
+<div id="content-section-0"></div>
 <div id="content-section-1"></div>
 <div id="content-section-2"></div>
-<div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3">
-    <a href="https://pacagen.com/products/cat-allergen-reducing-supplement" class="d-flex w-md-65 justify-content-center align-items-center text-decoration-none">
-        <div class="card p-2">
-            <div class="row mx-auto">
-                <div class="col-5 col-sm-4 col-md-3 p-0 px-md-2">
-                    <img src="/assets/images/ChickenFlavor_V3.png" class=" rounded-4" alt="Cat Allergen Reducing Supplement">
-                </div>
-                <div class="col-7 col-sm-8 col-md-9">
-                    <h3 class="card-title"><b>Cat Allergen Reducing Supplement</b></h3>
-                    <p class="card-reviews mb-1">★★★★★ &nbsp; 4.80 out of 5 stars (200+ reviews) </p>
-                    <p class="card-description mb-0">A tasty cat supplement to end allergens where they start</p>
-                </div>
-            </div>
-        </div>
-    </a>
-</div>
+
+<!-- Product showcase component -->
+<div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
+
 <div id="content-section-3"></div>
 <div id="content-section-4"></div>
 <div id="content-section-5"></div>
-<div id="content-section-6"></div>
 
 </section>
 
@@ -90,8 +65,8 @@ helps neutralize Fel d 1 in your cat's saliva—so less allergen ends up on furn
         // 1. Create fold component (title + author + date + image, no breadcrumb)
         document.getElementById('article-fold').innerHTML = createFold({
             title: 'The Best Supplement For Cat Allergies In 2026',
-            authorName: 'Julie Arnold',
-            authorImage: 'JulieArnold.png',
+                authorName: 'Julie Arnold',
+                authorImage: 'JulieArnold.png',
             imageSrc: 'woman-with-kittens.png',
             imageAlt: 'Woman with kittens',
             imageCaption: 'A supplement for your cat that reduces allergens directly at the source—before they trigger your allergies.',
@@ -101,6 +76,14 @@ helps neutralize Fel d 1 in your cat's saliva—so less allergen ends up on furn
         });
         
         // 2. Create content sections
+        document.getElementById('content-section-0').innerHTML = createContentSection({
+            paragraphs: [
+                'Welcoming a cat is exciting—but many new cat parents aren\'t prepared for cat allergens. Fel d 1, the protein in cat saliva, spreads easily and triggers sneezing, itchy eyes, and congestion.',
+                'That\'s why reducing allergens at the source matters. <strong><a href="https://pacagen.com/products/cat-allergen-reducing-supplement">Pacagen Cat Allergen-Reducing Supplement</a></strong> helps neutralize Fel d 1 in your cat\'s saliva—so less allergen ends up on furniture, fabrics, and in the air.'
+            ],
+            pageType: pageType
+        });
+        
         document.getElementById('content-section-1').innerHTML = createContentSection({
             title: 'Why Cat Parents Choose Pacagen',
             additionalContent: '<ul><li><strong>Targets the source:</strong> Reduces Fel d 1 directly in your cat\'s saliva.</li><li><strong>Easy daily supplement:</strong> Works with any diet—wet, dry, or raw.</li><li><strong>Breathe easier:</strong> Less allergen buildup on soft surfaces.</li><li><strong>Safe for daily use:</strong> Vet-formulated and palatable.</li></ul>',
@@ -119,6 +102,15 @@ helps neutralize Fel d 1 in your cat's saliva—so less allergen ends up on furn
             additionalContent: '<h3>Pacagen vs Purina LiveClear</h3><p>Purina LiveClear requires switching your cat to a specific dry food. That can be difficult for picky eaters and incompatible with wet or raw diets.</p><ul><li>Pacagen works with any existing diet</li><li>No food transition required</li><li>Focused allergen reduction without changing feeding routines</li></ul><p>For households that want flexibility, Pacagen fits seamlessly into daily life. *Below image taken from pacagen.com.</p>',
             imageSrc: 'https://cdn.shopify.com/s/files/1/0814/8369/4394/files/pacagenvspurina-desktop.png',
             imageAlt: 'Pacagen vs Purina LiveClear',
+            pageType: pageType
+        });
+        
+        // 3. Create product showcase
+        document.getElementById('pacagen-spray-showcase').innerHTML = createProductShowcase({
+            image: 'ChickenFlavor_V3.png',
+            alt: 'Cat Allergen Reducing Supplement',
+            description: 'A tasty cat supplement to end allergens where they start',
+            url: 'https://pacagen.com/products/cat-allergen-reducing-supplement',
             pageType: pageType
         });
         
@@ -151,11 +143,11 @@ helps neutralize Fel d 1 in your cat's saliva—so less allergen ends up on furn
             pageType: pageType
         });
         
-        // 3. Create article footer
+        // 4. Create article footer
         document.getElementById('article-footer').innerHTML = createArticleFooter({
             pageType: pageType
         });
-    }, { waitForArticle: true });
+    }, { waitForArticle: true, waitForProduct: true });
 </script>
 
 </body>

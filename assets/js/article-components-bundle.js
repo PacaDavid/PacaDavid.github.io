@@ -13,7 +13,8 @@
         'components/article/blog-header.js',
         'components/article/article-footer.js',
         'components/article/fold.js',
-        'components/article/content-section.js'
+        'components/article/content-section.js',
+        'components/article/button.js'
     ];
     
     // Detect the correct base path by finding the current script's location

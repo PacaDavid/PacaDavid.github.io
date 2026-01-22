@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the best gifts for cat moms - thoughtful products that show you care about both her and her feline friend.">
+    <meta name="keywords"
+        content="gifts for cat moms, cat mom gifts, cat owner gifts, cat products, cat accessories, cat mom presents">
+
+    <title>Best Gifts for Cat Moms | Health Pet Insider</title>
+
+    <!-- Head components (FOUC prevention, tracking init) -->
+    <script src="assets/js/head-components.js"></script>
+    
+    <!-- Tracking utilities (makes f() and getCookie() available) -->
+    <script src="assets/js/tracking.js"></script>
+    
+    <!-- Component initialization helper (must load before bundles) -->
+    <script src="assets/js/component-init.js"></script>
+    
+    <!-- Main JavaScript (navigation, footer) -->
+    <script src="assets/js/main.js" defer></script>
+    
+    <!-- Component bundles -->
+    <script src="assets/js/article-components-bundle.js"></script>
+    <script src="assets/js/product-components-bundle.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="gift-layout">
+
+<main>
+<article class="advertorial">
+<section class="w-70 mx-auto my-4">
+
+<!-- Fold component (title + author + date + image, no breadcrumb) -->
+<div id="article-fold"></div>
+
+<div id="content-section-1"></div>
+<div id="content-section-2"></div>
+<div id="content-section-3"></div>
+<div id="content-section-4"></div>
+<div id="content-section-5"></div>
+<div id="content-section-6"></div>
+<div id="content-section-7"></div>
+<div id="content-section-8"></div>
+<div id="content-section-9"></div>
+<div id="content-section-10"></div>
+<div id="content-section-11"></div>
+<div id="content-section-12"></div>
+
+</section>
+
+<!-- Article footer component -->
+<div id="article-footer"></div>
+
+</article>
+</main>
+
+<script>
+    initComponentsWhenReady(function() {
+        const pageType = window.location.pathname.includes('/blog/') ? 'blog' : 'root';
+        
+        // 1. Create fold component
+        document.getElementById('article-fold').innerHTML = createFold({
+            title: 'Best Gifts for Cat Moms',
+            authorName: 'Julie Arnold',
+            authorImage: 'JulieArnold.png',
+            imageSrc: 'woman-with-kittens.png',
+            imageAlt: 'Cat mom with cats',
+            imageCaption: 'Thoughtful gifts that show you care about both the cat mom and her feline friend.',
+            breadcrumb: false,
+            dateText: 'Updated on January 15, 2026',
+            pageType: pageType
+        });
+        
+        // 2. Create content sections with buttons
+        document.getElementById('content-section-1').innerHTML = createContentSection({
+            title: 'Gift 1',
+            paragraphs: [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Gift 1',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-2').innerHTML = createContentSection({
+            title: 'Gift 2',
+            paragraphs: [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Gift 2',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-3').innerHTML = createContentSection({
+            title: 'Gift 3',
+            paragraphs: [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Gift 3',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-4').innerHTML = createContentSection({
+            title: 'Gift 4',
+            paragraphs: [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Gift 4',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-5').innerHTML = createContentSection({
+            title: 'Gift 5',
+            paragraphs: [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Gift 5',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-6').innerHTML = createContentSection({
+            title: 'Gift 6',
+            paragraphs: [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Gift 6',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-7').innerHTML = createContentSection({
+            title: 'Gift 7',
+            paragraphs: [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Gift 7',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-8').innerHTML = createContentSection({
+            title: 'Gift 8',
+            paragraphs: [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Gift 8',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-9').innerHTML = createContentSection({
+            title: 'Gift 9',
+            paragraphs: [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Gift 9',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-10').innerHTML = createContentSection({
+            title: 'Gift 10',
+            paragraphs: [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Gift 10',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-11').innerHTML = createContentSection({
+            title: 'Gift 11',
+            paragraphs: [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Gift 11',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        document.getElementById('content-section-12').innerHTML = createContentSection({
+            title: 'Gift 12',
+            paragraphs: [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+            ],
+            additionalContent: createButton({
+                text: 'Shop Gift 12',
+                url: '#'
+            }),
+            pageType: pageType
+        });
+        
+        // 3. Create article footer
+        document.getElementById('article-footer').innerHTML = createArticleFooter({
+            pageType: pageType
+        });
+    }, { waitForArticle: true });
+</script>
+
+</body>
+</html>
+
