@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     
     <style>
-        /* Page-specific styles: Make all gift images smaller */
+        /* Page-specific styles: Make all gift images smaller on desktop */
         #content-section-1 .article-content-image img,
         #content-section-2 .article-content-image img,
         #content-section-3 .article-content-image img,
@@ -56,6 +56,19 @@
             text-align: center;
             margin-top: 0.5rem;
             width: 100%;
+        }
+        
+        /* Make images full width on mobile */
+        @media (max-width: 768px) {
+            #content-section-1 .article-content-image img,
+            #content-section-2 .article-content-image img,
+            #content-section-3 .article-content-image img,
+            #content-section-4 .article-content-image img,
+            #content-section-5 .article-content-image img,
+            #content-section-6 .article-content-image img {
+                max-width: 100%;
+                margin: 0 auto;
+            }
         }
     </style>
 </head>
