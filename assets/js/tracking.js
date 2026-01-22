@@ -1,7 +1,7 @@
 // Tracking Utilities Component
 // Handles cookie management and Pacagen link tracking
 // Usage: Include in <head> or before closing </body>
-// Makes getCookie() and f() functions globally available
+// Uses event delegation to handle clicks on links with class 'pacagen-link'
 
 (function() {
     'use strict';
@@ -47,7 +47,28 @@
         }, 200);
     }
     
-    // Make functions globally available (for onclick handlers and inline scripts)
+    /**
+     * Set up event delegation for Pacagen links
+     */
+    function setupPacagenLinkTracking() {
+        document.addEventListener('click', function(e) {
+            // Check if clicked element or its parent is a Pacagen link
+            let link = e.target.closest('a.pacagen-link');
+            if (link && link.href) {
+                e.preventDefault();
+                handlePacagenClick(link.href);
+            }
+        });
+    }
+    
+    // Initialize event delegation when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupPacagenLinkTracking);
+    } else {
+        setupPacagenLinkTracking();
+    }
+    
+    // Make functions globally available (for backward compatibility if needed)
     window.getCookie = getCookie;
     window.f = handlePacagenClick;
 })();

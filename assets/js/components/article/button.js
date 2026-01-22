@@ -12,8 +12,7 @@
             url = null,
             className = 'shop-button',
             additionalClasses = '',  // Optional: add more classes without replacing default
-            wrapper = true,
-            onClick = null
+            wrapper = true
         } = config;
         
         if (!text) {
@@ -33,9 +32,7 @@
         }
         
         // If no URL, create a button element
-        const buttonHTML = onClick 
-            ? `<button class="${allClasses}" onclick="${onClick}">${text}</button>`
-            : `<button class="${allClasses}">${text}</button>`;
+        const buttonHTML = `<button class="${allClasses}">${text}</button>`;
         
         return wrapper ? `<div class="shop-button-wrapper">${buttonHTML}</div>` : buttonHTML;
     }

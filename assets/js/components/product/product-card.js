@@ -20,7 +20,7 @@
         
         if (clickable && url) {
             return `
-                <a href="javascript:void(0)" class="d-flex w-md-65 justify-content-center align-items-center text-decoration-none" onclick="f('${url}')">
+                <a href="${url}" class="pacagen-link d-flex w-md-65 justify-content-center align-items-center text-decoration-none">
                     <div class="card p-2">
                         <div class="row mx-auto">
                             <div class="col-5 col-sm-4 col-md-3 p-0 px-md-2">
