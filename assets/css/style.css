@@ -641,6 +641,18 @@ div[id$="-ad"].component-loaded {
     min-height: 300px;
 }
 
+.ads-type-a.ad-clickable {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.ads-type-a.ad-clickable:hover {
+    opacity: 0.95;
+}
+
 .ads-type-a::before {
     content: '';
     position: absolute;
@@ -694,14 +706,14 @@ div[id$="-ad"].component-loaded {
 }
 
 .ads-type-b .ad-brand-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
     color: #000000;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    letter-spacing: 0px;
+    text-transform: none;
     flex: 1;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .ads-type-b .ad-brand-image {
@@ -725,13 +737,13 @@ div[id$="-ad"].component-loaded {
 }
 
 .ads-type-b .ad-promo-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.75rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #000000;
     line-height: 1.4;
-    letter-spacing: 0.3px;
-    font-style: italic;
+    letter-spacing: 0px;
+    font-style: normal;
 }
 
 .ads-type-b .ad-promo-subtext {
@@ -752,7 +764,7 @@ div[id$="-ad"].component-loaded {
     }
 
     .ads-type-b .ad-brand-name {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .ads-type-b .ad-brand-image {
@@ -765,7 +777,7 @@ div[id$="-ad"].component-loaded {
     }
 
     .ads-type-b .ad-promo-title {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .ads-type-b .ad-promo-subtext {

@@ -41,20 +41,33 @@
             );
         }
         
-        // Build CTA (link or span)
+        // Build CTA (span when ad is clickable, link when not)
         const ctaHTML = ctaUrl
-            ? `<a href="${ctaUrl}" target="${ctaTarget}" rel="noopener noreferrer" class="ad-cta">${ctaText}</a>`
+            ? `<span class="ad-cta">${ctaText}</span>`
             : `<span class="ad-cta">${ctaText}</span>`;
         
-        return `
-            <div class="ad-section ads-type-a" style="background-image: url('${imagePath}');">
-                <div class="ad-logo">${logoHTML}</div>
-                <div class="ad-headline">${headline}</div>
-                <div class="ad-body">${bodyHTML}</div>
-                <div class="ad-cta-wrapper">${ctaHTML}</div>
-                <span class="ad-label">Ad</span>
-            </div>
+        const adContent = `
+            <div class="ad-logo">${logoHTML}</div>
+            <div class="ad-headline">${headline}</div>
+            <div class="ad-body">${bodyHTML}</div>
+            <div class="ad-cta-wrapper">${ctaHTML}</div>
+            <span class="ad-label">Ad</span>
         `;
+        
+        // Wrap entire ad in link if ctaUrl is provided
+        if (ctaUrl) {
+            return `
+                <a href="${ctaUrl}" target="${ctaTarget}" rel="noopener noreferrer" class="ad-section ads-type-a ad-clickable" style="background-image: url('${imagePath}');">
+                    ${adContent}
+                </a>
+            `;
+        } else {
+            return `
+                <div class="ad-section ads-type-a" style="background-image: url('${imagePath}');">
+                    ${adContent}
+                </div>
+            `;
+        }
     }
     
     window.createAdTypeA = createAdTypeA;

@@ -25,12 +25,25 @@
     <!-- Component bundles -->
     <script src="assets/js/article-components-bundle.js"></script>
     <script src="assets/js/ads-components-bundle.js"></script>
+    <script src="assets/js/product-components-bundle.js"></script>
     
     <!-- Custom styles for this page -->
     <style>
         /* Hide border line segment for each section */
         .article-section h2 {
             border-bottom: none !important;
+        }
+        /* Make product showcase image fit properly */
+        #pacagen-showcase {
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+        #pacagen-showcase img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
     </style>
     
@@ -57,6 +70,8 @@
                     <div id="content-section-6"></div>
                     <div id="content-section-7"></div>
                     <div id="content-section-8"></div>
+                    <!-- Product showcase component -->
+                    <div id="pacagen-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
                 </section>
             </section>
 
@@ -98,6 +113,8 @@
                     'My partner has always been a little allergy-sensitive. Nothing dramatic. No emergency room visits or obvious reactions. Just the lingering kind of discomfort that never fully goes away. A stuffy nose that hangs around. Eyes that water more often than they should. The kind of thing that\'s easy to downplay and even easier to normalize.',
                     'So that\'s what we did. We normalized it.'
                 ],
+                imageSrc: 'img-cat-livingroom.png',
+                imageAlt: 'Tabby cat playing in a sunlit living room',
                 pageType: pageType
             });
             
@@ -111,6 +128,8 @@
                     'But slowly, I started noticing the moments in between. The pause before he sat on the couch. The way he\'d rub his eyes and then change the subject. The distance he kept from the places Mochi loved most.',
                     'None of it felt big enough to act on. But it added up.'
                 ],
+                imageSrc: 'img-cat-sleep.jpg',
+                imageAlt: 'Cat sleeping peacefully',
                 pageType: pageType
             });
             
@@ -139,9 +158,11 @@
                 title: 'A Small Change That Fit Into Real Life',
                 paragraphs: [
                     'Around that time, I started seeing more conversations about supporting cats from the inside out, specifically through diet and supplements designed to reduce active allergens at the source.',
-                    'One name that kept coming up was Pacagen\'s Cat Allergen Reducing Supplement. I didn\'t think of it as a solution so much as an experiment, something small I could try without changing our routines. I mixed it into Mochi\'s food, and then mostly stopped thinking about it.',
+                    'One name that kept coming up was <a href="https://pacagen.com/products/cat-allergen-reducing-supplement" target="_blank" rel="noopener noreferrer">Pacagen\'s Cat Allergen Reducing Supplement</a>. I didn\'t think of it as a solution so much as an experiment, something small I could try without changing our routines. I mixed it into Mochi\'s food, and then mostly stopped thinking about it.',
                     'There were no new rules to enforce. No changes to her behavior. No added stress. It simply became part of the background, the way most sustainable routines do.'
                 ],
+                imageSrc: 'img-cat-eating.png',
+                imageAlt: 'Cat eating from a bowl',
                 pageType: pageType
             });
             
@@ -153,6 +174,8 @@
                     'Mochi was still herself. Curious, stubborn, always nearby. She still claimed the couch. She still followed us down the hallway. Nothing about her changed.',
                     'What changed was the quiet math we\'d been doing in our heads, constantly balancing comfort, care, and compromise.'
                 ],
+                imageSrc: 'img-cat-cuddle-man.png',
+                imageAlt: 'Man cuddling with cat',
                 pageType: pageType
             });
             
@@ -182,19 +205,28 @@
             
             // 3. Create Ad Type B
             document.getElementById('lorem-ad').innerHTML = createAdTypeB({
-                brandName: 'Lorem',
-                brandImage: 'pacagen-products.png',
-                imageAlt: 'Lorem Products',
-                promoTitle: 'Lorem Ipsum Dolor Sit Amet',
-                promoSubtext: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                brandName: 'PetCare Insurance',
+                brandImage: 'img-ad-pet-insurance.jpg',
+                imageAlt: 'Pet Insurance',
+                promoTitle: 'Protect Your Feline Friend',
+                promoSubtext: 'Comprehensive pet insurance plans that cover routine care, emergencies, and more. Give your cat the protection they deserve.',
                 pageType: pageType
             });
             
-            // 4. Create article footer
+            // 4. Create product showcase
+            document.getElementById('pacagen-showcase').innerHTML = createProductShowcase({
+                image: 'supplement-2versions.png',
+                alt: 'Cat Allergen Reducing Supplement',
+                description: 'A tasty cat supplement to end allergens where they start',
+                url: 'https://pacagen.com/products/cat-allergen-reducing-supplement',
+                pageType: pageType
+            });
+            
+            // 5. Create article footer
             document.getElementById('article-footer').innerHTML = createArticleFooter({
                 pageType: pageType
             });
-        }, { waitForArticle: true, waitForAds: true });
+        }, { waitForArticle: true, waitForAds: true, waitForProduct: true });
     </script>
 </body>
 
