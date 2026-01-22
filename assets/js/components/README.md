@@ -1,4 +1,4 @@
-# Component System Documentation
+# Component System Documentation for HPI
 
 ## Structure
 
