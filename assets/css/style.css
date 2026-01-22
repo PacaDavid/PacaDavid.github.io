@@ -1605,6 +1605,36 @@ div[id$="-ad"].component-loaded {
     text-align: center;
 }
 
+.gift-layout .shop-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2A7F62;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-align: center;
+    border: 1px solid #2A7F62;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.gift-layout .shop-button:hover {
+    background-color: #284b40;
+    border-color: #284b40;
+    transform: translateY(-1px);
+}
+
+.gift-layout .shop-button:active {
+    transform: translateY(0);
+}
+
+.gift-layout .shop-button .discount {
+    color: #f4ffbf;
+    font-weight: 600;
+}
+
 /* Optional: Gift price and retailer info */
 .gift-price {
     font-size: 1.25rem;

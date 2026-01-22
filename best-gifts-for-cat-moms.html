@@ -28,6 +28,19 @@
     <script src="assets/js/product-components-bundle.js"></script>
     
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        /* Page-specific styles: Make all gift images smaller */
+        #content-section-1 .article-content-image img,
+        #content-section-2 .article-content-image img,
+        #content-section-3 .article-content-image img,
+        #content-section-4 .article-content-image img,
+        #content-section-5 .article-content-image img,
+        #content-section-6 .article-content-image img {
+            max-width: 50%;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body class="gift-layout">
@@ -45,12 +58,6 @@
 <div id="content-section-4"></div>
 <div id="content-section-5"></div>
 <div id="content-section-6"></div>
-<div id="content-section-7"></div>
-<div id="content-section-8"></div>
-<div id="content-section-9"></div>
-<div id="content-section-10"></div>
-<div id="content-section-11"></div>
-<div id="content-section-12"></div>
 
 </section>
 
@@ -79,145 +86,85 @@
         
         // 2. Create content sections with buttons
         document.getElementById('content-section-1').innerHTML = createContentSection({
-            title: 'Gift 1',
+            title: '1. Anthropologie Cat Breeds A-Z Dish Towel',
             paragraphs: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+                'This charming dish towel from Anthropologie features an adorable A-Z guide of cat breeds, making it both functional and decorative. It\'s the perfect gift for a cat mom who loves to add personality to her kitchen while celebrating her love for felines. The high-quality cotton blend is absorbent and durable, and the playful design adds a touch of whimsy to any home. It\'s a thoughtful, practical gift that shows you understand her passion for cats and appreciate her sense of style.'
             ],
+            imageSrc: 'img-gift-1-anthro.png',
+            imageAlt: 'Anthropologie Cat Breeds A-Z Dish Towel',
             additionalContent: createButton({
-                text: 'Shop Gift 1',
-                url: '#'
+                text: 'Shop Anthropologie Towel',
+                url: 'https://www.anthropologie.com/shop/cat-breeds-a-z-dish-towel?color=066&parentStyleId=89844898&quantity=1&size=0000&type=STANDARD'
             }),
             pageType: pageType
         });
         
         document.getElementById('content-section-2').innerHTML = createContentSection({
-            title: 'Gift 2',
+            title: '2. LEGO Ideas Tuxedo Cat Building Set',
             paragraphs: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+                'This adorable LEGO Ideas Tuxedo Cat set is perfect for the cat mom who loves both building and cats. With over 1,100 pieces, it\'s a fun, engaging project that results in a beautiful display piece. The set features a posable cat with realistic details, including a bow tie and expressive eyes. It\'s a thoughtful gift that combines her love of cats with a creative hobby, and the finished model makes for a charming addition to any home. Whether she\'s a LEGO enthusiast or just loves cats, this set is sure to bring a smile to her face.'
             ],
+            imageSrc: 'img-gift-2-lego.png',
+            imageAlt: 'LEGO Ideas Tuxedo Cat Building Set',
             additionalContent: createButton({
-                text: 'Shop Gift 2',
-                url: '#'
+                text: 'Shop LEGO Cat',
+                url: 'https://www.lego.com/en-us/product/tuxedo-cat-21349?cmp=KAC-INI-GOOGUS-GO-US_GL-EN-RE-SP-BUY-CREATE-MB_ALWAYS_ON-SHOP-BP-PMAX-ALL-CIDNA00000-PMAX-LOW_PRIORITY&ef_id=CjwKCAiAssfLBhBDEiwAcLpwfkvz1rd-Y0FXqg3_xgsrlN36K05p6R8D8QgVz4j0b8Lkx6N1pI5zFxoCOtcQAvD_BwE%3AG%3As&gad_campaignid=19924109190&gad_source=1&gbraid=0AAAAADESMXKu1tdJYtjU_sG8epJdoJzej&gclid=CjwKCAiAssfLBhBDEiwAcLpwfkvz1rd-Y0FXqg3_xgsrlN36K05p6R8D8QgVz4j0b8Lkx6N1pI5zFxoCOtcQAvD_BwE&s_kwcid=AL%21790%213%21%21%21%21x%21%21%2119932189580%21&consent-modal=show'
             }),
             pageType: pageType
         });
         
         document.getElementById('content-section-3').innerHTML = createContentSection({
-            title: 'Gift 3',
+            title: '3. Pacagen Cat Allergen Neutralizing Spray',
             paragraphs: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+                'This is a true game-changer for any cat mom who struggles with allergies. <a href="javascript:void(0)" onclick="f(\'https://www.pacagen.com/products/cat-allergen-neutralizing-spray\')">Pacagen</a> isn\'t just another fabric freshener—it\'s a targeted solution for cat allergies. Scientifically formulated to neutralize Fel d 1, the primary cat allergen, Pacagen\'s active ingredients break it down on contact. Spray it on the couch, bedding, or her cat\'s favorite blanket, and in just a few minutes allergens are reduced to harmless fragments. Safe, easy, and effective—this gift shows you understand her daily challenges and want to help her enjoy more comfortable cuddles with her feline friend.'
             ],
+            imageSrc: 'cat-spray.png',
+            imageAlt: 'Pacagen Cat Allergen Neutralizing Spray',
             additionalContent: createButton({
-                text: 'Shop Gift 3',
-                url: '#'
+                text: 'Shop Pacagen Spray',
+                url: 'https://www.pacagen.com/products/cat-allergen-neutralizing-spray'
             }),
             pageType: pageType
         });
         
         document.getElementById('content-section-4').innerHTML = createContentSection({
-            title: 'Gift 4',
+            title: '4. New Yorker Bodega Cat 1000 Piece Jigsaw Puzzle',
             paragraphs: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+                'This charming 1000-piece jigsaw puzzle from the New York Puzzle Company features the iconic New Yorker cover "Bodega Cat" illustrated by R. Kikuo Johnson. The scene captures a quintessential New York moment with a bodega cat lounging contentedly on the counter, overseeing the bustling convenience store below. Perfect for cat moms who love puzzles, this gift combines her passion for felines with a relaxing, engaging activity. The finished puzzle measures 19.25"x26.625" and features a linen-style finish to reduce glare. It\'s a thoughtful gift that offers hours of enjoyment and results in a beautiful piece of art she can display or frame.'
             ],
+            imageSrc: 'img-gift-4-puzzle.png',
+            imageAlt: 'New Yorker Bodega Cat Jigsaw Puzzle',
             additionalContent: createButton({
-                text: 'Shop Gift 4',
-                url: '#'
+                text: 'Shop Bodega Cat Puzzle',
+                url: 'https://www.newyorkpuzzlecompany.com/products/bodega-cat?variant=47386886734109&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gad_campaignid=16997056719&gbraid=0AAAAADPvjnmutfi9Jz6NMExlHsFtyuOBI&gclid=CjwKCAiAssfLBhBDEiwAcLpwfrioN9ZLlyH1I0gtrwwvJOmRbzYpfT1RvZpwqX9dI0CcKUuIlH9zAhoC0AsQAvD_BwE'
             }),
             pageType: pageType
         });
         
         document.getElementById('content-section-5').innerHTML = createContentSection({
-            title: 'Gift 5',
+            title: '5. Baggu Standard Baggu Fancy Cats Reusable Bag',
             paragraphs: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+                'This adorable reusable bag from Baggu features the "Fancy Cats" airbrush art design by Sara Rabin, showcasing whimsical cats in various poses wearing bows and collars. It\'s the perfect practical gift for a cat mom who wants to show off her love for felines while being eco-friendly. The bag carries 2-3 plastic grocery bags worth of stuff comfortably, holds up to 40lbs, and folds into its own compact 5" × 5" pouch for easy storage. Made from recycled ripstop polyester and machine washable, it\'s both stylish and sustainable. Whether she\'s heading to the grocery store, farmers market, or just running errands, this bag combines functionality with her cat-loving personality.'
             ],
+            imageSrc: 'img-gift-5-baggu.png',
+            imageAlt: 'Baggu Standard Baggu Fancy Cats Reusable Bag',
             additionalContent: createButton({
-                text: 'Shop Gift 5',
-                url: '#'
+                text: 'Shop Baggu Fancy Cats Bag',
+                url: 'https://baggu.com/products/standard-baggu-fancy-cats?variant=42444934283361&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&tw_source=google&tw_adid=&tw_campaign=20531046929&tw_kwdid=&gad_source=1&gad_campaignid=20535144205&gbraid=0AAAAADcyM_69qj6TiUky9muzzs-61oQ1w&gclid=CjwKCAiAssfLBhBDEiwAcLpwfsJ_-rOO0K3DMgKZllbo0OcZ4h_qzq_aQ-ozn8QkhQ2hnLie1XssMRoCa_kQAvD_BwE'
             }),
             pageType: pageType
         });
         
         document.getElementById('content-section-6').innerHTML = createContentSection({
-            title: 'Gift 6',
+            title: '6. Musubi Kiln Neco Hasami Cat Bowl Set',
             paragraphs: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
+                'This beautiful Japanese ceramic cat bowl set from Musubi Kiln features charming cat designs that add a touch of whimsy to any kitchen. The Neco Hasami (cat scissors) design showcases adorable cat motifs, making it perfect for a cat mom who appreciates both functionality and style. These handcrafted bowls are not only beautiful but also practical for serving meals, snacks, or even as decorative pieces. Made with traditional Japanese ceramic techniques, this set combines quality craftsmanship with delightful cat-themed artistry. It\'s a thoughtful gift that celebrates her love for cats while adding elegance to her dining experience.'
             ],
+            imageSrc: 'img-gift-6-bowl-set.png',
+            imageAlt: 'Musubi Kiln Neco Hasami Cat Bowl Set',
             additionalContent: createButton({
-                text: 'Shop Gift 6',
-                url: '#'
-            }),
-            pageType: pageType
-        });
-        
-        document.getElementById('content-section-7').innerHTML = createContentSection({
-            title: 'Gift 7',
-            paragraphs: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
-            ],
-            additionalContent: createButton({
-                text: 'Shop Gift 7',
-                url: '#'
-            }),
-            pageType: pageType
-        });
-        
-        document.getElementById('content-section-8').innerHTML = createContentSection({
-            title: 'Gift 8',
-            paragraphs: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
-            ],
-            additionalContent: createButton({
-                text: 'Shop Gift 8',
-                url: '#'
-            }),
-            pageType: pageType
-        });
-        
-        document.getElementById('content-section-9').innerHTML = createContentSection({
-            title: 'Gift 9',
-            paragraphs: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
-            ],
-            additionalContent: createButton({
-                text: 'Shop Gift 9',
-                url: '#'
-            }),
-            pageType: pageType
-        });
-        
-        document.getElementById('content-section-10').innerHTML = createContentSection({
-            title: 'Gift 10',
-            paragraphs: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
-            ],
-            additionalContent: createButton({
-                text: 'Shop Gift 10',
-                url: '#'
-            }),
-            pageType: pageType
-        });
-        
-        document.getElementById('content-section-11').innerHTML = createContentSection({
-            title: 'Gift 11',
-            paragraphs: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
-            ],
-            additionalContent: createButton({
-                text: 'Shop Gift 11',
-                url: '#'
-            }),
-            pageType: pageType
-        });
-        
-        document.getElementById('content-section-12').innerHTML = createContentSection({
-            title: 'Gift 12',
-            paragraphs: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'
-            ],
-            additionalContent: createButton({
-                text: 'Shop Gift 12',
-                url: '#'
+                text: 'Shop Cat Bowl Set',
+                url: 'https://musubikiln.com/products/neco-hasami-cat-bowl-set?pr_prod_strat=pinned&pr_rec_id=e34dd2452&pr_rec_pid=6864516939965&pr_ref_pid=6668831228093&pr_seq=uniform'
             }),
             pageType: pageType
         });
