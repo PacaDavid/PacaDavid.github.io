@@ -10,478 +10,145 @@
         content="best products for pet allergies, pet allergy relief at home, HEPA air purifier for pet allergies, allergen neutralizing spray for cats and dogs, allergen proof bedding, cat allergy solutions, dog allergy solutions, reduce pet dander allergies">
     <title>Top 5 Must-Have Products for Pet Owners with Allergies | Health Pet Insider</title>
 
-    <!-- Prevent FOUC (Flash of Unstyled Content) -->
-    <style>
-        body {
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .no-js body {
-            visibility: visible;
-            opacity: 1;
-        }
-    </style>
-    <script>document.documentElement.className += ' js';</script>
-    <script src="https://static.runconverge.com/pixels/AlO7bK.js" async></script>
-    <script>
-        window.cvg || (cvg = function () { cvg.process ? cvg.process.apply(cvg, arguments) : cvg.queue.push(arguments) }, cvg.queue = []);
-        cvg({ method: "track", eventName: "$page_load" });
-        cvg({ method: "link_domain", domain: "pacagen.com" });
-    </script>
-
-    <!-- Load main JavaScript -->
+    <!-- Head components (FOUC prevention, tracking init) -->
+    <script src="assets/js/head-components.js"></script>
+    
+    <!-- Tracking utilities (makes f() and getCookie() available) -->
+    <script src="assets/js/tracking.js"></script>
+    
+    <!-- Component initialization helper (must load before bundles) -->
+    <script src="assets/js/component-init.js"></script>
+    
+    <!-- Main JavaScript (navigation, footer) -->
     <script src="assets/js/main.js" defer></script>
-    <style>
-        .body{
-            background-color:#fefaf1 !important;
-        }
-        .blog-category {
-            align-items: center;
-        }
-
-        .blog-contents {
-            gap: 100px;
-        }
-
-        .blog-contents p {
-            margin-bottom: 1rem;
-            /* space after paragraphs */
-        }
-
-        .breadcrumb-section {
-            display: flex;
-            justify-content: center;
-            /* center horizontally */
-            align-items: center;
-            /* center vertically */
-            height: 50px;
-            /* adjust height as needed */
-            background-color: #ffffff;
-            /* optional */
-        }
-
-        .breadcrumb a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: 500;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        .blog-title-section {
-            display: flex;
-            justify-content: center;
-            /* horizontal center */
-            align-items: center;
-            /* vertical center if height set */
-            padding: 20px 0;
-            /* top/bottom spacing */
-            background-color: #ffffff;
-            /* optional background */
-        }
-
-        .blog-title {
-            font-size: 2rem;
-            font-weight: bold;
-            margin: 0;
-            text-align: center;
-        }
-
-        .author-section {
-            display: flex;
-            align-items: center;
-            /* vertically align text and image */
-            justify-content: center;
-            /* center horizontally */
-            gap: 10px;
-            /* space between text and image */
-            font-size: 1rem;
-            color: #555;
-            /* subtle gray text */
-        }
-
-        .author-image {
-            width: 32px;
-            /* adjust size */
-            height: 32px;
-            border-radius: 50%;
-            /* circular image */
-            object-fit: cover;
-            /* crop nicely */
-        }        
-
-        .image-row {
-            display: flex;
-            /* place items in a row */
-            gap: 10px;
-            /* space between images */
-        }
-
-        .image-row img {
-            width: 50%;
-            /* each takes half the parent width */
-            height: auto;
-            /* keep aspect ratio */
-            display: block;
-            /* remove inline spacing */
-        }
-
-        /* Product Row Layout */
-        .product-row {
-            margin-bottom: 3rem;
-        }
-
-        .product-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 0;
-        }
-
-        .product-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            object-fit: cover;
-        }
-
-        .product-content {
-            padding: 0 0 1.5rem 0;
-        }
-
-        .product-content h2 {
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-            color: #234436;
-            font-size: 2rem;
-            font-weight: 700;
-        }
-
-        .product-content p {
-            margin-bottom: 1rem;
-            line-height: 1.7;
-        }
-
-        /* Ensure proper spacing on mobile */
-        @media (max-width: 768px) {
-            .product-row {
-                margin-bottom: 2.5rem;
-            }
-
-            .product-row .row {
-                margin-bottom: 0 !important;
-            }
-
-            .product-row .g-4 {
-                --bs-gutter-y: 0.75rem;
-            }
-
-            .product-image {
-                margin-bottom: 0;
-            }
-
-            .product-image img {
-                border-radius: 10px;
-                max-width: 100%;
-            }
-
-            .product-content {
-                padding: 0 0 0.5rem 0;
-            }
-
-            .product-content h2 {
-                font-size: 1.75rem;
-                margin-bottom: 1rem;
-                line-height: 1.3;
-            }
-
-            .product-content p {
-                line-height: 1.6;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .product-row {
-                margin-bottom: 2rem;
-            }
-
-            .product-row .row {
-                margin-bottom: 0 !important;
-            }
-
-            .product-row .g-4 {
-                --bs-gutter-y: 0.5rem;
-                --bs-gutter-x: 1rem;
-            }
-
-            .product-image {
-                margin-bottom: 0;
-            }
-
-            .product-image img {
-                border-radius: 8px;
-            }
-
-            .product-content {
-                padding: 0;
-            }
-
-            .product-content h2 {
-                font-size: 1.5rem;
-                margin-bottom: 0.75rem;
-                line-height: 1.3;
-            }
-
-            .product-content p {
-                font-size: 0.95rem;
-                line-height: 1.6;
-                margin-bottom: 0.75rem;
-            }
-
-            /* Ensure proper stacking order on mobile */
-            .product-row-image-right .col-12 {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .product-row-image-right .order-1 {
-                order: 1;
-            }
-
-            .product-row-image-right .order-2 {
-                order: 2;
-            }
-        }
-    </style>
+    
+    <!-- Component bundles -->
+    <script src="assets/js/article-components-bundle.js"></script>
+    <script src="assets/js/product-components-bundle.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="layout-group-c">
     <!-- Navigation will be auto-inserted here -->
     <main>
         <article class="advertorial">
           <section class="w-70 mx-auto my-4">
-            <!-- Breadcrumb -->
-            <div class="breadcrumb-section">
-              <div class="breadcrumb">
-                <a href="index.html" class="custom-btn btn-sm shadow-sm">Home</a>
-              </div>
-            </div>
-      
-            <!-- Blog Title -->
-            <div class="blog-title-section">
-              <h2 class="blog-title">Top 5 Must-Have Products for Pet Owners with Allergies</h2>
-            </div>
-      
-            <!-- Author -->
-            <div class="author-section">
-              <span class="by-text">By Steven Timmins</span>
-              <img class="author-image" src="/assets/images/StevenTimmins.png" alt="Author Steven Timmins">
-            </div>
-      
-            <!-- Share + Updated date -->
-            <div class="container py-2">
-              <div class="row align-items-center">
-                <div class="col-md-6 text-md-start mt-2 mb-2 mt-md-0 text-muted">
-                  Updated on June 18, 2025
-                </div>
-              </div>
-            </div>
-      
-            <!-- Hero Row -->
-            <div class="row">
-              <div class="col-12 col-md-5 d-flex align-items-center">
-                <h1>Top 5 Must-Have Products for Pet Owners with Allergies</h1>
-              </div>
-              <div class="col-12 col-md-7">
-                <img src="assets/images/allergiccat.png" alt="Pet owner with cat and tissues">
-                <p class="d-block d-md-none">
-                  Loving your furry friend shouldn't come with the price of constant sneezing, itchy eyes, and a stuffy nose.
-                  With the right products, you can reduce allergens in your home and reclaim your comfort. Here are our top 5
-                  essentials every allergic pet owner should have.
-                </p>
-              </div>
-            </div>
-      
+            <!-- Fold component (breadcrumb + title + author + date + image) -->
+            <div id="article-fold"></div>
+            
             <p class="d-none d-md-block" style="margin-top: 3rem;">
               Loving your furry friend shouldn't come with the price of constant sneezing, itchy eyes, and a stuffy nose.
               For the millions of pet owners who also suffer from allergies, finding balance can be a real challenge.
               With the right products, you can significantly reduce allergens in your home and reclaim your comfort.
               Here are our top 5 essentials every allergic pet owner should have.
             </p>
-      
-            <!-- #1 HEPA Air Purifier -->
-            <div class="product-row product-row-image-left">
-              <div class="row align-items-center g-4 my-4">
-                <div class="col-12 col-md-6">
-                  <div class="product-image">
-              <img src="assets/images/best-air-purifier.png" class="article-img" alt="HEPA Air Purifier">
-            </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="product-content">
-                    <h2>A High-Efficiency Particulate Air (HEPA) Air Purifier</h2>
-            <p>
-              Pet dander, pollen, and other allergens are constantly floating in the air. A quality HEPA air purifier works
-              tirelessly to capture these microscopic particles before they can trigger your allergies. Look for a model with
-              a true HEPA filter (99.97% of particles down to 0.3 microns) and make sure it's rated for the size of your room.
-              Placing one in your bedroom or living room can make a world of difference in your daily symptoms. Brands like
-              Levoit and Coway are praised for their quiet yet effective operation.
-            </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- #2 Pacagen Spray -->
-            <div class="product-row product-row-image-right">
-              <div class="row align-items-center g-4 my-4">
-                <div class="col-12 col-md-6 order-2 order-md-1">
-                  <div class="product-content">
-                    <h2>Pacagen Cat Allergen Neutralizing Spray</h2>
-            <p>
-              This is a true game-changer. <a href="javascript:void(0)"
-                      onclick="f('https://www.pacagen.com/products/cat-allergen-neutralizing-spray')">Pacagen</a> isn't just another fabric freshener—it's a targeted solution for cat
-                      allergies. Scientifically formulated to neutralize Fel d 1, the primary cat allergen, Pacagen's active
-                      ingredients break it down on contact. Spray it on your couch, bedding, or your cat's favorite blanket, and in
-                      just a few minutes allergens are reduced to harmless fragments. Safe, easy, and effective—this one's essential
-              for every allergic cat owner who refuses to sacrifice cuddles.
-            </p>
-                  </div>
-                  <div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3 mt-3"></div>
-                </div>
-                <div class="col-12 col-md-6 order-1 order-md-2">
-                  <div class="product-image">
-                    <img src="assets/images/pacagen-products.png" class="article-img" alt="Pacagen Cat Allergen Spray">
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- #3 Allergen Shampoo/Wipes -->
-            <div class="product-row product-row-image-left">
-              <div class="row align-items-center g-4 my-4">
-                <div class="col-12 col-md-6">
-                  <div class="product-image">
-              <img src="assets/images/pet-shampoo.png" class="article-img" alt="Pet Shampoo for Allergies">
-            </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="product-content">
-                    <h2>Allergen-Reducing Shampoo or Wipes</h2>
-            <p>
-              Weekly baths may not work for every pet, but allergen-reducing shampoos like TropiClean or Allerpet help
-              cleanse fur of dander and saliva. Between baths, quick allergen-reducing wipes are a simple daily fix that
-              removes dander and keeps allergen levels under control—without the stress of frequent full baths.
-            </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- #4 HEPA Vacuum -->
-            <div class="product-row product-row-image-right">
-              <div class="row align-items-center g-4 my-4">
-                <div class="col-12 col-md-6 order-2 order-md-1">
-                  <div class="product-content">
-                    <h2>A HEPA-Sealed Vacuum Cleaner</h2>
-            <p>
-              A poor-quality vacuum can stir allergens into the air. A sealed-system vacuum with a HEPA filter traps dander,
-              fur, and dust without releasing them back into your room. Models from Dyson, Shark, or Miele are designed for
-              pet owners and often come with specialized attachments to clean fur from carpets and upholstery.
-            </p>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 order-1 order-md-2">
-                  <div class="product-image">
-                    <img src="assets/images/bed-vacuum.png" class="article-img" alt="HEPA Vacuum Cleaner">
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- #5 Allergen-Proof Bedding -->
-            <div class="product-row product-row-image-left">
-              <div class="row align-items-center g-4 my-4">
-                <div class="col-12 col-md-6">
-                  <div class="product-image">
-              <img src="assets/images/allergen-bedding.png" class="article-img" alt="Allergen Proof Bedding">
-            </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="product-content">
-                    <h2>Allergen-Proof Bedding</h2>
-            <p>
-              Since we spend a third of our lives in bed, creating an allergy-safe sleep zone is crucial. Allergen-proof
-              mattress and pillow covers act as barriers against dander. Combine this with weekly hot water washes, and
-                      you'll drastically cut down on allergens where you rest most—helping you wake up refreshed and symptom-free.
-            </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Wrap Up -->
-            <h2>Take Back Control</h2>
-            <p>
-              Living with pets and allergies doesn’t have to mean endless sneezing fits. With these 5 must-have products,
-              you’ll reduce allergens, breathe easier, and enjoy the best parts of pet ownership without the constant
-              discomfort. Small changes can create a healthier home—for you and your furry friend.
-            </p>
+
+            <div id="content-section-1"></div>
+            <div id="content-section-2"></div>
+            <div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
+            <div id="content-section-3"></div>
+            <div id="content-section-4"></div>
+            <div id="content-section-5"></div>
+            <div id="content-section-6"></div>
           </section>
       
-          <!-- Footer -->
-          <footer class="article-footer">
-            <p>
-              Find more helpful healthy pet info on our <a href="../index.html">homepage</a> or explore
-              <a href="/blog/index.html">all articles</a>
-            </p>
-          </footer>
+          <!-- Article footer component -->
+          <div id="article-footer"></div>
         </article>
       </main>
       
     <script>
-        function getCookie(name) {
-            const value = `; ${document.cookie}`;
-            const parts = value.split(`; ${name}=`);
-            if (parts.length === 2) return parts.pop().split(';').shift();
-            return '';
-        }
-
-        function f(baseUrl) {
-            cvg({ method: "track", eventName: "HealthPetInsiderPacagenClick" });
-
-            // Get cookie values
-            let uid = getCookie('__cvg_uid');
-            let sid = getCookie('__cvg_sid');
-
-            // Build the final URL with parameters
-            let finalUrl = baseUrl;
-            if (uid || sid) {
-                finalUrl += (finalUrl.includes('?') ? '&' : '?');
-                if (uid) finalUrl += `__cvg_uid=${encodeURIComponent(uid)}`;
-                if (uid && sid) finalUrl += '&';
-                if (sid) finalUrl += `__cvg_sid=${encodeURIComponent(sid)}`;
-            }
-
-            // Redirect after 200ms delay
-            setTimeout(() => {
-                window.location.href = finalUrl;
-            }, 200);
-        }
-        document.addEventListener('DOMContentLoaded', function() {
-            const pacagenSprayShowcase = createProductShowcase({
+        initComponentsWhenReady(function() {
+            const pageType = window.location.pathname.includes('/blog/') ? 'blog' : 'root';
+            
+            // 1. Create fold component (breadcrumb + title + author + date + image)
+            document.getElementById('article-fold').innerHTML = createFold({
+                title: 'Top 5 Must-Have Products for Pet Owners with Allergies',
+                authorName: 'Steven Timmins',
+                authorImage: 'StevenTimmins.png',
+                imageSrc: 'allergiccat.png',
+                imageAlt: 'Pet owner with cat and tissues',
+                imageCaption: 'Loving your furry friend shouldn\'t come with the price of constant sneezing, itchy eyes, and a stuffy nose. With the right products, you can reduce allergens in your home and reclaim your comfort. Here are our top 5 must-have products.',
+                breadcrumb: true,
+                homePath: 'index.html',
+                dateText: 'Updated on June 18, 2025',
+                pageType: pageType
+            });
+            
+            // 2. Create content sections
+            document.getElementById('content-section-1').innerHTML = createContentSection({
+                title: '1. A High-Efficiency Particulate Air (HEPA) Air Purifier',
+                paragraphs: [
+                    'Pet dander, pollen, and other allergens are constantly floating in the air. A quality HEPA air purifier works tirelessly to capture these microscopic particles before they can trigger your allergies. Look for a model with a true HEPA filter (99.97% of particles down to 0.3 microns) and make sure it\'s rated for the size of your room. Placing one in your bedroom or living room can make a world of difference in your daily symptoms. Brands like Levoit and Coway are praised for their quiet yet effective operation.'
+                ],
+                imageSrc: 'best-air-purifier.png',
+                imageAlt: 'HEPA Air Purifier',
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-2').innerHTML = createContentSection({
+                title: '2. Pacagen Cat Allergen Neutralizing Spray',
+                paragraphs: [
+                    'This is a true game-changer. <a href="javascript:void(0)" onclick="f(\'https://www.pacagen.com/products/cat-allergen-neutralizing-spray\')">Pacagen</a> isn\'t just another fabric freshener—it\'s a targeted solution for cat allergies. Scientifically formulated to neutralize Fel d 1, the primary cat allergen, Pacagen\'s active ingredients break it down on contact. Spray it on your couch, bedding, or your cat\'s favorite blanket, and in just a few minutes allergens are reduced to harmless fragments. Safe, easy, and effective—this one\'s essential for every allergic cat owner who refuses to sacrifice cuddles.'
+                ],
+                imageSrc: 'pacagen-products.png',
+                imageAlt: 'Pacagen Cat Allergen Spray',
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-3').innerHTML = createContentSection({
+                title: '3. Allergen-Reducing Shampoo or Wipes',
+                paragraphs: [
+                    'Weekly baths may not work for every pet, but allergen-reducing shampoos like TropiClean or Allerpet help cleanse fur of dander and saliva. Between baths, quick allergen-reducing wipes are a simple daily fix that removes dander and keeps allergen levels under control—without the stress of frequent full baths.'
+                ],
+                imageSrc: 'pet-shampoo.png',
+                imageAlt: 'Pet Shampoo for Allergies',
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-4').innerHTML = createContentSection({
+                title: '4. A HEPA-Sealed Vacuum Cleaner',
+                paragraphs: [
+                    'A poor-quality vacuum can stir allergens into the air. A sealed-system vacuum with a HEPA filter traps dander, fur, and dust without releasing them back into your room. Models from Dyson, Shark, or Miele are designed for pet owners and often come with specialized attachments to clean fur from carpets and upholstery.'
+                ],
+                imageSrc: 'bed-vacuum.png',
+                imageAlt: 'HEPA Vacuum Cleaner',
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-5').innerHTML = createContentSection({
+                title: '5. Allergen-Proof Bedding',
+                paragraphs: [
+                    'Since we spend a third of our lives in bed, creating an allergy-safe sleep zone is crucial. Allergen-proof mattress and pillow covers act as barriers against dander. Combine this with weekly hot water washes, and you\'ll drastically cut down on allergens where you rest most—helping you wake up refreshed and symptom-free.'
+                ],
+                imageSrc: 'allergen-bedding.png',
+                imageAlt: 'Allergen Proof Bedding',
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-6').innerHTML = createContentSection({
+                title: 'Take Back Control',
+                paragraphs: [
+                    'Living with pets and allergies doesn\'t have to mean endless sneezing fits. With these 5 must-have products, you\'ll reduce allergens, breathe easier, and enjoy the best parts of pet ownership without the constant discomfort. Small changes can create a healthier home—for you and your furry friend.'
+                ],
+                pageType: pageType
+            });
+            
+            // 3. Create product showcase
+            document.getElementById('pacagen-spray-showcase').innerHTML = createProductShowcase({
                 image: 'cat-spray.png',
                 alt: 'Cat Allergen Neutralizing Spray',
                 description: 'Breaks down 98% of cat allergens on contact',
                 url: 'https://www.pacagen.com/products/cat-allergen-neutralizing-spray',
-                pageType: 'root'
+                pageType: pageType
             });
-            document.getElementById('pacagen-spray-showcase').innerHTML = pacagenSprayShowcase;
-        });
+            
+            // 4. Create article footer
+            document.getElementById('article-footer').innerHTML = createArticleFooter({
+                pageType: pageType
+            });
+        }, { waitForArticle: true, waitForProduct: true });
     </script>
 </body>
 

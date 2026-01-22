@@ -370,3 +370,1170 @@ footer {
     margin-top: 20px;
     margin-bottom: 30px;
   }
+
+/* ============================================
+   COMMON STYLES (Shared across all groups)
+   ============================================ */
+
+/* Note: FOUC prevention styles should remain inline in HTML files
+   for faster initial render. They are not included here. */
+
+/* Common Blog Elements */
+.blog-category {
+    align-items: center;
+}
+
+.blog-contents {
+    gap: 100px;
+}
+
+.blog-contents p {
+    margin-bottom: 1rem;
+}
+
+.breadcrumb-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.blog-title-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+.author-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.author-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Prevent layout shifts - Hide empty component containers until populated */
+/* Use visibility instead of display to prevent reflow, and min-height to reserve space if needed */
+div[id^="content-section"]:empty,
+div#article-fold:empty,
+div#article-header:empty,
+div#article-header-blog:empty,
+div#article-footer:empty,
+div[id$="-showcase"]:empty,
+div[id$="-ad"]:empty {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Show containers once they have content with smooth transition */
+div[id^="content-section"]:not(:empty),
+div#article-fold:not(:empty),
+div#article-header:not(:empty),
+div#article-header-blog:not(:empty),
+div#article-footer:not(:empty),
+div[id$="-showcase"]:not(:empty),
+div[id$="-ad"]:not(:empty) {
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+    animation: fadeIn 0.2s ease-in;
+}
+
+/* Also handle class-based loading state for more control */
+div[id^="content-section"].component-loaded,
+div#article-fold.component-loaded,
+div#article-header.component-loaded,
+div#article-header-blog.component-loaded,
+div#article-footer.component-loaded,
+div[id$="-showcase"].component-loaded,
+div[id$="-ad"].component-loaded {
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fold Component Styles */
+.fold-section {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.fold-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: #234436;
+}
+
+.fold-leading-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #234436;
+    font-style: italic;
+}
+
+.fold-image-wrapper {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.fold-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.fold-image-caption {
+    font-size: 0.95rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .fold-title {
+        font-size: 2rem;
+    }
+    
+    .fold-leading-title {
+        font-size: 1.5rem;
+    }
+}
+
+.image-row {
+    display: flex;
+    gap: 10px;
+}
+
+.image-row img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+/* ============================================
+   ADS MODULE: Reusable Advertisement Styles
+   ============================================
+   Generic ad styles that can be used in any layout group
+   Use ads-type-a for ads with background images
+   ============================================ */
+
+/* Base Advertisement Section */
+.ad-section {
+    background-color: #fefaf1;
+    border: 1px solid #e8e3d5;
+    padding: 24px 28px;
+    margin: 32px 0;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+/* Ad Logo/Brand */
+.ad-logo {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #2A7F62;
+    letter-spacing: 0.5px;
+}
+
+.ad-logo .ad-logo-dark {
+    color: #234436;
+}
+
+/* Ad Headline */
+.ad-headline {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* Ad Body Text */
+.ad-body {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.ad-body .ad-product-name {
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Ad CTA Wrapper */
+.ad-cta-wrapper {
+    text-align: left;
+    margin-top: 8px;
+}
+
+.ad-cta {
+    display: inline-block;
+    color: #8B4513;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+/* Ad Label */
+.ad-label {
+    position: absolute !important;
+    bottom: 8px !important;
+    right: 8px !important;
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    border-radius: 2px;
+    z-index: 10;
+    margin: 0;
+    float: none;
+}
+
+/* Ad Type A: Background Image with Semi-Transparent Overlay */
+.ads-type-a {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 300px;
+}
+
+.ads-type-a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.ads-type-a > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Ads: Mobile Responsive */
+@media (max-width: 768px) {
+    .ad-section {
+        padding: 20px;
+        margin: 24px 0;
+    }
+
+    .ads-type-a {
+        min-height: 250px;
+    }
+
+    .ad-headline {
+        font-size: 1.4rem;
+    }
+
+    .ad-body {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ad Type B: Two-Row Layout with Brand Name and Image */
+.ads-type-b {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f0f9f5;
+    border: 1px solid #c8e6d5;
+}
+
+.ads-type-b .ad-row-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ads-type-b .ad-brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    flex: 1;
+    line-height: 1.1;
+}
+
+.ads-type-b .ad-brand-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ads-type-b .ad-brand-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.ads-type-b .ad-row-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ads-type-b .ad-promo-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #000000;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    font-style: italic;
+}
+
+.ads-type-b .ad-promo-subtext {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+    opacity: 0.85;
+}
+
+/* Ads Type B: Mobile Responsive */
+@media (max-width: 768px) {
+    .ads-type-b .ad-row-1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ads-type-b .ad-brand-name {
+        font-size: 2rem;
+    }
+
+    .ads-type-b .ad-brand-image {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .ads-type-b .ad-brand-image img {
+        max-height: 150px;
+    }
+
+    .ads-type-b .ad-promo-title {
+        font-size: 1.5rem;
+    }
+
+    .ads-type-b .ad-promo-subtext {
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================
+   GROUP A: Card-Based Article Sections Layout
+   ============================================
+   Use this module for pages with article-section cards
+   Pages: living-with-a-cat-small-changes.html,
+          love-your-cat-lose-the-allergies.html,
+          hypoallergenic-dogs.html
+   ============================================ */
+
+.layout-group-a .body,
+.layout-group-a body {
+    background-color: #fefaf1 !important;
+}
+
+.layout-group-a .blog-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+/* Group A: Larger blog title variant (for pages like hypoallergenic-dogs.html) */
+.layout-group-a .blog-title.large {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.layout-group-a .article-section {
+    margin-bottom: 2.5rem;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.layout-group-a .article-section .article-content-image:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.layout-group-a .article-section .article-content-image {
+    margin-bottom: 1rem;
+}
+
+.layout-group-a .article-section .article-img {
+    margin-bottom: 0.75rem;
+}
+
+.layout-group-a .article-section img[src*="whiskerblock-blue"] {
+    max-width: 45%;
+    width: 45%;
+}
+
+.layout-group-a .article-section h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #f4f2e0;
+}
+
+/* Group A: Callout Boxes (for pages like hypoallergenic-dogs.html) */
+.layout-group-a .callout {
+    background: #f7f7f7;
+    border-left: 4px solid #222;
+    padding: 12px 16px;
+    margin: 24px 0;
+    font-size: 0.95rem;
+}
+
+.layout-group-a .small-text {
+    font-size: 0.9rem;
+}
+
+/* Group A: Product Cards (for pages like hypoallergenic-dogs.html) */
+.layout-group-a .card .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.layout-group-a .card .card-reviews {
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.layout-group-a .card .card-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (min-width: 769px) {
+    .layout-group-a .card {
+        padding: 24px !important;
+    }
+
+    .layout-group-a .card .row {
+        align-items: center;
+    }
+
+    .layout-group-a .card .col-md-4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 20px;
+    }
+
+    .layout-group-a .card .col-md-8 {
+        padding-left: 20px;
+    }
+
+    .layout-group-a .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .layout-group-a .card .card-title {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout-group-a .card {
+        margin: 15px 0;
+        padding: 15px !important;
+    }
+
+    .layout-group-a .card-title {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+
+    .layout-group-a .card-reviews {
+        font-size: 0.85rem;
+    }
+
+    .layout-group-a .card-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .layout-group-a .card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .layout-group-a .card-title {
+        font-size: 1.2rem;
+    }
+
+    .layout-group-a .card-description {
+        font-size: 0.85rem;
+    }
+}
+
+/* Group A: Shop Buttons (for pages like hypoallergenic-dogs.html) */
+.layout-group-a .shop-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2A7F62;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-align: center;
+    border: 1px solid #2A7F62;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.layout-group-a .shop-button:hover {
+    background-color: #284b40;
+    border-color: #284b40;
+    transform: translateY(-1px);
+}
+
+.layout-group-a .shop-button:active {
+    transform: translateY(0);
+}
+
+.layout-group-a .shop-button .discount {
+    color: #f4ffbf;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .layout-group-a .shop-button {
+        width: auto;
+        max-width: 280px;
+        padding: 14px 20px;
+        font-size: 0.95rem;
+        display: inline-block;
+    }
+}
+
+/* Group A: Mobile Responsive */
+@media (max-width: 576px) {
+    .layout-group-a .w-70 {
+        width: 90% !important;
+    }
+
+    .layout-group-a .article-section {
+        margin-bottom: 3rem;
+        padding: 0.75rem 1rem 2rem 1rem;
+        background-color: #fefaf1;
+    }
+
+    .layout-group-a .article-section .article-content-image {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+    }
+
+    .layout-group-a .article-section .article-img {
+        margin-bottom: 0.5rem;
+    }
+
+    .layout-group-a .article-section img[src*="whiskerblock-blue"] {
+        max-width: 60%;
+        width: 60%;
+    }
+
+    .layout-group-a .article-section h2 {
+        font-size: 1.75rem;
+        border-bottom: 2px solid #e5e5e5;
+    }
+}
+
+/* ============================================
+   GROUP B: Comparison/Product Pages Layout
+   ============================================
+   Use this module for pages with comparison tables, product cards, callouts
+   Pages: best-cat-allergy-sprays.html,
+          best-dog-allergy-products.html
+   ============================================ */
+
+.layout-group-b .blog-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Group B: Article Content Typography */
+.layout-group-b .article-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    color: #222;
+}
+
+.layout-group-b .article-content h2:first-of-type {
+    margin-top: 0;
+}
+
+.layout-group-b .article-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color: #222;
+}
+
+.layout-group-b .article-content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* Group B: Comparison Tables */
+.layout-group-b .comparison-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+}
+
+.layout-group-b .comparison-table th,
+.layout-group-b .comparison-table td {
+    padding: 12px 16px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.layout-group-b .comparison-table th:first-child,
+.layout-group-b .comparison-table td:first-child {
+    text-align: left;
+}
+
+.layout-group-b .comparison-table .sign-cell {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.layout-group-b .comparison-table .sign-cell img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.layout-group-b .table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 auto;
+}
+
+/* Group B: Brand Selector */
+.layout-group-b .brand-selector {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.layout-group-b .brand-selector label {
+    font-weight: 500;
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
+
+.layout-group-b .brand-selector select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.layout-group-b .brand-selector select:hover {
+    border-color: #999;
+}
+
+.layout-group-b .brand-selector select:focus {
+    outline: none;
+    border-color: #222;
+}
+
+/* Group B: Callout Boxes */
+.layout-group-b .callout {
+    background: #f7f7f7;
+    border-left: 4px solid #222;
+    padding: 12px 16px;
+    margin: 24px 0;
+    font-size: 0.95rem;
+}
+
+.layout-group-b .small-text {
+    font-size: 0.9rem;
+}
+
+/* Group B: Product Cards */
+.layout-group-b .card .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.layout-group-b .card .card-reviews {
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.layout-group-b .card .card-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Group B: Shop Buttons */
+.layout-group-b .shop-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2A7F62;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-align: center;
+    border: 1px solid #2A7F62;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.layout-group-b .shop-button:hover {
+    background-color: #284b40;
+    border-color: #284b40;
+    transform: translateY(-1px);
+}
+
+.layout-group-b .shop-button:active {
+    transform: translateY(0);
+}
+
+.layout-group-b .shop-button .discount {
+    color: #f4ffbf;
+    font-weight: 600;
+}
+
+/* Group B: Prevent Horizontal Overflow */
+.layout-group-b body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.layout-group-b main,
+.layout-group-b article {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Group B: Mobile Responsive */
+@media (min-width: 769px) {
+    .layout-group-b .brand-selector {
+        display: none;
+    }
+    .layout-group-b .col-clorox {
+        display: table-cell !important;
+    }
+    .layout-group-b .col-allerpet {
+        display: table-cell !important;
+    }
+    
+    .layout-group-b .card {
+        padding: 24px !important;
+    }
+
+    .layout-group-b .card .row {
+        align-items: center;
+    }
+
+    .layout-group-b .card .col-md-4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 20px;
+    }
+
+    .layout-group-b .card .col-md-8 {
+        padding-left: 20px;
+    }
+
+    .layout-group-b .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .layout-group-b .card .card-title {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout-group-b .w-70 {
+        width: 100% !important;
+        padding: 0 15px;
+        margin: 0 !important;
+    }
+
+    .layout-group-b .blog-title {
+        font-size: 1.8rem;
+        padding: 15px 0;
+    }
+
+    .layout-group-b .blog-title-section {
+        padding: 15px 0;
+    }
+
+    .layout-group-b .author-section {
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+
+    .layout-group-b .row {
+        margin: 0;
+    }
+
+    .layout-group-b .row > div {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .layout-group-b .row h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .layout-group-b img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .layout-group-b .col-12.col-md-7 img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .layout-group-b .article-content-image {
+        margin: 20px -15px;
+        padding: 0;
+    }
+
+    .layout-group-b .article-content-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .layout-group-b .article-content {
+        padding: 0;
+    }
+
+    .layout-group-b .article-content h2 {
+        font-size: 1.6rem;
+        margin-top: 35px;
+        margin-bottom: 18px;
+        line-height: 1.3;
+    }
+
+    .layout-group-b .article-content h3 {
+        font-size: 1.3rem;
+        margin-top: 25px;
+        margin-bottom: 14px;
+    }
+
+    .layout-group-b .article-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .layout-group-b .article-content ul,
+    .layout-group-b .article-content ol {
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .layout-group-b .article-content li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+    }
+
+    .layout-group-b .callout {
+        margin: 20px -15px;
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+
+    .layout-group-b .card {
+        margin: 15px 0;
+        padding: 15px !important;
+    }
+
+    .layout-group-b .card-title {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+
+    .layout-group-b .card-reviews {
+        font-size: 0.85rem;
+    }
+
+    .layout-group-b .card-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .layout-group-b .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .layout-group-b .article-content a {
+        word-break: break-word;
+        font-size: 0.95rem;
+    }
+
+    .layout-group-b .small-text {
+        font-size: 0.85rem;
+    }
+
+    .layout-group-b .d-flex.justify-content-center {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .layout-group-b .w-md-65 {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .layout-group-b .brand-selector {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .layout-group-b .brand-selector label {
+        margin-right: 0;
+    }
+
+    .layout-group-b .brand-selector select {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .layout-group-b .comparison-table {
+        width: 100%;
+        max-width: 100%;
+        min-width: auto;
+        table-layout: auto;
+    }
+
+    .layout-group-b .col-clorox {
+        display: none;
+    }
+
+    .layout-group-b .col-allerpet {
+        display: table-cell;
+    }
+
+    .layout-group-b .comparison-table th,
+    .layout-group-b .comparison-table td {
+        padding: 8px 6px;
+        font-size: 0.85rem;
+    }
+
+    .layout-group-b .comparison-table th:first-child,
+    .layout-group-b .comparison-table td:first-child {
+        padding-left: 8px;
+        min-width: 120px;
+    }
+
+    .layout-group-b .comparison-table .sign-cell img {
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+    }
+
+    .layout-group-b .table-wrapper {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: visible;
+    }
+
+    .layout-group-b .shop-button {
+        width: auto;
+        max-width: 280px;
+        padding: 14px 20px;
+        font-size: 0.95rem;
+        display: inline-block;
+    }
+
+    .layout-group-b .shop-button-wrapper {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .layout-group-b .blog-title {
+        font-size: 1.5rem;
+    }
+
+    .layout-group-b .article-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .layout-group-b .article-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .layout-group-b .article-content p {
+        font-size: 0.95rem;
+    }
+
+    .layout-group-b .card-title {
+        font-size: 1.2rem;
+    }
+
+    .layout-group-b .card-description {
+        font-size: 0.85rem;
+    }
+
+    .layout-group-b .callout {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .layout-group-b .brand-selector label {
+        font-size: 1.1rem;
+    }
+
+    .layout-group-b .comparison-table {
+        width: 100%;
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .layout-group-b .comparison-table th,
+    .layout-group-b .comparison-table td {
+        padding: 6px 4px;
+        font-size: 0.8rem;
+    }
+
+    .layout-group-b .comparison-table th:first-child,
+    .layout-group-b .comparison-table td:first-child {
+        padding-left: 6px;
+        min-width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .layout-group-b .comparison-table .sign-cell img {
+        width: 14px;
+        height: 14px;
+        margin-right: 3px;
+    }
+
+    .layout-group-b .table-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* ============================================
+   GROUP C: Simple List/Content Layout
+   ============================================
+   Use this module for pages with simple content and article-content-image divs
+   Pages: 5-must-have-products.html,
+          5-best-fixes-for-dog-allergies.html,
+          5-ways-to-manage-allergens.html,
+          best-supplement-for-cat-allergies.html
+   ============================================ */
+
+.layout-group-c .body,
+.layout-group-c body {
+    background-color: #fefaf1 !important;
+}
+
+.layout-group-c .blog-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+/* Group C: Mobile Responsive */
+@media (max-width: 576px) {
+    .layout-group-c .w-70 {
+        width: 90% !important;
+    }
+}

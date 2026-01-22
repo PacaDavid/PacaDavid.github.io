@@ -10,173 +10,34 @@
         content="air purifiers, HEPA filters, allergy relief, indoor air quality, allergen removal, clean air, Pacagen">
     <title>5 Ways To Manage Allergens In The Home | Health Pet Insider</title>
 
-    <!-- Prevent FOUC (Flash of Unstyled Content) -->
-    <style>
-        body {
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .no-js body {
-            visibility: visible;
-            opacity: 1;
-        }
-    </style>
-    <script>document.documentElement.className += ' js';</script>
-    <script src="https://static.runconverge.com/pixels/AlO7bK.js" async></script>
-    <script>
-        window.cvg || (cvg = function () { cvg.process ? cvg.process.apply(cvg, arguments) : cvg.queue.push(arguments) }, cvg.queue = []);
-        cvg({ method: "track", eventName: "$page_load" });
-        cvg({ method: "link_domain", domain: "pacagen.com" });
-    </script>
-
-    <!-- Load main JavaScript -->
+    <!-- Head components (FOUC prevention, tracking init) - NO defer -->
+    <script src="assets/js/head-components.js"></script>
+    
+    <!-- Tracking utilities (makes f() and getCookie() available) - NO defer -->
+    <script src="assets/js/tracking.js"></script>
+    
+    <!-- Component initialization helper (must load before bundles) -->
+    <script src="assets/js/component-init.js"></script>
+    
+    <!-- Main JavaScript (navigation, footer) -->
     <script src="assets/js/main.js" defer></script>
-    <style>
-        .body{
-            background-color:#fefaf1 !important;
-        }
-        .blog-category {
-            align-items: center;
-        }
-
-        .blog-contents {
-            gap: 100px;
-        }
-
-        .blog-contents p {
-            margin-bottom: 1rem;
-            /* space after paragraphs */
-        }
-
-        .breadcrumb-section {
-            display: flex;
-            justify-content: center;
-            /* center horizontally */
-            align-items: center;
-            /* center vertically */
-            height: 50px;
-            /* adjust height as needed */
-            background-color: #ffffff;
-            /* optional */
-        }
-
-        .breadcrumb a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: 500;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        .blog-title-section {
-            display: flex;
-            justify-content: center;
-            /* horizontal center */
-            align-items: center;
-            /* vertical center if height set */
-            padding: 20px 0;
-            /* top/bottom spacing */
-            background-color: #ffffff;
-            /* optional background */
-        }
-
-        .blog-title {
-            font-size: 2rem;
-            font-weight: bold;
-            margin: 0;
-            text-align: center;
-        }
-
-        .author-section {
-            display: flex;
-            align-items: center;
-            /* vertically align text and image */
-            justify-content: center;
-            /* center horizontally */
-            gap: 10px;
-            /* space between text and image */
-            font-size: 1rem;
-            color: #555;
-            /* subtle gray text */
-        }
-
-        .author-image {
-            width: 32px;
-            /* adjust size */
-            height: 32px;
-            border-radius: 50%;
-            /* circular image */
-            object-fit: cover;
-            /* crop nicely */
-        }
-
-        /* On mobile (Bootstrap's sm breakpoint and below) */
-        @media (max-width: 576px) {
-            .w-70 {
-                width: 90% !important;
-            }
-        }
-
-        .image-row {
-            display: flex;
-            /* place items in a row */
-            gap: 10px;
-            /* space between images */
-        }
-
-        .image-row img {
-            width: 50%;
-            /* each takes half the parent width */
-            height: auto;
-            /* keep aspect ratio */
-            display: block;
-            /* remove inline spacing */
-        }
-    </style>
+    
+    <!-- Article components bundle -->
+    <script src="assets/js/article-components-bundle.js"></script>
+    
+    <!-- Product components bundle -->
+    <script src="assets/js/product-components-bundle.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="layout-group-c">
     <!-- Navigation will be auto-inserted here -->
     <main>
         <article class="advertorial">
             <section class="w-70 mx-auto my-4">
-                <div class="breadcrumb-section">
-                    <div class="breadcrumb">
-                        <a href="index.html" class="custom-btn btn-sm shadow-sm">Home</a>
-                    </div>
-                </div>
-                <div class="blog-title-section">
-                    <h2 class="blog-title">5 Ways To Manage Allergens In The Home</h2>
-                </div>
-                <div class="author-section">
-                    <span class="by-text">By Julie Arnold</span>
-                    <img class="author-image" src="/assets/images/JulieArnold.png" alt="Author Julie Arnold">
-                </div>
-
-                <div class="container py-2">
-                    <div class="row align-items-center">
-                        <!-- Right column: Updated date -->
-                        <div class="col-md-6 text-md-start mt-2 mb-2 mt-md-0 text-muted">
-                            Updated on July 25, 2025
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-5 d-flex align-items-center">
-                        <h1>5 Ways To Manage Allergens In The Home</h1>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <img src="assets/images/man-sneezing.png" alt="Man Sneezing">
-                        <p class="d-block d-md-none">Allergens are everywhere, and unless you take proactive steps to
-                            manage them, they won't be going anywhere anytime soon. Airborne allergens in the home in
-                            particular are notoriously challenging to remove without the right tools. To help you get
-                            started, we've put together a list of 6 ways to manage allergens in the home.</p>
-                    </div>
-                </div>
+                <!-- Fold component (title + author + leading title + image) -->
+                <div id="article-fold"></div>
 
                 <p class="d-none d-md-block" style="margin-top: 3rem;">Allergens are everywhere, and unless you take
                     proactive steps to manage them, they won't be going anywhere anytime soon. Airborne allergens in the
@@ -184,136 +45,109 @@
                     started, we've put together a list of 6 ways to manage allergens in the home.</p>
 
 
-                <div class="article-content-image d-flex">
-                    <img src="assets/images/hepafilter.png" class="article-img" alt="HEPA Filter">
-                </div>
-                <h2>1. HEPA Is King, But There's More To The Story</h2>
-                <p>High Efficiency Particulate Air (HEPA) filters are present in a variety of home appliances, including
-                    air purifiers, vacuum cleaners, and even some air conditioners. They're designed to capture, at
-                    minimum, 99.97% of particles, including dust, pollen, pet dander, and mold spores. Having a robust
-                    pre-filter is also important, as it can capture much larger things like pet hair & dander before it
-                    makes it to the HEPA filter, extending its lifespan. Having a variety of HEPA appliances in your
-                    home (and regularly using them!) is a great starting point when it comes to managing allergens in
-                    your home.</p>
-
-                <p> When shopping around for a HEPA appliance, make sure to check the filter and confirm that it's a
-                    true HEPA filter. The rising popularity of HEPA appliances has led to some manufacturers cutting
-                    corners and marketing their appliances as "HEPA-type" or "HEPA-like", which aren't held to the same
-                    quality standards as a true HEPA filter. These "HEPA-like" and "HEPA-type" appliances are often less
-                    expensive, but they aren't able to capture as many particles as a true HEPA filter.</p>
-
-                <div class="article-content-image d-flex">
-                    <img src="assets/images/bedsheets.png" class="article-img" alt="Person Making The Bed">
-                </div>
-                <h2>2. Wash Your Clothes and Sheets More Often Than You Think You Should</h2>
-                <p>This one's particularly important for people with dust allergies, but can still apply to other
-                    allergies as well. Allergens - the particles that cause your allergies - are incredibly tiny, and
-                    cannot be seen by the naked eye. Even if the sheets look clean, your sweaters are free of cat hair,
-                    and the couch was just vacuumed, chances are, there's still allergens hiding deep in the fibres.
-                    Research suggests that washing at 130°F or higher every week is the most reliable way to remove
-                    allergens from your clothes and sheets.</p>
-
-                <div class="article-content-image d-flex">
-                    <img src="assets/images/pileofclothes.png" class="article-img" alt="A Pile of Clothes">
-                </div>
-                <h2>3. Don't Forget The Clutter</h2>
-                <p>Remember that pile of old newspapers in the corner? What about the box of old clothes you've been
-                    meaning to donate? Because these neglected items tend to be left untouched for extended periods of
-                    time, allergens build up on them and there's nothing around to clean them up. This is a hotstpot for
-                    allergens, and a fantastic place to start when it comes to managing allergens in your home. Cleaning
-                    out your home regularly helps keep the pesky allergens in check, and keeps your home neat and tidy.
-                    Talk about a win-win!</p>
-
-                <div class="article-content-image d-flex">
-                    <a href="javascript:void(0)"
-              onclick="f('https://www.pacagen.com/products/cat-allergen-neutralizing-spray')"><img src="assets/images/pacagen-products.png" class="article-img" alt="Allergen Neutralizing Spray"></a>
-                </div>
-                <h2>4. Allergen Neutralizing Sprays Are Your Best Friend</h2>
-                <p>Allergen neutralizing sprays are a great way to keep your home safe. These highly specific sprays are
-                    purposefully crafted to break down allergens on contact. Because they're designed to only act on
-                    allergens, it's safe to use on a variety of surfaces, including clothes, sheets, and other surfaces.
-                    The best part? It takes less than 10 minutes a week to get results. For those of us living busy
-                    lives and have no time to regularly deep-clean the home, this is a no-brainer. 10 minutes a week for
-                    an allergen-free home? Sign me up!</p>
-
-                <p>If you're looking for a great allergen neutralizing spray, check out <a href="javascript:void(0)"
-                        onclick="f('https://www.pacagen.com/products/cat-allergen-neutralizing-spray')">Pacagen</a>.
-                    They made an allergen neutralizing spray for cat, dog, and even dust allergens.</p>
-                <div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
-
-                <div class="article-content-image d-flex">
-                    <img src="assets/images/cat-on-couch.png" class="article-img" alt="Cat on Couch">
-                </div>
-                <h2>5. Consider Home & Furniture "Upgrades"</h2>
-                <p>In the same vein as washing your clothes and sheets more often, consider upgrading your home and
-                    furniture. Like clothes and sheets, carpeted floors and upholstered furniture are magnets for
-                    allergens. Except that cleaning an upholstered couch isn't as simple as washing a sweater. If pets
-                    are in the home, being conscious about furniture choices is a must. Pets lounging on furniture
-                    causes allergen buildup, dander & fur gets trapped in carpet fibres after shedding, and they can
-                    stir up dust from all over the house as they move around, all of which cause allergy flare-ups.</p>
-
-                <p>Hardwood floors, leather furniture, and tile, while not foolproof, are good alternatives to carpeted
-                    floors and upholstered furniture. They're generally easier to clean and don't trap allergens as
-                    easily. If you're up for the investment, these are worthwhile places to begin.</p>
-
-                <h2>So What's Next?</h2>
-                <p>Living with allergies can sometimes feel like a never-ending battle. But with the right tools and a
-                    little bit of effort, you can take control and live a life free of allergy flare-ups: </p>
-                <ul>
-                    <li>Adding HEPA Filters & <a href="javascript:void(0)"
-                            onclick="f('https://www.pacagen.com/products/cat-allergen-neutralizing-spray')">Pacagen</a>
-                        to your arsenal</li>
-                    <li>Getting in the habit of non-negotiable cleaning days</li>
-                    <li>Making smarter furniture choices</li>
-                </ul>
-                <p>These steps set you up for success in the long run. Don't let allergies control your life - you can
-                    take control of your environment and your health.</p>
+                <div id="content-section-1"></div>
+                <div id="content-section-2"></div>
+                <div id="content-section-3"></div>
+                <div id="content-section-4"></div>
+                <div id="content-section-5"></div>
+                <div id="content-section-6"></div>
             </section>
 
-            <footer class="article-footer">
-                <p>Find more helpful healthy pet info on our <a href="../index.html">homepage</a> or explore <a href="/blog/index.html">all articles</a></p>
-            </footer>
+            <!-- Article footer component -->
+            <div id="article-footer"></div>
         </article>
     </main>
+    
     <script>
-        function getCookie(name) {
-            const value = `; ${document.cookie}`;
-            const parts = value.split(`; ${name}=`);
-            if (parts.length === 2) return parts.pop().split(';').shift();
-            return '';
-        }
-
-        function f(baseUrl) {
-            cvg({ method: "track", eventName: "HealthPetInsiderPacagenClick" });
-
-            // Get cookie values
-            let uid = getCookie('__cvg_uid');
-            let sid = getCookie('__cvg_sid');
-
-            // Build the final URL with parameters
-            let finalUrl = baseUrl;
-            if (uid || sid) {
-                finalUrl += (finalUrl.includes('?') ? '&' : '?');
-                if (uid) finalUrl += `__cvg_uid=${encodeURIComponent(uid)}`;
-                if (uid && sid) finalUrl += '&';
-                if (sid) finalUrl += `__cvg_sid=${encodeURIComponent(sid)}`;
-            }
-
-            // Redirect after 200ms delay
-            setTimeout(() => {
-                window.location.href = finalUrl;
-            }, 200);
-        }
-        document.addEventListener('DOMContentLoaded', function() {
-            const pacagenSprayShowcase = createProductShowcase({
+        initComponentsWhenReady(function() {
+            const pageType = window.location.pathname.includes('/blog/') ? 'blog' : 'root';
+            
+            // 1. Create fold component (title + author + leading title + image)
+            document.getElementById('article-fold').innerHTML = createFold({
+                title: '5 Ways To Manage Allergens In The Home',
+                authorName: 'Julie Arnold',
+                authorImage: 'JulieArnold.png',
+                imageSrc: 'man-sneezing.png',
+                imageAlt: 'Man Sneezing',
+                imageCaption: 'Allergens are everywhere, and unless you take proactive steps to manage them, they won\'t be going anywhere anytime soon. Airborne allergens in the home in particular are notoriously challenging to remove without the right tools. To help you get started, we\'ve put together a list of 6 ways to manage allergens in the home.',
+                pageType: pageType
+            });
+            
+            // 2. Create content sections
+            document.getElementById('content-section-1').innerHTML = createContentSection({
+                title: '1. HEPA Is King, But There\'s More To The Story',
+                paragraphs: [
+                    'High Efficiency Particulate Air (HEPA) filters are present in a variety of home appliances, including air purifiers, vacuum cleaners, and even some air conditioners. They\'re designed to capture, at minimum, 99.97% of particles, including dust, pollen, pet dander, and mold spores. Having a robust pre-filter is also important, as it can capture much larger things like pet hair & dander before it makes it to the HEPA filter, extending its lifespan. Having a variety of HEPA appliances in your home (and regularly using them!) is a great starting point when it comes to managing allergens in your home.',
+                    'When shopping around for a HEPA appliance, make sure to check the filter and confirm that it\'s a true HEPA filter. The rising popularity of HEPA appliances has led to some manufacturers cutting corners and marketing their appliances as "HEPA-type" or "HEPA-like", which aren\'t held to the same quality standards as a true HEPA filter. These "HEPA-like" and "HEPA-type" appliances are often less expensive, but they aren\'t able to capture as many particles as a true HEPA filter.'
+                ],
+                imageSrc: 'hepafilter.png',
+                imageAlt: 'HEPA Filter',
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-2').innerHTML = createContentSection({
+                title: '2. Wash Your Clothes and Sheets More Often Than You Think You Should',
+                paragraph: 'This one\'s particularly important for people with dust allergies, but can still apply to other allergies as well. Allergens - the particles that cause your allergies - are incredibly tiny, and cannot be seen by the naked eye. Even if the sheets look clean, your sweaters are free of cat hair, and the couch was just vacuumed, chances are, there\'s still allergens hiding deep in the fibres. Research suggests that washing at 130°F or higher every week is the most reliable way to remove allergens from your clothes and sheets.',
+                imageSrc: 'bedsheets.png',
+                imageAlt: 'Person Making The Bed',
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-3').innerHTML = createContentSection({
+                title: '3. Don\'t Forget The Clutter',
+                paragraph: 'Remember that pile of old newspapers in the corner? What about the box of old clothes you\'ve been meaning to donate? Because these neglected items tend to be left untouched for extended periods of time, allergens build up on them and there\'s nothing around to clean them up. This is a hotstpot for allergens, and a fantastic place to start when it comes to managing allergens in your home. Cleaning out your home regularly helps keep the pesky allergens in check, and keeps your home neat and tidy. Talk about a win-win!',
+                imageSrc: 'pileofclothes.png',
+                imageAlt: 'A Pile of Clothes',
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-4').innerHTML = createContentSection({
+                title: '4. Allergen Neutralizing Sprays Are Your Best Friend',
+                paragraphs: [
+                    'Allergen neutralizing sprays are a great way to keep your home safe. These highly specific sprays are purposefully crafted to break down allergens on contact. Because they\'re designed to only act on allergens, it\'s safe to use on a variety of surfaces, including clothes, sheets, and other surfaces. The best part? It takes less than 10 minutes a week to get results. For those of us living busy lives and have no time to regularly deep-clean the home, this is a no-brainer. 10 minutes a week for an allergen-free home? Sign me up!',
+                    'If you\'re looking for a great allergen neutralizing spray, check out <a href="javascript:void(0)" onclick="f(\'https://www.pacagen.com/products/cat-allergen-neutralizing-spray\')">Pacagen</a>. They made an allergen neutralizing spray for cat, dog, and even dust allergens.'
+                ],
+                imageSrc: 'pacagen-products.png',
+                imageAlt: 'Allergen Neutralizing Spray',
+                additionalContent: '<div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>',
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-5').innerHTML = createContentSection({
+                title: '5. Consider Home & Furniture "Upgrades"',
+                paragraphs: [
+                    'In the same vein as washing your clothes and sheets more often, consider upgrading your home and furniture. Like clothes and sheets, carpeted floors and upholstered furniture are magnets for allergens. Except that cleaning an upholstered couch isn\'t as simple as washing a sweater. If pets are in the home, being conscious about furniture choices is a must. Pets lounging on furniture causes allergen buildup, dander & fur gets trapped in carpet fibres after shedding, and they can stir up dust from all over the house as they move around, all of which cause allergy flare-ups.',
+                    'Hardwood floors, leather furniture, and tile, while not foolproof, are good alternatives to carpeted floors and upholstered furniture. They\'re generally easier to clean and don\'t trap allergens as easily. If you\'re up for the investment, these are worthwhile places to begin.'
+                ],
+                imageSrc: 'cat-on-couch.png',
+                imageAlt: 'Cat on Couch',
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-6').innerHTML = createContentSection({
+                title: 'So What\'s Next?',
+                paragraphs: [
+                    'Living with allergies can sometimes feel like a never-ending battle. But with the right tools and a little bit of effort, you can take control and live a life free of allergy flare-ups:',
+                    'These steps set you up for success in the long run. Don\'t let allergies control your life - you can take control of your environment and your health.'
+                ],
+                additionalContent: '<ul><li>Adding HEPA Filters & <a href="javascript:void(0)" onclick="f(\'https://www.pacagen.com/products/cat-allergen-neutralizing-spray\')">Pacagen</a> to your arsenal</li><li>Getting in the habit of non-negotiable cleaning days</li><li>Making smarter furniture choices</li></ul>',
+                pageType: pageType
+            });
+            
+            // 3. Create product showcase
+            document.getElementById('pacagen-spray-showcase').innerHTML = createProductShowcase({
                 image: 'canshand.png',
                 alt: 'Cat Allergen Neutralizing Spray',
                 description: 'Breaks down 98% of cat allergens on contact',
                 url: 'https://www.pacagen.com/products/cat-allergen-neutralizing-spray',
-                pageType: 'root'
+                pageType: pageType
             });
-            document.getElementById('pacagen-spray-showcase').innerHTML = pacagenSprayShowcase;
-        });
+            
+            // 4. Create article footer
+            document.getElementById('article-footer').innerHTML = createArticleFooter({
+                pageType: pageType
+            });
+        }, { waitForArticle: true, waitForProduct: true });
     </script>
 </body>
 

@@ -16,841 +16,31 @@
       Best Cat Allergy Sprays in 2026 | Pacagen vs Allerpet, Clorox & More
     </title>
 
-    <style>
-      body {
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
-      .no-js body {
-        visibility: visible;
-        opacity: 1;
-      }
-
-      .blog-category {
-        align-items: center;
-      }
-
-      .blog-contents {
-        gap: 100px;
-      }
-
-      .blog-contents p {
-        margin-bottom: 1rem;
-        /* space after paragraphs */
-      }
-
-      .breadcrumb-section {
-        display: flex;
-        justify-content: center;
-        /* center horizontally */
-        align-items: center;
-        /* center vertically */
-        height: 50px;
-        /* adjust height as needed */
-        background-color: #ffffff;
-        /* optional */
-      }
-
-      .breadcrumb a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: 500;
-      }
-
-      .breadcrumb a:hover {
-        text-decoration: underline;
-      }
-
-      .blog-title-section {
-        display: flex;
-        justify-content: center;
-        /* horizontal center */
-        align-items: center;
-        /* vertical center if height set */
-        padding: 20px 0;
-        /* top/bottom spacing */
-        background-color: #ffffff;
-        /* optional background */
-      }
-
-      .blog-title {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin: 0;
-        text-align: center;
-        line-height: 1.2;
-      }
-
-      /* Article content heading hierarchy */
-      .article-content h2 {
-        font-size: 2rem;
-        font-weight: 700;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        line-height: 1.3;
-        color: #222;
-      }
-
-      .article-content h2:first-of-type {
-        margin-top: 0;
-      }
-
-      .article-content h3 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-top: 30px;
-        margin-bottom: 15px;
-        line-height: 1.4;
-        color: #222;
-      }
-
-      .article-content p {
-        font-size: 1.05rem;
-        line-height: 1.7;
-        margin-bottom: 16px;
-      }
-
-      .author-section {
-        display: flex;
-        align-items: center;
-        /* vertically align text and image */
-        justify-content: center;
-        /* center horizontally */
-        gap: 10px;
-        /* space between text and image */
-        font-size: 1rem;
-        color: #555;
-        /* subtle gray text */
-      }
-
-      .author-image {
-        width: 32px;
-        /* adjust size */
-        height: 32px;
-        border-radius: 50%;
-        /* circular image */
-        object-fit: cover;
-        /* crop nicely */
-      }
-
-      .image-row {
-        display: flex;
-        /* place items in a row */
-        gap: 10px;
-        /* space between images */
-      }
-
-      .image-row img {
-        width: 50%;
-        /* each takes half the parent width */
-        height: auto;
-        /* keep aspect ratio */
-        display: block;
-        /* remove inline spacing */
-      }
-      .comparison-table {
-        border-collapse: collapse;
-        width: 100%;
-        max-width: 100%;
-      }
-
-      .comparison-table th,
-      .comparison-table td {
-        padding: 12px 16px;
-        text-align: center;
-        vertical-align: middle;
-      }
-
-      .comparison-table th:first-child,
-      .comparison-table td:first-child {
-        text-align: left;
-      }
-
-      .comparison-table .sign-cell {
-        text-align: center;
-        white-space: nowrap;
-      }
-
-      .comparison-table .sign-cell img {
-        width: 20px;
-        height: 20px;
-        vertical-align: middle;
-        margin-right: 8px;
-        display: inline-block;
-      }
-
-      .table-wrapper {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        margin: 0 auto;
-      }
-
-      .brand-selector {
-        display: none;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 20px;
-        flex-wrap: wrap;
-      }
-
-      .brand-selector label {
-        font-weight: 500;
-        margin-right: 5px;
-        font-size: 1.3rem;
-      }
-
-      .brand-selector select {
-        padding: 8px 12px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        font-size: 1rem;
-        cursor: pointer;
-        background-color: #fff;
-      }
-
-      .brand-selector select:hover {
-        border-color: #999;
-      }
-
-      .brand-selector select:focus {
-        outline: none;
-        border-color: #222;
-      }
-
-      @media (min-width: 769px) {
-        .brand-selector {
-          display: none;
-        }
-        .col-clorox {
-          display: table-cell !important;
-        }
-        .col-allerpet {
-          display: table-cell !important;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .brand-selector {
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-        }
-
-        .brand-selector label {
-          margin-right: 0;
-        }
-
-        .brand-selector select {
-          width: 100%;
-          max-width: 300px;
-        }
-
-        .comparison-table {
-          width: 100%;
-          max-width: 100%;
-          min-width: auto;
-          table-layout: auto;
-        }
-
-        /* On mobile, hide Clorox by default (will be controlled by JS) */
-        .col-clorox {
-          display: none;
-        }
-
-        /* Allerpet shown by default (selected option) */
-        .col-allerpet {
-          display: table-cell;
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-          padding: 8px 6px;
-          font-size: 0.85rem;
-        }
-
-        .comparison-table th:first-child,
-        .comparison-table td:first-child {
-          padding-left: 8px;
-          min-width: 120px;
-        }
-
-        .comparison-table .sign-cell img {
-          width: 16px;
-          height: 16px;
-          margin-right: 4px;
-        }
-
-        .table-wrapper {
-          width: 100%;
-          max-width: 100%;
-          margin: 0;
-          padding: 0;
-          overflow-x: visible;
-        }
-      }
-
-      @media (max-width: 576px) {
-        .comparison-table {
-          width: 100%;
-          max-width: 100%;
-          min-width: auto;
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-          padding: 6px 4px;
-          font-size: 0.8rem;
-        }
-
-        .comparison-table th:first-child,
-        .comparison-table td:first-child {
-          padding-left: 6px;
-          min-width: 100px;
-          font-size: 0.8rem;
-        }
-
-        .comparison-table .sign-cell img {
-          width: 14px;
-          height: 14px;
-          margin-right: 3px;
-        }
-
-        .table-wrapper {
-          width: 100%;
-          max-width: 100%;
-        }
-      }
-
-      /* Prevent horizontal overflow */
-      body {
-        overflow-x: hidden;
-        max-width: 100%;
-      }
-
-      main, article {
-        max-width: 100%;
-        overflow-x: hidden;
-      }
-
-      /* Comprehensive Mobile Responsive Styles */
-      @media (max-width: 768px) {
-        /* Container and spacing */
-        .w-70 {
-          width: 100% !important;
-          padding: 0 15px;
-          margin: 0 !important;
-        }
-
-        /* Blog title */
-        .blog-title {
-          font-size: 1.8rem;
-          padding: 15px 0;
-        }
-
-        .blog-title-section {
-          padding: 15px 0;
-        }
-
-        /* Author section */
-        .author-section {
-          font-size: 0.9rem;
-          margin: 10px 0;
-        }
-
-        /* Hero section - stack vertically */
-        .row {
-          margin: 0;
-        }
-
-        .row > div {
-          padding: 0;
-          margin-bottom: 20px;
-        }
-
-        .row h2 {
-          font-size: 1.3rem;
-          margin-bottom: 15px;
-        }
-
-        /* Images */
-        img {
-          max-width: 100%;
-          height: auto;
-        }
-
-        /* Hero section image */
-        .col-12.col-md-7 img {
-          width: 100%;
-          height: auto;
-          display: block;
-        }
-
-        .article-content-image {
-          margin: 20px -15px;
-          padding: 0;
-        }
-
-        .article-content-image img {
-          width: 100%;
-          height: auto;
-          display: block;
-        }
-
-        /* Article content */
-        .article-content {
-          padding: 0;
-        }
-
-        .article-content h2 {
-          font-size: 1.6rem;
-          margin-top: 35px;
-          margin-bottom: 18px;
-          line-height: 1.3;
-        }
-
-        .article-content h3 {
-          font-size: 1.3rem;
-          margin-top: 25px;
-          margin-bottom: 14px;
-        }
-
-        .article-content p {
-          font-size: 1rem;
-          line-height: 1.6;
-          margin-bottom: 15px;
-        }
-
-        .article-content ul,
-        .article-content ol {
-          padding-left: 20px;
-          margin-bottom: 20px;
-        }
-
-        .article-content li {
-          margin-bottom: 8px;
-          line-height: 1.6;
-        }
-
-        /* Callout boxes */
-        .callout {
-          margin: 20px -15px;
-          padding: 15px;
-          font-size: 0.95rem;
-        }
-
-        /* Product card */
-        .card {
-          margin: 15px 0;
-          padding: 15px !important;
-        }
-
-        .card-title {
-          font-size: 1.3rem;
-          margin-bottom: 12px;
-        }
-
-        .card-reviews {
-          font-size: 0.85rem;
-        }
-
-        .card-description {
-          font-size: 0.9rem;
-          line-height: 1.5;
-        }
-
-        .card img {
-          width: 100%;
-          height: auto;
-        }
-
-        /* Links */
-        .article-content a {
-          word-break: break-word;
-          font-size: 0.95rem;
-        }
-
-        /* Small text */
-        .small-text {
-          font-size: 0.85rem;
-        }
-
-        /* Remove negative margins that cause overflow */
-        .d-flex.justify-content-center {
-          margin-left: 0;
-          margin-right: 0;
-        }
-
-        /* Ensure product card link doesn't overflow */
-        .w-md-65 {
-          width: 100% !important;
-          max-width: 100%;
-        }
-      }
-
-      @media (max-width: 576px) {
-        /* Extra small devices */
-        .blog-title {
-          font-size: 1.5rem;
-        }
-
-        .article-content h2 {
-          font-size: 1.4rem;
-        }
-
-        .article-content h3 {
-          font-size: 1.2rem;
-        }
-
-        .article-content p {
-          font-size: 0.95rem;
-        }
-
-        .card-title {
-          font-size: 1.2rem;
-        }
-
-        .card-description {
-          font-size: 0.85rem;
-        }
-
-        .callout {
-          font-size: 0.9rem;
-          padding: 12px;
-        }
-
-        .brand-selector label {
-          font-size: 1.1rem;
-        }
-      }
-
-      .callout {
-        background: #f7f7f7;
-        border-left: 4px solid #222;
-        padding: 12px 16px;
-        margin: 24px 0;
-        font-size: 0.95rem;
-      }
-      .small-text {
-        font-size: 0.9rem;
-      }
-
-      /* Advertisement styling */
-      .ad-section {
-        background-color: #fefaf1;
-        border: 1px solid #e8e3d5;
-        padding: 24px 28px;
-        margin: 32px 0;
-        border-radius: 4px;
-        font-family: 'Montserrat', sans-serif;
-        position: relative;
-      }
-
-      .ad-logo {
-        font-size: 0.9rem;
-        font-weight: 600;
-        margin-bottom: 16px;
-        color: #2A7F62;
-        letter-spacing: 0.5px;
-      }
-
-      .ad-logo .ad-logo-dark {
-        color: #234436;
-      }
-
-      .ad-headline {
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: #222;
-        margin-bottom: 12px;
-        text-align: center;
-        line-height: 1.3;
-      }
-
-      .ad-body {
-        font-size: 0.95rem;
-        color: #333;
-        line-height: 1.6;
-        margin-bottom: 16px;
-        text-align: center;
-      }
-
-      .ad-body .ad-product-name {
-        font-style: italic;
-        font-weight: 500;
-      }
-
-      .ad-cta-wrapper {
-        text-align: left;
-        margin-top: 8px;
-      }
-
-      .ad-cta {
-        display: inline-block;
-        color: #8B4513;
-        text-decoration: underline;
-        font-weight: 500;
-        font-size: 0.95rem;
-        cursor: pointer;
-      }
-
-      .ad-label {
-        position: absolute !important;
-        bottom: 8px !important;
-        right: 8px !important;
-        background-color: #4A90E2;
-        color: #fff;
-        padding: 2px 6px;
-        font-size: 0.7rem;
-        border-radius: 2px;
-        z-index: 10;
-        margin: 0;
-        float: none;
-      }
-
-      .ad-section-travel {
-        background-image: url('assets/images/travel-ad.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-        min-height: 300px;
-      }
-
-      .ad-section-travel::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(255, 255, 255, 0.5);
-        z-index: 1;
-      }
-
-      .ad-section-travel > * {
-        position: relative;
-        z-index: 2;
-      }
-
-      .ad-section-credit {
-        background-image: url('assets/images/credit-card-ad.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-        min-height: 300px;
-      }
-
-      .ad-section-credit::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(255, 255, 255, 0.5);
-        z-index: 1;
-      }
-
-      .ad-section-credit > * {
-        position: relative;
-        z-index: 2;
-      }
-
-      @media (max-width: 768px) {
-        .ad-section {
-          padding: 20px;
-          margin: 24px 0;
-        }
-
-        .ad-section-travel {
-          min-height: 250px;
-        }
-
-        .ad-section-credit {
-          min-height: 250px;
-        }
-
-        .ad-headline {
-          font-size: 1.4rem;
-        }
-
-        .ad-body {
-          font-size: 0.9rem;
-        }
-      }
-
-      /* Product card desktop styling */
-      .card .card-title {
-        font-size: 1.4rem;
-        font-weight: 600;
-        margin-bottom: 16px;
-      }
-
-      .card .card-reviews {
-        font-size: 1rem;
-        margin-bottom: 12px;
-      }
-
-      .card .card-description {
-        font-size: 0.95rem;
-        line-height: 1.6;
-      }
-
-      @media (min-width: 769px) {
-        .card {
-          padding: 24px !important;
-        }
-
-        .card .row {
-          align-items: center;
-        }
-
-        .card .col-md-4 {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding-right: 20px;
-        }
-
-        .card .col-md-8 {
-          padding-left: 20px;
-        }
-
-        .card img {
-          max-width: 100%;
-          height: auto;
-        }
-
-        .card .card-title {
-          margin-bottom: 20px;
-        }
-      }
-
-      .shop-button {
-        display: inline-block;
-        padding: 12px 24px;
-        background-color: #2A7F62;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: 500;
-        transition: all 0.2s ease;
-        text-align: center;
-        border: 1px solid #2A7F62;
-        cursor: pointer;
-        font-size: 1rem;
-      }
-
-      .shop-button:hover {
-        background-color: #284b40;
-        border-color: #284b40;
-        transform: translateY(-1px);
-      }
-
-      .shop-button:active {
-        transform: translateY(0);
-      }
-
-      .shop-button .discount {
-        color: #f4ffbf;
-        font-weight: 600;
-      }
-
-      /* Center buttons */
-      .shop-button-wrapper {
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 30px;
-      }
-
-      @media (max-width: 768px) {
-        .shop-button {
-          width: auto;
-          max-width: 280px;
-          padding: 14px 20px;
-          font-size: 0.95rem;
-          display: inline-block;
-        }
-
-        .shop-button-wrapper {
-          text-align: center;
-          margin-bottom: 25px;
-        }
-      }
-    </style>
-    <script>
-      document.documentElement.className += " js";
-    </script>
-
-    <!-- Load main JavaScript -->
+    <!-- Head components (FOUC prevention, tracking init) -->
+    <script src="assets/js/head-components.js"></script>
+    
+    <!-- Tracking utilities (makes f() and getCookie() available) -->
+    <script src="assets/js/tracking.js"></script>
+    
+    <!-- Component initialization helper (must load before bundles) -->
+    <script src="assets/js/component-init.js"></script>
+    
+    <!-- Main JavaScript (navigation, footer) -->
     <script src="assets/js/main.js" defer></script>
-
-    <!-- Basic Layout Styles -->
-    <style>
-      .blog-contents p {
-        margin-bottom: 1rem;
-      }
-
-      @media (max-width: 576px) {
-        .w-70 {
-          width: 100% !important;
-          padding: 0 15px;
-        }
-      }
-    </style>
+    
+    <!-- Component bundles -->
+    <script src="assets/js/article-components-bundle.js"></script>
+    <script src="assets/js/product-components-bundle.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
-  <body>
+  <body class="layout-group-b">
     <main>
       <article class="advertorial">
         <section class="w-70 mx-auto my-4">
-          <!-- Blog Header -->
-          <div class="blog-title-section">
-            <h1 class="blog-title">The Best Cat Allergy Sprays In 2026</h1>
-          </div>
-
-          <div class="author-section">
-            <span class="by-text">By Steven Timmins</span>
-            <img
-              class="author-image"
-              src="/assets/images/StevenTimmins.png"
-              alt="Author Steven Timmins"
-            />
-          </div>
-
-          <div class="container py-2 px-0">
-            <div class="row align-items-center">
-              <div class="col-md-6 text-md-start mt-2 mb-2 mt-md-0 text-muted">
-                Updated on January 10, 2026
-              </div>
-            </div>
-          </div>
-
-          <!-- Hero -->
-          <div class="row">
-            <div class="col-12 col-md-5 d-flex align-items-center">
-              <h2>
-                Comparing the Top Cat Allergy Sprays for
-                Science-Backed Effectiveness & Comfort
-              </h2>
-            </div>
-            <div class="col-12 col-md-7">
-              <img
-                src="assets/images/bestcatsprays.png"
-                alt="Best Cat Allergy Sprays In 2026, Compared"
-              />
-              <p class="mt-1 small-text">
-                From targeted allergen neutralizers to general surface cleaners
-                - here's what works, what doesn't, and why science matters.
-              </p>
-            </div>
-          </div>
+          <!-- Fold component (title + author + date + image, no breadcrumb) -->
+          <div id="article-fold"></div>
 
           <section class="article-content">
             <p class="fw-semibold">
@@ -873,60 +63,10 @@
               they work, and this difference matters.
             </p>
 
-            <h2>How Cat Allergy Sprays Work</h2>
-            <div class="callout">
-              Most cat allergy sprays fail for one simple reason: they clean
-              surfaces, but ignore the airborne allergen that actually causes
-              symptoms.
-            </div>
+            <div id="content-section-1"></div>
+            <div id="content-section-2"></div>
 
-            <p>There are three main types of sprays:</p>
-            <ul>
-              <li>
-                <strong>Targeted allergen neutralizers</strong> - bind and
-                neutralize allergens (like Fel d 1) where they occur
-              </li>
-              <li>
-                <strong>Surface cleaners</strong> - remove allergens from
-                surfaces but do not neutralize them in the air
-              </li>
-              <li>
-                <strong>Harsh disinfectants</strong> - can reduce allergens but
-                risk irritation and unwanted side effects
-              </li>
-            </ul>
-
-            <p>
-              The science behind these categories matters because only targeted
-              sprays act specifically on cat allergens with minimal side
-              effects. Generic cleaners like bleach (Clorox) can reduce microbes
-              and allergens on surfaces but often
-              <b>irritate respiratory systems and skin.</b>
-            </p>
-            <div class="article-content-image d-flex mb-4">
-              <img
-                src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Part_1_Graphic_1.gif"
-                class="article-img"
-                alt="Cat allergies are caused by Fel d 1 allergens in the air and on surfaces"
-              />
-            </div>
-            
-            <h2>Why Specificity Matters</h2>
-            <p class="mb-4">
-              Scientific evidence shows that allergen mitigation is most
-              effective when the treatment binds or neutralizes the specific
-              allergen protein (Fel d 1) rather than just cleaning surfaces.
-              Generic sprays may reduce surface allergens but do not stop
-              airborne triggers and may contribute to side effects like
-              respiratory irritation.
-            </p>
-            <div class="callout">
-              Did you know? The amount of cat allergen you are exposed to in a
-              day in a home with a cat is comparable to the amount of pollen you
-              would inhale in an entire year.
-            </div>
-
-            <div class="ad-section ad-section-credit">
+            <div class="ad-section ads-type-a" style="background-image: url('assets/images/credit-card-ad.png');">
               <div class="ad-logo">PREMIUM CARD<span class="ad-logo-dark"> SERVICES®</span></div>
               <div class="ad-headline">Maximize Your Credit Rewards</div>
               <div class="ad-body">
@@ -1122,23 +262,7 @@
               });
             </script>
 
-            <h2>Choosing the Right Spray for Your Home</h2>
-            <ul>
-              <li>
-                <strong>For targeted allergy relief:</strong> Choose sprays
-                designed specifically for Fel d 1 (like Pacagen).
-              </li>
-              <li>
-                <strong>For routine cleaning:</strong> Regular surface cleaners
-                can help, but should not substitute allergen neutralizers.
-              </li>
-              <li>
-                <strong>For sensitive households:</strong> Avoid harsh
-                disinfectants that are associated with higher rates of
-                respiratory irritation, especially in enclosed indoor
-                environments.
-              </li>
-            </ul>
+            <div id="content-section-3"></div>
             <div class="d-flex justify-content-center align-items-center mb-3">
               <a
                 href="https://pacagen.com/products/cat-allergen-neutralizing-spray"
@@ -1176,18 +300,9 @@
               </a>
             </div>
 
-            <h2>How to Use Cat Allergy Sprays Safely</h2>
-            <ol>
-              <li>Spray in well-ventilated areas.</li>
-              <li>Focus on high-contact zones (furniture, bedding, carpet).</li>
-              <li>
-                Avoid spraying directly on cats unless product is formulated for
-                that use.
-              </li>
-              <li>Use in conjunction with regular cleaning and grooming.</li>
-            </ol>
+            <div id="content-section-4"></div>
 
-            <div class="ad-section ad-section-travel">
+            <div class="ad-section ads-type-a" style="background-image: url('assets/images/travel-ad.jpg');">
               <div class="ad-logo">GLOBAL TRAVEL<span class="ad-logo-dark"> SOLUTIONS®</span></div>
               <div class="ad-headline">Make Your Travel Dreams Come True</div>
               <div class="ad-body">
@@ -1199,51 +314,81 @@
               <span class="ad-label">Ad</span>
             </div>
 
-            <h2>Our Verdict:</h2>
-            <p>
-              In 2026, the best cat allergy sprays are not the strongest
-              disinfectants; they are the most precise.
-              <a
-                href="https://pacagen.com/products/cat-allergen-neutralizing-spray"
-                >Pacagen</a
-              >
-              stands out because it was designed specifically for Fel d 1, not
-              adapted from general-purpose cleaning chemistry.
-            </p>
-
-            <p>
-              Targeted sprays work best as part of a broader allergen management
-              plan, including grooming, air filtration, and cleaning, for a
-              healthier, more breathable home.
-            </p>
-
-            <h2>Best Cat Allergy Spray in 2026:</h2>
-            <div class="d-flex justify-content-center mb-3">
-              <img
-                src="assets/images/CANS-with-blue-arc.png"
-                alt="Pacagen Cat Allergen Neutralizing Spray"
-                style="max-width: 100%; height: auto;"
-              />
-            </div>
-            <div class="shop-button-wrapper">
-              <a
-                href="https://pacagen.com/products/cat-allergen-neutralizing-spray"
-                class="shop-button"
-                >Shop Pacagen <span class="discount">— 15% Off</span></a
-              >
-            </div>
+            <div id="content-section-5"></div>
           </section>
 
-          <!-- Footer -->
-          <footer class="article-footer">
-            <p>
-              Find more helpful healthy pet info on our
-              <a href="../index.html">homepage</a> or explore
-              <a href="/blog/index.html">all articles</a>
-            </p>
-          </footer>
+          <!-- Article footer component -->
+          <div id="article-footer"></div>
         </section>
       </article>
     </main>
+    
+    <script>
+      initComponentsWhenReady(function() {
+        const pageType = window.location.pathname.includes('/blog/') ? 'blog' : 'root';
+        
+        // 1. Create fold component (title + author + date + image, no breadcrumb)
+        document.getElementById('article-fold').innerHTML = createFold({
+          title: 'The Best Cat Allergy Sprays In 2026',
+          authorName: 'Steven Timmins',
+          authorImage: 'StevenTimmins.png',
+          imageSrc: 'bestcatsprays.png',
+          imageAlt: 'Best Cat Allergy Sprays In 2026, Compared',
+          imageCaption: 'From targeted allergen neutralizers to general surface cleaners - here\'s what works, what doesn\'t, and why science matters.',
+          breadcrumb: false,
+          dateText: 'Updated on January 10, 2026',
+          pageType: pageType
+        });
+        
+        // 2. Create content sections
+        document.getElementById('content-section-1').innerHTML = createContentSection({
+          title: 'How Cat Allergy Sprays Work',
+          paragraphs: [
+            'There are three main types of sprays:',
+            'The science behind these categories matters because only targeted sprays act specifically on cat allergens with minimal side effects. Generic cleaners like bleach (Clorox) can reduce microbes and allergens on surfaces but often <b>irritate respiratory systems and skin.</b>'
+          ],
+          additionalContent: '<div class="callout">Most cat allergy sprays fail for one simple reason: they clean surfaces, but ignore the airborne allergen that actually causes symptoms.</div><ul><li><strong>Targeted allergen neutralizers</strong> - bind and neutralize allergens (like Fel d 1) where they occur</li><li><strong>Surface cleaners</strong> - remove allergens from surfaces but do not neutralize them in the air</li><li><strong>Harsh disinfectants</strong> - can reduce allergens but risk irritation and unwanted side effects</li></ul>',
+          imageSrc: 'https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Part_1_Graphic_1.gif',
+          imageAlt: 'Cat allergies are caused by Fel d 1 allergens in the air and on surfaces',
+          pageType: pageType
+        });
+        
+        document.getElementById('content-section-2').innerHTML = createContentSection({
+          title: 'Why Specificity Matters',
+          paragraphs: [
+            'Scientific evidence shows that allergen mitigation is most effective when the treatment binds or neutralizes the specific allergen protein (Fel d 1) rather than just cleaning surfaces. Generic sprays may reduce surface allergens but do not stop airborne triggers and may contribute to side effects like respiratory irritation.'
+          ],
+          additionalContent: '<div class="callout">Did you know? The amount of cat allergen you are exposed to in a day in a home with a cat is comparable to the amount of pollen you would inhale in an entire year.</div>',
+          pageType: pageType
+        });
+        
+        document.getElementById('content-section-3').innerHTML = createContentSection({
+          title: 'Choosing the Right Spray for Your Home',
+          additionalContent: '<ul><li><strong>For targeted allergy relief:</strong> Choose sprays designed specifically for Fel d 1 (like Pacagen).</li><li><strong>For routine cleaning:</strong> Regular surface cleaners can help, but should not substitute allergen neutralizers.</li><li><strong>For sensitive households:</strong> Avoid harsh disinfectants that are associated with higher rates of respiratory irritation, especially in enclosed indoor environments.</li></ul>',
+          pageType: pageType
+        });
+        
+        document.getElementById('content-section-4').innerHTML = createContentSection({
+          title: 'How to Use Cat Allergy Sprays Safely',
+          additionalContent: '<ol><li>Spray in well-ventilated areas.</li><li>Focus on high-contact zones (furniture, bedding, carpet).</li><li>Avoid spraying directly on cats unless product is formulated for that use.</li><li>Use in conjunction with regular cleaning and grooming.</li></ol>',
+          pageType: pageType
+        });
+        
+        document.getElementById('content-section-5').innerHTML = createContentSection({
+          title: 'Our Verdict:',
+          paragraphs: [
+            'In 2026, the best cat allergy sprays are not the strongest disinfectants; they are the most precise. <a href="https://pacagen.com/products/cat-allergen-neutralizing-spray">Pacagen</a> stands out because it was designed specifically for Fel d 1, not adapted from general-purpose cleaning chemistry.',
+            'Targeted sprays work best as part of a broader allergen management plan, including grooming, air filtration, and cleaning, for a healthier, more breathable home.'
+          ],
+          additionalContent: '<h2>Best Cat Allergy Spray in 2026:</h2><div class="d-flex justify-content-center mb-3"><img src="assets/images/CANS-with-blue-arc.png" alt="Pacagen Cat Allergen Neutralizing Spray" style="max-width: 100%; height: auto;"></div><div class="shop-button-wrapper"><a href="https://pacagen.com/products/cat-allergen-neutralizing-spray" class="shop-button">Shop Pacagen <span class="discount">— 15% Off</span></a></div>',
+          pageType: pageType
+        });
+        
+        // 3. Create article footer
+        document.getElementById('article-footer').innerHTML = createArticleFooter({
+          pageType: pageType
+        });
+      }, { waitForArticle: true });
+    </script>
   </body>
 </html>

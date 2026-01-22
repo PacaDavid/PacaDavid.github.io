@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="One cat, one home, and all the quiet adjustments no one talks about — how small changes helped Mochi, her humans, and their allergies live together more comfortably.">
+    <meta name="keywords"
+        content="living with a cat, cat allergies, Fel d 1, Pacagen cat allergen reducing supplement, small changes with pets, cat allergy relief at home">
+    <title>No One Told Me Living With a Cat Would Mean This Many Small Changes | Health Pet Insider</title>
+
+    <!-- Head components (FOUC prevention, tracking init) -->
+    <script src="assets/js/head-components.js"></script>
+    
+    <!-- Tracking utilities (makes f() and getCookie() available) -->
+    <script src="assets/js/tracking.js"></script>
+    
+    <!-- Component initialization helper (must load before bundles) -->
+    <script src="assets/js/component-init.js"></script>
+    
+    <!-- Main JavaScript (navigation, footer) -->
+    <script src="assets/js/main.js" defer></script>
+    
+    <!-- Component bundles -->
+    <script src="assets/js/article-components-bundle.js"></script>
+    <script src="assets/js/ads-components-bundle.js"></script>
+    
+    <!-- Custom styles for this page -->
+    <style>
+        /* Hide border line segment for each section */
+        .article-section h2 {
+            border-bottom: none !important;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="layout-group-a">
+    <!-- Navigation will be auto-inserted here -->
+    <main>
+        <article class="advertorial">
+            <section class="w-70 mx-auto my-4">
+                <!-- Article header component (breadcrumb + title + author + date) -->
+                <div id="article-header"></div>
+
+                <!-- Story Sections -->
+                <section class="article-content">
+                    <div id="content-section-1"></div>
+                    <div id="content-section-2"></div>
+                    <div id="content-section-3"></div>
+                    <div id="content-section-4"></div>
+                    <div id="cleaning-ad"></div>
+                    <div id="content-section-5"></div>
+                    <div id="lorem-ad"></div>
+                    <div id="content-section-6"></div>
+                    <div id="content-section-7"></div>
+                    <div id="content-section-8"></div>
+                </section>
+            </section>
+
+            <!-- Article footer component -->
+            <div id="article-footer"></div>
+        </article>
+    </main>
+    
+    <script>
+        initComponentsWhenReady(function() {
+            const pageType = window.location.pathname.includes('/blog/') ? 'blog' : 'root';
+            
+            // 1. Create article header (breadcrumb + title + author + date)
+            document.getElementById('article-header').innerHTML = createArticleHeader({
+                title: 'No One Told Me Living With a Cat Would Mean This Many Small Changes',
+                authorName: 'Emily R.',
+                authorImage: null,  // No author image for this article
+                dateText: 'Published Jan 2026',
+                homePath: 'index.html',
+                pageType: pageType
+            });
+            
+            // 2. Create content sections
+            document.getElementById('content-section-1').innerHTML = createContentSection({
+                paragraphs: [
+                    'When we first brought Mochi home, I thought the hardest part would be the adjustment, learning her habits, figuring out her food, and accepting that nothing in our house would ever be truly hair-free again.',
+                    'I didn\'t expect how much she would quietly change the way we lived.',
+                    'Mochi came into our lives before kids, before packed calendars, before the feeling that every day was already full before it even started. Back then, the apartment was smaller and our routines were loose. She slept wherever she wanted. She followed us from room to room. She made the place feel settled in a way I hadn\'t realized I was missing.',
+                    'What I didn\'t fully appreciate at the time was that not everyone in our home experienced her the same way.'
+                ],
+                imageSrc: 'img-cat-polaroid.png',
+                imageAlt: 'Tabby cat in polaroid photo',
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-2').innerHTML = createContentSection({
+                title: 'The Allergies We Normalized',
+                paragraphs: [
+                    'My partner has always been a little allergy-sensitive. Nothing dramatic. No emergency room visits or obvious reactions. Just the lingering kind of discomfort that never fully goes away. A stuffy nose that hangs around. Eyes that water more often than they should. The kind of thing that\'s easy to downplay and even easier to normalize.',
+                    'So that\'s what we did. We normalized it.'
+                ],
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-3').innerHTML = createContentSection({
+                title: 'The Adjustments You Don\'t Notice at First',
+                paragraphs: [
+                    'Over time, small rules appeared without discussion. The bedroom door stayed closed. Certain blankets were washed more often than others. Windows stayed cracked open even when the weather didn\'t really call for it.',
+                    'Mochi adapted without complaint. She found new favorite spots. She learned which rooms were off-limits. She still curled up near us, just not quite as close.',
+                    'My partner never complained either. He smiled and said it was fine. I didn\'t push.',
+                    'It all felt reasonable. Manageable. Just part of living with both a cat and another human you care about.',
+                    'But slowly, I started noticing the moments in between. The pause before he sat on the couch. The way he\'d rub his eyes and then change the subject. The distance he kept from the places Mochi loved most.',
+                    'None of it felt big enough to act on. But it added up.'
+                ],
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-4').innerHTML = createContentSection({
+                title: 'We Tried to Control the House',
+                paragraphs: [
+                    'Like most pet owners trying to be responsible, we focused on the environment. Cleaning became a constant background task. Vacuuming. Wiping surfaces. Washing fabrics more frequently than seemed necessary.',
+                    'We bought air filters. Changed routines. Rearranged furniture. Told ourselves that if we stayed on top of it, things would eventually feel easier.',
+                    'It helped, in the way effort usually helps. Marginally. Temporarily.',
+                    'What I didn\'t understand then was that we were always reacting, addressing discomfort after it had already spread through the house. No matter how clean things looked, something lingered.'
+                ],
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-5').innerHTML = createContentSection({
+                title: 'Learning What Was Actually Happening',
+                paragraphs: [
+                    'It wasn\'t until much later, while reading about pet health and indoor air quality, that something clicked.',
+                    'Cat allergies aren\'t caused by fur itself. They\'re primarily caused by a protein cats naturally produce, called Fel d 1, which spreads easily through saliva and skin. Once it\'s in the environment, it\'s hard to chase down completely.',
+                    'That reframing shifted how I thought about everything. We weren\'t failing at cleaning. We were just focused on the very last step of a much longer chain.'
+                ],
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-6').innerHTML = createContentSection({
+                title: 'A Small Change That Fit Into Real Life',
+                paragraphs: [
+                    'Around that time, I started seeing more conversations about supporting cats from the inside out, specifically through diet and supplements designed to reduce active allergens at the source.',
+                    'One name that kept coming up was Pacagen\'s Cat Allergen Reducing Supplement. I didn\'t think of it as a solution so much as an experiment, something small I could try without changing our routines. I mixed it into Mochi\'s food, and then mostly stopped thinking about it.',
+                    'There were no new rules to enforce. No changes to her behavior. No added stress. It simply became part of the background, the way most sustainable routines do.'
+                ],
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-7').innerHTML = createContentSection({
+                title: 'What Changed Was Quiet But Real',
+                paragraphs: [
+                    'There wasn\'t a single moment where everything suddenly felt different. Instead, life became easier in small ways.',
+                    'My partner stayed in shared spaces longer. Mornings felt lighter. I stopped noticing the low-level tension I\'d grown used to carrying.',
+                    'Mochi was still herself. Curious, stubborn, always nearby. She still claimed the couch. She still followed us down the hallway. Nothing about her changed.',
+                    'What changed was the quiet math we\'d been doing in our heads, constantly balancing comfort, care, and compromise.'
+                ],
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-8').innerHTML = createContentSection({
+                title: 'Living Together, a Little Better',
+                paragraphs: [
+                    'Living with a pet means adjusting. Most of the time, those adjustments are worth it. Some of them we accept without ever questioning.',
+                    'But every once in a while, it\'s worth pausing to ask whether the discomfort we\'ve normalized actually needs to be there.',
+                    'For us, understanding what was happening and making a small, supportive change meant no one had to quietly give something up anymore.',
+                    'And that made our home feel like home again.'
+                ],
+                pageType: pageType
+            });
+            
+            // 3. Create Ad Type A
+            document.getElementById('cleaning-ad').innerHTML = createAdTypeA({
+                backgroundImage: 'cleaning-ad1.png',
+                logo: 'CLEAN HOME',
+                logoDark: 'HACKS',
+                headline: 'Transform Your Cleaning Routine',
+                body: 'Discover practical cleaning tips and products that make maintaining a pet-friendly home easier. If you\'re looking to simplify your cleaning routine, visit Clean Home Hacks for expert advice and solutions.',
+                productName: 'Clean Home Hacks',
+                ctaText: 'Learn More',
+                ctaUrl: 'https://cleanhomehacks.com/',
+                pageType: pageType
+            });
+            
+            // 3. Create Ad Type B
+            document.getElementById('lorem-ad').innerHTML = createAdTypeB({
+                brandName: 'Lorem',
+                brandImage: 'pacagen-products.png',
+                imageAlt: 'Lorem Products',
+                promoTitle: 'Lorem Ipsum Dolor Sit Amet',
+                promoSubtext: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                pageType: pageType
+            });
+            
+            // 4. Create article footer
+            document.getElementById('article-footer').innerHTML = createArticleFooter({
+                pageType: pageType
+            });
+        }, { waitForArticle: true, waitForAds: true });
+    </script>
+</body>
+
+</html>
+
+

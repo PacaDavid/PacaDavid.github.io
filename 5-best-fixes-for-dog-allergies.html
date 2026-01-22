@@ -8,304 +8,130 @@
         content="Discover 5 simple fixes for dog allergies—HEPA filters, washable fabrics, and Allergen Neutralizing Sprays—for a cleaner, sneeze-free home."
         content="dog allergies relief, dog dander solutions, reduce pet allergens, Pacagen Dog Allergen Neutralizing Spray, best fixes for dog allergies, non-medication dog allergy help, HEPA air purifier for dog allergies, washable fabrics for pet owners, allergy-friendly pet care, control dog allergens at home">
     <title>5 Best Fixes for Dog Allergies (Without Endless Baths) | Health Pet Insider</title>
-    <!-- Prevent FOUC (Flash of Unstyled Content) -->
-    <style>
-        body {
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
 
-        .no-js body {
-            visibility: visible;
-            opacity: 1;
-        }
-    </style>
-    <script>document.documentElement.className += ' js';</script>
-    <script src="https://static.runconverge.com/pixels/AlO7bK.js" async></script>
-    <script>
-        window.cvg || (cvg = function () { cvg.process ? cvg.process.apply(cvg, arguments) : cvg.queue.push(arguments) }, cvg.queue = []);
-        cvg({ method: "track", eventName: "$page_load" });
-        cvg({ method: "link_domain", domain: "pacagen.com" });
-    </script>
-
-    <!-- Load main JavaScript -->
+    <!-- Head components (FOUC prevention, tracking init) -->
+    <script src="assets/js/head-components.js"></script>
+    
+    <!-- Tracking utilities (makes f() and getCookie() available) -->
+    <script src="assets/js/tracking.js"></script>
+    
+    <!-- Component initialization helper (must load before bundles) -->
+    <script src="assets/js/component-init.js"></script>
+    
+    <!-- Main JavaScript (navigation, footer) -->
     <script src="assets/js/main.js" defer></script>
-    <style>
-        .body {
-            background-color: #fefaf1 !important;
-        }
-
-        .blog-category {
-            align-items: center;
-        }
-
-        .blog-contents {
-            gap: 100px;
-        }
-
-        .blog-contents p {
-            margin-bottom: 1rem;
-            /* space after paragraphs */
-        }
-
-        .breadcrumb-section {
-            display: flex;
-            justify-content: center;
-            /* center horizontally */
-            align-items: center;
-            /* center vertically */
-            height: 50px;
-            /* adjust height as needed */
-            background-color: #ffffff;
-            /* optional */
-        }
-
-        .breadcrumb a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: 500;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        .blog-title-section {
-            display: flex;
-            justify-content: center;
-            /* horizontal center */
-            align-items: center;
-            /* vertical center if height set */
-            padding: 20px 0;
-            /* top/bottom spacing */
-            background-color: #ffffff;
-            /* optional background */
-        }
-
-        .blog-title {
-            font-size: 2rem;
-            font-weight: bold;
-            margin: 0;
-            text-align: center;
-        }
-
-        .author-section {
-            display: flex;
-            align-items: center;
-            /* vertically align text and image */
-            justify-content: center;
-            /* center horizontally */
-            gap: 10px;
-            /* space between text and image */
-            font-size: 1rem;
-            color: #555;
-            /* subtle gray text */
-        }
-
-        .author-image {
-            width: 32px;
-            /* adjust size */
-            height: 32px;
-            border-radius: 50%;
-            /* circular image */
-            object-fit: cover;
-            /* crop nicely */
-        }
-
-        /* On mobile (Bootstrap's sm breakpoint and below) */
-        @media (max-width: 576px) {
-            .w-70 {
-                width: 90% !important;
-            }
-        }
-
-        .image-row {
-            display: flex;
-            /* place items in a row */
-            gap: 10px;
-            /* space between images */
-        }
-
-        .image-row img {
-            width: 50%;
-            /* each takes half the parent width */
-            height: auto;
-            /* keep aspect ratio */
-            display: block;
-            /* remove inline spacing */
-        }
-    </style>
+    
+    <!-- Component bundles -->
+    <script src="assets/js/article-components-bundle.js"></script>
+    <script src="assets/js/product-components-bundle.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="layout-group-c">
     <!-- Navigation will be auto-inserted here -->
     <main>
         <article class="advertorial">
             <section class="w-70 mx-auto my-4">
-                <!-- Breadcrumb -->
-                <div class="breadcrumb-section">
-                    <div class="breadcrumb">
-                        <a href="index.html" class="custom-btn btn-sm shadow-sm">Home</a>
-                    </div>
-                </div>
-
-                <!-- Blog Title -->
-                <div class="blog-title-section">
-                    <h2 class="blog-title">5 Best Fixes for Dog Allergies (Without Endless Baths)</h2>
-                </div>
-
-                <!-- Author -->
-                <div class="author-section">
-                    <span class="by-text">By Steven Timmins</span>
-                    <img class="author-image" src="/assets/images/StevenTimmins.png" alt="Author Steven Timmins">
-                </div>
-
-                <!-- Share + Updated date -->
-                <div class="container py-2">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 text-md-start mt-2 mb-2 mt-md-0 text-muted">
-                            Updated on Aug 30, 2025
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hero Row -->
-                <div class="row">
-                    <div class="col-12 col-md-5 d-flex align-items-center">
-                        <h1>5 Best Fixes for Dog Allergies (Without Endless Baths)</h1>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <img src="assets/images/woman-dog-allergies.png" alt="dog allergens">
-                        <p class="mt-1">Featuring Pacagen Dog Allergen Neutralizing Spray
-                        </p>
-                    </div>
-                </div>
-                <ol>
-                    <li>
-                        <h2>Treat Soft Surfaces with <a href="javascript:void(0)"
-                            onclick="f('https://pacagen.com/products/dog-allergen-neutralizing-spray')">
-                            Pacagen</a></h2>
-                        <p>If you prefer a non-medication approach, Pacagen provides an environmental control
-                            step you can do at home. It doesn’t treat or cure allergies, but it helps lower
-                            everyday exposure—often the first thing clinicians recommend before escalating to
-                            medications.</p>
-                        <p>Allergens cling to couches, throws, rugs, curtains, and car seats. Lightly spritz
-                            Pacagen over high-touch fabrics 2–3×/week. Let dry fully.</p>
-                        <ul>
-                            <li>Targets the high-touch surfaces you use most, not just the air.</li>
-                            <li>Complements HEPA filtration, routine vacuuming, and normal grooming to keep
-                                day-to-day exposure low between deep cleans.</li>
-                        </ul>
-                        <div class="article-content-image d-flex">
-                            <img src="assets/images/pacagen-dans.png" class="article-img" alt="Dog allergy product">
-                        </div>
-                        <div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
-                    </li>
-
-                    <li>
-                        <h2>HEPA Everywhere It Counts</h2>
-                        <p>Run a true HEPA air purifier in the room you use most and vacuum floors and
-                            upholstery with a HEPA vacuum 2–3×/week. Empty the canister outside.</p>
-                    </li>
-
-                    <li>
-                        <h2>Washable Layers = Easy Resets</h2>
-                        <p>Use slipcovers and throw blankets on seating. Wash weekly if fabric allows; treat
-                            between washes with Pacagen to keep buildup low.</p>
-                    </li>
-
-                    <li>
-                        <h2>Groom Smart, Not Constant</h2>
-                        <p>Brush outdoors, then wipe the coat with a damp microfiber cloth. Keep bath frequency
-                            to your vet or groomer’s guidance.</p>
-                    </li>
-
-                    <li>
-                        <h2>Control Hotspots</h2>
-                        <ul>
-                            <li>Designate a low-allergen lounge (close the door, treat fabrics with <a href="javascript:void(0)"
-                                onclick="f('https://pacagen.com/products/dog-allergen-neutralizing-spray')">
-                                Pacagen</a>).
-                            </li>
-                            <li>Use zip-off dog bed covers.</li>
-                            <li>Add an entryway “dander trap” (mat + lint roller).</li>
-                            <li>Protect car seats with washable covers.</li>
-                        </ul>
-                    </li>
-                </ol>
-
-                <h2>3-Minute Weekly Template</h2>
-                <ul>
-                    <li><strong>Mon/Wed/Fri:</strong> Pacagen on sofa, throws, dog bed</li>
-                    <li><strong>Tue:</strong> HEPA vacuum rugs and couch</li>
-                    <li><strong>Sat:</strong> Wash slipcovers/throws; swap in fresh set</li>
-                </ul>
-
-                <p><strong>Bottom line:</strong> Treat the fabrics you live on with <a href="javascript:void(0)"
-                    onclick="f('https://pacagen.com/products/dog-allergen-neutralizing-spray')">
-                    Pacagen’s Dog Allergen Neutralizing Spray Today</a>, add HEPA plus quick habits, and keep the cuddles, minus the sniffles.
-                </p>
-
-                <hr>
-
-                <h2>Try it today!</h2>
-                <p>
-                    👉 <a href="javascript:void(0)"
-                        onclick="f('https://pacagen.com/products/dog-allergen-neutralizing-spray')">Get
-                        Pacagen’s
-                        Dog Allergen Neutralizing Spray Today</a>.
-                </p>
+                <!-- Fold component (title + author + leading title + image) -->
+                <div id="article-fold"></div>
+                
+                <div id="content-section-1"></div>
+                <div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
+                <div id="content-section-2"></div>
+                <div id="content-section-3"></div>
+                <div id="content-section-4"></div>
+                <div id="content-section-5"></div>
+                <div id="content-section-6"></div>
+                <div id="content-section-7"></div>
             </section>
 
-            <!-- Footer -->
-            <footer class="article-footer">
-                <p>
-                    Find more helpful healthy pet info on our <a href="../index.html">homepage</a> or explore
-                    <a href="/blog/index.html">all articles</a>
-                </p>
-            </footer>
+            <!-- Article footer component -->
+            <div id="article-footer"></div>
         </article>
     </main>
+    
     <script>
-        function getCookie(name) {
-            const value = `; ${document.cookie}`;
-            const parts = value.split(`; ${name}=`);
-            if (parts.length === 2) return parts.pop().split(';').shift();
-            return '';
-        }
-
-        function f(baseUrl) {
-            cvg({ method: "track", eventName: "HealthPetInsiderPacagenClick" });
-
-            // Get cookie values
-            let uid = getCookie('__cvg_uid');
-            let sid = getCookie('__cvg_sid');
-
-            // Build the final URL with parameters
-            let finalUrl = baseUrl;
-            if (uid || sid) {
-                finalUrl += (finalUrl.includes('?') ? '&' : '?');
-                if (uid) finalUrl += `__cvg_uid=${encodeURIComponent(uid)}`;
-                if (uid && sid) finalUrl += '&';
-                if (sid) finalUrl += `__cvg_sid=${encodeURIComponent(sid)}`;
-            }
-
-            // Redirect after 200ms delay
-            setTimeout(() => {
-                window.location.href = finalUrl;
-            }, 200);
-        }
-        document.addEventListener('DOMContentLoaded', function() {
-            const pacagenSprayShowcase = createProductShowcase({
+        initComponentsWhenReady(function() {
+            const pageType = window.location.pathname.includes('/blog/') ? 'blog' : 'root';
+            
+            // 1. Create fold component (title + author + image)
+            document.getElementById('article-fold').innerHTML = createFold({
+                title: '5 Best Fixes for Dog Allergies (Without Endless Baths)',
+                authorName: 'Steven Timmins',
+                authorImage: 'StevenTimmins.png',
+                imageSrc: 'woman-dog-allergies.png',
+                imageAlt: 'dog allergens',
+                imageCaption: 'Featuring Pacagen Dog Allergen Neutralizing Spray',
+                pageType: pageType
+            });
+            
+            // 2. Create content sections
+            document.getElementById('content-section-1').innerHTML = createContentSection({
+                title: '1. Treat Soft Surfaces with <a href="javascript:void(0)" onclick="f(\'https://pacagen.com/products/dog-allergen-neutralizing-spray\')">Pacagen</a>',
+                paragraphs: [
+                    'If you prefer a non-medication approach, Pacagen provides an environmental control step you can do at home. It doesn\'t treat or cure allergies, but it helps lower everyday exposure—often the first thing clinicians recommend before escalating to medications.',
+                    'Allergens cling to couches, throws, rugs, curtains, and car seats. Lightly spritz Pacagen over high-touch fabrics 2–3×/week. Let dry fully.'
+                ],
+                additionalContent: '<ul><li>Targets the high-touch surfaces you use most, not just the air.</li><li>Complements HEPA filtration, routine vacuuming, and normal grooming to keep day-to-day exposure low between deep cleans.</li></ul>',
+                imageSrc: 'pacagen-dans.png',
+                imageAlt: 'Dog allergy product',
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-2').innerHTML = createContentSection({
+                title: '2. HEPA Everywhere It Counts',
+                paragraphs: [
+                    'Run a true HEPA air purifier in the room you use most and vacuum floors and upholstery with a HEPA vacuum 2–3×/week. Empty the canister outside.'
+                ],
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-3').innerHTML = createContentSection({
+                title: '3. Washable Layers = Easy Resets',
+                paragraphs: [
+                    'Use slipcovers and throw blankets on seating. Wash weekly if fabric allows; treat between washes with Pacagen to keep buildup low.'
+                ],
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-4').innerHTML = createContentSection({
+                title: '4. Groom Smart, Not Constant',
+                paragraphs: [
+                    'Brush outdoors, then wipe the coat with a damp microfiber cloth. Keep bath frequency to your vet or groomer\'s guidance.'
+                ],
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-5').innerHTML = createContentSection({
+                title: '5. Control Hotspots',
+                additionalContent: '<ul><li>Designate a low-allergen lounge (close the door, treat fabrics with <a href="javascript:void(0)" onclick="f(\'https://pacagen.com/products/dog-allergen-neutralizing-spray\')">Pacagen</a>).</li><li>Use zip-off dog bed covers.</li><li>Add an entryway "dander trap" (mat + lint roller).</li><li>Protect car seats with washable covers.</li></ul>',
+                pageType: pageType
+            });
+            
+            document.getElementById('content-section-6').innerHTML = createContentSection({
+                title: '3-Minute Weekly Template',
+                paragraphs: [
+                    '<strong>Bottom line:</strong> Treat the fabrics you live on with <a href="javascript:void(0)" onclick="f(\'https://pacagen.com/products/dog-allergen-neutralizing-spray\')">Pacagen\'s Dog Allergen Neutralizing Spray Today</a>, add HEPA plus quick habits, and keep the cuddles, minus the sniffles.'
+                ],
+                additionalContent: '<ul><li><strong>Mon/Wed/Fri:</strong> Pacagen on sofa, throws, dog bed</li><li><strong>Tue:</strong> HEPA vacuum rugs and couch</li><li><strong>Sat:</strong> Wash slipcovers/throws; swap in fresh set</li></ul><hr><h2>Try it today!</h2><p>👉 <a href="javascript:void(0)" onclick="f(\'https://pacagen.com/products/dog-allergen-neutralizing-spray\')">Get Pacagen\'s Dog Allergen Neutralizing Spray Today</a>.</p>',
+                pageType: pageType
+            });
+            
+            // 3. Create product showcase
+            document.getElementById('pacagen-spray-showcase').innerHTML = createProductShowcase({
                 image: 'dog-spray.png',
                 alt: 'Dog Allergen Neutralizing Spray',
                 description: 'Breaks down dog allergens on contact',
                 url: 'https://www.pacagen.com/products/dog-allergen-neutralizing-spray',
-                pageType: 'root'
+                pageType: pageType
             });
-            document.getElementById('pacagen-spray-showcase').innerHTML = pacagenSprayShowcase;
-        });
+            
+            // 4. Create article footer
+            document.getElementById('article-footer').innerHTML = createArticleFooter({
+                pageType: pageType
+            });
+        }, { waitForArticle: true, waitForProduct: true });
     </script>
 </body>
 
