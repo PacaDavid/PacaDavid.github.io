@@ -20,23 +20,47 @@
     <script src="../assets/js/main.js" defer></script>
     
     <!-- Component bundles -->
-    <script src="../assets/js/article-components-bundle.js"></script>
+    <script src="../assets/js/components/article/fold.js"></script>
+    <script src="../assets/js/components/article/article-footer.js"></script>
     
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
     <main>
-        <article class="blog-post w-70">
-            <!-- Article header component -->
-            <div id="article-header-blog"></div>
+        <article class="advertorial">
+            <section class="w-70 mx-auto my-4">
+                <!-- Fold component (title + author + date + image) -->
+                <div id="article-fold"></div>
 
-            <section class="article-content">
                 <p>In the U.S., about 10% to 20% are <a href="https://www.akc.org/dog-breeds/hypoallergenic-dogs/">allergic to dogs</a>. Having allergies can be a real challenge for dog lovers who wish to enjoy the company of their dog. However, there's no need to worry because there are specific breeds that are hypoallergenic, making them perfect for those who suffer from dog allergies. Hypoallergenic dogs produce fewer allergens such as dander, saliva, and urine proteins than other breeds, which reduces the risk of allergic reactions. It's important to note that hypoallergenic dogs aren't entirely allergen-free, but their low-shedding coats and minimal dander make them a better fit for people with allergies.</p>
                 
-                <div id="content-section-1"></div>
-                <div id="content-section-2"></div>
-                <div id="content-section-3"></div>
+                <div class="article-section">
+                    <div class="article-content-image d-flex">
+                        <img src="/assets/images/schnauzer.jpg" class="article-img" alt="closeup of schnauzer">
+                    </div>
+                    <h2>What Does Hypoallergenic Mean?</h2>
+                    <p>When we talk about the best hypoallergenic dogs, we're referring to breeds that produce fewer allergens than other breeds. However, it's important to note that no dog breed is completely hypoallergenic or allergen-free. Still, hypoallergenic breeds are known for producing fewer allergens such as dander, saliva, and urine proteins.</p>
+                    <p>What sets hypoallergenic breeds apart from others is their compatibility with individuals who have allergies. These breeds typically have certain characteristics that make them more suitable for people who suffer from allergies. For example, many hypoallergenic dogs have coats that shed minimally or not at all. This means fewer loose hairs and dander, which are common allergens. Additionally, some hypoallergenic breeds have specific coat types, such as curly or wiry coats, which tend to trap loose hair and dander, preventing them from spreading as much as with other breeds.</p>
+                    <p>Moreover, certain breeds may produce lower levels of allergenic proteins in their saliva or skin oils, which can also contribute to fewer allergic reactions in sensitive individuals. So, if you're someone who suffers from allergies but still wants a furry companion, hypoallergenic breeds may be a good option for you</p>
+                </div>
+                <div class="article-section">
+                    <h2>What are the Best Hypoallergenic Dogs?</h2>
+                    <h3>Poodle</h3>
+                    <p>Poodles are the best hypoallergenic dogs, especially for those who are prone to dog allergies. Their <a href="https://mobilitydog.org/blog-about-mobility-service-dogs-and-their-ada-handlers/2021/8/6/hypoallergenic-dogs-what-does-that-mean-by-petfindercom">distinctive curly and dense coat</a> makes them minimal shedders, which helps in keeping allergens away. Besides being hypoallergenic, Poodles are also known for their intelligence and friendly nature, making them great companions for families and individuals alike.</p>
+                    <h3>Bichon Frise</h3>
+                    <p>Bichon Frise is a breed of dog that is known for its cheerful and fluffy nature. They are highly regarded as one of the best hypoallergenic dogs due to their <a href="https://www.akc.org/dog-breeds/bichon-frise/">coat</a>, which shed minimally. Their playful and affectionate temperament makes them an ideal companion for households who are seeking an allergy-friendly pet. Overall, Bichon Frise is a great option for those who want a furry friend without the worry of allergies.</p>
+                    <h3>Portuguese Water Dog</h3>
+                    <p>Portuguese Water Dogs are considered one of the best hypoallergenic dog breeds due to their <a href="https://usspwdc.org/so-you-want-a-pwd/">single coat</a>, minimal shedding, and dander, thanks to their single-layered waterproof coat. These dogs were originally bred to assist fishermen and are known for being intelligent and active. They make great companions for families who lead an active lifestyle.</p>
+                    <h3>Schnauzer</h3>
+                    <p>Schnauzers are a breed of dogs that come in three different sizes - giant, standard, and miniature. They are known for their distinctive beard and wiry coat that sheds minimally. Due to their loyalty, intelligence, and low-allergen coats, they are a popular choice for those who suffer from dog allergies. These qualities make them one of the best hypoallergenic dog breeds.</p>
+                    <h3>Maltese</h3>
+                    <p>Maltese dogs are an excellent choice for households looking for a hypoallergenic pet. Despite their long and silky coat, they shed very little, which makes them one of the best hypoallergenic dog breeds. These adorable dogs have a loving and gentle nature, which makes them perfect for families who want a smaller, low-allergen companion.</p>
+                </div>
+                <div class="article-section">
+                    <h2>How to Minimize Dog Allergies?</h2>
+                    <p>While some dog breeds may be considered hypoallergenic and therefore better suited for those with dog allergies, it's important to remember that responsible care is still necessary. Regular brushing and bathing are effective grooming practices that can minimize loose hair and dander.</p>
+                </div>
             </section>
 
             <!-- Article footer component -->
@@ -48,36 +72,17 @@
         initComponentsWhenReady(function() {
             const pageType = 'blog';
             
-            // Create blog header (breadcrumb + title + date)
-            document.getElementById('article-header-blog').innerHTML = createBlogHeader({
+            // Create fold component (title + author + date + image)
+            document.getElementById('article-fold').innerHTML = createFold({
                 title: 'Best Hypoallergenic Dogs',
+                authorName: null,
+                authorImage: null,
+                imageSrc: null,
+                imageAlt: null,
+                imageCaption: null,
+                breadcrumb: false,
+                homePath: 'index.html',
                 dateText: 'Published on May 29, 2025',
-                breadcrumb: true,
-                homePath: 'index.html'
-            });
-            
-            // Create content sections
-            document.getElementById('content-section-1').innerHTML = createContentSection({
-                title: 'What Does Hypoallergenic Mean?',
-                paragraphs: [
-                    'When we talk about the best hypoallergenic dogs, we\'re referring to breeds that produce fewer allergens than other breeds. However, it\'s important to note that no dog breed is completely hypoallergenic or allergen-free. Still, hypoallergenic breeds are known for producing fewer allergens such as dander, saliva, and urine proteins.',
-                    'What sets hypoallergenic breeds apart from others is their compatibility with individuals who have allergies. These breeds typically have certain characteristics that make them more suitable for people who suffer from allergies. For example, many hypoallergenic dogs have coats that shed minimally or not at all. This means fewer loose hairs and dander, which are common allergens. Additionally, some hypoallergenic breeds have specific coat types, such as curly or wiry coats, which tend to trap loose hair and dander, preventing them from spreading as much as with other breeds.',
-                    'Moreover, certain breeds may produce lower levels of allergenic proteins in their saliva or skin oils, which can also contribute to fewer allergic reactions in sensitive individuals. So, if you\'re someone who suffers from allergies but still wants a furry companion, hypoallergenic breeds may be a good option for you'
-                ],
-                imageSrc: '/assets/images/schnauzer.jpg',
-                imageAlt: 'closeup of schnauzer',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-2').innerHTML = createContentSection({
-                title: 'What are the Best Hypoallergenic Dogs?',
-                additionalContent: '<h3>Poodle</h3><p>Poodles are the best hypoallergenic dogs, especially for those who are prone to dog allergies. Their <a href="https://mobilitydog.org/blog-about-mobility-service-dogs-and-their-ada-handlers/2021/8/6/hypoallergenic-dogs-what-does-that-mean-by-petfindercom">distinctive curly and dense coat</a> makes them minimal shedders, which helps in keeping allergens away. Besides being hypoallergenic, Poodles are also known for their intelligence and friendly nature, making them great companions for families and individuals alike.</p><h3>Bichon Frise</h3><p>Bichon Frise is a breed of dog that is known for its cheerful and fluffy nature. They are highly regarded as one of the best hypoallergenic dogs due to their <a href="https://www.akc.org/dog-breeds/bichon-frise/">coat</a>, which shed minimally. Their playful and affectionate temperament makes them an ideal companion for households who are seeking an allergy-friendly pet. Overall, Bichon Frise is a great option for those who want a furry friend without the worry of allergies.</p><h3>Portuguese Water Dog</h3><p>Portuguese Water Dogs are considered one of the best hypoallergenic dog breeds due to their <a href="https://usspwdc.org/so-you-want-a-pwd/">single coat</a>, minimal shedding, and dander, thanks to their single-layered waterproof coat. These dogs were originally bred to assist fishermen and are known for being intelligent and active. They make great companions for families who lead an active lifestyle.</p><h3>Schnauzer</h3><p>Schnauzers are a breed of dogs that come in three different sizes - giant, standard, and miniature. They are known for their distinctive beard and wiry coat that sheds minimally. Due to their loyalty, intelligence, and low-allergen coats, they are a popular choice for those who suffer from dog allergies. These qualities make them one of the best hypoallergenic dog breeds.</p><h3>Maltese</h3><p>Maltese dogs are an excellent choice for households looking for a hypoallergenic pet. Despite their long and silky coat, they shed very little, which makes them one of the best hypoallergenic dog breeds. These adorable dogs have a loving and gentle nature, which makes them perfect for families who want a smaller, low-allergen companion.</p>',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-3').innerHTML = createContentSection({
-                title: 'How to Minimize Dog Allergies?',
-                paragraph: 'While some dog breeds may be considered hypoallergenic and therefore better suited for those with dog allergies, it\'s important to remember that responsible care is still necessary. Regular brushing and bathing are effective grooming practices that can minimize loose hair and dander.',
                 pageType: pageType
             });
             

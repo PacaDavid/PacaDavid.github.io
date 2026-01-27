@@ -1,7 +1,7 @@
 // Fold Component (Article Header/Fold)
 // Creates the fold section with title, optional author, optional leading title, optional breadcrumb, optional date, and image
 // Usage: createFold({ title: 'Title', authorName: 'Author', authorImage: 'img.png', leadingTitle: 'Subtitle', imageSrc: 'hero.png', breadcrumb: true, dateText: 'Updated on...', pageType: 'root' })
-// Dependencies: author.js, breadcrumb.js, date.js (all optional)
+// Dependencies: breadcrumb.js (optional, has fallback)
 
 (function() {
     'use strict';
@@ -48,50 +48,35 @@
         // Date section (optional)
         let dateHTML = '';
         if (dateText) {
-            if (typeof createDateSection !== 'undefined') {
-                dateHTML = createDateSection(dateText);
-            } else {
-                // Fallback if date component not loaded
-                dateHTML = `
-                    <div class="container py-2">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 text-md-start mt-2 mb-2 mt-md-0 text-muted">
-                                ${dateText}
-                            </div>
+            dateHTML = `
+                <div class="container py-2">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 text-center mt-2 mb-2 mt-md-0 text-muted">
+                            ${dateText}
                         </div>
                     </div>
-                `;
-            }
+                </div>
+            `;
         }
         
         // Author section (optional)
         let authorHTML = '';
         if (authorName) {
-            if (typeof createAuthorSection === 'undefined') {
-                // Fallback if author component not loaded
-                const assetPath = pageType === 'blog' ? '../assets' : 'assets';
-                const authorImagePath = authorImage 
-                    ? (authorImage.startsWith('/') || authorImage.startsWith('http')
-                        ? authorImage 
-                        : `${assetPath}/images/${authorImage}`)
-                    : null;
-                const authorImgHTML = authorImagePath 
-                    ? `<img class="author-image" src="${authorImagePath}" alt="${authorImageAlt || `Author ${authorName}`}">`
-                    : '';
-                authorHTML = `
-                    <div class="author-section">
-                        <span class="by-text">By ${authorName}</span>
-                        ${authorImgHTML}
-                    </div>
-                `;
-            } else {
-                authorHTML = createAuthorSection({
-                    authorName,
-                    authorImage,
-                    imageAlt: authorImageAlt,
-                    pageType
-                });
-            }
+            const assetPath = pageType === 'blog' ? '../assets' : 'assets';
+            const authorImagePath = authorImage 
+                ? (authorImage.startsWith('/') || authorImage.startsWith('http')
+                    ? authorImage 
+                    : `${assetPath}/images/${authorImage}`)
+                : null;
+            const authorImgHTML = authorImagePath 
+                ? `<img class="author-image" src="${authorImagePath}" alt="${authorImageAlt || `Author ${authorName}`}">`
+                : '';
+            authorHTML = `
+                <div class="author-section">
+                    <span class="by-text">By ${authorName}</span>
+                    ${authorImgHTML}
+                </div>
+            `;
         }
         
         // Leading title (optional subtitle)

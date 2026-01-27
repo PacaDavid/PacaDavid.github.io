@@ -23,56 +23,93 @@
     <script src="assets/js/main.js" defer></script>
     
     <!-- Component bundles -->
-    <script src="assets/js/article-components-bundle.js"></script>
-    <script src="assets/js/ads-components-bundle.js"></script>
+    <script src="assets/js/components/article/fold.js"></script>
+    <script src="assets/js/components/article/article-footer.js"></script>
+    <script src="assets/js/components/ads/ad.js"></script>
     <script src="assets/js/product-components-bundle.js"></script>
-    
-    <!-- Custom styles for this page -->
-    <style>
-        /* Hide border line segment for each section */
-        .article-section h2 {
-            border-bottom: none !important;
-        }
-        /* Make product showcase image fit properly */
-        #pacagen-showcase {
-            margin-top: 3rem;
-            margin-bottom: 2rem;
-        }
-        #pacagen-showcase img {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
     
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="layout-group-a">
+<body>
     <!-- Navigation will be auto-inserted here -->
     <main>
         <article class="advertorial">
             <section class="w-70 mx-auto my-4">
-                <!-- Article header component (breadcrumb + title + author + date) -->
-                <div id="article-header"></div>
-
-                <!-- Story Sections -->
-                <section class="article-content">
-                    <div id="content-section-1"></div>
-                    <div id="content-section-2"></div>
-                    <div id="content-section-3"></div>
-                    <div id="content-section-4"></div>
+                <!-- Fold component (title + author + date) -->
+                <div id="article-fold"></div>
+                    <div class="article-section">
+                        <div class="article-content-image d-flex">
+                            <img src="assets/images/img-cat-polaroid.png" class="article-img" alt="Tabby cat in polaroid photo">
+                        </div>
+                        <p>When we first brought Mochi home, I thought the hardest part would be the adjustment, learning her habits, figuring out her food, and accepting that nothing in our house would ever be truly hair-free again.</p>
+                        <p>I didn't expect how much she would quietly change the way we lived.</p>
+                        <p>Mochi came into our lives before kids, before packed calendars, before the feeling that every day was already full before it even started. Back then, the apartment was smaller and our routines were loose. She slept wherever she wanted. She followed us from room to room. She made the place feel settled in a way I hadn't realized I was missing.</p>
+                        <p>What I didn't fully appreciate at the time was that not everyone in our home experienced her the same way.</p>
+                    </div>
+                    <div class="article-section">
+                        <div class="article-content-image d-flex">
+                            <img src="assets/images/img-cat-livingroom.png" class="article-img" alt="Tabby cat playing in a sunlit living room">
+                        </div>
+                        <h2>The Allergies We Normalized</h2>
+                        <p>My partner has always been a little allergy-sensitive. Nothing dramatic. No emergency room visits or obvious reactions. Just the lingering kind of discomfort that never fully goes away. A stuffy nose that hangs around. Eyes that water more often than they should. The kind of thing that's easy to downplay and even easier to normalize.</p>
+                        <p>So that's what we did. We normalized it.</p>
+                    </div>
+                    <div class="article-section">
+                        <div class="article-content-image d-flex">
+                            <img src="assets/images/img-cat-sleep.jpg" class="article-img" alt="Cat sleeping peacefully">
+                        </div>
+                        <h2>The Adjustments You Don't Notice at First</h2>
+                        <p>Over time, small rules appeared without discussion. The bedroom door stayed closed. Certain blankets were washed more often than others. Windows stayed cracked open even when the weather didn't really call for it.</p>
+                        <p>Mochi adapted without complaint. She found new favorite spots. She learned which rooms were off-limits. She still curled up near us, just not quite as close.</p>
+                        <p>My partner never complained either. He smiled and said it was fine. I didn't push.</p>
+                        <p>It all felt reasonable. Manageable. Just part of living with both a cat and another human you care about.</p>
+                        <p>But slowly, I started noticing the moments in between. The pause before he sat on the couch. The way he'd rub his eyes and then change the subject. The distance he kept from the places Mochi loved most.</p>
+                        <p>None of it felt big enough to act on. But it added up.</p>
+                    </div>
+                    <div class="article-section">
+                        <h2>We Tried to Control the House</h2>
+                        <p>Like most pet owners trying to be responsible, we focused on the environment. Cleaning became a constant background task. Vacuuming. Wiping surfaces. Washing fabrics more frequently than seemed necessary.</p>
+                        <p>We bought air filters. Changed routines. Rearranged furniture. Told ourselves that if we stayed on top of it, things would eventually feel easier.</p>
+                        <p>It helped, in the way effort usually helps. Marginally. Temporarily.</p>
+                        <p>What I didn't understand then was that we were always reacting, addressing discomfort after it had already spread through the house. No matter how clean things looked, something lingered.</p>
+                    </div>
                     <div id="cleaning-ad"></div>
-                    <div id="content-section-5"></div>
+                    <div class="article-section">
+                        <h2>Learning What Was Actually Happening</h2>
+                        <p>It wasn't until much later, while reading about pet health and indoor air quality, that something clicked.</p>
+                        <p>Cat allergies aren't caused by fur itself. They're primarily caused by a protein cats naturally produce, called Fel d 1, which spreads easily through saliva and skin. Once it's in the environment, it's hard to chase down completely.</p>
+                        <p>That reframing shifted how I thought about everything. We weren't failing at cleaning. We were just focused on the very last step of a much longer chain.</p>
+                    </div>
                     <div id="lorem-ad"></div>
-                    <div id="content-section-6"></div>
-                    <div id="content-section-7"></div>
-                    <div id="content-section-8"></div>
-                    <!-- Product showcase component -->
-                    <div id="pacagen-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
-                </section>
+                    <div class="article-section">
+                        <div class="article-content-image d-flex">
+                            <img src="assets/images/img-cat-eating.png" class="article-img" alt="Cat eating from a bowl">
+                        </div>
+                        <h2>A Small Change That Fit Into Real Life</h2>
+                        <p>Around that time, I started seeing more conversations about supporting cats from the inside out, specifically through diet and supplements designed to reduce active allergens at the source.</p>
+                        <p>One name that kept coming up was <a href="https://pacagen.com/products/cat-allergen-reducing-supplement" target="_blank" rel="noopener noreferrer">Pacagen's Cat Allergen Reducing Supplement</a>. I didn't think of it as a solution so much as an experiment, something small I could try without changing our routines. I mixed it into Mochi's food, and then mostly stopped thinking about it.</p>
+                        <p>There were no new rules to enforce. No changes to her behavior. No added stress. It simply became part of the background, the way most sustainable routines do.</p>
+                    </div>
+                    <div class="article-section">
+                        <div class="article-content-image d-flex">
+                            <img src="assets/images/img-cat-cuddle-man.png" class="article-img" alt="Man cuddling with cat">
+                        </div>
+                        <h2>What Changed Was Quiet But Real</h2>
+                        <p>There wasn't a single moment where everything suddenly felt different. Instead, life became easier in small ways.</p>
+                        <p>My partner stayed in shared spaces longer. Mornings felt lighter. I stopped noticing the low-level tension I'd grown used to carrying.</p>
+                        <p>Mochi was still herself. Curious, stubborn, always nearby. She still claimed the couch. She still followed us down the hallway. Nothing about her changed.</p>
+                        <p>What changed was the quiet math we'd been doing in our heads, constantly balancing comfort, care, and compromise.</p>
+                    </div>
+                    <div class="article-section">
+                        <h2>Living Together, a Little Better</h2>
+                        <p>Living with a pet means adjusting. Most of the time, those adjustments are worth it. Some of them we accept without ever questioning.</p>
+                        <p>But every once in a while, it's worth pausing to ask whether the discomfort we've normalized actually needs to be there.</p>
+                        <p>For us, understanding what was happening and making a small, supportive change meant no one had to quietly give something up anymore.</p>
+                        <p>And that made our home feel like home again.</p>
+                    </div>
+                <!-- Product showcase component -->
+                <div id="pacagen-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
             </section>
 
             <!-- Article footer component -->
@@ -84,149 +121,71 @@
         initComponentsWhenReady(function() {
             const pageType = window.location.pathname.includes('/blog/') ? 'blog' : 'root';
             
-            // 1. Create article header (breadcrumb + title + author + date)
-            document.getElementById('article-header').innerHTML = createArticleHeader({
+            // 1. Create fold (title + author + date)
+            const foldElement = document.getElementById('article-fold');
+            foldElement.innerHTML = createFold({
                 title: 'No One Told Me Living With a Cat Would Mean This Many Small Changes',
                 authorName: 'Emily R.',
-                authorImage: null,  // No author image for this article
                 dateText: 'Published Jan 2026',
-                homePath: 'index.html',
+                breadcrumb: false,
                 pageType: pageType
             });
+            foldElement.classList.add('component-loaded');
             
-            // 2. Create content sections
-            document.getElementById('content-section-1').innerHTML = createContentSection({
-                paragraphs: [
-                    'When we first brought Mochi home, I thought the hardest part would be the adjustment, learning her habits, figuring out her food, and accepting that nothing in our house would ever be truly hair-free again.',
-                    'I didn\'t expect how much she would quietly change the way we lived.',
-                    'Mochi came into our lives before kids, before packed calendars, before the feeling that every day was already full before it even started. Back then, the apartment was smaller and our routines were loose. She slept wherever she wanted. She followed us from room to room. She made the place feel settled in a way I hadn\'t realized I was missing.',
-                    'What I didn\'t fully appreciate at the time was that not everyone in our home experienced her the same way.'
-                ],
-                imageSrc: 'img-cat-polaroid.png',
-                imageAlt: 'Tabby cat in polaroid photo',
-                pageType: pageType
-            });
+            // 2. Create Ad
+            if (typeof createAd !== 'undefined') {
+                const cleaningAdElement = document.getElementById('cleaning-ad');
+                cleaningAdElement.innerHTML = createAd({
+                    backgroundImage: 'cleaning-ad1.png',
+                    logo: 'CLEAN HOME',
+                    logoDark: 'HACKS',
+                    headline: 'Transform Your Cleaning Routine',
+                    body: 'Discover practical cleaning tips and products that make maintaining a pet-friendly home easier. If you\'re looking to simplify your cleaning routine, visit Clean Home Hacks for expert advice and solutions.',
+                    productName: 'Clean Home Hacks',
+                    ctaText: 'Learn More',
+                    ctaUrl: 'https://cleanhomehacks.com/',
+                    pageType: pageType
+                });
+                cleaningAdElement.classList.add('component-loaded');
+            }
             
-            document.getElementById('content-section-2').innerHTML = createContentSection({
-                title: 'The Allergies We Normalized',
-                paragraphs: [
-                    'My partner has always been a little allergy-sensitive. Nothing dramatic. No emergency room visits or obvious reactions. Just the lingering kind of discomfort that never fully goes away. A stuffy nose that hangs around. Eyes that water more often than they should. The kind of thing that\'s easy to downplay and even easier to normalize.',
-                    'So that\'s what we did. We normalized it.'
-                ],
-                imageSrc: 'img-cat-livingroom.png',
-                imageAlt: 'Tabby cat playing in a sunlit living room',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-3').innerHTML = createContentSection({
-                title: 'The Adjustments You Don\'t Notice at First',
-                paragraphs: [
-                    'Over time, small rules appeared without discussion. The bedroom door stayed closed. Certain blankets were washed more often than others. Windows stayed cracked open even when the weather didn\'t really call for it.',
-                    'Mochi adapted without complaint. She found new favorite spots. She learned which rooms were off-limits. She still curled up near us, just not quite as close.',
-                    'My partner never complained either. He smiled and said it was fine. I didn\'t push.',
-                    'It all felt reasonable. Manageable. Just part of living with both a cat and another human you care about.',
-                    'But slowly, I started noticing the moments in between. The pause before he sat on the couch. The way he\'d rub his eyes and then change the subject. The distance he kept from the places Mochi loved most.',
-                    'None of it felt big enough to act on. But it added up.'
-                ],
-                imageSrc: 'img-cat-sleep.jpg',
-                imageAlt: 'Cat sleeping peacefully',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-4').innerHTML = createContentSection({
-                title: 'We Tried to Control the House',
-                paragraphs: [
-                    'Like most pet owners trying to be responsible, we focused on the environment. Cleaning became a constant background task. Vacuuming. Wiping surfaces. Washing fabrics more frequently than seemed necessary.',
-                    'We bought air filters. Changed routines. Rearranged furniture. Told ourselves that if we stayed on top of it, things would eventually feel easier.',
-                    'It helped, in the way effort usually helps. Marginally. Temporarily.',
-                    'What I didn\'t understand then was that we were always reacting, addressing discomfort after it had already spread through the house. No matter how clean things looked, something lingered.'
-                ],
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-5').innerHTML = createContentSection({
-                title: 'Learning What Was Actually Happening',
-                paragraphs: [
-                    'It wasn\'t until much later, while reading about pet health and indoor air quality, that something clicked.',
-                    'Cat allergies aren\'t caused by fur itself. They\'re primarily caused by a protein cats naturally produce, called Fel d 1, which spreads easily through saliva and skin. Once it\'s in the environment, it\'s hard to chase down completely.',
-                    'That reframing shifted how I thought about everything. We weren\'t failing at cleaning. We were just focused on the very last step of a much longer chain.'
-                ],
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-6').innerHTML = createContentSection({
-                title: 'A Small Change That Fit Into Real Life',
-                paragraphs: [
-                    'Around that time, I started seeing more conversations about supporting cats from the inside out, specifically through diet and supplements designed to reduce active allergens at the source.',
-                    'One name that kept coming up was <a href="https://pacagen.com/products/cat-allergen-reducing-supplement" target="_blank" rel="noopener noreferrer">Pacagen\'s Cat Allergen Reducing Supplement</a>. I didn\'t think of it as a solution so much as an experiment, something small I could try without changing our routines. I mixed it into Mochi\'s food, and then mostly stopped thinking about it.',
-                    'There were no new rules to enforce. No changes to her behavior. No added stress. It simply became part of the background, the way most sustainable routines do.'
-                ],
-                imageSrc: 'img-cat-eating.png',
-                imageAlt: 'Cat eating from a bowl',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-7').innerHTML = createContentSection({
-                title: 'What Changed Was Quiet But Real',
-                paragraphs: [
-                    'There wasn\'t a single moment where everything suddenly felt different. Instead, life became easier in small ways.',
-                    'My partner stayed in shared spaces longer. Mornings felt lighter. I stopped noticing the low-level tension I\'d grown used to carrying.',
-                    'Mochi was still herself. Curious, stubborn, always nearby. She still claimed the couch. She still followed us down the hallway. Nothing about her changed.',
-                    'What changed was the quiet math we\'d been doing in our heads, constantly balancing comfort, care, and compromise.'
-                ],
-                imageSrc: 'img-cat-cuddle-man.png',
-                imageAlt: 'Man cuddling with cat',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-8').innerHTML = createContentSection({
-                title: 'Living Together, a Little Better',
-                paragraphs: [
-                    'Living with a pet means adjusting. Most of the time, those adjustments are worth it. Some of them we accept without ever questioning.',
-                    'But every once in a while, it\'s worth pausing to ask whether the discomfort we\'ve normalized actually needs to be there.',
-                    'For us, understanding what was happening and making a small, supportive change meant no one had to quietly give something up anymore.',
-                    'And that made our home feel like home again.'
-                ],
-                pageType: pageType
-            });
-            
-            // 3. Create Ad Type A
-            document.getElementById('cleaning-ad').innerHTML = createAdTypeA({
-                backgroundImage: 'cleaning-ad1.png',
-                logo: 'CLEAN HOME',
-                logoDark: 'HACKS',
-                headline: 'Transform Your Cleaning Routine',
-                body: 'Discover practical cleaning tips and products that make maintaining a pet-friendly home easier. If you\'re looking to simplify your cleaning routine, visit Clean Home Hacks for expert advice and solutions.',
-                productName: 'Clean Home Hacks',
-                ctaText: 'Learn More',
-                ctaUrl: 'https://cleanhomehacks.com/',
-                pageType: pageType
-            });
-            
-            // 3. Create Ad Type B
-            document.getElementById('lorem-ad').innerHTML = createAdTypeB({
-                brandName: 'PetCare Insurance',
-                brandImage: 'img-ad-pet-insurance.jpg',
-                imageAlt: 'Pet Insurance',
-                promoTitle: 'Protect Your Feline Friend',
-                promoSubtext: 'Comprehensive pet insurance plans that cover routine care, emergencies, and more. Give your cat the protection they deserve.',
-                pageType: pageType
-            });
+            // 3. Create Ad
+            if (typeof createAd !== 'undefined') {
+                const loremAdElement = document.getElementById('lorem-ad');
+                loremAdElement.innerHTML = createAd({
+                    backgroundImage: 'img-ad-pet-insurance.jpg',
+                    logo: 'PETCARE',
+                    logoDark: 'INSURANCE',
+                    headline: 'Protect Your Feline Friend',
+                    body: 'Comprehensive pet insurance plans that cover routine care, emergencies, and more. Give your cat the protection they deserve.',
+                    productName: 'PetCare Insurance',
+                    ctaText: 'Learn More',
+                    ctaUrl: '#',
+                    pageType: pageType
+                });
+                loremAdElement.classList.add('component-loaded');
+            }
             
             // 4. Create product showcase
-            document.getElementById('pacagen-showcase').innerHTML = createProductShowcase({
-                image: 'supplement-2versions.png',
-                alt: 'Cat Allergen Reducing Supplement',
-                description: 'A tasty cat supplement to end allergens where they start',
-                url: 'https://pacagen.com/products/cat-allergen-reducing-supplement',
-                pageType: pageType
-            });
+            if (typeof createProductShowcase !== 'undefined') {
+                const showcaseElement = document.getElementById('pacagen-showcase');
+                showcaseElement.innerHTML = createProductShowcase({
+                    image: 'supplement-2versions.png',
+                    alt: 'Cat Allergen Reducing Supplement',
+                    description: 'A tasty cat supplement to end allergens where they start',
+                    url: 'https://pacagen.com/products/cat-allergen-reducing-supplement',
+                    pageType: pageType
+                });
+                showcaseElement.classList.add('component-loaded');
+            }
             
             // 5. Create article footer
-            document.getElementById('article-footer').innerHTML = createArticleFooter({
+            const footerElement = document.getElementById('article-footer');
+            footerElement.innerHTML = createArticleFooter({
                 pageType: pageType
             });
-        }, { waitForArticle: true, waitForAds: true, waitForProduct: true });
+            footerElement.classList.add('component-loaded');
+        }, { waitForArticle: true });
     </script>
 </body>
 

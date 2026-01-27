@@ -24,13 +24,15 @@
     <script src="assets/js/main.js" defer></script>
     
     <!-- Component bundles -->
-    <script src="assets/js/article-components-bundle.js"></script>
+    <script src="assets/js/components/article/fold.js"></script>
+    <script src="assets/js/components/article/article-footer.js"></script>
     <script src="assets/js/product-components-bundle.js"></script>
+    <script src="assets/js/components/testimonial/testimonial-carousel.js"></script>
     
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="layout-group-c">
+<body>
 
 <main>
 <article class="advertorial">
@@ -39,16 +41,61 @@
 <!-- Fold component (title + author + date + image, no breadcrumb) -->
 <div id="article-fold"></div>
 
-<div id="content-section-0"></div>
-<div id="content-section-1"></div>
-<div id="content-section-2"></div>
+<div class="article-section">
+    <p>Welcoming a cat is exciting—but many new cat parents aren't prepared for cat allergens. Fel d 1, the protein in cat saliva, spreads easily and triggers sneezing, itchy eyes, and congestion.</p>
+    <p>That's why reducing allergens at the source matters. <strong><a href="https://pacagen.com/products/cat-allergen-reducing-supplement">Pacagen Cat Allergen-Reducing Supplement</a></strong> helps neutralize Fel d 1 in your cat's saliva—so less allergen ends up on furniture, fabrics, and in the air.</p>
+</div>
+<div class="article-section">
+    <div class="article-content-image d-flex">
+        <img src="assets/images/cute-cat-CHS.png" class="article-img" alt="Cute cat with Pacagen Cat Allergen Reducing Supplement">
+    </div>
+    <h2>Why Cat Parents Choose Pacagen</h2>
+    <ul><li><strong>Targets the source:</strong> Reduces Fel d 1 directly in your cat's saliva.</li><li><strong>Easy daily supplement:</strong> Works with any diet—wet, dry, or raw.</li><li><strong>Breathe easier:</strong> Less allergen buildup on soft surfaces.</li><li><strong>Safe for daily use:</strong> Vet-formulated and palatable.</li></ul>
+</div>
+<div class="article-section">
+    <div class="article-content-image d-flex">
+        <img src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/pacagenvspurina-desktop.png" class="article-img" alt="Pacagen vs Purina LiveClear">
+    </div>
+    <h2>Why Pacagen Is Better Than Egg Powder & Purina LiveClear</h2>
+    <p>Many cat allergy solutions rely on egg-derived antibodies or specialized diets. While these approaches helped prove allergen reduction is possible, they come with limitations.</p>
+    <p>Egg powder products depend on antibodies sourced from eggs to bind Fel d 1. However, antibody stability can vary, effectiveness may decline during digestion, and these products do not support broader cat health.</p>
+    <p><strong>Pacagen uses a purpose-built protein-based approach</strong> designed for consistency, daily use, and reliable allergen reduction—without relying on egg antibodies.</p>
+    <h3>Pacagen vs Purina LiveClear</h3>
+    <p>Purina LiveClear requires switching your cat to a specific dry food. That can be difficult for picky eaters and incompatible with wet or raw diets.</p>
+    <ul><li>Pacagen works with any existing diet</li><li>No food transition required</li><li>Focused allergen reduction without changing feeding routines</li></ul>
+    <p>For households that want flexibility, Pacagen fits seamlessly into daily life. *Below image taken from pacagen.com.</p>
+</div>
 
 <!-- Product showcase component -->
 <div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
 
-<div id="content-section-3"></div>
-<div id="content-section-4"></div>
-<div id="content-section-5"></div>
+<!-- Testimonial carousel component -->
+<div data-testimonial-carousel></div>
+
+<div class="article-section">
+    <div class="article-content-image d-flex">
+        <img src="assets/images/cute-cat-with-woman.png" class="article-img" alt="Woman cuddling cat comfortably">
+    </div>
+    <h2>Your First 30 Days With Pacagen</h2>
+    <h3>Day 1</h3>
+    <p>Add two scoops to your cat's food—salmon or chicken flavor.</p>
+    <h3>Weeks 1-2</h3>
+    <p>Fel d 1 levels begin declining as allergen spread slows.</p>
+    <h3>Weeks 3-4</h3>
+    <p>Noticeably less allergen buildup on furniture and fabrics.</p>
+</div>
+<div class="article-section">
+    <h2>Quick Q&A</h2>
+    <ul><li><strong>Is Pacagen safe?</strong> Yes, formulated for daily use.</li><li><strong>When will I notice results?</strong> Typically within 2-4 weeks.</li><li><strong>Does it replace cleaning?</strong> No—works alongside normal cleaning.</li></ul>
+</div>
+<div class="article-section">
+    <h2>The Bottom Line</h2>
+    <p>If you're searching for the <strong>best supplement for cat allergies</strong>, Pacagen offers a flexible, science-driven alternative to egg powder and specialty diets.</p>
+    <p>By reducing allergens at the source—without forcing dietary changes—Pacagen helps create a more breathable home for everyone.</p>
+    <hr>
+    <h2>Shop Now</h2>
+    <p>👉 <a href="https://pacagen.com/products/cat-allergen-reducing-supplement">Get Pacagen's Cat Allergen Reducing Supplement Today</a></p>
+</div>
 
 </section>
 
@@ -75,36 +122,6 @@
             pageType: pageType
         });
         
-        // 2. Create content sections
-        document.getElementById('content-section-0').innerHTML = createContentSection({
-            paragraphs: [
-                'Welcoming a cat is exciting—but many new cat parents aren\'t prepared for cat allergens. Fel d 1, the protein in cat saliva, spreads easily and triggers sneezing, itchy eyes, and congestion.',
-                'That\'s why reducing allergens at the source matters. <strong><a href="https://pacagen.com/products/cat-allergen-reducing-supplement">Pacagen Cat Allergen-Reducing Supplement</a></strong> helps neutralize Fel d 1 in your cat\'s saliva—so less allergen ends up on furniture, fabrics, and in the air.'
-            ],
-            pageType: pageType
-        });
-        
-        document.getElementById('content-section-1').innerHTML = createContentSection({
-            title: 'Why Cat Parents Choose Pacagen',
-            additionalContent: '<ul><li><strong>Targets the source:</strong> Reduces Fel d 1 directly in your cat\'s saliva.</li><li><strong>Easy daily supplement:</strong> Works with any diet—wet, dry, or raw.</li><li><strong>Breathe easier:</strong> Less allergen buildup on soft surfaces.</li><li><strong>Safe for daily use:</strong> Vet-formulated and palatable.</li></ul>',
-            imageSrc: 'cute-cat-CHS.png',
-            imageAlt: 'Cute cat with Pacagen Cat Allergen Reducing Supplement',
-            pageType: pageType
-        });
-        
-        document.getElementById('content-section-2').innerHTML = createContentSection({
-            title: 'Why Pacagen Is Better Than Egg Powder & Purina LiveClear',
-            paragraphs: [
-                'Many cat allergy solutions rely on egg-derived antibodies or specialized diets. While these approaches helped prove allergen reduction is possible, they come with limitations.',
-                'Egg powder products depend on antibodies sourced from eggs to bind Fel d 1. However, antibody stability can vary, effectiveness may decline during digestion, and these products do not support broader cat health.',
-                '<strong>Pacagen uses a purpose-built protein-based approach</strong> designed for consistency, daily use, and reliable allergen reduction—without relying on egg antibodies.'
-            ],
-            additionalContent: '<h3>Pacagen vs Purina LiveClear</h3><p>Purina LiveClear requires switching your cat to a specific dry food. That can be difficult for picky eaters and incompatible with wet or raw diets.</p><ul><li>Pacagen works with any existing diet</li><li>No food transition required</li><li>Focused allergen reduction without changing feeding routines</li></ul><p>For households that want flexibility, Pacagen fits seamlessly into daily life. *Below image taken from pacagen.com.</p>',
-            imageSrc: 'https://cdn.shopify.com/s/files/1/0814/8369/4394/files/pacagenvspurina-desktop.png',
-            imageAlt: 'Pacagen vs Purina LiveClear',
-            pageType: pageType
-        });
-        
         // 3. Create product showcase
         document.getElementById('pacagen-spray-showcase').innerHTML = createProductShowcase({
             image: 'ChickenFlavor_V3.png',
@@ -114,36 +131,9 @@
             pageType: pageType
         });
         
-        document.getElementById('content-section-3').innerHTML = createContentSection({
-            title: 'Your First 30 Days With Pacagen',
-            paragraphs: [
-                'Add two scoops to your cat\'s food—salmon or chicken flavor.',
-                'Fel d 1 levels begin declining as allergen spread slows.',
-                'Noticeably less allergen buildup on furniture and fabrics.'
-            ],
-            additionalContent: '<h3>Day 1</h3><h3>Weeks 1-2</h3><h3>Weeks 3-4</h3>',
-            imageSrc: 'cute-cat-with-woman.png',
-            imageAlt: 'Woman cuddling cat comfortably',
-            pageType: pageType
-        });
+        // 4. Testimonial carousel is auto-initialized via data-testimonial-carousel attribute
         
-        document.getElementById('content-section-4').innerHTML = createContentSection({
-            title: 'Quick Q&A',
-            additionalContent: '<ul><li><strong>Is Pacagen safe?</strong> Yes, formulated for daily use.</li><li><strong>When will I notice results?</strong> Typically within 2-4 weeks.</li><li><strong>Does it replace cleaning?</strong> No—works alongside normal cleaning.</li></ul>',
-            pageType: pageType
-        });
-        
-        document.getElementById('content-section-5').innerHTML = createContentSection({
-            title: 'The Bottom Line',
-            paragraphs: [
-                'If you\'re searching for the <strong>best supplement for cat allergies</strong>, Pacagen offers a flexible, science-driven alternative to egg powder and specialty diets.',
-                'By reducing allergens at the source—without forcing dietary changes—Pacagen helps create a more breathable home for everyone.'
-            ],
-            additionalContent: '<hr><h2>Shop Now</h2><p>👉 <a href="https://pacagen.com/products/cat-allergen-reducing-supplement">Get Pacagen\'s Cat Allergen Reducing Supplement Today</a></p>',
-            pageType: pageType
-        });
-        
-        // 4. Create article footer
+        // 5. Create article footer
         document.getElementById('article-footer').innerHTML = createArticleFooter({
             pageType: pageType
         });

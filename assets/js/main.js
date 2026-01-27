@@ -115,7 +115,7 @@ function insertFooter(pageType = 'root') {
     // Create footer HTML
     const footerHTML = `
         <footer>
-            <div class="container footer-HPI">
+            <div class="container footer-text">
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <p>&copy; 2026 Health Pet Insider. All rights reserved.</p>

@@ -23,13 +23,14 @@
     <script src="assets/js/main.js" defer></script>
     
     <!-- Component bundles -->
-    <script src="assets/js/article-components-bundle.js"></script>
+    <script src="assets/js/components/article/fold.js"></script>
+    <script src="assets/js/components/article/article-footer.js"></script>
     <script src="assets/js/product-components-bundle.js"></script>
     
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="layout-group-c">
+<body>
     <!-- Navigation will be auto-inserted here -->
     <main>
         <article class="advertorial">
@@ -44,13 +45,46 @@
               Here are our top 5 essentials every allergic pet owner should have.
             </p>
 
-            <div id="content-section-1"></div>
-            <div id="content-section-2"></div>
+            <div class="article-section">
+                <div class="article-content-image d-flex">
+                    <img src="assets/images/best-air-purifier.png" class="article-img" alt="HEPA Air Purifier">
+                </div>
+                <h2>1. A High-Efficiency Particulate Air (HEPA) Air Purifier</h2>
+                <p>Pet dander, pollen, and other allergens are constantly floating in the air. A quality HEPA air purifier works tirelessly to capture these microscopic particles before they can trigger your allergies. Look for a model with a true HEPA filter (99.97% of particles down to 0.3 microns) and make sure it's rated for the size of your room. Placing one in your bedroom or living room can make a world of difference in your daily symptoms. Brands like Levoit and Coway are praised for their quiet yet effective operation.</p>
+            </div>
+            <div class="article-section">
+                <div class="article-content-image d-flex">
+                    <img src="assets/images/pacagen-products.png" class="article-img" alt="Pacagen Cat Allergen Spray">
+                </div>
+                <h2>2. Pacagen Cat Allergen Neutralizing Spray</h2>
+                <p>This is a true game-changer. <a href="https://www.pacagen.com/products/cat-allergen-neutralizing-spray" class="pacagen-link">Pacagen</a> isn't just another fabric freshener—it's a targeted solution for cat allergies. Scientifically formulated to neutralize Fel d 1, the primary cat allergen, Pacagen's active ingredients break it down on contact. Spray it on your couch, bedding, or your cat's favorite blanket, and in just a few minutes allergens are reduced to harmless fragments. Safe, easy, and effective—this one's essential for every allergic cat owner who refuses to sacrifice cuddles.</p>
+            </div>
             <div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
-            <div id="content-section-3"></div>
-            <div id="content-section-4"></div>
-            <div id="content-section-5"></div>
-            <div id="content-section-6"></div>
+            <div class="article-section">
+                <div class="article-content-image d-flex">
+                    <img src="assets/images/pet-shampoo.png" class="article-img" alt="Pet Shampoo for Allergies">
+                </div>
+                <h2>3. Allergen-Reducing Shampoo or Wipes</h2>
+                <p>Weekly baths may not work for every pet, but allergen-reducing shampoos like TropiClean or Allerpet help cleanse fur of dander and saliva. Between baths, quick allergen-reducing wipes are a simple daily fix that removes dander and keeps allergen levels under control—without the stress of frequent full baths.</p>
+            </div>
+            <div class="article-section">
+                <div class="article-content-image d-flex">
+                    <img src="assets/images/bed-vacuum.png" class="article-img" alt="HEPA Vacuum Cleaner">
+                </div>
+                <h2>4. A HEPA-Sealed Vacuum Cleaner</h2>
+                <p>A poor-quality vacuum can stir allergens into the air. A sealed-system vacuum with a HEPA filter traps dander, fur, and dust without releasing them back into your room. Models from Dyson, Shark, or Miele are designed for pet owners and often come with specialized attachments to clean fur from carpets and upholstery.</p>
+            </div>
+            <div class="article-section">
+                <div class="article-content-image d-flex">
+                    <img src="assets/images/allergen-bedding.png" class="article-img" alt="Allergen Proof Bedding">
+                </div>
+                <h2>5. Allergen-Proof Bedding</h2>
+                <p>Since we spend a third of our lives in bed, creating an allergy-safe sleep zone is crucial. Allergen-proof mattress and pillow covers act as barriers against dander. Combine this with weekly hot water washes, and you'll drastically cut down on allergens where you rest most—helping you wake up refreshed and symptom-free.</p>
+            </div>
+            <div class="article-section">
+                <h2>Take Back Control</h2>
+                <p>Living with pets and allergies doesn't have to mean endless sneezing fits. With these 5 must-have products, you'll reduce allergens, breathe easier, and enjoy the best parts of pet ownership without the constant discomfort. Small changes can create a healthier home—for you and your furry friend.</p>
+            </div>
           </section>
       
           <!-- Article footer component -->
@@ -70,68 +104,9 @@
                 imageSrc: 'allergiccat.png',
                 imageAlt: 'Pet owner with cat and tissues',
                 imageCaption: 'Loving your furry friend shouldn\'t come with the price of constant sneezing, itchy eyes, and a stuffy nose. With the right products, you can reduce allergens in your home and reclaim your comfort. Here are our top 5 must-have products.',
-                breadcrumb: true,
+                breadcrumb: false,
                 homePath: 'index.html',
                 dateText: 'Updated on June 18, 2025',
-                pageType: pageType
-            });
-            
-            // 2. Create content sections
-            document.getElementById('content-section-1').innerHTML = createContentSection({
-                title: '1. A High-Efficiency Particulate Air (HEPA) Air Purifier',
-                paragraphs: [
-                    'Pet dander, pollen, and other allergens are constantly floating in the air. A quality HEPA air purifier works tirelessly to capture these microscopic particles before they can trigger your allergies. Look for a model with a true HEPA filter (99.97% of particles down to 0.3 microns) and make sure it\'s rated for the size of your room. Placing one in your bedroom or living room can make a world of difference in your daily symptoms. Brands like Levoit and Coway are praised for their quiet yet effective operation.'
-                ],
-                imageSrc: 'best-air-purifier.png',
-                imageAlt: 'HEPA Air Purifier',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-2').innerHTML = createContentSection({
-                title: '2. Pacagen Cat Allergen Neutralizing Spray',
-                paragraphs: [
-                    'This is a true game-changer. <a href="https://www.pacagen.com/products/cat-allergen-neutralizing-spray" class="pacagen-link">Pacagen</a> isn\'t just another fabric freshener—it\'s a targeted solution for cat allergies. Scientifically formulated to neutralize Fel d 1, the primary cat allergen, Pacagen\'s active ingredients break it down on contact. Spray it on your couch, bedding, or your cat\'s favorite blanket, and in just a few minutes allergens are reduced to harmless fragments. Safe, easy, and effective—this one\'s essential for every allergic cat owner who refuses to sacrifice cuddles.'
-                ],
-                imageSrc: 'pacagen-products.png',
-                imageAlt: 'Pacagen Cat Allergen Spray',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-3').innerHTML = createContentSection({
-                title: '3. Allergen-Reducing Shampoo or Wipes',
-                paragraphs: [
-                    'Weekly baths may not work for every pet, but allergen-reducing shampoos like TropiClean or Allerpet help cleanse fur of dander and saliva. Between baths, quick allergen-reducing wipes are a simple daily fix that removes dander and keeps allergen levels under control—without the stress of frequent full baths.'
-                ],
-                imageSrc: 'pet-shampoo.png',
-                imageAlt: 'Pet Shampoo for Allergies',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-4').innerHTML = createContentSection({
-                title: '4. A HEPA-Sealed Vacuum Cleaner',
-                paragraphs: [
-                    'A poor-quality vacuum can stir allergens into the air. A sealed-system vacuum with a HEPA filter traps dander, fur, and dust without releasing them back into your room. Models from Dyson, Shark, or Miele are designed for pet owners and often come with specialized attachments to clean fur from carpets and upholstery.'
-                ],
-                imageSrc: 'bed-vacuum.png',
-                imageAlt: 'HEPA Vacuum Cleaner',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-5').innerHTML = createContentSection({
-                title: '5. Allergen-Proof Bedding',
-                paragraphs: [
-                    'Since we spend a third of our lives in bed, creating an allergy-safe sleep zone is crucial. Allergen-proof mattress and pillow covers act as barriers against dander. Combine this with weekly hot water washes, and you\'ll drastically cut down on allergens where you rest most—helping you wake up refreshed and symptom-free.'
-                ],
-                imageSrc: 'allergen-bedding.png',
-                imageAlt: 'Allergen Proof Bedding',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-6').innerHTML = createContentSection({
-                title: 'Take Back Control',
-                paragraphs: [
-                    'Living with pets and allergies doesn\'t have to mean endless sneezing fits. With these 5 must-have products, you\'ll reduce allergens, breathe easier, and enjoy the best parts of pet ownership without the constant discomfort. Small changes can create a healthier home—for you and your furry friend.'
-                ],
                 pageType: pageType
             });
             

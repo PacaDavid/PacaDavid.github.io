@@ -20,27 +20,79 @@
     <script src="../assets/js/main.js" defer></script>
     
     <!-- Component bundles -->
-    <script src="../assets/js/article-components-bundle.js"></script>
+    <script src="../assets/js/components/article/fold.js"></script>
+    <script src="../assets/js/components/article/article-footer.js"></script>
     
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <main>
-        <article class="blog-post w-70">
-            <!-- Article header component -->
-            <div id="article-header-blog"></div>
+        <article class="advertorial">
+            <section class="w-70 mx-auto my-4">
+                <!-- Fold component (title + author + date + image) -->
+                <div id="article-fold"></div>
 
-            <section class="article-content">
                 <p>If you're a cat person trapped in a sneezy, itchy, watery-eyed body—trust me, you're not alone. Tons of folks adore their cats but get hit with allergy symptoms that make hanging out with them feel like a personal attack. The good news? You've got more options than ever when it comes to cat allergy treatment.</p>
                 <p>And yes, some of them are actually natural. So if you're trying to figure out how to get rid of cat allergies naturally, you might be surprised at how much relief is possible without loading up on pills. This blog walks you through the best cat allergy remedies, from lifestyle tweaks to medical treatments—so you can breathe easier and still cuddle your cat.</p>
                 
-                <div id="content-section-1"></div>
-                <div id="content-section-2"></div>
-                <div id="content-section-3"></div>
-                <div id="content-section-4"></div>
-                <div id="content-section-5"></div>
-                <div id="content-section-6"></div>
-                <div id="content-section-7"></div>
+                <div class="article-section">
+                    <div class="article-content-image d-flex">
+                        <img src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Blog_Images_16.png?v=1752441156" class="article-img" alt="cat allergy remedy">
+                    </div>
+                    <h2>Wait, what causes cat allergies anyway?</h2>
+                    <p>Most people assume the problem is fur, but that's not quite it. The real troublemaker is a sneaky little protein called <a rel="noopener" title="Understanding Fel d 1" href="https://pacagen.com/blogs/cat-allergies/understanding-fel-d-1?srsltid=AfmBOoqaJUKD8_M6mGC272vtgqGaOYX5w0j8OnVpr8M_g5RRaGD2iULr" target="_blank">Fel d 1</a>. It's found in your cat's saliva, skin, and dander (tiny flakes of dead skin) and even urine. When they groom themselves, that protein spreads to their fur and then floats into the air and settles all over your home—your couch, your bed, your favorite hoodie.</p>
+                    <p>So, when your nose turns into a faucet or your eyes won't stop itching, it's your immune system throwing a fit over Fel d 1. Not fun.</p>
+                </div>
+                <div class="article-section">
+                    <h2>Can you cure cat allergies?</h2>
+                    <p>Let's be straight—there isn't a guaranteed, one-size-fits-all cat allergy cure right now. But "no cure" doesn't mean "no hope." People find real relief through a combination of lifestyle changes, medical treatments, and natural options. There's no magic fix, but there are plenty of ways to feel better.</p>
+                    <p>What works for you may take a little trial and error, but the key is consistency.</p>
+                </div>
+                <div class="article-section">
+                    <h2>How to get rid of cat allergies naturally (no lab coat required)</h2>
+                    <p>If you're not keen on heavy-duty meds, or just want to start with <a rel="noopener" title="5 Tips for Allergies" href="https://www.allergy-asthma-immunology.com/blog/5-tips-for-helping-house-guests-with-dog-or-cat-allergies/?bp=37488" target="_blank">gentler habits</a>, these remedies can make a big difference:</p>
+                    <h3>1. Clean like allergens are your enemy (because they are)</h3>
+                    <ul><li>Vacuum often using a vacuum with a HEPA filter—especially rugs and upholstered furniture.</li><li>Wash stuff that collects pet dander: bedding, curtains, your cat's bed.</li><li>Dust with a damp cloth. Dry dusting = spreading allergens in the air.</li><li>Consider an air purifier, especially in the bedroom.</li></ul>
+                    <h3>2. Bathe your cat (yes, seriously)</h3>
+                    <p>It may sound like a nightmare, I know. But <a rel="noopener" title="Everything about bathing cats" href="https://www.huntersanimalhospital.com/site/blog/2023/02/28/bathe-cat-often" target="_blank">regular cat baths</a> can reduce the amount of allergens your cat sheds. Use vet-approved wipes or shampoos made for this purpose—never regular soap. No need to dunk them daily—just be consistent. If your cat thinks water is the devil, grooming wipes are your friend.</p>
+                    <h3>3. Brush your cat regularly (preferably outside)</h3>
+                    <p><a rel="noopener" title="How to take care of a longhaired cat" href="https://vethealthcenter.com/2024/08/15/taking-care-of-a-longhaired-cat/" target="_blank">Brushing</a> helps cut down on loose fur and dander. Ideally, someone without allergies should handle this task. Do it outside if possible to keep allergens from circulating indoors.</p>
+                    <h3>4. Try natural supplements</h3>
+                    <p>Some people swear by <a rel="noopener" title="6 Natural Antihistamines" href="https://www.healthline.com/health/allergies/best-natural-antihistamines" target="_blank">natural antihistamines</a> or anti-inflammatories like:</p>
+                    <ul><li>Quercetin: A plant-based compound that may reduce allergic reactions.</li><li>Stinging Nettle: Believed to block histamines.</li><li>Vitamin C: Known to support the immune system and lower histamine levels.</li></ul>
+                    <p>Always check with your doctor first, just to be safe.</p>
+                    <p>These options aren't miracle cures, but they can be part of your cat allergy remedy plan.</p>
+                </div>
+                <div class="article-section">
+                    <h2>Medical cat Allergy treatments that can really help</h2>
+                    <p>Sometimes, natural stuff isn't enough. If your symptoms are intense or non-stop, you might need to bring in backup:</p>
+                    <h3>1. Antihistamines</h3>
+                    <p>Over-the-counter options like loratadine (Claritin), cetirizine (Zyrtec), or fexofenadine (Allegra) help block histamines—those pesky things your body makes in reaction to allergens. They're easy to find and work pretty well for many people.</p>
+                    <h3>2. Nasal sprays</h3>
+                    <p>Steroid nasal sprays reduce inflammation and congestion, giving fast relief for stuffy noses and sinus pressure.</p>
+                    <h3>3. Allergy shots (Immunotherapy)</h3>
+                    <p>This one's long-term, but super effective. You get small doses of the allergen over time, training your immune system to chill out. Some people see a huge improvement. It's not an overnight fix, but it's probably the closest thing we have to a true cat allergy cure.</p>
+                    <h3>4. Monoclonal antibody treatments</h3>
+                    <p>A newer treatment called Cat-Specific Immunotherapy is being developed to target Fel d 1 more precisely. Still in progress, but promising. If you're in the "let's fix this for good" mindset, this is something to watch.</p>
+                </div>
+                <div class="article-section">
+                    <h2>Bonus tips that make a big difference</h2>
+                    <ul><li><p><strong>Keep your cat out of the bedroom</strong>: I know, it's tough, but it gives your body a break while you sleep.</p></li></ul>
+                    <blockquote>"Having a safe spot to rest is extremely important for your immune system to recharge, especially if you are having a bad allergy day"<strong>— Dr. Andrew Findlaytor, DVM</strong></blockquote>
+                    <ul><li><strong>Use HEPA filters</strong>: In both air purifiers and HVAC systems.</li><li><strong>Change clothes after cuddling</strong>: Especially if you're going out or heading to bed.</li><li><strong>Wash your hands and face</strong>: After petting or playing with your cat.</li><li><p><strong>Sprays like Pacagen's cat allergen neutralizer</strong>: One of the newer additions in cat allergen treatment is <a rel="noopener" title="Pacagen Cat Allergen Neutralizing Spray" href="https://pacagen.com/products/cat-allergen-neutralizing-spray" target="_blank">Pacagen's Cat Allergen Neutralizing Spray</a>. It's a gentle, non-toxic solution that fits well alongside natural remedies or medical treatments. If you're exploring science-backed results, it's definitely worth a try.</p></li></ul>
+                </div>
+                <div class="article-section">
+                    <h2>Cats and allergies: can you still live together?</h2>
+                    <p>Yes, you can. Plenty of allergy-prone folks live happily with cats once they figure out the right mix of changes. Whether you're trying natural methods, exploring medical cat allergy treatments, or doing a bit of both, consistency is key.</p>
+                    <p>So no, you don't have to say goodbye to your cat. You just have to get smarter about treating cat allergies and doing what works for your body.</p>
+                    <p>If you found this helpful, check out our other posts on:</p>
+                    <ul><li><a rel="noopener" title="Best Cat Breeds for Allergies" href="what-are-the-best-cat-breeds-for-allergies.html" target="_blank">Best Cat Breeds for Allergy Sufferers</a></li><li><a rel="noopener" title="Managing Cat Allergies" href="how-cat-allergies-work.html" target="_blank">Understanding How Cat Allergies Work</a></li></ul>
+                    <p>You've got options. You've got your cat. And now, you've got a plan.</p>
+                </div>
+                <div class="article-section">
+                    <h2>References:</h2>
+                    <ul><li><a rel="noopener" title="6 Natural Antihistamines" href="https://www.healthline.com/health/allergies/best-natural-antihistamines" target="_blank">https://www.healthline.com/health/allergies/best-natural-antihistamines</a></li><li><a rel="noopener" title="Fel d 1" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3836235/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC3836235/</a></li><li><a rel="noopener" title="Everything about bathing cats" href="https://www.huntersanimalhospital.com/site/blog/2023/02/28/bathe-cat-often" target="_blank">https://www.huntersanimalhospital.com/site/blog/2023/02/28/bathe-cat-often</a></li><li><a rel="noopener" title="5 Tips for Allergies" href="https://www.allergy-asthma-immunology.com/blog/5-tips-for-helping-house-guests-with-dog-or-cat-allergies/?bp=37488" target="_blank">https://www.allergy-asthma-immunology.com/blog/5-tips-for-helping-house-guests-with-dog-or-cat-allergies/?bp=37488</a></li><li><a rel="noopener" title="Understanding Fel d 1" href="https://pacagen.com/blogs/cat-allergies/understanding-fel-d-1?srsltid=AfmBOoqaJUKD8_M6mGC272vtgqGaOYX5w0j8OnVpr8M_g5RRaGD2iULr" target="_blank">https://pacagen.com/blogs/cat-allergies/understanding-fel-d-1?srsltid=AfmBOoqaJUKD8_M6mGC272vtgqGaOYX5w0j8OnVpr8M_g5RRaGD2iULr</a></li><li><a rel="noopener" title="Understanding Fel d 1" href="https://aacijournal.biomedcentral.com/articles/10.1186/s13223-018-0239-8" target="_blank">https://aacijournal.biomedcentral.com/articles/10.1186/s13223-018-0239-8</a></li><li><a rel="noopener" title="How to take care of a longhaired cat" href="https://vethealthcenter.com/2024/08/15/taking-care-of-a-longhaired-cat/" target="_blank">https://vethealthcenter.com/2024/08/15/taking-care-of-a-longhaired-cat/</a></li></ul>
+                </div>
             </section>
 
             <!-- Article footer component -->
@@ -52,69 +104,16 @@
         initComponentsWhenReady(function() {
             const pageType = 'blog';
             
-            document.getElementById('article-header-blog').innerHTML = createBlogHeader({
+            document.getElementById('article-fold').innerHTML = createFold({
                 title: 'How to Treat Cat Allergies Naturally (and Actually Enjoy Being Around Cats Again)',
-                dateText: 'Published on June 18, 2025',
+                authorName: null,
+                authorImage: null,
+                imageSrc: null,
+                imageAlt: null,
+                imageCaption: null,
                 breadcrumb: false,
-                homePath: 'index.html'
-            });
-            
-            // Create content sections
-            document.getElementById('content-section-1').innerHTML = createContentSection({
-                title: 'Wait, what causes cat allergies anyway?',
-                paragraphs: [
-                    'Most people assume the problem is fur, but that\'s not quite it. The real troublemaker is a sneaky little protein called <a rel="noopener" title="Understanding Fel d 1" href="https://pacagen.com/blogs/cat-allergies/understanding-fel-d-1?srsltid=AfmBOoqaJUKD8_M6mGC272vtgqGaOYX5w0j8OnVpr8M_g5RRaGD2iULr" target="_blank">Fel d 1</a>. It\'s found in your cat\'s saliva, skin, and dander (tiny flakes of dead skin) and even urine. When they groom themselves, that protein spreads to their fur and then floats into the air and settles all over your home—your couch, your bed, your favorite hoodie.',
-                    'So, when your nose turns into a faucet or your eyes won\'t stop itching, it\'s your immune system throwing a fit over Fel d 1. Not fun.'
-                ],
-                imageSrc: 'https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Blog_Images_16.png?v=1752441156',
-                imageAlt: 'cat allergy remedy',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-2').innerHTML = createContentSection({
-                title: 'Can you cure cat allergies?',
-                paragraphs: [
-                    'Let\'s be straight—there isn\'t a guaranteed, one-size-fits-all cat allergy cure right now. But "no cure" doesn\'t mean "no hope." People find real relief through a combination of lifestyle changes, medical treatments, and natural options. There\'s no magic fix, but there are plenty of ways to feel better.',
-                    'What works for you may take a little trial and error, but the key is consistency.'
-                ],
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-3').innerHTML = createContentSection({
-                title: 'How to get rid of cat allergies naturally (no lab coat required)',
-                paragraph: 'If you\'re not keen on heavy-duty meds, or just want to start with <a rel="noopener" title="5 Tips for Allergies" href="https://www.allergy-asthma-immunology.com/blog/5-tips-for-helping-house-guests-with-dog-or-cat-allergies/?bp=37488" target="_blank">gentler habits</a>, these remedies can make a big difference:',
-                additionalContent: '<h3>1. Clean like allergens are your enemy (because they are)</h3><ul><li>Vacuum often using a vacuum with a HEPA filter—especially rugs and upholstered furniture.</li><li>Wash stuff that collects pet dander: bedding, curtains, your cat\'s bed.</li><li>Dust with a damp cloth. Dry dusting = spreading allergens in the air.</li><li>Consider an air purifier, especially in the bedroom.</li></ul><h3>2. Bathe your cat (yes, seriously)</h3><p>It may sound like a nightmare, I know. But <a rel="noopener" title="Everything about bathing cats" href="https://www.huntersanimalhospital.com/site/blog/2023/02/28/bathe-cat-often" target="_blank">regular cat baths</a> can reduce the amount of allergens your cat sheds. Use vet-approved wipes or shampoos made for this purpose—never regular soap. No need to dunk them daily—just be consistent. If your cat thinks water is the devil, grooming wipes are your friend.</p><h3>3. Brush your cat regularly (preferably outside)</h3><p><a rel="noopener" title="How to take care of a longhaired cat" href="https://vethealthcenter.com/2024/08/15/taking-care-of-a-longhaired-cat/" target="_blank">Brushing</a> helps cut down on loose fur and dander. Ideally, someone without allergies should handle this task. Do it outside if possible to keep allergens from circulating indoors.</p><h3>4. Try natural supplements</h3><p>Some people swear by <a rel="noopener" title="6 Natural Antihistamines" href="https://www.healthline.com/health/allergies/best-natural-antihistamines" target="_blank">natural antihistamines</a> or anti-inflammatories like:</p><ul><li>Quercetin: A plant-based compound that may reduce allergic reactions.</li><li>Stinging Nettle: Believed to block histamines.</li><li>Vitamin C: Known to support the immune system and lower histamine levels.</li></ul><p>Always check with your doctor first, just to be safe.</p><p>These options aren\'t miracle cures, but they can be part of your cat allergy remedy plan.</p>',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-4').innerHTML = createContentSection({
-                title: 'Medical cat Allergy treatments that can really help',
-                paragraph: 'Sometimes, natural stuff isn\'t enough. If your symptoms are intense or non-stop, you might need to bring in backup:',
-                additionalContent: '<h3>1. Antihistamines</h3><p>Over-the-counter options like loratadine (Claritin), cetirizine (Zyrtec), or fexofenadine (Allegra) help block histamines—those pesky things your body makes in reaction to allergens. They\'re easy to find and work pretty well for many people.</p><h3>2. Nasal sprays</h3><p>Steroid nasal sprays reduce inflammation and congestion, giving fast relief for stuffy noses and sinus pressure.</p><h3>3. Allergy shots (Immunotherapy)</h3><p>This one\'s long-term, but super effective. You get small doses of the allergen over time, training your immune system to chill out. Some people see a huge improvement. It\'s not an overnight fix, but it\'s probably the closest thing we have to a true cat allergy cure.</p><h3>4. Monoclonal antibody treatments</h3><p>A newer treatment called Cat-Specific Immunotherapy is being developed to target Fel d 1 more precisely. Still in progress, but promising. If you\'re in the "let\'s fix this for good" mindset, this is something to watch.</p>',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-5').innerHTML = createContentSection({
-                title: 'Bonus tips that make a big difference',
-                additionalContent: '<ul><li><p><strong>Keep your cat out of the bedroom</strong>: I know, it\'s tough, but it gives your body a break while you sleep.</p></li></ul><blockquote>"Having a safe spot to rest is extremely important for your immune system to recharge, especially if you are having a bad allergy day"<strong>— Dr. Andrew Findlaytor, DVM</strong></blockquote><ul><li><strong>Use HEPA filters</strong>: In both air purifiers and HVAC systems.</li><li><strong>Change clothes after cuddling</strong>: Especially if you\'re going out or heading to bed.</li><li><strong>Wash your hands and face</strong>: After petting or playing with your cat.</li><li><p><strong>Sprays like Pacagen\'s cat allergen neutralizer</strong>: One of the newer additions in cat allergen treatment is <a rel="noopener" title="Pacagen Cat Allergen Neutralizing Spray" href="https://pacagen.com/products/cat-allergen-neutralizing-spray" target="_blank">Pacagen\'s Cat Allergen Neutralizing Spray</a>. It\'s a gentle, non-toxic solution that fits well alongside natural remedies or medical treatments. If you\'re exploring science-backed results, it\'s definitely worth a try.</p></li></ul>',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-6').innerHTML = createContentSection({
-                title: 'Cats and allergies: can you still live together?',
-                paragraphs: [
-                    'Yes, you can. Plenty of allergy-prone folks live happily with cats once they figure out the right mix of changes. Whether you\'re trying natural methods, exploring medical cat allergy treatments, or doing a bit of both, consistency is key.',
-                    'So no, you don\'t have to say goodbye to your cat. You just have to get smarter about treating cat allergies and doing what works for your body.',
-                    'If you found this helpful, check out our other posts on:',
-                    'You\'ve got options. You\'ve got your cat. And now, you\'ve got a plan.'
-                ],
-                additionalContent: '<ul><li><a rel="noopener" title="Best Cat Breeds for Allergies" href="what-are-the-best-cat-breeds-for-allergies.html" target="_blank">Best Cat Breeds for Allergy Sufferers</a></li><li><a rel="noopener" title="Managing Cat Allergies" href="how-cat-allergies-work.html" target="_blank">Understanding How Cat Allergies Work</a></li></ul>',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-7').innerHTML = createContentSection({
-                title: 'References:',
-                additionalContent: '<ul><li><a rel="noopener" title="6 Natural Antihistamines" href="https://www.healthline.com/health/allergies/best-natural-antihistamines" target="_blank">https://www.healthline.com/health/allergies/best-natural-antihistamines</a></li><li><a rel="noopener" title="Fel d 1" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3836235/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC3836235/</a></li><li><a rel="noopener" title="Everything about bathing cats" href="https://www.huntersanimalhospital.com/site/blog/2023/02/28/bathe-cat-often" target="_blank">https://www.huntersanimalhospital.com/site/blog/2023/02/28/bathe-cat-often</a></li><li><a rel="noopener" title="5 Tips for Allergies" href="https://www.allergy-asthma-immunology.com/blog/5-tips-for-helping-house-guests-with-dog-or-cat-allergies/?bp=37488" target="_blank">https://www.allergy-asthma-immunology.com/blog/5-tips-for-helping-house-guests-with-dog-or-cat-allergies/?bp=37488</a></li><li><a rel="noopener" title="Understanding Fel d 1" href="https://pacagen.com/blogs/cat-allergies/understanding-fel-d-1?srsltid=AfmBOoqaJUKD8_M6mGC272vtgqGaOYX5w0j8OnVpr8M_g5RRaGD2iULr" target="_blank">https://pacagen.com/blogs/cat-allergies/understanding-fel-d-1?srsltid=AfmBOoqaJUKD8_M6mGC272vtgqGaOYX5w0j8OnVpr8M_g5RRaGD2iULr</a></li><li><a rel="noopener" title="Understanding Fel d 1" href="https://aacijournal.biomedcentral.com/articles/10.1186/s13223-018-0239-8" target="_blank">https://aacijournal.biomedcentral.com/articles/10.1186/s13223-018-0239-8</a></li><li><a rel="noopener" title="How to take care of a longhaired cat" href="https://vethealthcenter.com/2024/08/15/taking-care-of-a-longhaired-cat/" target="_blank">https://vethealthcenter.com/2024/08/15/taking-care-of-a-longhaired-cat/</a></li></ul>',
+                homePath: 'index.html',
+                dateText: 'Published on June 18, 2025',
                 pageType: pageType
             });
             

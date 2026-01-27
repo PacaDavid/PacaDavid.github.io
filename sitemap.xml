@@ -55,7 +55,7 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://healthpetinsider.com/blog/best-home-air-purifier.html</loc>
+        <loc>https://healthpetinsider.com/blog/best-home-air-purifiers.html</loc>
         <lastmod>2025-08-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -103,22 +103,58 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://healthpetinsider.com/new-cat-parent-allergen-routine.html</loc>
-        <lastmod>2025-08-29</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://healthpetinsider.com/5-best-fixes-for-dog-allergies</loc>
+        <loc>https://healthpetinsider.com/5-best-fixes-for-dog-allergies.html</loc>
         <lastmod>2025-08-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://healthpetinsider.com/quiz.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <loc>https://healthpetinsider.com/best-supplement-for-cat-allergies.html</loc>
+        <lastmod>2026-01-26</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://healthpetinsider.com/living-with-a-cat-small-changes.html</loc>
+        <lastmod>2026-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://healthpetinsider.com/9-things-cat-parents-swear-by.html</loc>
+        <lastmod>2026-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://healthpetinsider.com/best-gifts-for-cat-moms.html</loc>
+        <lastmod>2026-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://healthpetinsider.com/hypoallergenic-dogs.html</loc>
+        <lastmod>2026-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://healthpetinsider.com/best-dog-allergy-products.html</loc>
+        <lastmod>2026-01-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://healthpetinsider.com/privacy-policy.html</loc>
+        <lastmod>2026-01-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://healthpetinsider.com/terms-of-service.html</loc>
+        <lastmod>2026-01-26</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
     </url>
     <url>
         <loc>https://healthpetinsider.com/blog/how-often-should-you-bathe-your-dog.html</loc>

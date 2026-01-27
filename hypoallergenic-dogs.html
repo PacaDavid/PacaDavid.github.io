@@ -31,13 +31,14 @@
     <script src="assets/js/main.js" defer></script>
     
     <!-- Component bundles -->
-    <script src="assets/js/article-components-bundle.js"></script>
+    <script src="assets/js/components/article/fold.js"></script>
+    <script src="assets/js/components/article/article-footer.js"></script>
     <script src="assets/js/product-components-bundle.js"></script>
     
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
-  <body class="layout-group-a">
+  <body>
     <main>
       <article class="advertorial">
         <section class="w-70 mx-auto my-4">
@@ -45,26 +46,65 @@
           <div id="article-fold"></div>
 
           <!-- Section: Introduction -->
-          <div id="content-section-0"></div>
+          <div class="article-section">
+            <p>For years, I believed the same thing most people with dog allergies believe: <strong>If I just choose the right dog, my allergies won't be a problem.</strong></p>
+            <p>When I finally felt ready to get a dog, I went straight to Google and typed in "hypoallergenic dogs." Poodles. Doodles. Schnauzers. Portuguese Water Dogs. Every list promised the same thing — fewer allergies, fewer symptoms, fewer problems.</p>
+            <p>It sounded perfect. Too perfect.</p>
+            <div class="highlight-box">What I didn't realize at the time: there is no such thing as a truly hypoallergenic dog.</div>
+          </div>
 
           <!-- Section: What Hypoallergenic Really Means -->
-          <div id="content-section-1"></div>
+          <div class="article-section">
+            <h2>What "Hypoallergenic" Really Means (And What It Doesn't)</h2>
+            <p>Like most people, I assumed dog allergies were caused by fur. Less shedding meant fewer allergens — or so I thought.</p>
+            <p>In reality, dog allergies are triggered primarily by a protein called <strong>Can f 1</strong>. This protein is found in dog saliva, dander, and urine — not fur.</p>
+            <p>Even dogs that barely shed still produce allergens constantly. And those allergens spread everywhere: furniture, carpets, bedding, clothing, and even the air.</p>
+          </div>
 
           <!-- Section: Why Breed Didn't Solve My Symptoms -->
-          <div id="content-section-2"></div>
+          <div class="article-section">
+            <h2>Why Breed Didn't Solve My Symptoms</h2>
+            <p>I spent time around multiple "hypoallergenic" breeds. Some were easier to tolerate than others, but none eliminated my symptoms.</p>
+            <p>I still sneezed. My eyes still burned. I still woke up congested — especially indoors.</p>
+            <p>That's when something clicked: <strong>my reactions weren't tied to the dog itself — they were tied to my home.</strong></p>
+            <div class="highlight-box">Allergies aren't an on/off switch. They flare when allergen exposure exceeds your personal threshold.</div>
+          </div>
 
           <!-- Section: The Real Problem -->
-          <div id="content-section-3"></div>
+          <div class="article-section">
+            <h2>The Real Problem: Allergen Load</h2>
+            <p>Dog allergens are microscopic. You can't see them, but they accumulate relentlessly over time.</p>
+            <p>Even with frequent cleaning and HEPA filters, allergens kept returning. Why? Because most tools remove particles — they don't neutralize the allergenic proteins themselves.</p>
+            <p>Once I understood that, my approach changed completely.</p>
+          </div>
 
           <!-- Section: What Finally Made a Difference -->
-          <div id="content-section-4"></div>
+          <div class="article-section">
+            <h2>What Finally Made a Difference</h2>
+            <p>Instead of focusing on breed, I started focusing on <strong>environmental allergen control</strong>. Specifically, I looked for solutions designed to neutralize dog allergens at the molecular level.</p>
+            <p>That's when I discovered allergen-neutralizing sprays designed specifically for <a href="https://pacagen.com/blogs/dog-allergies/understanding-dog-allergens">Can f 1</a>. Unlike surface cleaners, these sprays break down the allergenic proteins so they can't trigger reactions.</p>
+            <p>Within weeks of using them consistently on high-contact surfaces — couches, bedding, carpets — I noticed something I hadn't felt in years:</p>
+            <ul><li>Fewer daily flare-ups</li><li>Less congestion indoors</li><li>Less "background" irritation</li><li>A home that finally felt breathable</li></ul>
+          </div>
           <div id="dog-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
 
           <!-- Section: Hypoallergenic Dogs vs. Allergen Solutions -->
-          <div id="content-section-5"></div>
+          <div class="article-section">
+            <h2>Hypoallergenic Dogs vs. Allergen Solutions</h2>
+            <p>Looking back, I wish I had understood this earlier:</p>
+            <ul><li><strong>Dog breed:</strong> Limited impact</li><li><strong>Shedding level:</strong> Helps with cleaning, not allergens</li><li><strong>Air filters:</strong> Helpful but incomplete</li><li><strong>Targeted allergen neutralization:</strong> <u>The real game changer</u></li></ul>
+            <div class="highlight-box">You don't need a hypoallergenic dog. You need a low-allergen environment.</div>
+          </div>
 
           <!-- Section: My Final Takeaway -->
-          <div id="content-section-6"></div>
+          <div class="article-section">
+            <h2>My Final Takeaway</h2>
+            <p>If you're considering a hypoallergenic dog because of allergies, I get it. I was there. Some breeds can help — but they're not the solution.</p>
+            <p>The real solution is reducing allergen load in your home. When you do that, everything else finally starts working.</p>
+            <p>For me, that meant combining smarter cleaning, air filtration, and <a href="https://www.pacagen.com/products/dog-allergen-neutralizing-spray">targeted allergen neutralization</a>.</p>
+            <p>I didn't have to give up on dogs — and I didn't have to live on antihistamines. I just had to stop chasing myths and start addressing the real cause.</p>
+            <p><strong>If you're allergic but still want a dog, this is the path I wish I'd found sooner.</strong></p>
+          </div>
 
           <!-- Article footer component -->
           <div id="article-footer"></div>
@@ -88,86 +128,12 @@
           pageType: pageType
         });
         
-        // 2. Create content sections
-        document.getElementById('content-section-0').innerHTML = createContentSection({
-          paragraphs: [
-            'For years, I believed the same thing most people with dog allergies believe: <strong>If I just choose the right dog, my allergies won\'t be a problem.</strong>',
-            'When I finally felt ready to get a dog, I went straight to Google and typed in "hypoallergenic dogs." Poodles. Doodles. Schnauzers. Portuguese Water Dogs. Every list promised the same thing — fewer allergies, fewer symptoms, fewer problems.',
-            'It sounded perfect. Too perfect.'
-          ],
-          additionalContent: '<div class="callout">What I didn\'t realize at the time: there is no such thing as a truly hypoallergenic dog.</div>',
-          pageType: pageType
-        });
-        
-        document.getElementById('content-section-1').innerHTML = createContentSection({
-          title: 'What "Hypoallergenic" Really Means (And What It Doesn\'t)',
-          paragraphs: [
-            'Like most people, I assumed dog allergies were caused by fur. Less shedding meant fewer allergens — or so I thought.',
-            'In reality, dog allergies are triggered primarily by a protein called <strong>Can f 1</strong>. This protein is found in dog saliva, dander, and urine — not fur.',
-            'Even dogs that barely shed still produce allergens constantly. And those allergens spread everywhere: furniture, carpets, bedding, clothing, and even the air.'
-          ],
-          pageType: pageType
-        });
-        
-        document.getElementById('content-section-2').innerHTML = createContentSection({
-          title: 'Why Breed Didn\'t Solve My Symptoms',
-          paragraphs: [
-            'I spent time around multiple "hypoallergenic" breeds. Some were easier to tolerate than others, but none eliminated my symptoms.',
-            'I still sneezed. My eyes still burned. I still woke up congested — especially indoors.',
-            'That\'s when something clicked: <strong>my reactions weren\'t tied to the dog itself — they were tied to my home.</strong>'
-          ],
-          additionalContent: '<div class="callout">Allergies aren\'t an on/off switch. They flare when allergen exposure exceeds your personal threshold.</div>',
-          pageType: pageType
-        });
-        
-        document.getElementById('content-section-3').innerHTML = createContentSection({
-          title: 'The Real Problem: Allergen Load',
-          paragraphs: [
-            'Dog allergens are microscopic. You can\'t see them, but they accumulate relentlessly over time.',
-            'Even with frequent cleaning and HEPA filters, allergens kept returning. Why? Because most tools remove particles — they don\'t neutralize the allergenic proteins themselves.',
-            'Once I understood that, my approach changed completely.'
-          ],
-          pageType: pageType
-        });
-        
-        document.getElementById('content-section-4').innerHTML = createContentSection({
-          title: 'What Finally Made a Difference',
-          paragraphs: [
-            'Instead of focusing on breed, I started focusing on <strong>environmental allergen control</strong>. Specifically, I looked for solutions designed to neutralize dog allergens at the molecular level.',
-            'That\'s when I discovered allergen-neutralizing sprays designed specifically for <a href="https://pacagen.com/blogs/dog-allergies/understanding-dog-allergens">Can f 1</a>. Unlike surface cleaners, these sprays break down the allergenic proteins so they can\'t trigger reactions.',
-            'Within weeks of using them consistently on high-contact surfaces — couches, bedding, carpets — I noticed something I hadn\'t felt in years:'
-          ],
-          additionalContent: '<ul><li>Fewer daily flare-ups</li><li>Less congestion indoors</li><li>Less "background" irritation</li><li>A home that finally felt breathable</li></ul>',
-          pageType: pageType
-        });
-        
         // Create product showcase
         document.getElementById('dog-spray-showcase').innerHTML = createProductShowcase({
           image: 'https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Effectiveness-DogSKUs.png',
           alt: 'Dog Allergen Neutralizing Spray',
           description: 'Unlike surface cleaners that rely on dilution or removal, Pacagen works through direct molecular interaction with Can f 1, rendering the allergen biologically inactive.',
           url: 'https://pacagen.com/products/dog-allergen-neutralizing-spray',
-          pageType: pageType
-        });
-        
-        document.getElementById('content-section-5').innerHTML = createContentSection({
-          title: 'Hypoallergenic Dogs vs. Allergen Solutions',
-          paragraphs: [
-            'Looking back, I wish I had understood this earlier:'
-          ],
-          additionalContent: '<ul><li><strong>Dog breed:</strong> Limited impact</li><li><strong>Shedding level:</strong> Helps with cleaning, not allergens</li><li><strong>Air filters:</strong> Helpful but incomplete</li><li><strong>Targeted allergen neutralization:</strong> <u>The real game changer</u></li></ul><div class="callout">You don\'t need a hypoallergenic dog. You need a low-allergen environment.</div>',
-          pageType: pageType
-        });
-        
-        document.getElementById('content-section-6').innerHTML = createContentSection({
-          title: 'My Final Takeaway',
-          paragraphs: [
-            'If you\'re considering a hypoallergenic dog because of allergies, I get it. I was there. Some breeds can help — but they\'re not the solution.',
-            'The real solution is reducing allergen load in your home. When you do that, everything else finally starts working.',
-            'For me, that meant combining smarter cleaning, air filtration, and <a href="https://www.pacagen.com/products/dog-allergen-neutralizing-spray">targeted allergen neutralization</a>.',
-            'I didn\'t have to give up on dogs — and I didn\'t have to live on antihistamines. I just had to stop chasing myths and start addressing the real cause.',
-            '<strong>If you\'re allergic but still want a dog, this is the path I wish I\'d found sooner.</strong>'
-          ],
           pageType: pageType
         });
         

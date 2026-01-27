@@ -23,13 +23,14 @@
     <script src="assets/js/main.js" defer></script>
     
     <!-- Component bundles -->
-    <script src="assets/js/article-components-bundle.js"></script>
+    <script src="assets/js/components/article/fold.js"></script>
+    <script src="assets/js/components/article/article-footer.js"></script>
     <script src="assets/js/product-components-bundle.js"></script>
     
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="layout-group-a">
+<body>
     <!-- Navigation will be auto-inserted here -->
     <main>
         <article class="advertorial">
@@ -38,25 +39,72 @@
                 <div id="article-fold"></div>
 
                 <!-- Section: If You're Allergic to Cats -->
-                <div id="content-section-1"></div>
+                <div class="article-section">
+                    <div class="article-content-image d-flex">
+                        <img src="assets/images/cat-allergy.png" class="article-img" alt="Cat allergy illustration">
+                    </div>
+                    <h2>If You're Allergic to Cats, You're Not Alone</h2>
+                    <p>Millions of cat lovers deal with the same frustrating cycle: cuddles → sneezing → itchy eyes → tissues everywhere. The real culprit? A tiny protein called Fel d 1 that's produced in cats' salivary and skin glands, then spread to fur during grooming. From there, it floats into your home's air and fabrics, where it stubbornly hangs around.</p>
+                    <p>For decades, the advice was the same: clean more, take antihistamines, run a HEPA filter… and, in extreme cases, rehome your cat. But if you've ever cried just thinking about that, you'll be glad to know science has a better answer.</p>
+                </div>
 
                 <!-- Section: New Era -->
-                <div id="content-section-2"></div>
+                <div class="article-section">
+                    <div class="article-content-image d-flex">
+                        <img src="assets/images/whiskerblock-blue.png" class="article-img" alt="WhiskerBlock Technology">
+                    </div>
+                    <h2>The New Era of Cat Allergy Relief</h2>
+                    <p>Allergy experts now agree: the most effective approach is to reduce allergens at the source before they reach your nose. That means targeting Fel d 1 on your cat, not just cleaning up after it. <a href="https://pacagen.com/en-us/products/cat-allergen-reducing-supplement" class="pacagen-link">Pacagen</a> is leading this new wave of solutions with its Cat Allergen Reducing Supplement, powered by cutting-edge <strong>WhiskerBlock™ proteins</strong> that neutralize allergens directly in your cat's mouth, where Fel d 1 starts.</p>
+                </div>
 
                 <!-- Section: Why People Are Talking -->
-                <div id="content-section-6"></div>
+                <div class="article-section">
+                    <div class="article-content-image d-flex">
+                        <img src="assets/images/cute-cat-CHS.png" class="article-img" alt="Pacagen Cat Allergen Reducing Supplement">
+                    </div>
+                    <h2>Why People Are Talking About <a href="https://pacagen.com/en-us/products/cat-allergen-reducing-supplement" class="pacagen-link">Pacagen's Cat Allergen Reducing Supplement</a></h2>
+                    <ul><li><strong>Targets the Real Problem</strong> — WhiskerBlock™ proteins bind to Fel d 1, making it inactive before it ever leaves your cat.</li><li><strong>Works While Your Cat Eats</strong> — Just sprinkle the supplement over food once a day, and it works in the background.</li><li><strong>Safe & Gentle</strong> — Food-grade, non-medicated, made with simple ingredients like chicken bone broth and yeast culture.</li></ul>
+                </div>
 
                 <!-- Section: Real-Life Routine -->
-                <div id="content-section-3"></div>
+                <div class="article-section">
+                    <div class="article-content-image d-flex">
+                        <img src="assets/images/cat-food-routine.png" class="article-img" alt="Daily allergy routine">
+                    </div>
+                    <h2>How It Fits into a Real-Life Allergy Routine</h2>
+                    <p><strong>Morning:</strong> Sprinkle Pacagen Cat Allergen Reducing Supplement on breakfast.</p>
+                    <p><strong>Evening:</strong> Lightly mist Pacagen's Cat Allergen Neutralizing Spray on soft furnishings and high-traffic areas.</p>
+                    <p><strong>Weekly:</strong> Wash bedding and vacuum with a HEPA filter vacuum.</p>
+                    <p>Over time, the allergen load in your home goes down, which means fewer flare-ups and more uninterrupted snuggle sessions.</p>
+                </div>
 
                 <!-- Section: Does it Work -->
-                <div id="content-section-4"></div>
+                <div class="article-section">
+                    <div class="article-content-image d-flex">
+                        <img src="assets/images/science-backed-solution.png" class="article-img" alt="Science backed allergy relief">
+                    </div>
+                    <h2>Does It Really Work?</h2>
+                    <p>While results vary, most cat parents notice the difference within weeks.</p>
+                    <p>Pacagen's feeding approach is inspired by published research showing that specific allergen-binding proteins can reduce active Fel d 1 levels on cats' hair and saliva. In their internal testing, Pacagen's spray neutralized up to 98% of active cat allergens when used as directed, and the supplement works daily to prevent new buildup.</p>
+                </div>
 
                 <!-- Section: Bottom Line -->
-                <div id="content-section-5"></div>
+                <div class="article-section">
+                    <div class="article-content-image d-flex">
+                        <img src="assets/images/supplements-transparent.png" class="article-img" alt="Pacagen Cat Allergen Reducing Supplement">
+                    </div>
+                    <h2>The Bottom Line</h2>
+                    <p>If you've been looking for a cat allergy solution that doesn't involve medications, expensive treatments, or heartbreaking goodbyes, Pacagen's Cat Allergen Reducing Supplement is a must-try. It's science-backed, easy to use, and, most importantly, helps you and your cat live together more comfortably.</p>
+                </div>
 
                 <!-- CTA -->
-                <div id="content-section-7"></div>
+                <div class="article-section">
+                    <div class="article-content-image d-flex">
+                        <img src="assets/images/pacagen-supplement.png" class="article-img" alt="Shop Pacagen Products">
+                    </div>
+                    <h2>Shop Now & Start Your Allergy Relief Journey</h2>
+                    <p><a href="https://pacagen.com/en-us/products/cat-allergen-reducing-supplement" class="pacagen-link">Get Pacagen's Cat Allergen Reducing Supplement</a> today. For a limited time, bundle with the <a href="https://www.pacagen.com/products/cat-allergen-neutralizing-spray" class="pacagen-link">Cat Allergen Neutralizing Spray</a> for a complete home-and-cat solution.</p>
+                </div>
             </section>
 
             <!-- Article footer component -->
@@ -76,74 +124,6 @@
                 imageSrc: 'cat-owner.png',
                 imageAlt: 'Happy cat owner',
                 imageCaption: 'Because nothing should come between you and your fur baby — not even a sneeze.',
-                pageType: pageType
-            });
-            
-            // 2. Create content sections
-            document.getElementById('content-section-1').innerHTML = createContentSection({
-                title: 'If You\'re Allergic to Cats, You\'re Not Alone',
-                paragraphs: [
-                    'Millions of cat lovers deal with the same frustrating cycle: cuddles → sneezing → itchy eyes → tissues everywhere. The real culprit? A tiny protein called Fel d 1 that\'s produced in cats\' salivary and skin glands, then spread to fur during grooming. From there, it floats into your home\'s air and fabrics, where it stubbornly hangs around.',
-                    'For decades, the advice was the same: clean more, take antihistamines, run a HEPA filter… and, in extreme cases, rehome your cat. But if you\'ve ever cried just thinking about that, you\'ll be glad to know science has a better answer.'
-                ],
-                imageSrc: 'cat-allergy.png',
-                imageAlt: 'Cat allergy illustration',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-2').innerHTML = createContentSection({
-                title: 'The New Era of Cat Allergy Relief',
-                paragraph: 'Allergy experts now agree: the most effective approach is to reduce allergens at the source before they reach your nose. That means targeting Fel d 1 on your cat, not just cleaning up after it. <a href="https://pacagen.com/en-us/products/cat-allergen-reducing-supplement" class="pacagen-link">Pacagen</a> is leading this new wave of solutions with its Cat Allergen Reducing Supplement, powered by cutting-edge <strong>WhiskerBlock™ proteins</strong> that neutralize allergens directly in your cat\'s mouth, where Fel d 1 starts.',
-                imageSrc: 'whiskerblock-blue.png',
-                imageAlt: 'WhiskerBlock Technology',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-6').innerHTML = createContentSection({
-                title: 'Why People Are Talking About <a href="https://pacagen.com/en-us/products/cat-allergen-reducing-supplement" class="pacagen-link" style="font-family: \'Playfair Display\', serif !important;">Pacagen\'s Cat Allergen Reducing Supplement</a>',
-                additionalContent: '<ul><li><strong>Targets the Real Problem</strong> — WhiskerBlock™ proteins bind to Fel d 1, making it inactive before it ever leaves your cat.</li><li><strong>Works While Your Cat Eats</strong> — Just sprinkle the supplement over food once a day, and it works in the background.</li><li><strong>Safe & Gentle</strong> — Food-grade, non-medicated, made with simple ingredients like chicken bone broth and yeast culture.</li></ul>',
-                imageSrc: 'cute-cat-CHS.png',
-                imageAlt: 'Pacagen Cat Allergen Reducing Supplement',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-3').innerHTML = createContentSection({
-                title: 'How It Fits into a Real-Life Allergy Routine',
-                paragraphs: [
-                    '<strong>Morning:</strong> Sprinkle Pacagen Cat Allergen Reducing Supplement on breakfast.',
-                    '<strong>Evening:</strong> Lightly mist Pacagen\'s Cat Allergen Neutralizing Spray on soft furnishings and high-traffic areas.',
-                    '<strong>Weekly:</strong> Wash bedding and vacuum with a HEPA filter vacuum.',
-                    'Over time, the allergen load in your home goes down, which means fewer flare-ups and more uninterrupted snuggle sessions.'
-                ],
-                imageSrc: 'cat-food-routine.png',
-                imageAlt: 'Daily allergy routine',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-4').innerHTML = createContentSection({
-                title: 'Does It Really Work?',
-                paragraphs: [
-                    'While results vary, most cat parents notice the difference within weeks.',
-                    'Pacagen\'s feeding approach is inspired by published research showing that specific allergen-binding proteins can reduce active Fel d 1 levels on cats\' hair and saliva. In their internal testing, Pacagen\'s spray neutralized up to 98% of active cat allergens when used as directed, and the supplement works daily to prevent new buildup.'
-                ],
-                imageSrc: 'science-backed-solution.png',
-                imageAlt: 'Science backed allergy relief',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-5').innerHTML = createContentSection({
-                title: 'The Bottom Line',
-                paragraph: 'If you\'ve been looking for a cat allergy solution that doesn\'t involve medications, expensive treatments, or heartbreaking goodbyes, Pacagen\'s Cat Allergen Reducing Supplement is a must-try. It\'s science-backed, easy to use, and, most importantly, helps you and your cat live together more comfortably.',
-                imageSrc: 'supplements-transparent.png',
-                imageAlt: 'Pacagen Cat Allergen Reducing Supplement',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-7').innerHTML = createContentSection({
-                title: 'Shop Now & Start Your Allergy Relief Journey',
-                paragraph: '<a href="https://pacagen.com/en-us/products/cat-allergen-reducing-supplement" class="pacagen-link">Get Pacagen\'s Cat Allergen Reducing Supplement</a> today. For a limited time, bundle with the <a href="https://www.pacagen.com/products/cat-allergen-neutralizing-spray" class="pacagen-link">Cat Allergen Neutralizing Spray</a> for a complete home-and-cat solution.',
-                imageSrc: 'pacagen-supplement.png',
-                imageAlt: 'Shop Pacagen Products',
                 pageType: pageType
             });
             

@@ -22,13 +22,14 @@
     <script src="assets/js/main.js" defer></script>
     
     <!-- Component bundles -->
-    <script src="assets/js/article-components-bundle.js"></script>
+    <script src="assets/js/components/article/fold.js"></script>
+    <script src="assets/js/components/article/article-footer.js"></script>
     <script src="assets/js/product-components-bundle.js"></script>
     
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="layout-group-c">
+<body>
     <!-- Navigation will be auto-inserted here -->
     <main>
         <article class="advertorial">
@@ -36,14 +37,40 @@
                 <!-- Fold component (title + author + leading title + image) -->
                 <div id="article-fold"></div>
                 
-                <div id="content-section-1"></div>
+                <div class="article-section">
+                    <div class="article-content-image d-flex">
+                        <img src="assets/images/pacagen-dans.png" class="article-img" alt="Dog allergy product">
+                    </div>
+                    <h2>1. Treat Soft Surfaces with <a href="https://pacagen.com/products/dog-allergen-neutralizing-spray" class="pacagen-link">Pacagen</a></h2>
+                    <p>If you prefer a non-medication approach, Pacagen provides an environmental control step you can do at home. It doesn't treat or cure allergies, but it helps lower everyday exposure—often the first thing clinicians recommend before escalating to medications.</p>
+                    <p>Allergens cling to couches, throws, rugs, curtains, and car seats. Lightly spritz Pacagen over high-touch fabrics 2–3×/week. Let dry fully.</p>
+                    <ul><li>Targets the high-touch surfaces you use most, not just the air.</li><li>Complements HEPA filtration, routine vacuuming, and normal grooming to keep day-to-day exposure low between deep cleans.</li></ul>
+                </div>
                         <div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3"></div>
-                <div id="content-section-2"></div>
-                <div id="content-section-3"></div>
-                <div id="content-section-4"></div>
-                <div id="content-section-5"></div>
-                <div id="content-section-6"></div>
-                <div id="content-section-7"></div>
+                <div class="article-section">
+                    <h2>2. HEPA Everywhere It Counts</h2>
+                    <p>Run a true HEPA air purifier in the room you use most and vacuum floors and upholstery with a HEPA vacuum 2–3×/week. Empty the canister outside.</p>
+                </div>
+                <div class="article-section">
+                    <h2>3. Washable Layers = Easy Resets</h2>
+                    <p>Use slipcovers and throw blankets on seating. Wash weekly if fabric allows; treat between washes with Pacagen to keep buildup low.</p>
+                </div>
+                <div class="article-section">
+                    <h2>4. Groom Smart, Not Constant</h2>
+                    <p>Brush outdoors, then wipe the coat with a damp microfiber cloth. Keep bath frequency to your vet or groomer's guidance.</p>
+                </div>
+                <div class="article-section">
+                    <h2>5. Control Hotspots</h2>
+                    <ul><li>Designate a low-allergen lounge (close the door, treat fabrics with <a href="https://pacagen.com/products/dog-allergen-neutralizing-spray" class="pacagen-link">Pacagen</a>).</li><li>Use zip-off dog bed covers.</li><li>Add an entryway "dander trap" (mat + lint roller).</li><li>Protect car seats with washable covers.</li></ul>
+                </div>
+                <div class="article-section">
+                    <h2>3-Minute Weekly Template</h2>
+                    <p><strong>Bottom line:</strong> Treat the fabrics you live on with <a href="https://pacagen.com/products/dog-allergen-neutralizing-spray" class="pacagen-link">Pacagen's Dog Allergen Neutralizing Spray Today</a>, add HEPA plus quick habits, and keep the cuddles, minus the sniffles.</p>
+                    <ul><li><strong>Mon/Wed/Fri:</strong> Pacagen on sofa, throws, dog bed</li><li><strong>Tue:</strong> HEPA vacuum rugs and couch</li><li><strong>Sat:</strong> Wash slipcovers/throws; swap in fresh set</li></ul>
+                    <hr>
+                    <h2>Try it today!</h2>
+                    <p>👉 <a href="https://pacagen.com/products/dog-allergen-neutralizing-spray" class="pacagen-link">Get Pacagen's Dog Allergen Neutralizing Spray Today</a>.</p>
+                </div>
             </section>
 
             <!-- Article footer component -->
@@ -63,58 +90,6 @@
                 imageSrc: 'woman-dog-allergies.png',
                 imageAlt: 'dog allergens',
                 imageCaption: 'Featuring Pacagen Dog Allergen Neutralizing Spray',
-                pageType: pageType
-            });
-            
-            // 2. Create content sections
-            document.getElementById('content-section-1').innerHTML = createContentSection({
-                title: '1. Treat Soft Surfaces with <a href="https://pacagen.com/products/dog-allergen-neutralizing-spray" class="pacagen-link">Pacagen</a>',
-                paragraphs: [
-                    'If you prefer a non-medication approach, Pacagen provides an environmental control step you can do at home. It doesn\'t treat or cure allergies, but it helps lower everyday exposure—often the first thing clinicians recommend before escalating to medications.',
-                    'Allergens cling to couches, throws, rugs, curtains, and car seats. Lightly spritz Pacagen over high-touch fabrics 2–3×/week. Let dry fully.'
-                ],
-                additionalContent: '<ul><li>Targets the high-touch surfaces you use most, not just the air.</li><li>Complements HEPA filtration, routine vacuuming, and normal grooming to keep day-to-day exposure low between deep cleans.</li></ul>',
-                imageSrc: 'pacagen-dans.png',
-                imageAlt: 'Dog allergy product',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-2').innerHTML = createContentSection({
-                title: '2. HEPA Everywhere It Counts',
-                paragraphs: [
-                    'Run a true HEPA air purifier in the room you use most and vacuum floors and upholstery with a HEPA vacuum 2–3×/week. Empty the canister outside.'
-                ],
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-3').innerHTML = createContentSection({
-                title: '3. Washable Layers = Easy Resets',
-                paragraphs: [
-                    'Use slipcovers and throw blankets on seating. Wash weekly if fabric allows; treat between washes with Pacagen to keep buildup low.'
-                ],
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-4').innerHTML = createContentSection({
-                title: '4. Groom Smart, Not Constant',
-                paragraphs: [
-                    'Brush outdoors, then wipe the coat with a damp microfiber cloth. Keep bath frequency to your vet or groomer\'s guidance.'
-                ],
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-5').innerHTML = createContentSection({
-                title: '5. Control Hotspots',
-                additionalContent: '<ul><li>Designate a low-allergen lounge (close the door, treat fabrics with <a href="https://pacagen.com/products/dog-allergen-neutralizing-spray" class="pacagen-link">Pacagen</a>).</li><li>Use zip-off dog bed covers.</li><li>Add an entryway "dander trap" (mat + lint roller).</li><li>Protect car seats with washable covers.</li></ul>',
-                pageType: pageType
-            });
-            
-            document.getElementById('content-section-6').innerHTML = createContentSection({
-                title: '3-Minute Weekly Template',
-                paragraphs: [
-                    '<strong>Bottom line:</strong> Treat the fabrics you live on with <a href="https://pacagen.com/products/dog-allergen-neutralizing-spray" class="pacagen-link">Pacagen\'s Dog Allergen Neutralizing Spray Today</a>, add HEPA plus quick habits, and keep the cuddles, minus the sniffles.'
-                ],
-                additionalContent: '<ul><li><strong>Mon/Wed/Fri:</strong> Pacagen on sofa, throws, dog bed</li><li><strong>Tue:</strong> HEPA vacuum rugs and couch</li><li><strong>Sat:</strong> Wash slipcovers/throws; swap in fresh set</li></ul><hr><h2>Try it today!</h2><p>👉 <a href="https://pacagen.com/products/dog-allergen-neutralizing-spray" class="pacagen-link">Get Pacagen\'s Dog Allergen Neutralizing Spray Today</a>.</p>',
                 pageType: pageType
             });
             

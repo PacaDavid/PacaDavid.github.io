@@ -7,17 +7,12 @@
     
     // Track which components are loaded via events
     const componentStatus = {
-        article: false,
         product: false,
         ads: false
     };
     
     // Set up event listeners IMMEDIATELY (before bundles start loading)
     // This ensures we catch events even if they fire before initComponentsWhenReady is called
-    window.addEventListener('articleComponentsLoaded', function() {
-        componentStatus.article = true;
-    }, { once: false }); // Use false so multiple pages can listen
-    
     window.addEventListener('productComponentsLoaded', function() {
         componentStatus.product = true;
     }, { once: false });
@@ -28,14 +23,7 @@
     
     // Check if article components are loaded
     function areArticleComponentsLoaded() {
-        return typeof createBreadcrumb !== 'undefined' &&
-               typeof createAuthorSection !== 'undefined' &&
-               typeof createDateSection !== 'undefined' &&
-               typeof createFold !== 'undefined' &&
-               typeof createContentSection !== 'undefined' &&
-               typeof createArticleHeader !== 'undefined' &&
-               typeof createBlogTitleSection !== 'undefined' &&
-               typeof createBlogHeader !== 'undefined' &&
+        return typeof createFold !== 'undefined' &&
                typeof createArticleFooter !== 'undefined';
     }
     
@@ -46,8 +34,7 @@
     
     // Check if ad components are loaded
     function areAdComponentsLoaded() {
-        return typeof createAdTypeA !== 'undefined' &&
-               typeof createAdTypeB !== 'undefined';
+        return typeof createAd !== 'undefined';
     }
     
     // Wait for components to be ready, then execute callback
@@ -101,15 +88,6 @@
         function setupEventListeners() {
             if (eventListenersSetup) return;
             eventListenersSetup = true;
-            
-            if (waitForArticle) {
-                const articleHandler = function() {
-                    if (checkComponentsReady()) {
-                        executeCallback();
-                    }
-                };
-                window.addEventListener('articleComponentsLoaded', articleHandler, { once: true });
-            }
             
             if (waitForProduct) {
                 const productHandler = function() {
