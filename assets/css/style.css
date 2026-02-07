@@ -923,8 +923,8 @@ div[id$="-ad"].component-loaded {
 .gift-card {
     background: white;
     border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #e0e0e0;
@@ -936,7 +936,7 @@ div[id$="-ad"].component-loaded {
 }
 
 .gift-card .article-content-image {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.25rem;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -950,19 +950,20 @@ div[id$="-ad"].component-loaded {
 
 .gift-card h2 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
     color: #234436;
     font-weight: 700;
 }
 
 .gift-card p {
     color: #666;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1.6;
 }
 
 .gift-card .shop-button-wrapper {
-    margin-top: 1.5rem;
+    margin-top: 0.75rem;
     text-align: center;
 }
 
@@ -1369,10 +1370,18 @@ footer {
     }
 
     .gift-card {
-        padding: 1.5rem;
-        margin-bottom: 1.5rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
     }
-    
+
+    .gift-card .article-content-image img {
+        max-width: 58%;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
     .gift-card h2 {
         font-size: 1.3rem;
     }
