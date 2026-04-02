@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Internal template: all component injection targets (create* functions).">
+  <title>Component injection template | HealthPetInsider</title>
+
+  <script src="assets/js/head-components.js"></script>
+  <script src="assets/js/tracking.js"></script>
+  <script src="assets/js/component-init.js"></script>
+  <script src="assets/js/main.js" defer></script>
+
+  <script src="assets/js/components/article/fold.js"></script>
+  <script src="assets/js/components/article/breadcrumb.js"></script>
+  <script src="assets/js/components/article/article-footer.js"></script>
+  <script src="assets/js/product-components-bundle.js"></script>
+  <script src="assets/js/components/ads/ad.js"></script>
+  <script src="assets/js/components/comparison-table/comparison-table.js" defer></script>
+  <script src="assets/js/components/testimonial/testimonial-carousel.js"></script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .template-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #5a6b5c;
+      margin: 2rem 0 0.5rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px dashed #c5d4c7;
+    }
+    .template-slot {
+      min-height: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="main-article">
+      <section class="w-70 mx-auto my-4">
+        <p class="text-muted small mb-4">Reference page for <code>create*</code> injectors. Exported globals: <code>createFold</code>, <code>createBreadcrumb</code> (used inside <code>createFold</code> when <code>breadcrumb: true</code>), <code>createArticleFooter</code>, <code>createProductShowcase</code>, <code>createProductCard</code>, <code>createComparisonTable</code>, <code>createAd</code>, <code>createTestimonialCarousel</code> (also auto-inits <code>[data-testimonial-carousel]</code>). Internal: <code>createCell</code> inside comparison-table.</p>
+
+        <p class="template-label">createFold → #article-fold</p>
+        <div id="article-fold" class="template-slot"></div>
+
+        <section class="article-content content-large">
+          <p class="template-label">createProductShowcase → #pacagen-spray-showcase</p>
+          <div id="pacagen-spray-showcase" class="d-flex justify-content-center align-items-center mb-3 template-slot"></div>
+
+          <p class="template-label">createProductShowcase → #dog-spray-showcase</p>
+          <div id="dog-spray-showcase" class="d-flex justify-content-center align-items-center mb-3 template-slot"></div>
+
+          <p class="template-label">createProductShowcase → #pacagen-showcase</p>
+          <div id="pacagen-showcase" class="d-flex justify-content-center align-items-center mb-3 template-slot"></div>
+
+          <p class="template-label">createProductCard → #product-card-demo (direct; normally used via createProductShowcase)</p>
+          <div id="product-card-demo" class="d-flex justify-content-center align-items-center mb-3 template-slot"></div>
+
+          <p class="template-label">createComparisonTable → #comparison-table-container</p>
+          <div id="comparison-table-container" class="template-slot"></div>
+
+          <p class="template-label">createAd → #credit-card-ad</p>
+          <div id="credit-card-ad" class="template-slot"></div>
+
+          <p class="template-label">createAd → #travel-ad</p>
+          <div id="travel-ad" class="template-slot"></div>
+
+          <p class="template-label">createAd → #meal-kit-ad</p>
+          <div id="meal-kit-ad" class="template-slot"></div>
+
+          <p class="template-label">createAd → #cleaning-ad</p>
+          <div id="cleaning-ad" class="template-slot"></div>
+
+          <p class="template-label">createAd → #lorem-ad</p>
+          <div id="lorem-ad" class="template-slot"></div>
+
+          <p class="template-label">createAd → #cat-photography-ad</p>
+          <div id="cat-photography-ad" class="template-slot"></div>
+
+          <p class="template-label">createTestimonialCarousel → [data-testimonial-carousel] (auto-init)</p>
+          <div data-testimonial-carousel></div>
+        </section>
+
+        <p class="template-label">createArticleFooter → #article-footer</p>
+        <div id="article-footer" class="template-slot"></div>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    initComponentsWhenReady(function() {
+      const pageType = window.location.pathname.includes('/blog/') ? 'blog' : 'root';
+
+      const showcaseConfig = {
+        image: 'CANS.png',
+        alt: 'Cat Allergen Neutralizing Spray',
+        description: 'Template placeholder for createProductShowcase.',
+        url: 'https://pacagen.com/products/cat-allergen-neutralizing-spray',
+        pageType: pageType
+      };
+
+      document.getElementById('article-fold').innerHTML = createFold({
+        title: 'Component injection template',
+        authorName: 'Template',
+        authorImage: 'StevenTimmins.png',
+        imageSrc: 'bestcatsprays.png',
+        imageAlt: 'Placeholder hero',
+        imageCaption: 'createFold with breadcrumb: true exercises createBreadcrumb.',
+        breadcrumb: true,
+        homePath: 'index.html',
+        homeText: 'Home',
+        dateText: 'Template · Updated April 2, 2026',
+        pageType: pageType
+      });
+
+      document.getElementById('pacagen-spray-showcase').innerHTML = createProductShowcase(showcaseConfig);
+      document.getElementById('dog-spray-showcase').innerHTML = createProductShowcase({
+        image: 'https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Effectiveness-DogSKUs.png',
+        alt: 'Dog Allergen Neutralizing Spray',
+        description: 'Template placeholder for dog spray showcase.',
+        url: 'https://pacagen.com/products/dog-allergen-neutralizing-spray',
+        pageType: pageType
+      });
+      document.getElementById('pacagen-showcase').innerHTML = createProductShowcase({
+        image: 'ChickenFlavor_V3.png',
+        alt: 'Cat Allergen Reducing Supplement',
+        description: 'Template placeholder for pacagen-showcase id.',
+        url: 'https://pacagen.com/products/cat-allergen-reducing-supplement',
+        pageType: pageType
+      });
+
+      if (typeof createProductCard !== 'undefined') {
+        document.getElementById('product-card-demo').innerHTML = createProductCard({
+          imagePath: 'assets/images/CANS.png',
+          alt: 'createProductCard demo',
+          url: 'https://pacagen.com/products/cat-allergen-neutralizing-spray',
+          description: 'Direct createProductCard injection.',
+          reviewText: '★★★★★ Template review line',
+          clickable: true
+        });
+      }
+
+      function initComparisonTableComponent() {
+        if (typeof createComparisonTable === 'undefined') {
+          setTimeout(initComparisonTableComponent, 50);
+          return;
+        }
+        const container = document.getElementById('comparison-table-container');
+        if (!container) return;
+        container.innerHTML = createComparisonTable({
+          rows: [
+            {
+              feature: 'Sample feature row',
+              pacagen: { type: 'yes' },
+              allerpet: { type: 'no' },
+              clorox: { type: 'warning', text: 'Limited' }
+            },
+            {
+              feature: '<strong>Best use case</strong>',
+              pacagen: 'Daily allergen control',
+              allerpet: 'Occasional grooming aid',
+              clorox: 'Hard-surface only'
+            }
+          ],
+          brands: [
+            { value: 'allerpet', name: 'Allerpet' },
+            { value: 'clorox', name: 'Clorox' }
+          ],
+          tableId: 'comparison-table',
+          selectorId: 'brand-select'
+        });
+        if (typeof initComparisonTable !== 'undefined') {
+          const table = document.getElementById('comparison-table');
+          if (table) initComparisonTable(table);
+        }
+      }
+      initComparisonTableComponent();
+
+      if (typeof createAd !== 'undefined') {
+        const adBase = {
+          logo: 'BRAND',
+          logoDark: 'NAME',
+          headline: 'Template ad headline',
+          body: 'This is placeholder body copy for createAd. ProductName appears highlighted when productName is set.',
+          productName: 'ProductName',
+          ctaText: 'Learn More',
+          ctaUrl: '#',
+          pageType: pageType
+        };
+        const byId = {
+          'credit-card-ad': { backgroundImage: 'credit-card-ad.png', ...adBase, logo: 'PREMIUM CARD', logoDark: 'SERVICES®' },
+          'travel-ad': { backgroundImage: 'travel-ad.jpg', ...adBase, logo: 'GLOBAL TRAVEL', logoDark: 'SOLUTIONS®' },
+          'meal-kit-ad': { backgroundImage: 'img-ad-fresh-meal.png', ...adBase, logo: 'MEAL KIT', logoDark: 'DELIVERY' },
+          'cleaning-ad': { backgroundImage: 'cleaning-ad1.png', ...adBase, logo: 'CLEAN HOME', logoDark: 'HACKS' },
+          'lorem-ad': { backgroundImage: 'img-ad-pet-insurance.jpg', ...adBase, logo: 'PETCARE', logoDark: 'INSURANCE' },
+          'cat-photography-ad': { backgroundImage: 'img-ad-cat-photographer.jpg', ...adBase, logo: 'PHOTO', logoDark: 'STUDIO' }
+        };
+        Object.keys(byId).forEach(function(id) {
+          const el = document.getElementById(id);
+          if (el) {
+            el.innerHTML = createAd(byId[id]);
+            el.classList.add('component-loaded');
+          }
+        });
+      }
+
+      document.getElementById('article-footer').innerHTML = createArticleFooter({ pageType: pageType });
+    }, { waitForArticle: true, waitForProduct: true, waitForAds: true });
+  </script>
+</body>
+</html>
