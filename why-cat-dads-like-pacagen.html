@@ -3,236 +3,434 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover why cat dads love Pacagen for tackling everyday cat-allergen exposure at the source. Learn seven smart benefits, see the science, and find a cleaner way to feel more comfortable at home.">
-  <meta name="keywords" content="Pacagen, cat allergy relief, cat allergen spray, Fel d 1, cat dads, pet allergies, home allergen support, cat lover allergy help">
+  <meta name="description" content="Discover why cat dads love Pacagen—targeted cat allergen support designed to help you cuddle more, sneeze less, and enjoy life with your cat without constant compromise.">
+  <meta name="keywords" content="Pacagen, cat dads, cat allergies, pet allergy relief, cat allergen support, Fel d 1, living with cats, allergy-friendly home, cat lovers">
   <title>Why Cat Dads Love Pacagen | HealthPetInsider</title>
-  <script src="/assets/js/head-components.js"></script>
-  <script src="/assets/js/tracking.js"></script>
-  <script src="/assets/js/component-init.js"></script>
-  <script src="/assets/js/main.js" defer></script>
-  <script src="/assets/js/fold.js"></script>
-  <script src="/assets/js/article-footer.js"></script>
-  <script src="/assets/js/product-components-bundle.js"></script>
-  <script src="/assets/js/testimonial-carousel.js"></script>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="assets/js/head-components.js"></script>
+  <script src="assets/js/tracking.js"></script>
+  <script src="assets/js/component-init.js"></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/components/article/fold.js"></script>
+  <script src="assets/js/components/article/article-footer.js"></script>
+  <script src="assets/js/product-components-bundle.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- NEW_COMPONENT_STYLES_GO_HERE -->
   <style>
-    .article-date {
-      font-size: 14px;
-      color: #667085;
-      margin: 12px 0 24px;
+    .article-section {
+      margin: 3rem 0;
     }
-    .article-content-image {
-      margin: 18px 0;
-      border-radius: 18px;
-      overflow: hidden;
-    }
-    .article-image-panel {
-      width: 100%;
-      aspect-ratio: 16/9;
-      display: flex;
-      align-items: end;
-      justify-content: start;
-      padding: 24px;
-      color: #fff;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 1.2;
-    }
-    .allergen-image {
-      background: linear-gradient(135deg, #264653 0%, #2a9d8f 100%);
-    }
-    .routine-image {
-      background: linear-gradient(135deg, #3a86ff 0%, #6dd3ff 100%);
-    }
-    .comfort-image {
-      background: linear-gradient(135deg, #6a4c93 0%, #b185db 100%);
-    }
-    .home-image {
-      background: linear-gradient(135deg, #2f4858 0%, #86bbd8 100%);
-    }
-    .science-image {
-      background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
-    }
-    .credibility-section,
-    .benefits-summary-section,
-    .final-cta-section {
-      margin: 48px 0;
-      padding: 28px;
-      border-radius: 20px;
-      background: #f8fafc;
-      border: 1px solid #e5e7eb;
-    }
-    .credibility-grid,
-    .benefits-summary-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 22px;
-    }
-    .credibility-card,
-    .benefit-pill {
+    .article-section-card {
       background: #fff;
-      border: 1px solid #e5e7eb;
-      border-radius: 16px;
-      padding: 18px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+      border: 1px solid #dbe7df;
+      border-radius: 22px;
+      padding: 2rem;
+      box-shadow: 0 12px 32px rgba(17, 53, 34, 0.06);
     }
-    .credibility-card h3,
-    .benefit-pill h3 {
-      margin: 0 0 8px;
-      font-size: 20px;
-      line-height: 1.3;
-    }
-    .credibility-card p,
-    .benefit-pill p {
-      margin: 0;
-    }
-    .final-cta-section {
-      text-align: center;
-      background: linear-gradient(135deg, #eef7f4 0%, #f7fbff 100%);
-    }
-    .final-cta-actions {
-      display: flex;
-      gap: 14px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 18px;
-    }
-    .final-cta-button {
+    .article-kicker {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      padding: 14px 24px;
-      border-radius: 999px;
+      gap: .5rem;
+      font-size: .82rem;
       font-weight: 700;
-      text-decoration: none;
-      transition: transform 0.2s ease, opacity 0.2s ease;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #1f6b45;
+      background: #eef8f1;
+      padding: .45rem .75rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
     }
-    .final-cta-button:hover {
-      transform: translateY(-1px);
-      opacity: 0.95;
+    .article-heading {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      line-height: 1.15;
+      color: #163524;
+      margin: 0 0 .85rem;
     }
-    .final-cta-button.primary {
-      background: #0f766e;
+    .article-subtext,
+    .article-copy p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #314b3c;
+      margin: 0 0 1rem;
+    }
+    .benefit-list,
+    .mini-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.25rem 0 0;
+      display: grid;
+      gap: .9rem;
+    }
+    .benefit-list li,
+    .mini-list li {
+      background: #f7fbf8;
+      border: 1px solid #e0ece4;
+      border-radius: 16px;
+      padding: 1rem 1rem 1rem 3rem;
+      position: relative;
+      color: #274233;
+      line-height: 1.6;
+    }
+    .benefit-list li::before,
+    .mini-list li::before {
+      content: "🐾";
+      position: absolute;
+      left: 1rem;
+      top: .95rem;
+      font-size: 1.1rem;
+    }
+    .split-feature {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 1.5rem;
+      align-items: stretch;
+    }
+    .feature-side-panel {
+      background: linear-gradient(180deg, #eff8f2 0%, #f9fcfa 100%);
+      border: 1px solid #dce9e0;
+      border-radius: 20px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .feature-stat {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #163524;
+      margin-bottom: .3rem;
+    }
+    .feature-stat-caption {
+      color: #42604d;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    .dad-quote-grid,
+    .results-grid,
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .dad-quote,
+    .result-card,
+    .trust-card {
+      background: #fff;
+      border: 1px solid #deebe2;
+      border-radius: 18px;
+      padding: 1.25rem;
+      box-shadow: 0 8px 22px rgba(17, 53, 34, 0.05);
+    }
+    .dad-quote p {
+      margin: 0 0 .9rem;
+      color: #2d4738;
+      line-height: 1.7;
+    }
+    .dad-quote cite {
+      font-style: normal;
+      color: #1f6b45;
+      font-weight: 700;
+    }
+    .science-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .science-pill {
+      background: #f3faf5;
+      border: 1px solid #d8e8dd;
+      border-radius: 18px;
+      padding: 1.2rem;
+    }
+    .science-pill h3,
+    .trust-card h3,
+    .result-card h3 {
+      margin: 0 0 .5rem;
+      color: #163524;
+      font-size: 1.05rem;
+    }
+    .science-pill p,
+    .trust-card p,
+    .result-card p {
+      margin: 0;
+      color: #3e5a49;
+      line-height: 1.65;
+    }
+    .big-percent {
+      font-size: 2.3rem;
+      line-height: 1;
+      font-weight: 800;
+      color: #1f6b45;
+      margin-bottom: .55rem;
+    }
+    .wrap-up-banner {
+      background: linear-gradient(135deg, #153825 0%, #245f3e 100%);
+      color: #fff;
+      border-radius: 24px;
+      padding: 2rem;
+      overflow: hidden;
+      position: relative;
+    }
+    .wrap-up-banner h2,
+    .wrap-up-banner p,
+    .wrap-up-banner li {
       color: #fff;
     }
-    .final-cta-button.secondary {
-      border: 2px solid #0f766e;
-      color: #0f766e;
-      background: transparent;
+    .wrap-up-banner .mini-list li {
+      background: rgba(255,255,255,.08);
+      border-color: rgba(255,255,255,.16);
     }
-    @media (max-width: 768px) {
-      .credibility-grid,
-      .benefits-summary-grid {
+    .editor-note {
+      font-size: .92rem;
+      color: #64806f;
+      margin-top: 1rem;
+    }
+    @media (max-width: 900px) {
+      .split-feature,
+      .dad-quote-grid,
+      .results-grid,
+      .trust-grid,
+      .science-strip {
         grid-template-columns: 1fr;
       }
-      .article-image-panel {
-        font-size: 20px;
-        padding: 18px;
+      .article-section-card,
+      .wrap-up-banner {
+        padding: 1.35rem;
       }
     }
   </style>
 </head>
 <body>
-  <article class="main-article">
-    <section class="w-70 mx-auto my-4">
+  <main>
+    <article class="main-article">
+      <section class="w-70 mx-auto my-4">
 
-      <div id="article-fold"></div>
-      <script type="application/json" id="fold-data">
-        { "title": "Why Cat Dads Love Pacagen", "subtitle": "You love your cat. Your itchy eyes, stuffy nose, and constant lint-rolling habit? Not so much. Here are seven reasons Pacagen has become a go-to for cat dads who want more comfort at home without changing who sleeps on the sofa.", "ctas": ["See How Pacagen Works"] }
-      </script>
+        <div id="article-fold"></div>
 
-      <p class="article-date">Published April 1, 2026</p>
+        <section class="article-content content-large">
+          <p>Published April 2, 2026 — If you’ve ever watched a grown man insist he’s “totally fine” while quietly rubbing watery eyes after scooping the litter box, this one’s for him. Cat dads are famously loyal, deeply attached, and not especially interested in giving up couch cuddles just because allergies keep crashing the party. That’s exactly why Pacagen has become such a favorite: it offers targeted support for people who want to keep loving their cat like a cat dad should—close up, daily, and with fewer sniffly consequences.</p>
 
-      <p>If you’re a proud cat dad, you already know the deal: the purring is perfect, the head boops are elite, and the allergens are... less charming. For many cat owners, the challenge isn’t loving their pet less. It’s finding a smarter way to live more comfortably around the allergens cats naturally spread through dander, saliva, and the spaces they claim as their kingdom. Pacagen stands out because it’s built for real homes, real routines, and real people who want relief without turning life with their cat into a full-time cleaning project.</p>
-
-      <div class="article-section">
-        <h2>1. It helps tackle cat allergens at the source</h2>
-        <div class="article-content-image d-flex"><div class="article-image-panel allergen-image">Target the allergen, not your relationship with your cat.</div></div>
-        <p>One of the biggest reasons cat dads love Pacagen is that it’s designed to address Fel d 1, the major cat allergen, where it shows up around everyday life. Instead of simply masking the problem, Pacagen is made to help reduce allergen exposure on common surfaces and in the spaces your cat already rules. That means less time reacting and more time enjoying the good stuff, like lap naps, laser-pointer heroics, and your cat pretending they don’t need you five minutes after demanding attention.</p>
-      </div>
-
-      <div class="article-section">
-        <h2>2. It fits into real life without adding a huge routine</h2>
-        <div class="article-content-image d-flex"><div class="article-image-panel routine-image">Simple enough for daily life, even on busy mornings.</div></div>
-        <p>No cat dad wants a twelve-step ritual just to sit on his own couch. Pacagen works because it’s refreshingly practical. It can be used as part of the cleaning and comfort habits you already have, making it much easier to stay consistent. Whether you’re heading to work, hosting friends, or trying to keep your bedroom from becoming an unofficial fur annex, Pacagen feels like a realistic solution instead of another wellness promise that looks great on paper and disappears in real life.</p>
-      </div>
-
-      <div class="article-section">
-        <h2>3. It supports a more comfortable home environment</h2>
-        <div class="article-content-image d-flex"><div class="article-image-panel comfort-image">A home that feels better for you can still feel like home for your cat.</div></div>
-        <p>For people sensitive to cat allergens, comfort at home matters a lot. Pacagen earns loyalty because it helps cat dads feel like their home can be shared, not endured. When allergen load is better managed, everyday moments like reading in bed, watching a movie, or waking up without immediate irritation can feel a whole lot easier. That’s a huge win for anyone who has ever wondered whether loving a cat and feeling comfortable indoors had to be mutually exclusive.</p>
-      </div>
-
-      <div class="article-section">
-        <h2>4. It works well alongside smart home habits</h2>
-        <div class="article-content-image d-flex"><div class="article-image-panel home-image">Pacagen plays nicely with the rest of your allergy strategy.</div></div>
-        <p>Air purifiers, laundry, vacuuming, brushing, washing blankets more often than you’d like to admit—cat dads already do a lot. Pacagen shines because it complements those efforts instead of trying to replace them. Think of it as a strong supporting player in a bigger comfort strategy. Used consistently with good home habits, it can help you build a cleaner-feeling space without asking you to choose between your cat and your sinuses.</p>
-      </div>
-
-      <div class="article-section">
-        <h2>5. It feels like a modern answer for modern pet parents</h2>
-        <div class="article-content-image d-flex"><div class="article-image-panel routine-image">Smart science, less drama.</div></div>
-        <p>Today’s pet parents want solutions that feel thoughtful, targeted, and grounded in actual science. Pacagen appeals to cat dads because it doesn’t rely on vague wellness language or old-school one-size-fits-all advice. It’s built around a clear problem and a clear purpose: helping reduce exposure to cat allergens in the home. That straightforward, science-forward approach gives it the kind of credibility people want before bringing any new product into their daily routine.</p>
-      </div>
-
-      <section class="credibility-section">
-        <h2>Clinically minded, scientifically grounded</h2>
-        <p>Just like the strongest landing pages pair benefits with proof, Pacagen backs up its appeal with a clear science story. For cat dads who want more than hype, that matters.</p>
-        <div class="credibility-grid">
-          <div class="credibility-card">
-            <h3>Built around Fel d 1</h3>
-            <p>Pacagen is designed with the major cat allergen in mind, helping users focus on the source of everyday discomfort rather than guessing their way through generic fixes.</p>
+          <div class="article-section">
+            <div class="article-section-card">
+              <div class="article-kicker">01 · Hook / problem statement</div>
+              <h2 class="article-heading">7 reasons cat dads are obsessed with Pacagen</h2>
+              <p class="article-subtext">Cat dads don’t want “pet-free solutions.” They want real life solutions—ones that work when the cat sleeps on the hoodie, claims half the bed, and somehow knows the exact moment Zoom starts.</p>
+              <ul class="benefit-list">
+                <li><strong>It helps support life with the cat you already adore,</strong> instead of asking you to love from a distance.</li>
+                <li><strong>It’s built around the actual cat allergen problem,</strong> which makes it feel smarter than generic guesswork.</li>
+                <li><strong>It fits into a normal routine,</strong> even if your normal routine includes feeding your cat before yourself.</li>
+                <li><strong>It feels like a grown-up answer,</strong> not a dramatic ultimatum between comfort and companionship.</li>
+                <li><strong>It helps keep bonding moments on the table,</strong> from lap naps to forehead boops.</li>
+                <li><strong>It supports a cleaner-feeling home experience,</strong> especially in those rooms your cat has clearly declared ownership of.</li>
+                <li><strong>It gives hopeful cat dads a reason to relax,</strong> which may be the most underrated benefit of all.</li>
+              </ul>
+            </div>
           </div>
-          <div class="credibility-card">
-            <h3>Made for real-world use</h3>
-            <p>This isn’t lab-only thinking. Pacagen is meant to fit into homes, routines, fabrics, and surfaces where cat allergens actually accumulate.</p>
+
+          <div class="article-section">
+            <div class="article-section-card split-feature">
+              <div class="article-copy">
+                <div class="article-kicker">02 · Supporting content</div>
+                <h2 class="article-heading">More lap time, less “I should probably stand up now”</h2>
+                <p>Cat dads are cuddle guys. The issue is that their favorite creature also happens to carry the allergen that can turn a sweet evening into a sneezy standoff. Pacagen appeals to them because it’s centered on keeping closeness realistic.</p>
+                <p>Instead of redesigning your relationship with your cat around avoidance, Pacagen supports the kind of everyday contact cat dads actually want: hanging out on the sofa, brushing fur off the black sweatshirt, and not acting personally betrayed when the cat finally chooses your lap.</p>
+              </div>
+              <div class="feature-side-panel">
+                <div class="feature-stat">Cuddle-friendly support</div>
+                <div class="feature-stat-caption">The cat dad dream is simple: fewer interruptions between “come here, buddy” and an uninterrupted purr session.</div>
+                <ul class="mini-list">
+                  <li>Better for evenings on the couch</li>
+                  <li>Better for cat-on-chest moments</li>
+                  <li>Better for homes where the cat has seniority</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="credibility-card">
-            <h3>Confidence without the fluff</h3>
-            <p>The appeal is simple: targeted science, practical use, and a product story that makes sense to thoughtful pet owners who like facts more than miracle claims.</p>
+
+          <div class="article-section">
+            <div class="article-section-card split-feature">
+              <div class="article-copy">
+                <div class="article-kicker">03 · Supporting content</div>
+                <h2 class="article-heading">Because cat dads are tired of playing defense all day</h2>
+                <p>There’s a specific exhaustion that comes from constantly managing the idea of allergens—wash the blanket, lint-roll the chair, open a window, hope for the best. Cat dads love Pacagen because it feels proactive rather than reactive.</p>
+                <p>That shift matters. When your home also happens to be your cat’s kingdom, you don’t want to spend every day negotiating where fur is allowed to exist. Pacagen gives cat dads a more confident way to think about everyday exposure.</p>
+              </div>
+              <div class="feature-side-panel">
+                <div class="feature-stat">Less defensive living</div>
+                <div class="feature-stat-caption">A calmer home routine can make it easier to enjoy the cat, not just manage the cat.</div>
+                <ul class="mini-list">
+                  <li>Less hovering around “problem spots”</li>
+                  <li>Less hyper-awareness about fur everywhere</li>
+                  <li>More normal-feeling time at home</li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
+
+          <div class="article-section">
+            <div class="article-section-card split-feature">
+              <div class="article-copy">
+                <div class="article-kicker">04 · Supporting content</div>
+                <h2 class="article-heading">It’s refreshingly specific—and cat dads appreciate that</h2>
+                <p>Cat dads are often the kind of pet people who research everything: the best wet food, the least offensive litter, whether that dramatic 3 a.m. hallway sprint is emotionally meaningful. So when they discover a solution focused on cat allergens specifically, it clicks.</p>
+                <p>Pacagen doesn’t sound vague or trendy. It sounds targeted. And when you love one tiny furry dictator enough to organize your schedule around him, targeted support is exactly the kind of thing you want.</p>
+              </div>
+              <div class="feature-side-panel">
+                <div class="feature-stat">Cat-specific logic</div>
+                <div class="feature-stat-caption">Cat dads tend to trust solutions that match the real problem instead of pretending all allergy triggers are basically the same.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-section">
+            <div class="article-section-card split-feature">
+              <div class="article-copy">
+                <div class="article-kicker">05 · Supporting content</div>
+                <h2 class="article-heading">It works for busy guys who still somehow have 400 photos of their cat</h2>
+                <p>Cat dads may be devoted, but they’re also busy. They want something that fits into real life—not a complicated ritual they’ll abandon by Thursday. Pacagen earns points here because it supports consistency without adding chaos.</p>
+                <p>That means it can slide into the same routines cat dads already keep: morning coffee, feeding time, litter check, accidental 10-minute conversation with the cat before work. Helpful products win when they don’t need to become a second job.</p>
+              </div>
+              <div class="feature-side-panel">
+                <div class="feature-stat">Low drama, high fit</div>
+                <div class="feature-stat-caption">Simple routines are more likely to stick, and cat dads love anything that supports their cat without asking for heroic effort.</div>
+                <ul class="mini-list">
+                  <li>Easy to work into daily habits</li>
+                  <li>No complicated wellness theater</li>
+                  <li>Better odds of actually staying consistent</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-section">
+            <div class="article-section-card split-feature">
+              <div class="article-copy">
+                <div class="article-kicker">06 · Supporting content</div>
+                <h2 class="article-heading">It helps keep the bond intact—not just the symptoms managed</h2>
+                <p>Here’s what cat dads really care about: not having to emotionally distance themselves from the animal they’re wildly attached to. Pacagen stands out because the payoff isn’t just practical—it’s relational.</p>
+                <p>When you can stay close more comfortably, you don’t end up avoiding your cat’s favorite spots, skipping playtime, or feeling weirdly guilty every time he curls up beside you. For cat dads, that emotional relief is huge.</p>
+              </div>
+              <div class="feature-side-panel">
+                <div class="feature-stat">Protects the vibe</div>
+                <div class="feature-stat-caption">Yes, that’s scientific enough for us. A calmer allergy experience can mean a stronger, more natural-feeling bond.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-section">
+            <div class="article-section-card">
+              <div class="article-kicker">07 · Supporting content</div>
+              <h2 class="article-heading">Cat dads say the little moments feel easier again</h2>
+              <p class="article-subtext">This is where Pacagen becomes more than a clever product idea. It becomes the reason everyday cat life feels more enjoyable again.</p>
+              <div class="dad-quote-grid">
+                <div class="dad-quote">
+                  <p>“My tabby thinks my chest is his assigned seating. Pacagen made it feel way more realistic to let him win that argument.”</p>
+                  <cite>— Marcus, proud cat dad of one clingy orange boy</cite>
+                </div>
+                <div class="dad-quote">
+                  <p>“I didn’t want a solution that meant ‘just interact with your cat less.’ Pacagen felt like it was made for people exactly like me.”</p>
+                  <cite>— Devon, apartment cat dad and habitual lap-trapper</cite>
+                </div>
+                <div class="dad-quote">
+                  <p>“The best part is that my home feels like my home again, not a place I’m constantly defending myself from.”</p>
+                  <cite>— Eli, rescue-cat dad and self-appointed litter logistics manager</cite>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-section">
+            <div class="article-section-card">
+              <div class="article-kicker">08 · Credibility / science</div>
+              <h2 class="article-heading">The science piece matters—and cat dads are paying attention</h2>
+              <p class="article-subtext">Cat dads can be sentimental, sure. They can also be very discerning shoppers. Pacagen gets traction because it pairs emotional relevance with a science-forward story centered on cat allergens, including Fel d 1.</p>
+              <div class="science-strip">
+                <div class="science-pill">
+                  <h3>Built around the real allergen conversation</h3>
+                  <p>Rather than speaking in broad wellness clichés, Pacagen is aligned with the actual protein cat-allergy sufferers hear about most: Fel d 1.</p>
+                </div>
+                <div class="science-pill">
+                  <h3>Made for people who want informed choices</h3>
+                  <p>Cat dads who read labels, reviews, and ingredient explanations tend to appreciate products that feel thoughtfully engineered instead of vaguely promising.</p>
+                </div>
+                <div class="science-pill">
+                  <h3>Credibility supports commitment</h3>
+                  <p>When a product sounds grounded and specific, people are more likely to stay consistent with it—which is exactly what practical cat dads want.</p>
+                </div>
+              </div>
+              <p class="editor-note">Editor’s note: Pacagen should be used as directed and isn’t a substitute for professional medical advice. But for many cat dads, its targeted approach is exactly what makes it feel worth trying.</p>
+            </div>
+          </div>
+
+          <div class="article-section">
+            <div class="article-section-card">
+              <div class="article-kicker">09 · Benefits</div>
+              <h2 class="article-heading">Real cat-dad wins, in real life</h2>
+              <p class="article-subtext">The appeal of Pacagen isn’t abstract. It shows up in the places cat dads notice first: bedtime, sofa time, cleaning day, and all the unplanned moments when the cat decides closeness is mandatory.</p>
+              <div class="results-grid">
+                <div class="result-card">
+                  <div class="big-percent">Closer</div>
+                  <h3>More comfortable cuddle windows</h3>
+                  <p>Cat dads love feeling like affection doesn’t have to come with a mental cost-benefit analysis every single time.</p>
+                </div>
+                <div class="result-card">
+                  <div class="big-percent">Calmer</div>
+                  <h3>Less tension around the home</h3>
+                  <p>When allergens feel more manageable, the house stops feeling like a trigger map and starts feeling livable again.</p>
+                </div>
+                <div class="result-card">
+                  <div class="big-percent">Easier</div>
+                  <h3>More natural daily routines</h3>
+                  <p>Play, pet, brush, repeat. Pacagen fits the goal of making cat care and cat love feel normal—not strategic.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="article-section">
+            <div class="wrap-up-banner">
+              <div class="article-kicker" style="background: rgba(255,255,255,.14); color: #fff;">10 · Conclusion / wrap-up</div>
+              <h2 class="article-heading">Why cat dads keep choosing Pacagen</h2>
+              <p>Because they’re not looking for permission to love their cat from six feet away. They’re looking for a smarter way to live together—closely, comfortably, and with less compromise.</p>
+              <p>Pacagen speaks directly to that mindset. It’s specific. It’s practical. And most importantly, it supports the exact life cat dads want: one where the cat still steals the blanket, the chair, and most of their camera roll.</p>
+              <ul class="mini-list">
+                <li>Made for people who want to keep their cat close</li>
+                <li>Grounded in a more targeted cat-allergen conversation</li>
+                <li>Easy to understand, easier to stick with</li>
+                <li>A genuinely compelling option for loyal, slightly fur-covered men</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="pacagen-spray-showcase"></div>
+
+          <div class="article-section">
+            <p>If you’re a cat dad—or shopping for one—Pacagen stands out for a simple reason: it respects the bond. It doesn’t ask people to become less attached, less affectionate, or less themselves around their cat. It helps make that relationship feel more livable. And honestly, for the guy who calls his cat “my son” without irony, that’s a pretty powerful reason to click add to cart.</p>
+          </div>
+        </section>
+
+        <div id="article-footer"></div>
+
       </section>
+    </article>
+  </main>
 
-      <div id="pacagen-spray-showcase"></div>
-      <div data-testimonial-carousel></div>
-
-      <section class="benefits-summary-section">
-        <h2>Real cat dads, real everyday wins</h2>
-        <p>The biggest benefit of Pacagen may be how normal life starts to feel again. Not “perfectly allergen-free.” Just more manageable, more comfortable, and a lot more cat-compatible.</p>
-        <div class="benefits-summary-grid">
-          <div class="benefit-pill">
-            <h3>More couch time</h3>
-            <p>Because avoiding the places your cat loves isn’t exactly the dream.</p>
-          </div>
-          <div class="benefit-pill">
-            <h3>Less household tension</h3>
-            <p>Helpful if one partner loves the cat and the other loves breathing clearly. Ideally, both can win.</p>
-          </div>
-          <div class="benefit-pill">
-            <h3>More confidence hosting</h3>
-            <p>A cleaner-feeling home can make guests, roommates, and fellow allergy-prone visitors a lot happier.</p>
-          </div>
-        </div>
-      </section>
-
-      <div class="article-section">
-        <p>Pacagen has become a favorite among cat dads for one simple reason: it respects both sides of the equation. You shouldn’t have to choose between loving your cat and wanting a home that feels more comfortable to live in. With a smart, targeted approach to cat allergens, Pacagen offers a practical way to support everyday comfort while keeping your favorite little menace exactly where he wants to be—close by, mildly judgmental, and very much adored.</p>
-      </div>
-
-      <section class="final-cta-section">
-        <h2>Loved by cat dads who refuse to pick between comfort and companionship</h2>
-        <p>If your cat is staying—and let’s be honest, that decision was never really yours—Pacagen is worth a closer look.</p>
-        <div class="final-cta-actions">
-          <a href="#pacagen-spray-showcase" class="final-cta-button primary">Explore Pacagen</a>
-          <a href="#article-footer" class="final-cta-button secondary">Keep Reading</a>
-        </div>
-      </section>
-
-      <div id="article-footer"></div>
-
-    </section>
-  </article>
+  <script>
+    initComponentsWhenReady(function() {
+      document.getElementById('article-fold').innerHTML = createFold({
+        title: 'Why Cat Dads Love Pacagen',
+        subtitle: 'For the men who would absolutely give up their side of the bed before they’d give up their cat, here’s why Pacagen has become a favorite for keeping cuddles close and allergy stress lower.',
+        ctas: [
+          { text: 'Shop Pacagen', href: '#pacagen-spray-showcase' },
+          { text: 'See Why It Works', href: '#pacagen-spray-showcase' }
+        ],
+        authorName: 'HealthPetInsider Editorial Team'
+      });
+      createProductShowcase({ targetId: 'pacagen-spray-showcase', productSlug: 'pacagen' });
+      document.getElementById('article-footer').innerHTML = createArticleFooter({ pageType: 'root' });
+    }, { waitForArticle: true, waitForProduct: true });
+  </script>
 </body>
 </html>
