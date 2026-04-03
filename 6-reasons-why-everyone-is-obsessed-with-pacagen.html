@@ -3,339 +3,662 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>6 Reasons Why Everyone is Obsessed With Pacagen</title>
-  <meta name="description" content="Discover the 6 reasons why everyone is obsessed with Pacagen's cat allergen-neutralizing spray. Neutralizes 98% of active cat allergens. 97% felt relief after using. Simple, fast relief in seconds." />
-
-  <script src="assets/js/head-components.js"></script>
-  <script src="assets/js/tracking.js"></script>
-  <script src="assets/js/component-init.js"></script>
-  <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/components/article/fold.js"></script>
-  <script src="assets/js/components/article/article-footer.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
-
+  <title>Pacagen | Reclaim Your Edge at Home</title>
+  <meta name="description" content="Reclaim your edge with Pacagen. Stop sneezing, itching, and runny noses at home with a cat allergen neutralizing spray trusted by over 70,000 allergic families." />
   <style>
-    .reasons-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      margin: 24px 0;
+    :root{
+      --bg:#f7faf9;
+      --surface:#ffffff;
+      --text:#122023;
+      --muted:#5d6b6f;
+      --primary:#0f7c6b;
+      --primary-dark:#0a5b4f;
+      --accent:#dff5ef;
+      --border:#d9e7e3;
+      --shadow:0 10px 30px rgba(18,32,35,.08);
+      --radius:18px;
+      --radius-sm:12px;
+      --max:1180px;
     }
-
-    .reason-card,
-    .stat-card,
-    .review-card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 20px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-      border: 1px solid #ececec;
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#f5fbf9 0%,#ffffff 100%);
+      line-height:1.5;
     }
-
-    .reason-number {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: #111;
-      color: #fff;
-      font-weight: 700;
-      margin-bottom: 12px;
+    a{text-decoration:none;color:inherit}
+    .container{
+      width:min(calc(100% - 2rem), var(--max));
+      margin:0 auto;
     }
-
-    .stats-row,
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 16px;
-      margin: 20px 0;
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.5rem;
+      padding:1rem 1.4rem;
+      border-radius:999px;
+      font-weight:700;
+      border:1px solid transparent;
+      transition:.2s ease;
+      cursor:pointer;
+      min-height:52px;
     }
-
-    .stat-value {
-      font-size: 2rem;
-      font-weight: 800;
-      line-height: 1;
-      margin-bottom: 8px;
+    .btn-primary{
+      background:var(--primary);
+      color:#fff;
+      box-shadow:0 8px 24px rgba(15,124,107,.22);
     }
-
-    .highlight-box {
-      background: linear-gradient(135deg, #f7fafc 0%, #eef6ff 100%);
-      border: 1px solid #d9e8ff;
-      border-radius: 18px;
-      padding: 24px;
-      margin: 24px 0;
+    .btn-primary:hover{background:var(--primary-dark); transform:translateY(-1px)}
+    .btn-secondary{
+      background:#fff;
+      color:var(--text);
+      border-color:var(--border);
     }
-
-    .review-stars {
-      color: #f5a623;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-      font-size: 1rem;
+    .btn-secondary:hover{border-color:#b8ccc7; transform:translateY(-1px)}
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      padding:.45rem .8rem;
+      background:var(--accent);
+      color:var(--primary-dark);
+      border:1px solid #cceae1;
+      border-radius:999px;
+      font-size:.9rem;
+      font-weight:700;
     }
-
-    .article-section h2 {
-      margin-top: 18px;
+    .dot{
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:var(--primary);
+      display:inline-block;
     }
-
-    .article-section .subhead {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 12px;
+    header{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:rgba(255,255,255,.88);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(217,231,227,.8);
     }
-
-    .cta-inline {
-      display: inline-block;
-      margin-top: 12px;
-      font-weight: 700;
-      text-decoration: none;
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:.9rem 0;
+      gap:1rem;
     }
-
-    .benefit-list li,
-    .proof-list li {
-      margin-bottom: 10px;
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:.75rem;
+      font-weight:800;
+      letter-spacing:.01em;
     }
-
-    .section-divider {
-      height: 1px;
-      background: linear-gradient(to right, transparent, #ddd, transparent);
-      margin: 8px 0 0;
+    .brand-mark{
+      width:38px;
+      height:38px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--primary) 0%, #7fd7c5 100%);
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.35);
+    }
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:1.2rem;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    .hero{
+      padding:4.5rem 0 3rem;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:2rem;
+      align-items:center;
+    }
+    h1{
+      font-size:clamp(2.2rem, 5vw, 4.6rem);
+      line-height:1.02;
+      margin:.9rem 0 1rem;
+      letter-spacing:-.03em;
+      max-width:13ch;
+    }
+    .subheadline{
+      font-size:clamp(1.05rem, 2vw, 1.3rem);
+      color:var(--muted);
+      max-width:60ch;
+      margin:0 0 1.5rem;
+    }
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.85rem;
+      margin:1.2rem 0 1rem;
+    }
+    .microproof{
+      display:flex;
+      flex-wrap:wrap;
+      gap:1rem;
+      margin-top:1.25rem;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    .microproof span{
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+    }
+    .check{
+      width:18px;
+      height:18px;
+      border-radius:50%;
+      background:var(--accent);
+      border:1px solid #cde8e2;
+      position:relative;
+      flex:0 0 18px;
+    }
+    .check:after{
+      content:"";
+      position:absolute;
+      left:5px;
+      top:2px;
+      width:5px;
+      height:9px;
+      border:solid var(--primary-dark);
+      border-width:0 2px 2px 0;
+      transform:rotate(45deg);
+    }
+    .hero-card{
+      background:var(--surface);
+      border:1px solid var(--border);
+      border-radius:calc(var(--radius) + 6px);
+      box-shadow:var(--shadow);
+      padding:1rem;
+    }
+    .product-shot{
+      width:100%;
+      aspect-ratio: 4 / 5;
+      border-radius:20px;
+      background:
+        radial-gradient(circle at 25% 20%, rgba(255,255,255,.8) 0 18%, transparent 19%),
+        linear-gradient(160deg, #ecf8f4 0%, #d9f2eb 45%, #f4fbf9 100%);
+      border:1px solid #d7ebe6;
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      padding:1.1rem;
+      position:relative;
+      overflow:hidden;
+    }
+    .product-shot:before,
+    .product-shot:after{
+      content:"";
+      position:absolute;
+      border-radius:999px;
+      background:rgba(15,124,107,.09);
+      filter:blur(2px);
+    }
+    .product-shot:before{
+      width:180px;height:180px;right:-40px;top:-30px;
+    }
+    .product-shot:after{
+      width:120px;height:120px;left:-20px;bottom:30px;
+    }
+    .bottle{
+      width:34%;
+      min-width:110px;
+      aspect-ratio: 1 / 2.3;
+      border-radius:20px 20px 26px 26px;
+      background:linear-gradient(180deg,#ffffff 0%, #f0faf7 100%);
+      border:1px solid #cfe4de;
+      box-shadow:0 14px 24px rgba(18,32,35,.08);
+      position:relative;
+      z-index:1;
+    }
+    .bottle:before{
+      content:"";
+      position:absolute;
+      width:42%;
+      height:10%;
+      top:-7%;
+      left:29%;
+      border-radius:10px 10px 4px 4px;
+      background:linear-gradient(180deg,#dcebe7 0%, #c7ddd7 100%);
+      border:1px solid #c7ddd7;
+    }
+    .bottle:after{
+      content:"Pacagen";
+      position:absolute;
+      inset:28% 12% auto 12%;
+      text-align:center;
+      padding:.9rem .4rem;
+      border-radius:14px;
+      background:#eef9f5;
+      color:var(--primary-dark);
+      font-weight:800;
+      font-size:clamp(.85rem,1.6vw,1rem);
+      border:1px solid #d2ebe4;
+    }
+    .card-stats{
+      width:58%;
+      display:grid;
+      gap:.8rem;
+      z-index:1;
+    }
+    .stat{
+      background:rgba(255,255,255,.78);
+      border:1px solid rgba(207,228,222,.9);
+      border-radius:16px;
+      padding:.9rem 1rem;
+      backdrop-filter:blur(8px);
+    }
+    .stat strong{
+      display:block;
+      font-size:1.45rem;
+      line-height:1;
+      margin-bottom:.25rem;
+    }
+    .section{
+      padding:3.5rem 0;
+    }
+    .section-head{
+      max-width:760px;
+      margin-bottom:1.8rem;
+    }
+    .section-head h2{
+      font-size:clamp(1.8rem,3vw,2.8rem);
+      line-height:1.08;
+      margin:0 0 .8rem;
+      letter-spacing:-.02em;
+    }
+    .section-head p{
+      margin:0;
+      color:var(--muted);
+      font-size:1.05rem;
+    }
+    .benefits-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1.1rem;
+    }
+    .card{
+      background:var(--surface);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:1.25rem;
+      box-shadow:var(--shadow);
+    }
+    .icon-placeholder{
+      width:52px;
+      height:52px;
+      border-radius:14px;
+      background:linear-gradient(135deg, #e9f8f4 0%, #d8f1ea 100%);
+      border:1px solid #cfe7e1;
+      margin-bottom:1rem;
+      position:relative;
+    }
+    .icon-placeholder:after{
+      content:"";
+      position:absolute;
+      inset:14px;
+      border-radius:10px;
+      background:rgba(15,124,107,.14);
+    }
+    .benefit h3, .quote h3{
+      margin:.1rem 0 .55rem;
+      font-size:1.15rem;
+    }
+    .benefit p, .quote p, .article p, .faq p, footer p{
+      color:var(--muted);
+      margin:0;
+    }
+    .quotes{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1rem;
+    }
+    .quote{
+      position:relative;
+      padding-top:1.7rem;
+    }
+    .quote:before{
+      content:"“";
+      position:absolute;
+      left:1rem;
+      top:.2rem;
+      font-size:3rem;
+      line-height:1;
+      color:#b5d8cf;
+      font-weight:800;
+    }
+    .quote .author{
+      margin-top:1rem;
+      color:var(--text);
+      font-weight:700;
+      font-size:.95rem;
+    }
+    .article{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:1.4rem;
+      align-items:start;
+    }
+    .article .card{
+      height:100%;
+    }
+    .article-placeholder{
+      width:100%;
+      aspect-ratio: 16 / 10;
+      border-radius:18px;
+      background:linear-gradient(135deg,#eef8f5 0%, #e0f2ec 100%);
+      border:1px solid #d6ebe5;
+      margin-bottom:1rem;
+      position:relative;
+      overflow:hidden;
+    }
+    .article-placeholder:before,
+    .article-placeholder:after{
+      content:"";
+      position:absolute;
+      background:rgba(15,124,107,.09);
+      border-radius:999px;
+    }
+    .article-placeholder:before{
+      width:160px;height:160px;right:-30px;top:-20px;
+    }
+    .article-placeholder:after{
+      width:100px;height:100px;left:20px;bottom:15px;
+    }
+    .faq-list{
+      display:grid;
+      gap:.9rem;
+    }
+    details{
+      background:var(--surface);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:1rem 1.1rem;
+      box-shadow:var(--shadow);
+    }
+    summary{
+      list-style:none;
+      cursor:pointer;
+      font-weight:700;
+      padding-right:2rem;
+      position:relative;
+    }
+    summary::-webkit-details-marker{display:none}
+    summary:after{
+      content:"+";
+      position:absolute;
+      right:0;
+      top:-.1rem;
+      color:var(--primary);
+      font-size:1.4rem;
+      font-weight:500;
+    }
+    details[open] summary:after{content:"–"}
+    details p{
+      margin-top:.65rem;
+      padding-top:.65rem;
+      border-top:1px solid #ebf3f0;
+    }
+    footer{
+      padding:2.5rem 0 3rem;
+      border-top:1px solid var(--border);
+      background:#fbfdfc;
+    }
+    .footer-grid{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+      flex-wrap:wrap;
+    }
+    .footer-nav{
+      display:flex;
+      gap:1rem;
+      color:var(--muted);
+      font-size:.95rem;
+      flex-wrap:wrap;
+    }
+    .footer-cta{
+      display:flex;
+      align-items:center;
+      gap:.85rem;
+      flex-wrap:wrap;
+    }
+    @media (max-width: 980px){
+      .hero-grid,
+      .article,
+      .benefits-grid,
+      .quotes{
+        grid-template-columns:1fr;
+      }
+      .hero{
+        padding-top:3.5rem;
+      }
+      h1{max-width:16ch}
+      .nav-links{
+        display:none;
+      }
+    }
+    @media (max-width: 640px){
+      .container{width:min(calc(100% - 1.2rem), var(--max))}
+      .hero-actions,
+      .footer-cta{
+        flex-direction:column;
+        align-items:stretch;
+      }
+      .btn{width:100%}
+      .microproof{
+        flex-direction:column;
+        gap:.6rem;
+      }
+      .product-shot{
+        padding:.8rem;
+      }
+      .card-stats{
+        width:56%;
+      }
+      .stat strong{
+        font-size:1.2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <main>
-    <article class="main-article">
-      <section class="w-70 mx-auto my-4">
-        <div id="article-fold"></div>
+  <header>
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Pacagen home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Pacagen</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#benefits">Benefits</a>
+        <a href="#results">Results</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#cta" class="btn btn-primary">Get Relief Now</a>
+    </div>
+  </header>
 
-        <div class="article-section">
-          <div class="article-content-image d-flex">
-            <img src="assets/images/pacagen-cat-allergen-spray-hero.jpg" class="article-img" alt="Pacagen cat allergen-neutralizing spray beside a relaxed cat and happy owner" />
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span>Trusted by 70,000+ allergic families</div>
+          <h1>Reclaim your edge at home with Pacagen.</h1>
+          <p class="subheadline">Stop the sneezing, itching, and runny noses in your own home with Pacagen’s cat allergen neutralizing spray. In seconds, it neutralizes up to 98% of cat allergens—and 97% of families report relief.</p>
+          <div class="hero-actions">
+            <a href="#cta" class="btn btn-primary">Try Pacagen Today</a>
+            <a href="#benefits" class="btn btn-secondary">See How It Works</a>
           </div>
-          <h2>Why Pacagen Is Suddenly Everywhere</h2>
-          <p>
-            Cat lovers have always had to make an impossible choice: live with constant sniffles, itchy eyes, and congestion—or avoid the pet they adore. Pacagen is changing that story. Instead of masking symptoms after the fact, Pacagen's cat allergen-neutralizing spray targets the source by neutralizing 98% of active cat allergens in seconds.
-          </p>
-          <p>
-            That’s why more allergy-conscious households are making the switch. The results are simple, immediate, and easy to fit into real life: spray, settle the allergens, and get back to enjoying your home. Even better, 97% felt relief after using it—making Pacagen one of the most talked-about solutions for cat-related discomfort right now.
-          </p>
-
-          <div class="stats-row">
-            <div class="stat-card">
-              <div class="stat-value">98%</div>
-              <p>of active cat allergens neutralized for fast, targeted relief.</p>
-            </div>
-            <div class="stat-card">
-              <div class="stat-value">97%</div>
-              <p>felt relief after using Pacagen in their everyday environment.</p>
-            </div>
-            <div class="stat-card">
-              <div class="stat-value">Seconds</div>
-              <p>to start reducing allergen exposure where it actually matters.</p>
-            </div>
-            <div class="stat-card">
-              <div class="stat-value">Simple</div>
-              <p>spray-and-go use that works with your routine, not against it.</p>
-            </div>
+          <div class="microproof" aria-label="Key proof points">
+            <span><i class="check" aria-hidden="true"></i>Neutralizes 98% of cat allergens in seconds</span>
+            <span><i class="check" aria-hidden="true"></i>97% report noticeable relief</span>
+            <span><i class="check" aria-hidden="true"></i>Made for real life with cats you love</span>
           </div>
         </div>
 
-        <div class="article-section">
-          <div class="article-content-image d-flex">
-            <img src="assets/images/reason-1-fast-relief.jpg" class="article-img" alt="Woman relaxing comfortably at home with her cat after using allergen-neutralizing spray" />
-          </div>
-          <h2>Reason #1: It Gives Fast Relief Without Making Life Complicated</h2>
-          <p class="subhead">People are obsessed with Pacagen because it works quickly—and it doesn’t ask you to overhaul your life to feel better.</p>
-          <p>
-            Traditional allergy management often comes with tradeoffs: constant cleaning, limited cuddle time, room restrictions, or waiting on symptom support after exposure has already happened. Pacagen flips that model. It helps neutralize active cat allergens right away, so the relief starts where the allergens begin.
-          </p>
-          <p>
-            For busy pet parents, that matters. No complicated setup. No endless routine. Just a simple spray that fits naturally into daily life. It’s the kind of product people try once and immediately understand why everyone keeps talking about it.
-          </p>
-          <ul class="benefit-list">
-            <li>Fast action for moments when allergen buildup disrupts comfort</li>
-            <li>Simple enough for everyday use around the home</li>
-            <li>Designed for real people who want relief without hassle</li>
-          </ul>
-        </div>
-
-        <div class="article-section">
-          <div class="article-content-image d-flex">
-            <img src="assets/images/reason-2-neutralizes-source.jpg" class="article-img" alt="Close-up of Pacagen spray bottle on a couch where a cat rests" />
-          </div>
-          <h2>Reason #2: It Targets the Source Instead of Just Covering Up the Problem</h2>
-          <p class="subhead">This is the breakthrough people can feel: Pacagen neutralizes 98% of active cat allergens instead of merely chasing symptoms.</p>
-          <p>
-            That single difference is why Pacagen stands apart from solutions that only react after exposure has already triggered discomfort. Cat allergens can linger on surfaces, upholstery, and in the spaces where you spend the most time. Pacagen is designed to help stop that cycle by addressing the allergen burden itself.
-          </p>
-          <p>
-            It’s a smarter approach, and consumers instantly recognize the value. When a product goes after the problem at its source, relief feels more direct, more intuitive, and more in your control.
-          </p>
-
-          <div class="highlight-box">
-            <strong>The obsession makes sense:</strong>
-            <p>
-              When people hear “neutralizes 98% of active cat allergens” and “97% felt relief after using,” they don’t hear hype—they hear a practical solution to a daily frustration.
-            </p>
-          </div>
-        </div>
-
-        <div class="article-section">
-          <div class="article-content-image d-flex">
-            <img src="assets/images/reason-3-cat-lovers.jpg" class="article-img" alt="Happy cat owner cuddling their cat comfortably on the sofa" />
-          </div>
-          <h2>Reason #3: It Helps Cat Lovers Feel Closer to Their Pets Again</h2>
-          <p class="subhead">Pacagen is popular because it removes the emotional tradeoff so many cat owners know too well.</p>
-          <p>
-            For people sensitive to cat allergens, affection often comes with hesitation. You start avoiding the couch, limiting close contact, or worrying about what happens after your cat curls up nearby. Pacagen gives people a way to feel more relaxed in the spaces they share with the pet they love.
-          </p>
-          <p>
-            That emotional payoff is huge. This isn’t just about cleaner air or reduced discomfort—it’s about restoring the everyday moments cat owners don’t want to miss. And products that preserve that bond tend to earn loyalty fast.
-          </p>
-          <ul class="proof-list">
-            <li>More comfort in the rooms where your cat actually lives</li>
-            <li>Less dread around daily exposure and shared spaces</li>
-            <li>More freedom to enjoy your pet without constantly second-guessing</li>
-          </ul>
-        </div>
-
-        <div class="article-section">
-          <div class="article-content-image d-flex">
-            <img src="assets/images/reason-4-social-proof.jpg" class="article-img" alt="Collection of positive customer feedback for Pacagen spray" />
-          </div>
-          <h2>Reason #4: The Social Proof Is Hard to Ignore</h2>
-          <p class="subhead">People trust Pacagen because the results are easy to understand and easy to share.</p>
-          <p>
-            The most compelling products spread for a reason: they solve a common problem in a way people can explain in one sentence. Pacagen has that advantage. “It neutralizes 98% of active cat allergens.” “I felt relief fast.” “It’s just a spray.” That kind of clarity builds momentum quickly.
-          </p>
-          <p>
-            And once customers begin noticing a real difference in their daily environment, they tell friends, partners, family members, and fellow cat owners. That’s how products move from “interesting” to “obsessed-over.”
-          </p>
-
-          <div class="reviews-grid">
-            <div class="review-card">
-              <div class="review-stars">★★★★★</div>
-              <p>“I noticed a difference almost immediately. Pacagen made our living room feel more comfortable without changing our whole routine.”</p>
-              <strong>- Verified customer</strong>
-            </div>
-            <div class="review-card">
-              <div class="review-stars">★★★★★</div>
-              <p>“This is the first cat-related product that felt both simple and effective. Spray, wait, and breathe easier.”</p>
-              <strong>- Verified customer</strong>
-            </div>
-            <div class="review-card">
-              <div class="review-stars">★★★★★</div>
-              <p>“I love my cat, but hated the constant allergen buildup. Pacagen has been a game-changer for our home.”</p>
-              <strong>- Verified customer</strong>
+        <div class="hero-card" aria-label="Pacagen product overview">
+          <div class="product-shot">
+            <div class="bottle" aria-hidden="true"></div>
+            <div class="card-stats">
+              <div class="stat">
+                <strong>98%</strong>
+                <span>cat allergens neutralized quickly where symptoms start</span>
+              </div>
+              <div class="stat">
+                <strong>70,000+</strong>
+                <span>families have already brought calmer breathing back home</span>
+              </div>
+              <div class="stat">
+                <strong>97%</strong>
+                <span>say they experienced meaningful relief</span>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="article-section">
-          <div class="article-content-image d-flex">
-            <img src="assets/images/reason-5-easy-routine.jpg" class="article-img" alt="Pacagen spray being used easily on furniture in a bright home" />
-          </div>
-          <h2>Reason #5: It Fits Into Real Life Better Than Most Allergy Workarounds</h2>
-          <p class="subhead">The easier something is to use consistently, the more people stick with it—and that’s a big reason Pacagen keeps winning fans.</p>
-          <p>
-            Many solutions fail because they ask too much: too much time, too much planning, too many compromises. Pacagen’s appeal is the opposite. It’s straightforward, fast, and built for normal households that want effective allergen support without a long checklist.
-          </p>
-          <p>
-            People don’t want more complexity in their routines. They want products that solve problems quickly and quietly. Pacagen delivers that kind of low-friction relief, which is exactly why customers keep coming back.
-          </p>
-
-          <div class="reasons-grid">
-            <div class="reason-card">
-              <div class="reason-number">1</div>
-              <h3>Spray in seconds</h3>
-              <p>No time-consuming setup or drawn-out process.</p>
-            </div>
-            <div class="reason-card">
-              <div class="reason-number">2</div>
-              <h3>Use where it matters</h3>
-              <p>Perfect for the spaces where cat allergens tend to build up.</p>
-            </div>
-            <div class="reason-card">
-              <div class="reason-number">3</div>
-              <h3>Stay consistent</h3>
-              <p>Easy routines are the ones people actually maintain.</p>
-            </div>
-          </div>
+    <section class="section" id="benefits">
+      <div class="container">
+        <div class="section-head">
+          <h2>The fastest way to make home feel like yours again</h2>
+          <p>Pacagen extends the core promise beyond the first spray: fewer reactions, more comfort, and a home that supports your life instead of interrupting it.</p>
         </div>
 
-        <div class="article-section">
-          <div class="article-content-image d-flex">
-            <img src="assets/images/reason-6-results.jpg" class="article-img" alt="Confident cat owner smiling at home with Pacagen spray in hand" />
+        <div class="benefits-grid">
+          <div class="card benefit">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Stop symptoms where they begin</h3>
+            <p>Instead of waiting for sneezing, itchy eyes, or a runny nose to take over, Pacagen targets cat allergens on surfaces in your home so relief starts at the source.</p>
           </div>
-          <h2>Reason #6: The Results Sound Impressive—Because They Are</h2>
-          <p class="subhead">The obsession ultimately comes down to proof people can remember.</p>
-          <p>
-            In a crowded market, most products fade into vague promises. Pacagen doesn’t. It gives people concrete reasons to pay attention: neutralizes 98% of active cat allergens, 97% felt relief after using, and zero allergens in seconds. Those are the kinds of numbers that stick.
-          </p>
-          <p>
-            More importantly, they connect to a real-world outcome: a home that feels easier to live in when you have a cat you adore. When the promise is clear and the benefit is immediate, it’s no surprise Pacagen has become the product people keep recommending.
-          </p>
 
-          <div class="stats-row">
-            <div class="stat-card">
-              <div class="stat-value">6</div>
-              <p>clear reasons cat owners and allergy-conscious households keep choosing Pacagen.</p>
-            </div>
-            <div class="stat-card">
-              <div class="stat-value">98%</div>
-              <p>active cat allergen neutralization that helps reduce exposure fast.</p>
-            </div>
-            <div class="stat-card">
-              <div class="stat-value">97%</div>
-              <p>reported relief after use, reinforcing strong customer satisfaction.</p>
-            </div>
-            <div class="stat-card">
-              <div class="stat-value">0</div>
-              <p>patience required for a complicated routine—just simple relief in seconds.</p>
-            </div>
+          <div class="card benefit">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Get results in seconds, not someday</h3>
+            <p>You do not need a complicated routine or a total lifestyle reset. A quick spray helps neutralize allergens fast, so your space feels more livable right away.</p>
+          </div>
+
+          <div class="card benefit">
+            <div class="icon-placeholder" aria-hidden="true"></div>
+            <h3>Keep your cat, lose the constant irritation</h3>
+            <p>Pacagen is built for families who love their cats but are tired of paying for it with daily discomfort. You can protect your comfort without changing who lives in your home.</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="article-section">
-          <div class="article-content-image d-flex">
-            <img src="assets/images/pacagen-final-cta.jpg" class="article-img" alt="Pacagen cat allergen-neutralizing spray featured as the simple solution for cat allergen relief" />
-          </div>
-          <h2>The Bottom Line: Pacagen Makes It Easier to Love Life With Your Cat</h2>
-          <p>
-            When a product is this simple, this targeted, and this effective, people talk about it. Pacagen has become an obsession because it solves a frustrating everyday problem in a way that feels immediate and effortless. Neutralize 98% of active cat allergens. Feel fast relief. Get back to the moments that matter.
-          </p>
-          <p>
-            If you’ve been searching for a smarter way to manage cat allergens at home, this is the reason so many people are making the switch. Pacagen isn’t about avoiding your cat—it’s about enjoying your home again.
-          </p>
-          <p>
-            <a href="#" class="pacagen-link cta-inline">See why more cat owners are choosing Pacagen now</a>
-          </p>
-          <div class="section-divider"></div>
+    <section class="section" id="results">
+      <div class="container">
+        <div class="section-head">
+          <h2>What relief actually sounds like</h2>
+          <p>These are the kinds of outcomes families are talking about when they say they reclaimed their edge with Pacagen.</p>
         </div>
 
-        <div id="article-footer"></div>
-      </section>
-    </article>
+        <div class="quotes">
+          <div class="card quote">
+            <h3>“I stopped bracing myself every time I walked into the living room.”</h3>
+            <p>Within days, the constant sneezing and itchy eyes were no longer running the show. It finally felt possible to enjoy our cat and our home at the same time.</p>
+            <div class="author">— Melissa, cat owner and mom of two</div>
+          </div>
+
+          <div class="card quote">
+            <h3>“Pacagen gave us back normal evenings.”</h3>
+            <p>Before, I would start reacting as soon as I sat on the couch. Now our home feels calm again, and I am not reaching for tissues every night.</p>
+            <div class="author">— Jordan, apartment renter with two cats</div>
+          </div>
+
+          <div class="card quote">
+            <h3>“This is the first thing that made a measurable difference fast.”</h3>
+            <p>We had tried cleaning harder and avoiding certain rooms, but Pacagen was what finally helped reduce the everyday symptoms that made home exhausting.</p>
+            <div class="author">— Priya, lifelong allergy sufferer</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container article">
+        <div class="card">
+          <div class="article-placeholder" aria-hidden="true"></div>
+          <h2 style="margin:.2rem 0 .8rem;font-size:clamp(1.6rem,2.4vw,2.2rem);line-height:1.1;">You should not have to choose between breathing easier and loving your cat.</h2>
+          <p>For most allergic cat owners, the hardest part is not just the symptoms—it is the feeling that your home is constantly working against you. Sneezing in the kitchen, itchy eyes on the couch, a runny nose the second you settle into bed. Pacagen is designed to interrupt that cycle by neutralizing cat allergens on the surfaces where life actually happens, so you can spend more time living and less time reacting.</p>
+        </div>
+
+        <div class="card">
+          <p>Maybe you have already tried vacuuming more, keeping doors closed, washing blankets constantly, or relying on temporary fixes that never seem to solve the real problem. Pacagen does not ask you to build your life around your allergies. It helps reduce the allergen burden quickly, so your efforts finally add up to something you can feel. That is why so many families describe the result the same way: home becomes comfortable again.</p>
+          <p style="margin-top:1rem;">And if you are wondering whether relief can really happen that fast, the numbers speak clearly. Pacagen neutralizes up to 98% of cat allergens in seconds, and 97% of users report relief. That means this is not about vague promises or wishful thinking. It is about a simple, practical way to reclaim your edge in the place where you need it most—your own home.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>Questions allergic cat families ask before they buy</h2>
+          <p>Everything here ties back to the same goal: helping you feel better at home, faster.</p>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>How does Pacagen help stop sneezing, itching, and runny noses at home?</summary>
+            <p>Pacagen works by neutralizing cat allergens on the surfaces around your home, which helps reduce the triggers that commonly cause allergy symptoms in the first place.</p>
+          </details>
+
+          <details>
+            <summary>How quickly does it work?</summary>
+            <p>Pacagen is designed to work in seconds, making it a practical option when you want fast support instead of waiting days or weeks to notice a difference.</p>
+          </details>
+
+          <details>
+            <summary>Do I need to get rid of my cat or change my whole routine?</summary>
+            <p>No. Pacagen is for people who want relief without giving up the cat they love or turning daily life into a constant allergy-management project.</p>
+          </details>
+
+          <details>
+            <summary>Is this only for severe allergy sufferers?</summary>
+            <p>Not at all. Whether your symptoms are mild but annoying or strong enough to disrupt daily life, reducing cat allergens in your environment can help make home more comfortable.</p>
+          </details>
+
+          <details>
+            <summary>Why do so many families trust Pacagen?</summary>
+            <p>Because the product is already used by over 70,000 allergic families, and 97% report relief. Those numbers reflect real-world use by people trying to solve a real problem at home.</p>
+          </details>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      createFold({
-        title: '6 Reasons Why Everyone is Obsessed With Pacagen',
-        authorName: 'Pacagen Editorial Team',
-        authorImage: 'assets/images/authors/pacagen-editorial-team.jpg',
-        imageSrc: 'assets/images/pacagen-fold-hero.jpg',
-        imageAlt: 'Pacagen cat allergen-neutralizing spray helping create a more comfortable home for cat owners',
-        imageCaption: 'Pacagen helps neutralize 98% of active cat allergens for simple, fast relief.',
-        pageType: 'article'
-      });
+  <footer id="cta">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:.35rem;">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Pacagen</span>
+        </div>
+        <p>Neutralize cat allergens fast. Feel like yourself at home again.</p>
+      </div>
 
-      createArticleFooter({
-        pageType: 'article'
-      });
-    });
-  </script>
+      <div class="footer-cta">
+        <a href="#top" class="btn btn-primary">Get Pacagen Now</a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#benefits">Benefits</a>
+          <a href="#results">Results</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
