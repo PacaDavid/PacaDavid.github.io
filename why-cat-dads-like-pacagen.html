@@ -1,119 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Cat's New Favorite Healthy Habit</title>
-  <meta name="description" content="Discover the easy daily wellness habit cats actually enjoy. Support digestion, skin, coat, immunity, and everyday vitality with a simple, tasty routine your cat will look forward to.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cat's New Favorite Healthy Habit | Pacagen</title>
+  <meta name="description" content="A daily healthy habit your cat will love. Pacagen's cat allergen reducing supplement supports gut and immune health while helping reduce Fel d 1 cat allergens at the source." />
+
   <script src="assets/js/head-components.js"></script>
   <script src="assets/js/tracking.js"></script>
   <script src="assets/js/component-init.js"></script>
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/components/article/fold.js"></script>
   <script src="assets/js/components/article/article-footer.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+
   <style>
-    .hero-note,
-    .benefit-card,
-    .ingredient-grid,
-    .faq-box,
-    .testimonial-box,
-    .cta-box,
-    .comparison-table {
-      border-radius: 16px;
+    .article-section h2 {
+      margin-bottom: 0.75rem;
     }
-
-    .hero-note,
-    .benefit-card,
-    .faq-box,
-    .testimonial-box,
-    .cta-box {
-      background: #fffaf4;
-      border: 1px solid #f0e2d0;
-      padding: 1.25rem;
+    .article-section p,
+    .article-section li {
+      font-size: 1.05rem;
+      line-height: 1.7;
     }
-
+    .article-section ul {
+      padding-left: 1.25rem;
+      margin-top: 0.75rem;
+    }
+    .stat-grid,
     .benefit-grid,
-    .ingredient-grid,
-    .testimonial-grid {
+    .testimonial-grid,
+    .steps-grid {
       display: grid;
       gap: 1rem;
+      margin-top: 1.25rem;
     }
-
-    .benefit-grid {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-
-    .ingredient-grid {
+    .stat-grid {
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
-
-    .testimonial-grid {
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    .benefit-grid,
+    .testimonial-grid,
+    .steps-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
-
-    .benefit-card h3,
-    .ingredient-grid h3,
-    .faq-box h3,
-    .cta-box h3 {
-      margin-top: 0;
-    }
-
-    .ingredient-item {
-      background: #ffffff;
-      border: 1px solid #eee2d2;
-      border-radius: 14px;
-      padding: 1rem;
-    }
-
-    .comparison-table {
-      overflow: hidden;
-      border: 1px solid #eadbc7;
-      margin-top: 1rem;
-    }
-
-    .comparison-table table {
-      width: 100%;
-      border-collapse: collapse;
+    .stat-card,
+    .benefit-card,
+    .testimonial-card,
+    .step-card,
+    .highlight-box,
+    .offer-box {
       background: #fff;
+      border: 1px solid #e9ecef;
+      border-radius: 16px;
+      padding: 1.25rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
     }
-
-    .comparison-table th,
-    .comparison-table td {
-      padding: 0.9rem;
-      border-bottom: 1px solid #f1e6d8;
-      text-align: left;
-      vertical-align: top;
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1f6f5f;
+      line-height: 1.1;
     }
-
-    .comparison-table th {
-      background: #fff3e5;
+    .mini-kicker {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #1f6f5f;
+      margin-bottom: 0.5rem;
     }
-
-    .check {
-      color: #1f8f4e;
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.25rem;
+      align-items: center;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #1f6f5f;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.9rem 1.4rem;
+      border-radius: 999px;
       font-weight: 700;
     }
-
-    .x {
-      color: #b44a3c;
+    .cta-button:hover {
+      opacity: 0.92;
+    }
+    .trust-note {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .quote {
+      font-size: 1.05rem;
+      font-style: italic;
+      margin-bottom: 0.75rem;
+    }
+    .check-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .check-list li {
+      margin-bottom: 0.7rem;
+      padding-left: 1.7rem;
+      position: relative;
+    }
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #1f6f5f;
       font-weight: 700;
     }
-
-    .article-section .pacagen-link {
-      font-weight: 700;
-      text-decoration: underline;
+    .soft-bg {
+      background: #f6fbf9;
+      border-radius: 20px;
+      padding: 1.5rem;
     }
-
-    .highlight-line {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #6c4b20;
+    .offer-box {
+      background: linear-gradient(135deg, #f6fbf9 0%, #ffffff 100%);
     }
-
+    .offer-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
     @media (max-width: 768px) {
-      .comparison-table {
-        overflow-x: auto;
+      .article-section p,
+      .article-section li {
+        font-size: 1rem;
+      }
+      .stat-number {
+        font-size: 1.7rem;
       }
     }
   </style>
@@ -125,180 +146,181 @@
         <div id="article-fold"></div>
 
         <div class="article-section">
-          <div class="hero-note">
-            <p class="highlight-line">If your cat turns up their nose at powders, pills, or messy toppers, this is the simple wellness ritual you've been looking for.</p>
-            <p>Cats can be picky. One day they love something, the next day they act offended you even offered it. That’s why the smartest daily health routine is the one they actually enjoy. Imagine giving your cat meaningful nutritional support in a form that feels more like a treat than a chore—something they get excited for, and you can feel good about serving.</p>
-            <p>This is your cat’s new favorite healthy habit: a delicious, easy-to-serve daily chew designed to support whole-body wellness without turning mealtime into a battle.</p>
-          </div>
-        </div>
-
-        <div class="article-section">
           <div class="article-content-image d-flex">
-            <img src="assets/images/cat-enjoying-daily-chew.jpg" class="article-img" alt="Healthy cat enjoying a daily wellness chew in a cozy home">
+            <img src="assets/images/cat-healthy-habit-hero.jpg" class="article-img" alt="Healthy cat enjoying a daily supplement ritual with its owner" />
           </div>
-          <h2>Finally, Daily Nutrition Your Cat Will Actually Look Forward To</h2>
-          <p>Most pet wellness routines fail for one reason: they’re inconvenient. Powders clump. Liquids get ignored. Capsules require wrestling. And when your cat hates the process, consistency disappears.</p>
-          <p>A better routine removes friction. It gives you a simple, once-a-day moment that feels effortless and rewarding. Instead of hiding supplements in food and hoping for the best, you can offer a tasty chew that fits naturally into your cat’s day.</p>
-          <p>That means less stress for you, more excitement for them, and a health habit that’s easy to stick with long term.</p>
+          <span class="mini-kicker">A smarter daily ritual</span>
+          <h2>Your Cat’s New Favorite Healthy Habit</h2>
+          <p>
+            The best wellness routines are the ones your cat actually enjoys. That’s what makes Pacagen different. Instead of choosing between supporting your cat’s health and making your home more comfortable for you, this daily supplement helps you do both at once.
+          </p>
+          <p>
+            Pacagen’s cat allergen reducing supplement is designed to be good for your cat, with gut- and immune-supporting ingredients, and good for you, by targeting Fel d 1 cat allergens at the source. It’s a simple habit that fits into everyday life—and one your cat can look forward to.
+          </p>
+          <div class="cta-row">
+            <a href="#" class="cta-button pacagen-link">Shop Pacagen Now</a>
+            <span class="trust-note">Loved by cat parents looking for a healthier routine for both cat and human</span>
+          </div>
         </div>
 
         <div class="article-section">
-          <h2>Why Cat Parents Are Making the Switch</h2>
+          <span class="mini-kicker">Why cat parents are switching</span>
+          <h2>Healthy for your cat. Helpful for your home.</h2>
+          <p>
+            Most cat products focus on only one side of the relationship. They support coat health, digestion, or calming behavior—or they try to manage allergens after they’ve already spread through your space. Pacagen starts earlier by helping reduce the major cat allergen, Fel d 1, at its source while supporting your cat’s daily wellness from the inside out.
+          </p>
           <div class="benefit-grid">
             <div class="benefit-card">
-              <h3>Supports everyday digestion</h3>
-              <p>A balanced gut can help your cat feel more comfortable day to day, with support for regular digestion and nutrient absorption.</p>
+              <h3>Supports gut health</h3>
+              <p>A healthy gut helps support digestion, nutrient absorption, and overall everyday wellbeing.</p>
             </div>
             <div class="benefit-card">
-              <h3>Helps maintain healthy skin and a soft coat</h3>
-              <p>Daily nutritional support can help keep your cat looking as good as they feel, from whiskers to tail.</p>
+              <h3>Supports immune health</h3>
+              <p>Formulated with wellness-minded ingredients to help your cat maintain a resilient, balanced system.</p>
             </div>
             <div class="benefit-card">
-              <h3>Promotes immune wellness</h3>
-              <p>Consistent daily nutrition helps support the body’s natural defenses so your cat can thrive through every season.</p>
+              <h3>Targets Fel d 1 at the source</h3>
+              <p>Helps address cat allergens before they become another layer on furniture, clothes, and the air around you.</p>
             </div>
             <div class="benefit-card">
-              <h3>Encourages all-around vitality</h3>
-              <p>From playful energy to day-to-day comfort, a smart wellness routine helps support your cat’s best self over time.</p>
+              <h3>Easy daily habit</h3>
+              <p>No complicated routines—just a simple addition that makes life easier for both of you.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="article-section">
+          <div class="soft-bg">
+            <span class="mini-kicker">The numbers cat parents look for</span>
+            <h2>What makes a daily habit stick? Results you can feel good about.</h2>
+            <p>
+              Today’s best wellness brands win by combining convenience, consistency, and trust. Cat parents want the same thing: a product they can give every day, a formula with a real purpose, and proof that it belongs in their routine.
+            </p>
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">1 daily scoop</div>
+                <p>Simple enough to become part of your cat’s everyday rhythm.</p>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">2-in-1 support</div>
+                <p>Supports your cat’s gut and immune health while helping reduce allergen exposure for you.</p>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">Fel d 1 focused</div>
+                <p>Targets the primary cat allergen at the source, not just after it lands around the home.</p>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">Everyday consistency</div>
+                <p>Built for long-term use as a healthy habit your cat can enjoy again and again.</p>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="article-section">
           <div class="article-content-image d-flex">
-            <img src="assets/images/cat-owner-bonding-kitchen.jpg" class="article-img" alt="Cat owner giving a daily healthy chew to a relaxed cat in the kitchen">
+            <img src="assets/images/cat-and-owner-couch.jpg" class="article-img" alt="Cat cuddling with owner on a couch in a clean comfortable home" />
           </div>
-          <h2>No More Guesswork. No More Mealtime Negotiations.</h2>
-          <p>You shouldn’t need a complicated routine just to support your cat’s health. The best products are built for real life: quick to serve, easy to remember, and appealing enough that your cat doesn’t resist.</p>
-          <p>That’s what makes a chew-based wellness ritual so powerful. It transforms “I hope they eat this” into “They’re already waiting for it.” And that small shift matters, because daily consistency is where results begin.</p>
-          <ul>
-            <li>Easy to serve in seconds</li>
-            <li>No measuring, mixing, or disguising</li>
-            <li>No supplement cabinet full of half-used products</li>
-            <li>A routine your cat can genuinely enjoy</li>
+          <span class="mini-kicker">Why this matters</span>
+          <h2>The allergen problem starts with Fel d 1</h2>
+          <p>
+            If you live with a cat, you’re not just living with fur. The biggest issue for many sensitive cat parents is Fel d 1, the primary cat allergen. Cats naturally produce it, then spread it through grooming and normal daily activity. That means the challenge doesn’t start on your couch or clothes—it starts with your cat’s biology.
+          </p>
+          <p>
+            Pacagen is designed around that reality. By targeting Fel d 1 at the source, it helps support a more comfortable shared environment, while the wellness-focused formula gives you a reason to feel good about making it part of your cat’s daily routine.
+          </p>
+          <ul class="check-list">
+            <li>Addresses the problem before allergens are distributed around the home</li>
+            <li>Helps create a more comfortable day-to-day experience for cat-loving households</li>
+            <li>Turns “allergen management” into a proactive wellness ritual</li>
           </ul>
         </div>
 
         <div class="article-section">
-          <h2>What a Better Daily Cat Supplement Should Deliver</h2>
-          <div class="ingredient-grid">
-            <div class="ingredient-item">
-              <h3>Taste-first formulation</h3>
-              <p>If cats won’t eat it, it doesn’t matter how “healthy” it is. Palatability comes first so the routine can actually last.</p>
+          <span class="mini-kicker">Daily health hack for cat households</span>
+          <h2>The easiest routines are the ones your cat actually enjoys</h2>
+          <p>
+            The biggest reason healthy habits fail? They feel like work. Pacagen is built to feel like a treatable, repeatable moment your cat can enjoy, not a battle you have to win every day. That matters, because consistent use is what turns a good idea into a meaningful ritual.
+          </p>
+          <div class="steps-grid">
+            <div class="step-card">
+              <h3>Step 1: Add to food</h3>
+              <p>Mix into your cat’s usual mealtime or daily feeding ritual with minimal disruption.</p>
             </div>
-            <div class="ingredient-item">
-              <h3>Whole-body support</h3>
-              <p>Look for ingredients chosen to support digestion, skin, coat, immune function, and everyday wellness in one simple serving.</p>
+            <div class="step-card">
+              <h3>Step 2: Keep it consistent</h3>
+              <p>Daily habits help support ongoing gut and immune wellness while continuing allergen-focused benefits.</p>
             </div>
-            <div class="ingredient-item">
-              <h3>Clean, thoughtful ingredients</h3>
-              <p>Cat parents want support they can trust—without unnecessary fillers, fuss, or hard-to-understand routines.</p>
-            </div>
-            <div class="ingredient-item">
-              <h3>Convenience that sticks</h3>
-              <p>The best habit is the one that fits your life. Easy wins every time when it comes to long-term consistency.</p>
+            <div class="step-card">
+              <h3>Step 3: Enjoy the difference</h3>
+              <p>Feel better about what you’re giving your cat—and what that choice means for your shared space.</p>
             </div>
           </div>
-          <p>If you’re looking for a simple way to upgrade your cat’s daily nutrition, explore a better option through the <a href="#" class="pacagen-link">Pacagen product collection</a> and build a routine your cat will actually enjoy.</p>
-        </div>
-
-        <div class="article-section">
-          <h2>How It Fits Into Your Routine</h2>
-          <p>You don’t need to overhaul your cat’s diet or add another complicated task to your day. This works best as a simple, repeatable moment:</p>
-          <ul>
-            <li>Offer the chew at the same time each day</li>
-            <li>Pair it with a positive routine like breakfast, playtime, or evening wind-down</li>
-            <li>Stay consistent so your cat begins to expect and enjoy it</li>
-            <li>Let the daily habit do the heavy lifting over time</li>
-          </ul>
-          <p>Think of it as a tiny upgrade with big potential: a better-for-them treat that supports more than just cravings.</p>
         </div>
 
         <div class="article-section">
           <div class="article-content-image d-flex">
-            <img src="assets/images/shiny-coat-happy-cat.jpg" class="article-img" alt="Bright-eyed cat with a shiny coat resting comfortably on a sofa">
+            <img src="assets/images/healthy-cat-bowl.jpg" class="article-img" alt="Healthy cat eating from bowl with wellness supplement added" />
           </div>
-          <h2>The Difference Between a Treat and a Healthy Habit</h2>
-          <p>Traditional treats are fun, but they rarely do much beyond the moment. A thoughtfully designed daily chew can go further by combining enjoyment with meaningful nutritional support.</p>
-          <div class="comparison-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Feature</th>
-                  <th>Ordinary Cat Treat</th>
-                  <th>Daily Wellness Chew</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Something cats get excited about</td>
-                  <td class="check">✓</td>
-                  <td class="check">✓</td>
-                </tr>
-                <tr>
-                  <td>Supports digestion, skin, coat, and immunity</td>
-                  <td class="x">✕</td>
-                  <td class="check">✓</td>
-                </tr>
-                <tr>
-                  <td>Built for everyday consistency</td>
-                  <td class="x">✕</td>
-                  <td class="check">✓</td>
-                </tr>
-                <tr>
-                  <td>Easy alternative to powders or pills</td>
-                  <td class="x">✕</td>
-                  <td class="check">✓</td>
-                </tr>
-                <tr>
-                  <td>Feels rewarding instead of like a chore</td>
-                  <td class="check">✓</td>
-                  <td class="check">✓</td>
-                </tr>
-              </tbody>
-            </table>
+          <span class="mini-kicker">What your cat gets out of it</span>
+          <h2>A supplement that does more than just one job</h2>
+          <p>
+            Pacagen isn’t just about reducing the burden of allergens in your home. It’s also designed to support your cat’s internal health with ingredients selected for everyday wellness. That’s what makes it such a compelling habit: your cat gets meaningful support, and you get a smarter way to approach cat allergens.
+          </p>
+          <div class="highlight-box">
+            <ul class="check-list">
+              <li>Supports digestive wellness and gut balance</li>
+              <li>Helps promote everyday immune resilience</li>
+              <li>Fits naturally into long-term preventive care habits</li>
+              <li>Gives cat parents a more holistic reason to stay consistent</li>
+            </ul>
           </div>
         </div>
 
         <div class="article-section">
-          <h2>What Cat Parents Love Most</h2>
+          <span class="mini-kicker">Social proof</span>
+          <h2>Why cat parents keep coming back</h2>
+          <p>
+            The strongest endorsement of any daily wellness product is repeat use. Cat parents want products that are easy to give, make sense scientifically, and help improve everyday life. Pacagen is earning attention because it checks all three boxes.
+          </p>
           <div class="testimonial-grid">
-            <div class="testimonial-box">
-              <p>“I’ve tried powders, broths, and soft chews before, and my cat ignored all of them. This is the first thing she actually wants every day.”</p>
-              <p><strong>— A relieved cat mom</strong></p>
+            <div class="testimonial-card">
+              <p class="quote">“This is the first product I’ve felt genuinely good about giving every day. It supports my cat, and it supports our home.”</p>
+              <p><strong>— Verified Cat Parent</strong></p>
             </div>
-            <div class="testimonial-box">
-              <p>“The biggest win is how easy it is. No mixing, no hiding, no wasted product. Just one simple healthy habit we can stick to.”</p>
-              <p><strong>— A busy pet parent</strong></p>
+            <div class="testimonial-card">
+              <p class="quote">“I love that it’s not just about me—it’s also something that supports my cat’s health. That made it an easy yes.”</p>
+              <p><strong>— Multi-Cat Household</strong></p>
             </div>
-            <div class="testimonial-box">
-              <p>“I wanted something that supported more than one need without turning into a complicated supplement routine. This made daily wellness feel realistic.”</p>
-              <p><strong>— A multi-cat household</strong></p>
+            <div class="testimonial-card">
+              <p class="quote">“The routine is simple, my cat doesn’t fight me on it, and that’s exactly what I needed to stay consistent.”</p>
+              <p><strong>— Happy Pacagen Customer</strong></p>
             </div>
           </div>
         </div>
 
         <div class="article-section">
-          <h2>Frequently Asked Questions</h2>
-          <div class="faq-box">
-            <h3>Is this just another cat treat?</h3>
-            <p>No. The goal is to combine the enjoyment of a treat with the benefits of daily nutritional support, making it easier to stay consistent.</p>
-          </div>
-          <div class="faq-box" style="margin-top: 1rem;">
-            <h3>What makes a chew better than powders or pills?</h3>
-            <p>Convenience and compliance. If your cat enjoys it, you’re far more likely to serve it regularly—which is what matters most in any wellness routine.</p>
-          </div>
-          <div class="faq-box" style="margin-top: 1rem;">
-            <h3>Can this be part of a long-term routine?</h3>
-            <p>That’s the idea. A daily habit should feel simple enough to repeat, enjoyable enough for your cat to want, and supportive enough for you to feel confident giving it every day.</p>
-          </div>
+          <span class="mini-kicker">A new standard</span>
+          <h2>Stop choosing between your cat’s wellbeing and your own comfort</h2>
+          <p>
+            You shouldn’t have to compromise. You shouldn’t have to settle for a product that only benefits your cat, or only benefits you. Pacagen’s cat allergen reducing supplement was made for modern cat households who want a better answer—one daily habit that feels caring, proactive, and practical.
+          </p>
+          <p>
+            It’s the kind of routine that makes sense immediately: support your cat’s gut, support your cat’s immune health, and help reduce Fel d 1 cat allergens where they begin. That’s not just clever product design. That’s a habit worth keeping.
+          </p>
         </div>
 
         <div class="article-section">
-          <div class="cta-box">
-            <h3>Your Cat Deserves a Health Routine That Feels Good for Both of You</h3>
-            <p>You don’t have to choose between what’s healthy and what your cat will actually accept. The right daily chew gives you both: whole-body support in a form that feels easy, rewarding, and sustainable.</p>
-            <p>If you’re ready to replace the struggle with a routine your cat can love, discover a smarter option through <a href="#" class="pacagen-link">Pacagen</a> and turn daily wellness into your cat’s new favorite habit.</p>
+          <div class="offer-box">
+            <span class="mini-kicker">Make it your new routine</span>
+            <h2 class="offer-title">Start the healthy habit your cat will actually want</h2>
+            <p>
+              If you’ve been waiting for a simpler, smarter way to care for your cat and your home at the same time, this is it. Pacagen makes daily wellness feel easy—and gives cat parents a practical way to target allergens at the source.
+            </p>
+            <div class="cta-row">
+              <a href="#" class="cta-button pacagen-link">Try Pacagen Today</a>
+              <span class="trust-note">A better routine for your cat. A better everyday experience for you.</span>
+            </div>
           </div>
         </div>
 
@@ -310,12 +332,12 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       createFold({
-        title: "Your Cat's New Favorite Healthy Habit",
+        title: "Your Cat’s New Favorite Healthy Habit",
         authorName: "Pacagen Editorial Team",
         authorImage: "assets/images/authors/pacagen-editorial-team.jpg",
-        imageSrc: "assets/images/cat-healthy-habit-hero.jpg",
-        imageAlt: "Happy cat enjoying a healthy daily wellness routine",
-        imageCaption: "A simple daily chew can make wellness easier, tastier, and more consistent.",
+        imageSrc: "assets/images/cat-healthy-habit-fold.jpg",
+        imageAlt: "Healthy cat relaxing beside its owner as part of a daily wellness routine",
+        imageCaption: "A daily ritual that supports your cat’s wellness and helps reduce allergens at the source.",
         pageType: "article"
       });
 
