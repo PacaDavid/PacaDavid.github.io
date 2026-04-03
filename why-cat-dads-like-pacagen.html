@@ -1,712 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>7 Benefits Men Love About Pacagen</title>
-  <meta name="description" content="Discover the 7 benefits men love about Pacagen, from daily nutrition support and steady energy to gut health, immunity, and a simple routine that actually sticks." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cat's New Favorite Healthy Habit</title>
+  <meta name="description" content="Discover the easy daily wellness habit cats actually enjoy. Support digestion, skin, coat, immunity, and everyday vitality with a simple, tasty routine your cat will look forward to.">
+  <script src="assets/js/head-components.js"></script>
+  <script src="assets/js/tracking.js"></script>
+  <script src="assets/js/component-init.js"></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/components/article/fold.js"></script>
+  <script src="assets/js/components/article/article-footer.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
   <style>
-    :root{
-      --bg:#f8f7f2;
-      --surface:#ffffff;
-      --surface-2:#f1efe6;
-      --text:#1f2a1f;
-      --muted:#5e665d;
-      --accent:#2f6b3d;
-      --accent-dark:#245531;
-      --accent-soft:#dceadf;
-      --border:#d9dfd3;
-      --shadow:0 10px 30px rgba(31,42,31,.08);
-      --radius:18px;
-      --radius-sm:12px;
-      --max:1180px;
+    .hero-note,
+    .benefit-card,
+    .ingredient-grid,
+    .faq-box,
+    .testimonial-box,
+    .cta-box,
+    .comparison-table {
+      border-radius: 16px;
     }
 
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.55;
+    .hero-note,
+    .benefit-card,
+    .faq-box,
+    .testimonial-box,
+    .cta-box {
+      background: #fffaf4;
+      border: 1px solid #f0e2d0;
+      padding: 1.25rem;
     }
 
-    a{color:inherit;text-decoration:none}
-    button{font:inherit}
-    .container{
-      width:min(calc(100% - 2rem), var(--max));
-      margin:0 auto;
+    .benefit-grid,
+    .ingredient-grid,
+    .testimonial-grid {
+      display: grid;
+      gap: 1rem;
     }
 
-    .topbar{
-      background:#eef5ef;
-      border-bottom:1px solid var(--border);
-      color:var(--accent-dark);
-      text-align:center;
-      font-size:.92rem;
-      padding:.65rem 1rem;
-      font-weight:600;
-      letter-spacing:.01em;
+    .benefit-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 
-    .hero{
-      position:relative;
-      overflow:hidden;
-      padding:clamp(3rem, 5vw, 5rem) 0 3rem;
-      background:
-        radial-gradient(circle at top right, rgba(47,107,61,.12), transparent 32%),
-        radial-gradient(circle at left center, rgba(47,107,61,.08), transparent 28%),
-        var(--bg);
+    .ingredient-grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
 
-    .hero-grid{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap:2rem;
-      align-items:center;
+    .testimonial-grid {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     }
 
-    .eyebrow{
-      display:inline-flex;
-      align-items:center;
-      gap:.5rem;
-      background:var(--accent-soft);
-      color:var(--accent-dark);
-      border:1px solid #c7dbc9;
-      padding:.5rem .8rem;
-      border-radius:999px;
-      font-size:.9rem;
-      font-weight:700;
-      margin-bottom:1rem;
+    .benefit-card h3,
+    .ingredient-grid h3,
+    .faq-box h3,
+    .cta-box h3 {
+      margin-top: 0;
     }
 
-    .eyebrow-dot{
-      width:.55rem;
-      height:.55rem;
-      border-radius:50%;
-      background:var(--accent);
-      flex:0 0 auto;
+    .ingredient-item {
+      background: #ffffff;
+      border: 1px solid #eee2d2;
+      border-radius: 14px;
+      padding: 1rem;
     }
 
-    h1,h2,h3,p{margin:0}
-    h1{
-      font-size:clamp(2.2rem, 5vw, 4.4rem);
-      line-height:1.05;
-      letter-spacing:-.03em;
-      max-width:12ch;
+    .comparison-table {
+      overflow: hidden;
+      border: 1px solid #eadbc7;
+      margin-top: 1rem;
     }
 
-    .subheadline{
-      margin-top:1rem;
-      font-size:clamp(1.05rem, 2vw, 1.25rem);
-      color:var(--muted);
-      max-width:58ch;
+    .comparison-table table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
     }
 
-    .hero-actions{
-      display:flex;
-      flex-wrap:wrap;
-      gap:.9rem;
-      margin-top:1.6rem;
+    .comparison-table th,
+    .comparison-table td {
+      padding: 0.9rem;
+      border-bottom: 1px solid #f1e6d8;
+      text-align: left;
+      vertical-align: top;
     }
 
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      min-height:52px;
-      padding:0 1.2rem;
-      border-radius:999px;
-      font-weight:800;
-      border:1px solid transparent;
-      transition:.2s ease;
-      cursor:pointer;
+    .comparison-table th {
+      background: #fff3e5;
     }
 
-    .btn-primary{
-      background:var(--accent);
-      color:#fff;
-      box-shadow:var(--shadow);
-    }
-    .btn-primary:hover{background:var(--accent-dark); transform:translateY(-1px)}
-    .btn-secondary{
-      background:transparent;
-      color:var(--text);
-      border-color:var(--border);
-    }
-    .btn-secondary:hover{background:var(--surface)}
-    .microcopy{
-      display:flex;
-      flex-wrap:wrap;
-      gap:1rem;
-      margin-top:1rem;
-      color:var(--muted);
-      font-size:.95rem;
+    .check {
+      color: #1f8f4e;
+      font-weight: 700;
     }
 
-    .hero-card{
-      background:var(--surface);
-      border:1px solid var(--border);
-      border-radius:calc(var(--radius) + 6px);
-      box-shadow:var(--shadow);
-      padding:1.1rem;
+    .x {
+      color: #b44a3c;
+      font-weight: 700;
     }
 
-    .product-shot{
-      aspect-ratio: 4 / 5;
-      border-radius:var(--radius);
-      background:
-        linear-gradient(145deg, #f2f4ee, #e7eadf);
-      border:1px solid var(--border);
-      display:flex;
-      align-items:flex-end;
-      justify-content:center;
-      padding:1.1rem;
-      position:relative;
-      overflow:hidden;
+    .article-section .pacagen-link {
+      font-weight: 700;
+      text-decoration: underline;
     }
 
-    .product-shot::before{
-      content:"Pacagen";
-      position:absolute;
-      top:1rem;
-      left:1rem;
-      font-weight:900;
-      letter-spacing:.08em;
-      color:var(--accent-dark);
-      background:#ffffffcf;
-      border:1px solid var(--border);
-      padding:.45rem .7rem;
-      border-radius:999px;
-      font-size:.85rem;
-      text-transform:uppercase;
+    .highlight-line {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #6c4b20;
     }
 
-    .product-badge{
-      width:min(72%, 320px);
-      aspect-ratio: 3 / 4;
-      background:linear-gradient(180deg, #3a7a49, #245531);
-      border-radius:28px;
-      box-shadow:0 24px 40px rgba(36,85,49,.22);
-      position:relative;
-      border:1px solid rgba(255,255,255,.18);
-    }
-
-    .product-badge::before{
-      content:"Daily Nutrition Support";
-      position:absolute;
-      top:18%;
-      left:50%;
-      transform:translateX(-50%);
-      color:#eaf4ec;
-      font-size:.95rem;
-      font-weight:700;
-      letter-spacing:.03em;
-      text-align:center;
-      width:78%;
-    }
-
-    .product-badge::after{
-      content:"PACAGEN";
-      position:absolute;
-      bottom:15%;
-      left:50%;
-      transform:translateX(-50%);
-      color:#fff;
-      font-size:1.45rem;
-      font-weight:900;
-      letter-spacing:.12em;
-    }
-
-    .stats{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:.8rem;
-      margin-top:1rem;
-    }
-
-    .stat{
-      background:var(--surface-2);
-      border:1px solid var(--border);
-      border-radius:var(--radius-sm);
-      padding:.9rem;
-      text-align:center;
-    }
-
-    .stat strong{
-      display:block;
-      font-size:1.15rem;
-      margin-bottom:.15rem;
-    }
-
-    section{
-      padding:4rem 0;
-    }
-
-    .section-head{
-      max-width:760px;
-      margin-bottom:2rem;
-    }
-
-    .section-head h2{
-      font-size:clamp(1.8rem, 3vw, 2.7rem);
-      line-height:1.1;
-      letter-spacing:-.02em;
-    }
-
-    .section-head p{
-      margin-top:.75rem;
-      color:var(--muted);
-      font-size:1.05rem;
-    }
-
-    .benefits-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:1rem;
-    }
-
-    .benefit{
-      background:var(--surface);
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      padding:1.2rem;
-      box-shadow:var(--shadow);
-    }
-
-    .icon{
-      width:52px;
-      height:52px;
-      border-radius:14px;
-      background:linear-gradient(180deg, #e7f1e9, #d8e8dc);
-      border:1px solid #c8d9cc;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:var(--accent-dark);
-      font-weight:900;
-      margin-bottom:1rem;
-    }
-
-    .benefit h3{
-      font-size:1.1rem;
-      margin-bottom:.45rem;
-    }
-
-    .benefit p{
-      color:var(--muted);
-      font-size:.98rem;
-    }
-
-    .proof-wrap{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:1rem;
-    }
-
-    blockquote{
-      margin:0;
-      background:var(--surface);
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      padding:1.25rem;
-      box-shadow:var(--shadow);
-    }
-
-    blockquote p{
-      font-size:1rem;
-      color:var(--text);
-    }
-
-    .quote-footer{
-      margin-top:1rem;
-      color:var(--muted);
-      font-size:.92rem;
-      font-weight:700;
-    }
-
-    .article{
-      display:grid;
-      grid-template-columns:1.05fr .95fr;
-      gap:2rem;
-      align-items:start;
-    }
-
-    .article-card{
-      background:var(--surface);
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      padding:1.5rem;
-      box-shadow:var(--shadow);
-    }
-
-    .article-card p + p{
-      margin-top:1rem;
-    }
-
-    .aside-placeholder{
-      aspect-ratio: 4 / 4.2;
-      border-radius:var(--radius);
-      background:
-        linear-gradient(160deg, #f1f4eb 0%, #e8ede1 55%, #dfe8d8 100%);
-      border:1px solid var(--border);
-      position:relative;
-      overflow:hidden;
-    }
-
-    .aside-placeholder::before,
-    .aside-placeholder::after{
-      content:"";
-      position:absolute;
-      border-radius:20px;
-      background:rgba(47,107,61,.09);
-      border:1px solid rgba(47,107,61,.12);
-    }
-
-    .aside-placeholder::before{
-      width:58%;
-      height:22%;
-      top:12%;
-      left:10%;
-    }
-
-    .aside-placeholder::after{
-      width:72%;
-      height:28%;
-      bottom:12%;
-      right:8%;
-    }
-
-    .aside-copy{
-      margin-top:1rem;
-      background:var(--surface);
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      padding:1rem 1.1rem;
-    }
-
-    .aside-copy strong{
-      display:block;
-      margin-bottom:.35rem;
-    }
-
-    .faq-list{
-      display:grid;
-      gap:.9rem;
-    }
-
-    .faq-item{
-      background:var(--surface);
-      border:1px solid var(--border);
-      border-radius:var(--radius-sm);
-      padding:1.1rem 1.15rem;
-      box-shadow:var(--shadow);
-    }
-
-    .faq-item h3{
-      font-size:1.02rem;
-      margin-bottom:.4rem;
-    }
-
-    .faq-item p{
-      color:var(--muted);
-      font-size:.98rem;
-    }
-
-    footer{
-      padding:2.5rem 0 3rem;
-      background:#eef3ec;
-      border-top:1px solid var(--border);
-    }
-
-    .footer-wrap{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap:1.5rem;
-      flex-wrap:wrap;
-    }
-
-    .brand{
-      font-size:1.35rem;
-      font-weight:900;
-      letter-spacing:.05em;
-      text-transform:uppercase;
-      color:var(--accent-dark);
-    }
-
-    .footer-copy{
-      color:var(--muted);
-      margin-top:.45rem;
-      max-width:48ch;
-      font-size:.96rem;
-    }
-
-    .footer-nav{
-      display:flex;
-      gap:1rem;
-      flex-wrap:wrap;
-      margin-top:.9rem;
-      color:var(--muted);
-      font-size:.95rem;
-    }
-
-    .footer-cta{
-      display:flex;
-      flex-direction:column;
-      align-items:flex-start;
-      gap:.75rem;
-    }
-
-    @media (max-width: 980px){
-      .hero-grid,
-      .article,
-      .benefits-grid,
-      .proof-wrap{
-        grid-template-columns:1fr;
-      }
-
-      .stats{
-        grid-template-columns:1fr 1fr 1fr;
-      }
-
-      .hero{
-        padding-top:2.5rem;
-      }
-
-      h1{
-        max-width:14ch;
-      }
-    }
-
-    @media (max-width: 640px){
-      .container{
-        width:min(calc(100% - 1.2rem), var(--max));
-      }
-
-      section{
-        padding:3.2rem 0;
-      }
-
-      .stats{
-        grid-template-columns:1fr;
-      }
-
-      .hero-actions{
-        flex-direction:column;
-      }
-
-      .btn{
-        width:100%;
-      }
-
-      .footer-wrap{
-        flex-direction:column;
+    @media (max-width: 768px) {
+      .comparison-table {
+        overflow-x: auto;
       }
     }
   </style>
 </head>
 <body>
-  <div class="topbar">A simpler daily routine for men who want to feel covered without overthinking nutrition</div>
+  <main>
+    <article class="main-article">
+      <section class="w-70 mx-auto my-4">
+        <div id="article-fold"></div>
 
-  <header class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="eyebrow"><span class="eyebrow-dot"></span>7 Benefits Men Love About Pacagen</div>
-        <h1>Feel more covered every day, without making nutrition your second job.</h1>
-        <p class="subheadline">Pacagen gives men a practical way to support energy, digestion, immunity, and daily consistency in one easy routine. No complicated stacks. No guesswork. Just better support for the parts of health that matter most.</p>
-        <div class="hero-actions">
-          <a href="#benefits" class="btn btn-primary">See the 7 Benefits</a>
-          <a href="#faq" class="btn btn-secondary">Get the FAQs</a>
-        </div>
-        <div class="microcopy">
-          <span>Daily nutrition support</span>
-          <span>Simple routine you can actually stick to</span>
-          <span>Built for real life, not perfect habits</span>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <div class="product-shot">
-          <div class="product-badge" aria-hidden="true"></div>
-        </div>
-        <div class="stats">
-          <div class="stat">
-            <strong>1 easy habit</strong>
-            <span>Less friction every morning</span>
-          </div>
-          <div class="stat">
-            <strong>7 key benefits</strong>
-            <span>Support men notice daily</span>
-          </div>
-          <div class="stat">
-            <strong>Made to last</strong>
-            <span>Consistency beats complexity</span>
+        <div class="article-section">
+          <div class="hero-note">
+            <p class="highlight-line">If your cat turns up their nose at powders, pills, or messy toppers, this is the simple wellness ritual you've been looking for.</p>
+            <p>Cats can be picky. One day they love something, the next day they act offended you even offered it. That’s why the smartest daily health routine is the one they actually enjoy. Imagine giving your cat meaningful nutritional support in a form that feels more like a treat than a chore—something they get excited for, and you can feel good about serving.</p>
+            <p>This is your cat’s new favorite healthy habit: a delicious, easy-to-serve daily chew designed to support whole-body wellness without turning mealtime into a battle.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </header>
 
-  <section id="benefits">
-    <div class="container">
-      <div class="section-head">
-        <h2>The 7 reasons men keep Pacagen in their routine</h2>
-        <p>Every benefit below supports the same core promise: helping you feel more covered, more consistent, and more in control of your daily nutrition without adding another complicated system to your life.</p>
-      </div>
-
-      <div class="benefits-grid">
-        <div class="benefit">
-          <div class="icon">1</div>
-          <h3>Steadier everyday energy</h3>
-          <p>When your nutrition is more consistent, your day feels more stable. Pacagen helps men support energy from a better daily foundation instead of relying on another coffee and hoping for the best.</p>
+        <div class="article-section">
+          <div class="article-content-image d-flex">
+            <img src="assets/images/cat-enjoying-daily-chew.jpg" class="article-img" alt="Healthy cat enjoying a daily wellness chew in a cozy home">
+          </div>
+          <h2>Finally, Daily Nutrition Your Cat Will Actually Look Forward To</h2>
+          <p>Most pet wellness routines fail for one reason: they’re inconvenient. Powders clump. Liquids get ignored. Capsules require wrestling. And when your cat hates the process, consistency disappears.</p>
+          <p>A better routine removes friction. It gives you a simple, once-a-day moment that feels effortless and rewarding. Instead of hiding supplements in food and hoping for the best, you can offer a tasty chew that fits naturally into your cat’s day.</p>
+          <p>That means less stress for you, more excitement for them, and a health habit that’s easy to stick with long term.</p>
         </div>
 
-        <div class="benefit">
-          <div class="icon">2</div>
-          <h3>Support for digestion and gut comfort</h3>
-          <p>A lot of men know when their gut is off, but few have a routine that supports it daily. Pacagen makes digestive support easier to maintain, so you can feel lighter, more comfortable, and less thrown off by your schedule.</p>
-        </div>
-
-        <div class="benefit">
-          <div class="icon">3</div>
-          <h3>Reliable nutritional coverage</h3>
-          <p>Even disciplined guys have days when meals are rushed, repetitive, or far from ideal. Pacagen helps fill the gap between how you want to eat and how real life actually goes.</p>
-        </div>
-
-        <div class="benefit">
-          <div class="icon">4</div>
-          <h3>Immune support that fits real life</h3>
-          <p>Travel, stress, hard training, late nights, and packed calendars can all take their toll. Pacagen gives you a straightforward way to support your body daily without turning wellness into a full-time project.</p>
-        </div>
-
-        <div class="benefit">
-          <div class="icon">5</div>
-          <h3>A routine that is easier to stick with</h3>
-          <p>The best health routine is the one you’ll actually keep doing. Pacagen is designed to reduce friction, simplify decision-making, and make consistency feel realistic instead of aspirational.</p>
-        </div>
-
-        <div class="benefit">
-          <div class="icon">6</div>
-          <h3>Less dependence on a cluttered supplement stack</h3>
-          <p>Men often accumulate bottles, powders, and one-off fixes they barely remember to take. Pacagen helps simplify the chaos so your routine feels cleaner, more practical, and easier to maintain long term.</p>
-        </div>
-
-        <div class="benefit">
-          <div class="icon">7</div>
-          <h3>More confidence that you are doing something good for yourself</h3>
-          <p>There’s real value in knowing you’ve taken one smart step today. Pacagen helps remove the mental drag of “I should probably be doing more” and replaces it with a daily habit you can feel good about.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="reviews">
-    <div class="container">
-      <div class="section-head">
-        <h2>What men say after making it part of the day</h2>
-        <p>The most common feedback is simple: it makes healthy consistency feel easier, and that changes more than people expect.</p>
-      </div>
-
-      <div class="proof-wrap">
-        <blockquote>
-          <p>“I didn’t want another complicated health routine. Pacagen felt refreshingly simple, and within a couple of weeks I just felt more on top of things. Less guesswork, better consistency.”</p>
-          <div class="quote-footer">Marcus, 38 • Busy dad and sales leader</div>
-        </blockquote>
-
-        <blockquote>
-          <p>“I train regularly, but my nutrition was uneven when work got hectic. Pacagen helped me feel like I had a dependable baseline, especially on days when meals weren’t perfect.”</p>
-          <div class="quote-footer">Jason, 34 • Gym regular and frequent traveler</div>
-        </blockquote>
-
-        <blockquote>
-          <p>“What I like most is that it’s realistic. I’m not trying to become a wellness influencer. I just wanted something easy that supports energy and digestion without adding friction.”</p>
-          <div class="quote-footer">Evan, 42 • Founder and father of two</div>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <section id="article">
-    <div class="container">
-      <div class="section-head">
-        <h2>Why this matters more than another “perfect” health plan</h2>
-        <p>Most men do not need more information. They need a routine that works on ordinary days, not just ideal ones.</p>
-      </div>
-
-      <div class="article">
-        <div class="article-card">
-          <p>That’s the real appeal behind the 7 benefits men love about Pacagen: it supports the areas that usually slip first when life gets busy. Energy dips. Meals get skipped. Digestion gets inconsistent. The supplement shelf gets crowded with good intentions and half-finished bottles. Pacagen answers that with a more practical approach. Instead of asking you to overhaul your life, it helps you build one reliable habit that supports your day from the ground up.</p>
-          <p>For a lot of men, the biggest objection is not whether daily nutrition support sounds useful. It’s whether they’ll actually keep up with it. That’s exactly why simplicity matters. If something feels complicated, it usually becomes occasional. If it feels easy, it has a chance to become automatic. Pacagen is built around that truth, giving you a way to support your body consistently without forcing a high-maintenance routine into an already full schedule.</p>
-          <p>Another common concern is whether one product can really make a noticeable difference. The better question is whether one easy habit can improve consistency across the week, the month, and the year. That is where results compound. When your baseline improves, you feel it in the form of fewer gaps, less friction, and more confidence that you are covering important ground every single day.</p>
-        </div>
-
-        <div>
-          <div class="aside-placeholder" aria-hidden="true"></div>
-          <div class="aside-copy">
-            <strong>Simple beats sporadic.</strong>
-            <span>Men don’t need a routine that looks impressive on paper. They need one that survives travel, meetings, workouts, family life, and the occasional chaotic week.</span>
+        <div class="article-section">
+          <h2>Why Cat Parents Are Making the Switch</h2>
+          <div class="benefit-grid">
+            <div class="benefit-card">
+              <h3>Supports everyday digestion</h3>
+              <p>A balanced gut can help your cat feel more comfortable day to day, with support for regular digestion and nutrient absorption.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>Helps maintain healthy skin and a soft coat</h3>
+              <p>Daily nutritional support can help keep your cat looking as good as they feel, from whiskers to tail.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>Promotes immune wellness</h3>
+              <p>Consistent daily nutrition helps support the body’s natural defenses so your cat can thrive through every season.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>Encourages all-around vitality</h3>
+              <p>From playful energy to day-to-day comfort, a smart wellness routine helps support your cat’s best self over time.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="faq">
-    <div class="container">
-      <div class="section-head">
-        <h2>Frequently asked questions</h2>
-        <p>Quick answers to the questions men ask when they want daily nutrition support without unnecessary complexity.</p>
-      </div>
-
-      <div class="faq-list">
-        <div class="faq-item">
-          <h3>What makes Pacagen different from a typical men’s supplement routine?</h3>
-          <p>It is designed around simplicity and consistency. Instead of piecing together multiple products, Pacagen helps support core daily needs in a way that is easier to maintain.</p>
+        <div class="article-section">
+          <div class="article-content-image d-flex">
+            <img src="assets/images/cat-owner-bonding-kitchen.jpg" class="article-img" alt="Cat owner giving a daily healthy chew to a relaxed cat in the kitchen">
+          </div>
+          <h2>No More Guesswork. No More Mealtime Negotiations.</h2>
+          <p>You shouldn’t need a complicated routine just to support your cat’s health. The best products are built for real life: quick to serve, easy to remember, and appealing enough that your cat doesn’t resist.</p>
+          <p>That’s what makes a chew-based wellness ritual so powerful. It transforms “I hope they eat this” into “They’re already waiting for it.” And that small shift matters, because daily consistency is where results begin.</p>
+          <ul>
+            <li>Easy to serve in seconds</li>
+            <li>No measuring, mixing, or disguising</li>
+            <li>No supplement cabinet full of half-used products</li>
+            <li>A routine your cat can genuinely enjoy</li>
+          </ul>
         </div>
 
-        <div class="faq-item">
-          <h3>Can Pacagen help if my meals are not perfect every day?</h3>
-          <p>Yes. One of the biggest benefits men appreciate is better nutritional coverage on the days when work, travel, or family life make ideal eating unrealistic.</p>
+        <div class="article-section">
+          <h2>What a Better Daily Cat Supplement Should Deliver</h2>
+          <div class="ingredient-grid">
+            <div class="ingredient-item">
+              <h3>Taste-first formulation</h3>
+              <p>If cats won’t eat it, it doesn’t matter how “healthy” it is. Palatability comes first so the routine can actually last.</p>
+            </div>
+            <div class="ingredient-item">
+              <h3>Whole-body support</h3>
+              <p>Look for ingredients chosen to support digestion, skin, coat, immune function, and everyday wellness in one simple serving.</p>
+            </div>
+            <div class="ingredient-item">
+              <h3>Clean, thoughtful ingredients</h3>
+              <p>Cat parents want support they can trust—without unnecessary fillers, fuss, or hard-to-understand routines.</p>
+            </div>
+            <div class="ingredient-item">
+              <h3>Convenience that sticks</h3>
+              <p>The best habit is the one that fits your life. Easy wins every time when it comes to long-term consistency.</p>
+            </div>
+          </div>
+          <p>If you’re looking for a simple way to upgrade your cat’s daily nutrition, explore a better option through the <a href="#" class="pacagen-link">Pacagen product collection</a> and build a routine your cat will actually enjoy.</p>
         </div>
 
-        <div class="faq-item">
-          <h3>Is Pacagen only for men who work out hard or follow strict health routines?</h3>
-          <p>No. It is especially helpful for men who want meaningful support without having to build their life around supplements, meal prep, or complicated protocols.</p>
+        <div class="article-section">
+          <h2>How It Fits Into Your Routine</h2>
+          <p>You don’t need to overhaul your cat’s diet or add another complicated task to your day. This works best as a simple, repeatable moment:</p>
+          <ul>
+            <li>Offer the chew at the same time each day</li>
+            <li>Pair it with a positive routine like breakfast, playtime, or evening wind-down</li>
+            <li>Stay consistent so your cat begins to expect and enjoy it</li>
+            <li>Let the daily habit do the heavy lifting over time</li>
+          </ul>
+          <p>Think of it as a tiny upgrade with big potential: a better-for-them treat that supports more than just cravings.</p>
         </div>
 
-        <div class="faq-item">
-          <h3>How does Pacagen fit into a busy schedule?</h3>
-          <p>That is one of its main advantages. It is built to reduce friction, making it easier to keep a health habit going even when your calendar is full and your routine is less than perfect.</p>
+        <div class="article-section">
+          <div class="article-content-image d-flex">
+            <img src="assets/images/shiny-coat-happy-cat.jpg" class="article-img" alt="Bright-eyed cat with a shiny coat resting comfortably on a sofa">
+          </div>
+          <h2>The Difference Between a Treat and a Healthy Habit</h2>
+          <p>Traditional treats are fun, but they rarely do much beyond the moment. A thoughtfully designed daily chew can go further by combining enjoyment with meaningful nutritional support.</p>
+          <div class="comparison-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Ordinary Cat Treat</th>
+                  <th>Daily Wellness Chew</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Something cats get excited about</td>
+                  <td class="check">✓</td>
+                  <td class="check">✓</td>
+                </tr>
+                <tr>
+                  <td>Supports digestion, skin, coat, and immunity</td>
+                  <td class="x">✕</td>
+                  <td class="check">✓</td>
+                </tr>
+                <tr>
+                  <td>Built for everyday consistency</td>
+                  <td class="x">✕</td>
+                  <td class="check">✓</td>
+                </tr>
+                <tr>
+                  <td>Easy alternative to powders or pills</td>
+                  <td class="x">✕</td>
+                  <td class="check">✓</td>
+                </tr>
+                <tr>
+                  <td>Feels rewarding instead of like a chore</td>
+                  <td class="check">✓</td>
+                  <td class="check">✓</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
-        <div class="faq-item">
-          <h3>What benefits do men tend to notice first?</h3>
-          <p>Many men talk about feeling more consistent overall, with support for energy, digestion, and the confidence that they are doing something smart for their health each day.</p>
+        <div class="article-section">
+          <h2>What Cat Parents Love Most</h2>
+          <div class="testimonial-grid">
+            <div class="testimonial-box">
+              <p>“I’ve tried powders, broths, and soft chews before, and my cat ignored all of them. This is the first thing she actually wants every day.”</p>
+              <p><strong>— A relieved cat mom</strong></p>
+            </div>
+            <div class="testimonial-box">
+              <p>“The biggest win is how easy it is. No mixing, no hiding, no wasted product. Just one simple healthy habit we can stick to.”</p>
+              <p><strong>— A busy pet parent</strong></p>
+            </div>
+            <div class="testimonial-box">
+              <p>“I wanted something that supported more than one need without turning into a complicated supplement routine. This made daily wellness feel realistic.”</p>
+              <p><strong>— A multi-cat household</strong></p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <footer>
-    <div class="container footer-wrap">
-      <div>
-        <div class="brand">Pacagen</div>
-        <p class="footer-copy">Daily nutrition support for men who want more coverage, less complexity, and a routine that fits real life.</p>
-        <div class="footer-nav">
-          <a href="#benefits">Benefits</a>
-          <a href="#reviews">Reviews</a>
-          <a href="#article">Why It Works</a>
-          <a href="#faq">FAQ</a>
+        <div class="article-section">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-box">
+            <h3>Is this just another cat treat?</h3>
+            <p>No. The goal is to combine the enjoyment of a treat with the benefits of daily nutritional support, making it easier to stay consistent.</p>
+          </div>
+          <div class="faq-box" style="margin-top: 1rem;">
+            <h3>What makes a chew better than powders or pills?</h3>
+            <p>Convenience and compliance. If your cat enjoys it, you’re far more likely to serve it regularly—which is what matters most in any wellness routine.</p>
+          </div>
+          <div class="faq-box" style="margin-top: 1rem;">
+            <h3>Can this be part of a long-term routine?</h3>
+            <p>That’s the idea. A daily habit should feel simple enough to repeat, enjoyable enough for your cat to want, and supportive enough for you to feel confident giving it every day.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="footer-cta">
-        <a href="#benefits" class="btn btn-primary">Explore the 7 Benefits</a>
-        <span style="color: var(--muted); font-size: .94rem;">Start with one easier habit.</span>
-      </div>
-    </div>
-  </footer>
+        <div class="article-section">
+          <div class="cta-box">
+            <h3>Your Cat Deserves a Health Routine That Feels Good for Both of You</h3>
+            <p>You don’t have to choose between what’s healthy and what your cat will actually accept. The right daily chew gives you both: whole-body support in a form that feels easy, rewarding, and sustainable.</p>
+            <p>If you’re ready to replace the struggle with a routine your cat can love, discover a smarter option through <a href="#" class="pacagen-link">Pacagen</a> and turn daily wellness into your cat’s new favorite habit.</p>
+          </div>
+        </div>
+
+        <div id="article-footer"></div>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      createFold({
+        title: "Your Cat's New Favorite Healthy Habit",
+        authorName: "Pacagen Editorial Team",
+        authorImage: "assets/images/authors/pacagen-editorial-team.jpg",
+        imageSrc: "assets/images/cat-healthy-habit-hero.jpg",
+        imageAlt: "Happy cat enjoying a healthy daily wellness routine",
+        imageCaption: "A simple daily chew can make wellness easier, tastier, and more consistent.",
+        pageType: "article"
+      });
+
+      createArticleFooter({
+        pageType: "article"
+      });
+    });
+  </script>
 </body>
 </html>
