@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Most cat allergy reactions are linked to Fel d 1, a microscopic protein that spreads through grooming, dust, fabrics, and air—not just visible fur. Learn what allergists say and why fur cleanup alone may miss the real issue.">
+  <meta name="description"
+    content="Most cat allergy reactions are linked to Fel d 1, a microscopic protein that spreads through grooming, dust, fabrics, and air—not just visible fur. Learn what allergists say and why fur cleanup alone may miss the real issue.">
   <title>The Real Reason Cats Trigger Allergies | HealthPetInsider</title>
   <script src="assets/js/head-components.js"></script>
   <script src="assets/js/tracking.js"></script>
   <script src="assets/js/component-init.js"></script>
   <script src="assets/js/main.js" defer></script>
-
   <script src="assets/js/components/article/fold.js"></script>
   <script src="assets/js/components/article/breadcrumb.js"></script>
   <script src="assets/js/components/article/article-footer.js"></script>
@@ -17,283 +18,378 @@
   <script src="assets/js/components/ads/ad.js"></script>
   <script src="assets/js/components/comparison-table/comparison-table.js" defer></script>
   <script src="assets/js/components/testimonial/testimonial-carousel.js"></script>
-
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
   <main>
     <article class="main-article">
       <section class="w-70 mx-auto my-4">
         <div id="article-fold"></div>
         <section class="article-content content-large">
+          <style>
+            .hpi-myth-card {
+              background: linear-gradient(135deg, #f4ffbf 0%, #ffffff 100%);
+              border: 1px solid rgba(5, 104, 57, 0.18);
+              border-radius: 18px;
+              padding: 28px;
+              margin: 24px 0 32px;
+              box-shadow: 0 10px 30px rgba(35, 68, 54, 0.06);
+              font-family: 'Grift', serif;
+              color: #234436;
+            }
 
-<style>
-  .hpi-myth-card {
-    background: linear-gradient(135deg, #f4ffbf 0%, #ffffff 100%);
-    border: 1px solid rgba(5,104,57,0.18);
-    border-radius: 18px;
-    padding: 28px;
-    margin: 24px 0 32px;
-    box-shadow: 0 10px 30px rgba(35,68,54,0.06);
-    font-family: 'Grift', serif;
-    color: #234436;
-  }
-  .hpi-myth-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-  }
-  .hpi-myth-item {
-    background: #fff;
-    border-radius: 14px;
-    padding: 20px;
-    border-left: 5px solid #056839;
-  }
-  .hpi-myth-label {
-    font-family: 'Playfair Display', serif;
-    font-size: 14px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #056839;
-    margin-bottom: 10px;
-  }
-  .hpi-myth-item h3 {
-    margin: 0 0 10px;
-    font-family: 'Playfair Display', serif;
-    color: #234436;
-    font-size: 26px;
-  }
-  .hpi-myth-item p {
-    margin: 0;
-    font-size: 17px;
-    line-height: 1.7;
-  }
-  @media (max-width: 768px) {
-    .hpi-myth-grid { grid-template-columns: 1fr; }
-  }
-</style>
+            .hpi-myth-grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 18px;
+            }
 
-<div class="hpi-myth-card">
-  <div class="hpi-myth-grid">
-    <div class="hpi-myth-item">
-      <div class="hpi-myth-label">What many cat owners think</div>
-      <h3>“It’s the fur.”</h3>
-      <p>If a home is full of loose hair, it seems logical to blame shedding alone for sneezing, itchy eyes, and congestion.</p>
-    </div>
-    <div class="hpi-myth-item">
-      <div class="hpi-myth-label">What allergists commonly point to</div>
-      <h3>It’s often Fel d 1.</h3>
-      <p>Fel d 1 is a microscopic cat allergen protein recognized by allergists and researchers as a major driver of cat allergy symptoms. Fur is often just the vehicle that carries it around.</p>
-    </div>
-  </div>
-</div>
+            .hpi-myth-item {
+              background: #fff;
+              border-radius: 14px;
+              padding: 20px;
+              border-left: 5px solid #056839;
+            }
 
-<h2>Most people blame visible fur. The real trigger is usually much harder to see.</h2>
-<p>For years, cat allergy advice has centered on the obvious: vacuum more, remove loose hair, lint-roll your clothes, and keep fur off the couch. Those steps may help with general cleanup, but they do not fully explain why symptoms can continue even in homes that look spotless.</p>
-<p>The reason is simple: what commonly triggers cat allergy symptoms is not just the hair you can see. It is often <strong>Fel d 1</strong>, a tiny allergen protein that can spread far beyond the cat itself.</p>
-<p>That distinction matters. If you think the whole issue is “fur,” you may spend your time fighting the wrong enemy.</p>
+            .hpi-myth-label {
+              font-family: 'Playfair Display', serif;
+              font-size: 14px;
+              letter-spacing: 0.08em;
+              text-transform: uppercase;
+              color: #056839;
+              margin-bottom: 10px;
+            }
 
-<h2>What exactly is Fel d 1?</h2>
-<p>Fel d 1 is the major cat allergen most often discussed in allergy research and in clinical conversations about cat sensitivity. You do not need a science degree to understand the important part: it is a protein associated with cats that can trigger reactions in sensitive individuals.</p>
-<p>Unlike a tuft of fur on the floor, Fel d 1 is microscopic. You cannot easily spot it on a blanket, chair, or shirt sleeve. That invisibility is part of what makes cat allergies so frustrating. People may remove visible hair and still wonder why they keep reacting.</p>
-<p>Allergists frequently identify Fel d 1 as a primary reason people react to cats. So while fur gets most of the blame, the underlying issue is usually more specific—and much smaller.</p>
+            .hpi-myth-item h3 {
+              margin: 0 0 10px;
+              font-family: 'Playfair Display', serif;
+              color: #234436;
+              font-size: 26px;
+            }
 
-<style>
-  .hpi-process {
-    background: #ffffff;
-    border: 1px solid rgba(5,104,57,0.16);
-    border-radius: 18px;
-    padding: 26px;
-    margin: 30px 0;
-    box-shadow: 0 10px 30px rgba(35,68,54,0.05);
-  }
-  .hpi-process-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-    color: #234436;
-    margin: 0 0 18px;
-    text-align: center;
-  }
-  .hpi-process-steps {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-  }
-  .hpi-step {
-    background: #f9f9f9;
-    border-radius: 14px;
-    padding: 18px;
-    position: relative;
-    border-top: 4px solid #056839;
-  }
-  .hpi-step-num {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: #056839;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    margin-bottom: 12px;
-    font-family: 'Grift', serif;
-  }
-  .hpi-step h3 {
-    margin: 0 0 8px;
-    font-family: 'Playfair Display', serif;
-    color: #234436;
-    font-size: 22px;
-  }
-  .hpi-step p {
-    margin: 0;
-    color: #234436;
-    line-height: 1.7;
-    font-family: 'Grift', serif;
-  }
-  @media (max-width: 900px) {
-    .hpi-process-steps { grid-template-columns: 1fr 1fr; }
-  }
-  @media (max-width: 560px) {
-    .hpi-process-steps { grid-template-columns: 1fr; }
-  }
-</style>
+            .hpi-myth-item p {
+              margin: 0;
+              font-size: 17px;
+              line-height: 1.7;
+            }
 
-<div class="hpi-process">
-  <h3 class="hpi-process-title">How Fel d 1 travels through a home</h3>
-  <div class="hpi-process-steps">
-    <div class="hpi-step">
-      <div class="hpi-step-num">1</div>
-      <h3>Produced</h3>
-      <p>Fel d 1 is primarily produced in cats’ salivary and sebaceous glands.</p>
-    </div>
-    <div class="hpi-step">
-      <div class="hpi-step-num">2</div>
-      <h3>Spread by grooming</h3>
-      <p>As cats lick and groom themselves, they deposit that protein onto their fur and skin.</p>
-    </div>
-    <div class="hpi-step">
-      <div class="hpi-step-num">3</div>
-      <h3>Carried into the environment</h3>
-      <p>From there, it can attach to shed hair, dander, dust, bedding, furniture, and clothing.</p>
-    </div>
-    <div class="hpi-step">
-      <div class="hpi-step-num">4</div>
-      <h3>Lingering indoors</h3>
-      <p>Because it is lightweight and sticky, it can circulate and settle in places far beyond where the cat spends time.</p>
-    </div>
-  </div>
-</div>
+            @media (max-width: 768px) {
+              .hpi-myth-grid {
+                grid-template-columns: 1fr;
+              }
+            }
+          </style>
 
-<p>This is the part many cat owners never get told clearly enough: fur may carry the allergen, but fur itself is not the whole story. The protein is what matters.</p>
+          <div class="hpi-myth-card">
+            <div class="hpi-myth-grid">
+              <div class="hpi-myth-item">
+                <div class="hpi-myth-label">What many cat owners think</div>
+                <h3>“It’s the fur.”</h3>
+                <p>If a home is full of loose hair, it seems logical to blame shedding alone for sneezing, itchy eyes,
+                  and congestion.</p>
+              </div>
+              <div class="hpi-myth-item">
+                <div class="hpi-myth-label">What allergists commonly point to</div>
+                <h3>It’s often Fel d 1.</h3>
+                <p>Fel d 1 is a microscopic cat allergen protein recognized by allergists and researchers as a major
+                  driver of cat allergy symptoms. Fur is often just the vehicle that carries it around.</p>
+              </div>
+            </div>
+          </div>
 
-<div class="pacagen-showcase d-flex justify-content-center align-items-center mb-3"></div>
+          <h2>Most people blame visible fur. The real trigger is usually much harder to see.</h2>
+          <p>For years, cat allergy advice has centered on the obvious: vacuum more, remove loose hair, lint-roll your
+            clothes, and keep fur off the couch. Those steps may help with general cleanup, but they do not fully
+            explain why symptoms can continue even in homes that look spotless.</p>
+          <p>The reason is simple: what commonly triggers cat allergy symptoms is not just the hair you can see. It is
+            often <strong>Fel d 1</strong>, a tiny allergen protein that can spread far beyond the cat itself.</p>
+          <p>That distinction matters. If you think the whole issue is “fur,” you may spend your time fighting the wrong
+            enemy.</p>
 
-<h2>Why symptoms can show up in “cat-free” parts of the house</h2>
-<p>Once Fel d 1 has been transferred onto fur and skin during grooming, it does not simply stay put. It can move through the home in several ways:</p>
-<ul>
-  <li>On loose hair and dander</li>
-  <li>In household dust</li>
-  <li>On couches, rugs, curtains, and bedding</li>
-  <li>On clothing, blankets, and other soft surfaces</li>
-  <li>In airborne particles that drift into nearby rooms</li>
-</ul>
-<p>That helps explain a common experience: someone may avoid direct contact with the cat and still react on the sofa, in the bedroom, or when handling laundry. The cat did not have to be sitting there at that moment for Fel d 1 to be present.</p>
-<p>Because the protein is so light and so adhesive, it can linger indoors and turn up in places that seem unrelated to the pet. In practical terms, that means a home can feel “clean” while the allergen load remains higher than expected.</p>
+          <h2>What exactly is Fel d 1?</h2>
+          <p><a href="https://pacagen.com/blogs/cat-allergies/understanding-fel-d-1" target="_blank">Fel d 1 is the
+              major cat allergen</a> most often discussed in allergy research and in clinical conversations
+            about cat sensitivity. You do not need a science degree to understand the important part: it is a protein
+            associated with cats that can trigger reactions in sensitive individuals.</p>
+          <p>Unlike a tuft of fur on the floor, Fel d 1 is microscopic. You cannot easily spot it on a blanket, chair,
+            or shirt sleeve. That invisibility is part of what makes cat allergies so frustrating. People may remove
+            visible hair and still wonder why they keep reacting.</p>
+          <p>Allergists frequently identify Fel d 1 as a primary reason people react to cats. So while fur gets most of
+            the blame, the underlying issue is usually more specific—and much smaller.</p>
 
-<h2>Why fur-only solutions can fall short</h2>
-<p>If your entire strategy is focused on visible shedding, you may only be addressing one piece of the puzzle.</p>
-<p>Brushing, vacuuming, and washing fabrics can all be reasonable housekeeping steps. But if the root issue is an allergen protein continuously spread through grooming and daily movement around the house, then removing hair alone may not fully address what sensitive people react to.</p>
-<p>That does not mean fur cleanup is useless. It means it is incomplete.</p>
-<p>A more informed approach starts with the right mental model:</p>
-<ol>
-  <li>The cat produces Fel d 1.</li>
-  <li>Grooming distributes it onto the coat and skin.</li>
-  <li>The home environment then becomes the delivery system.</li>
-</ol>
-<p>Once you understand that chain, the shortcomings of a “just vacuum more” plan become easier to see.</p>
+          <style>
+            .hpi-process {
+              background: #ffffff;
+              border: 1px solid rgba(5, 104, 57, 0.16);
+              border-radius: 18px;
+              padding: 26px;
+              margin: 30px 0;
+              box-shadow: 0 10px 30px rgba(35, 68, 54, 0.05);
+            }
 
-<style>
-  .hpi-proof-strip {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    margin: 30px 0;
-  }
-  .hpi-proof-box {
-    background: #ffffff;
-    border: 1px solid rgba(5,104,57,0.16);
-    border-radius: 16px;
-    padding: 22px 20px;
-    text-align: center;
-    box-shadow: 0 8px 24px rgba(35,68,54,0.05);
-  }
-  .hpi-proof-box strong {
-    display: block;
-    font-family: 'Playfair Display', serif;
-    font-size: 34px;
-    line-height: 1.1;
-    color: #056839;
-    margin-bottom: 8px;
-  }
-  .hpi-proof-box span {
-    display: block;
-    color: #234436;
-    font-family: 'Grift', serif;
-    line-height: 1.6;
-    font-size: 16px;
-  }
-  @media (max-width: 768px) {
-    .hpi-proof-strip { grid-template-columns: 1fr; }
-  }
-</style>
+            .hpi-process-title {
+              font-family: 'Playfair Display', serif;
+              font-size: 30px;
+              color: #234436;
+              margin: 0 0 18px;
+              text-align: center;
+            }
 
-<div class="hpi-proof-strip">
-  <div class="hpi-proof-box">
-    <strong>Invisible</strong>
-    <span>You cannot judge Fel d 1 levels by how much fur you can see.</span>
-  </div>
-  <div class="hpi-proof-box">
-    <strong>Mobile</strong>
-    <span>It can spread through dust, fabrics, clothing, and nearby air.</span>
-  </div>
-  <div class="hpi-proof-box">
-    <strong>Persistent</strong>
-    <span>Its lightweight, sticky nature helps it linger in indoor spaces.</span>
-  </div>
-</div>
+            .hpi-process-steps {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 16px;
+            }
 
-<h2>What allergists want people to understand</h2>
-<p>When allergists discuss cat allergy, Fel d 1 is not a fringe theory or internet myth. It is widely recognized as a primary allergen associated with cat reactions.</p>
-<p>That matters for two reasons. First, it gives cat owners a more accurate explanation for what they are experiencing. Second, it helps remove some of the confusion that comes from blaming “fur” in a vague, catch-all way.</p>
-<p>Put simply, many people are not reacting to fur as fur. They are reacting to the allergen protein that fur can transport.</p>
-<p>This also helps explain why short-haired cats are not automatically “non-allergenic,” and why reducing visible shedding does not always translate into the relief people expect.</p>
+            .hpi-step {
+              background: #f9f9f9;
+              border-radius: 14px;
+              padding: 18px;
+              position: relative;
+              border-top: 4px solid #056839;
+            }
 
-<blockquote>“I always thought my daughter was reacting to cat hair on the furniture. Learning about Fel d 1 changed the way we thought about the whole problem. It finally made sense why symptoms kept popping up in rooms our cat barely used.”</blockquote>
+            .hpi-step-num {
+              width: 36px;
+              height: 36px;
+              border-radius: 50%;
+              background: #056839;
+              color: #fff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: 700;
+              margin-bottom: 12px;
+              font-family: 'Grift', serif;
+            }
 
-<blockquote>“What stood out to me was how grooming spreads the protein onto the coat, then the environment does the rest. That was the missing piece no one had explained clearly before.”</blockquote>
+            .hpi-step h3 {
+              margin: 0 0 8px;
+              font-family: 'Playfair Display', serif;
+              color: #234436;
+              font-size: 22px;
+            }
 
-<div class="pacagen-showcase d-flex justify-content-center align-items-center mb-3"></div>
+            .hpi-step p {
+              margin: 0;
+              color: #234436;
+              line-height: 1.7;
+              font-family: 'Grift', serif;
+            }
 
-<h2>If the protein is the issue, the strategy should reflect that</h2>
-<p>Once you understand the role of Fel d 1, the goal becomes clearer: do not just chase hair you can see. Think more broadly about the allergen burden moving through the home.</p>
-<p>That may include improving routine cleaning, paying attention to soft surfaces, and considering products specifically designed around cat allergen exposure rather than basic deodorizing or fur cleanup alone.</p>
-<p>For cat owners trying to preserve both comfort and companionship, that distinction can be meaningful. An approach informed by the biology of the allergen is simply more rational than one based on guesswork.</p>
-<p>No responsible source should promise a cure, and individual responses vary. But understanding the primary allergen involved can help people make better, more targeted decisions.</p>
+            @media (max-width: 900px) {
+              .hpi-process-steps {
+                grid-template-columns: 1fr 1fr;
+              }
+            }
 
-<h2>The bottom line</h2>
-<p>The next time someone says, “I’m allergic to cat fur,” the more accurate answer may be: <em>fur is often just the carrier.</em></p>
-<p>The major culprit allergists commonly point to is <strong>Fel d 1</strong>—an invisible protein produced mainly in cats’ salivary and sebaceous glands, spread through grooming, and dispersed across the home on hair, dander, dust, fabrics, and air.</p>
-<p>That is why cat allergy symptoms can feel so stubborn, and why surface-level cleanup may not fully solve the problem.</p>
-<p>When you understand what is actually happening, you are in a better position to respond intelligently—and keep your cat in the life you built together.</p>
+            @media (max-width: 560px) {
+              .hpi-process-steps {
+                grid-template-columns: 1fr;
+              }
+            }
+          </style>
 
-<ul>
-  <li>Fel d 1 is widely recognized as a major cat allergen.</li>
-  <li>Fur is often a carrier, not the entire cause.</li>
-  <li>Cats spread Fel d 1 onto their coat and skin through grooming.</li>
-  <li>The protein can travel through dust, fabrics, furniture, bedding, clothing, and air.</li>
-  <li>Because it is lightweight and sticky, it can linger in rooms well beyond where the cat spends time.</li>
-</ul>
+          <div class="hpi-process">
+            <h3 class="hpi-process-title">How Fel d 1 travels through a home</h3>
+            <div class="hpi-process-steps">
+              <div class="hpi-step">
+                <div class="hpi-step-num">1</div>
+                <h3>Produced</h3>
+                <p>Fel d 1 is primarily produced in cats’ salivary and sebaceous glands.</p>
+              </div>
+              <div class="hpi-step">
+                <div class="hpi-step-num">2</div>
+                <h3>Spread by grooming</h3>
+                <p>As cats lick and groom themselves, they deposit that protein onto their fur and skin.</p>
+              </div>
+              <div class="hpi-step">
+                <div class="hpi-step-num">3</div>
+                <h3>Carried into the environment</h3>
+                <p>From there, it can attach to shed hair, dander, dust, bedding, furniture, and clothing.</p>
+              </div>
+              <div class="hpi-step">
+                <div class="hpi-step-num">4</div>
+                <h3>Lingering indoors</h3>
+                <p>Because it is lightweight and sticky, it can circulate and settle in places far beyond where the cat
+                  spends time.</p>
+              </div>
+            </div>
+          </div>
+
+          <p>This is the part many cat owners never get told clearly enough: fur may carry the allergen, but fur itself
+            is not the whole story. The protein is what matters.</p>
+
+          <div class="pacagen-showcase d-flex justify-content-center align-items-center mb-3"></div>
+
+          <h2>Why symptoms can show up in “cat-free” parts of the house</h2>
+          <p>Once Fel d 1 has been transferred onto fur and skin during grooming, it does not simply stay put. It can
+            move through the home in several ways:</p>
+          <ul>
+            <li>On loose hair and dander</li>
+            <li>In household dust</li>
+            <li>On couches, rugs, curtains, and bedding</li>
+            <li>On clothing, blankets, and other soft surfaces</li>
+            <li>In airborne particles that drift into nearby rooms</li>
+          </ul>
+          <p>That helps explain a common experience: someone may avoid direct contact with the cat and still react on
+            the sofa, in the bedroom, or when handling laundry. The cat did not have to be sitting there at that moment
+            for Fel d 1 to be present.</p>
+          <p>Because the protein is so light and so adhesive, it can linger indoors and turn up in places that seem
+            unrelated to the pet. In practical terms, that means a home can feel “clean” while the allergen load remains
+            higher than expected.</p>
+
+          <h2>Why fur-only solutions can fall short</h2>
+          <p>If your entire strategy is focused on visible shedding, you may only be addressing one piece of the puzzle.
+          </p>
+          <p>Brushing, vacuuming, and washing fabrics can all be reasonable housekeeping steps. But if the root issue is
+            an allergen protein continuously spread through grooming and daily movement around the house, then removing
+            hair alone may not fully address what sensitive people react to.</p>
+          <p>That does not mean fur cleanup is useless. It means it is incomplete.</p>
+          <p>A more informed approach starts with the right mental model:</p>
+          <ol>
+            <li>The cat produces Fel d 1.</li>
+            <li>Grooming distributes it onto the coat and skin.</li>
+            <li>The home environment then becomes the delivery system.</li>
+          </ol>
+          <p>Once you understand that chain, the shortcomings of a “just vacuum more” plan become easier to see.</p>
+
+          <style>
+            .hpi-proof-strip {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 16px;
+              margin: 30px 0;
+            }
+
+            .hpi-proof-box {
+              background: #ffffff;
+              border: 1px solid rgba(5, 104, 57, 0.16);
+              border-radius: 16px;
+              padding: 22px 20px;
+              text-align: center;
+              box-shadow: 0 8px 24px rgba(35, 68, 54, 0.05);
+            }
+
+            .hpi-proof-box strong {
+              display: block;
+              font-family: 'Playfair Display', serif;
+              font-size: 34px;
+              line-height: 1.1;
+              color: #056839;
+              margin-bottom: 8px;
+            }
+
+            .hpi-proof-box span {
+              display: block;
+              color: #234436;
+              font-family: 'Grift', serif;
+              line-height: 1.6;
+              font-size: 16px;
+            }
+
+            @media (max-width: 768px) {
+              .hpi-proof-strip {
+                grid-template-columns: 1fr;
+              }
+            }
+          </style>
+
+          <div class="hpi-proof-strip">
+            <div class="hpi-proof-box">
+              <strong>Invisible</strong>
+              <span>You cannot judge Fel d 1 levels by how much fur you can see.</span>
+            </div>
+            <div class="hpi-proof-box">
+              <strong>Mobile</strong>
+              <span>It can spread through dust, fabrics, clothing, and nearby air.</span>
+            </div>
+            <div class="hpi-proof-box">
+              <strong>Persistent</strong>
+              <span>Its lightweight, sticky nature helps it linger in indoor spaces.</span>
+            </div>
+          </div>
+
+          <h2>What allergists want people to understand</h2>
+          <p>When allergists discuss cat allergy, Fel d 1 is not a fringe theory or internet myth. It is widely
+            recognized as a primary allergen associated with cat reactions.</p>
+          <p>That matters for two reasons. First, it gives cat owners a more accurate explanation for what they are
+            experiencing. Second, it helps remove some of the confusion that comes from blaming “fur” in a vague,
+            catch-all way.</p>
+          <p><b>Put simply, many people are not reacting to fur as fur. They are reacting to the allergen protein that
+              fur
+              can transport.</b></p>
+          <p>This also helps explain why short-haired cats are not automatically “non-allergenic,” and why reducing
+            visible shedding does not always translate into the relief people expect.</p>
+
+          <div class="highlight-box">“I always thought my daughter was reacting to cat hair on the furniture. Learning
+            about Fel d 1
+            changed the way we thought about the whole problem. It finally made sense why symptoms kept popping up in
+            rooms our cat barely used.”</div>
+
+          <div class="highlight-box">“What stood out to me was how grooming spreads the protein onto the coat, then the
+            environment
+            does the rest. That was the missing piece no one had explained clearly before.”</div>
+
+          <div class="d-flex justify-content-center align-items-center mb-3"><a
+              href="https://pacagen.com/products/cat-allergen-neutralizing-spray"
+              class="d-flex w-md-65 justify-content-center align-items-center text-decoration-none">
+              <div class="card p-2">
+                <div class="row mx-auto">
+                  <div class="col-12 mb-2">
+                    <h3 class="card-title text-center"><b>Cat Allergen Neutralizing Spray</b></h3>
+                  </div>
+                </div>
+                <div class="row mx-auto align-items-center">
+                  <div class="col-5 col-sm-4 col-md-4 p-0 px-md-2"><img
+                      src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/catbottle.png" class="rounded-4"
+                      alt="Cat Allergen Neutralizing Spray"></div>
+                  <div class="col-7 col-sm-8 col-md-8">
+                    <p class="card-reviews mb-0">★★★★★ &nbsp; 4.72 out of 5 stars (700+ reviews)</p>
+                    <p class="card-description mb-0 mt-2">Unlike surface cleaners that rely on dilution or removal,
+                      Pacagen works through direct molecular interaction with Fel d 1, rendering the allergen
+                      biologically inactive.</p>
+                  </div>
+                </div>
+              </div>
+            </a></div>
+
+
+          <h2>If the protein is the issue, the strategy should reflect that</h2>
+          <p>Once you understand the role of Fel d 1, the goal becomes clearer: do not just chase hair you can see.
+            Think more broadly about the allergen burden moving through the home.</p>
+          <p>That may include improving routine cleaning, paying attention to soft surfaces, and considering products
+            specifically designed around cat allergen exposure rather than basic deodorizing or fur cleanup alone.</p>
+          <p>For cat owners trying to preserve both comfort and companionship, that distinction can be meaningful. An
+            approach informed by the biology of the allergen is simply more rational than one based on guesswork.</p>
+          <p>No responsible source should promise a cure, and individual responses vary. But understanding the primary
+            allergen involved can help people make better, more targeted decisions.</p>
+
+          <h2>Why Specificity Matters</h2>
+          <p>Scientific evidence shows that allergen mitigation is most effective when the solution actually
+            neutralizes the specific allergen protein (Fel d 1) rather than just cleaning surfaces. Generic sprays may
+            reduce surface allergens but do not stop airborne triggers and may contribute to side effects like
+            respiratory irritation. Read our other blog post on <a href="https://healthpetinsider.com/best-cat-allergy-sprays.html">the best cat allergy sprays</a> for more information.</p>
+
+          <h2>The bottom line</h2>
+          <p>The next time someone says, “I’m allergic to cat fur,” the more accurate answer may be: <em>fur is often
+              just the carrier.</em></p>
+          <p>The major culprit allergists commonly point to is <strong>Fel d 1</strong>—an invisible protein produced
+            mainly in cats’ salivary and sebaceous glands, spread through grooming, and dispersed across the home on
+            hair, dander, dust, fabrics, and air.</p>
+          <p>That is why cat allergy symptoms can feel so stubborn, and why surface-level cleanup may not fully solve
+            the problem.</p>
+          <p>When you understand what is actually happening, you are in a better position to respond intelligently—and
+            keep your cat in the life you built together.</p>
+
+          <ul>
+            <li>Fel d 1 is widely recognized as a major cat allergen.</li>
+            <li>Fur is often a carrier, not the entire cause.</li>
+            <li>Cats spread Fel d 1 onto their coat and skin through grooming.</li>
+            <li>The protein can travel through dust, fabrics, furniture, bedding, clothing, and air.</li>
+            <li>Because it is lightweight and sticky, it can linger in rooms well beyond where the cat spends time.</li>
+          </ul>
 
         </section>
         <div id="article-footer"></div>
@@ -301,22 +397,22 @@
     </article>
   </main>
   <script>
-    initComponentsWhenReady(function() {
+    initComponentsWhenReady(function () {
       const pageType = 'root';
       document.getElementById('article-fold').innerHTML = createFold({
-        title: 'The Real Reason Cats Trigger Allergies Isn’t Just Fur',
-        authorName: 'Dr. Melanie Cross',
-        authorImage: 'author.png',
+        title: 'The Real Reason Cats Trigger Allergies Isn\'t Just Fur',
+        authorName: 'Steven Timmins',
+        authorImage: 'StevenTimmins.png',
         leadingTitle: 'Allergists often point to a microscopic protein called Fel d 1 as the main driver of cat allergy symptoms—while visible hair is usually just the messenger.',
-        imageSrc: 'hero.png',
-        dateText: 'Updated April 6, 2026',
+        dateText: 'Updated April 5, 2026',
+        imageSrc: 'img-cat-product-hero.png',
         pageType: pageType
       });
-      document.querySelectorAll('.pacagen-showcase').forEach(function(el) {
+      document.querySelectorAll('.pacagen-showcase').forEach(function (el) {
         el.innerHTML = createProductShowcase({
-          image: 'CANS.png',
+          image: 'cat-spray.png',
           alt: 'Cat Allergen Neutralizing Spray',
-          description: 'A surface-safe cat allergen neutralizing spray designed to help reduce exposure to Fel d 1 on common household fabrics and surfaces where allergen proteins can accumulate.',
+          description: 'A surface-safe cat allergen neutralizing spray designed to help stop exposure to Fel d 1 on common household fabrics, surfaces, and in the air.',
           url: 'https://pacagen.com/products/cat-allergen-neutralizing-spray',
           pageType: pageType
         });
@@ -325,4 +421,5 @@
     }, { waitForArticle: true, waitForProduct: true });
   </script>
 </body>
+
 </html>
