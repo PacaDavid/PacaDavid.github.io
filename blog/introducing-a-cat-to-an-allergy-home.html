@@ -195,8 +195,6 @@
             </div>
           </div>
 
-          <div class="pacagen-showcase d-flex justify-content-center align-items-center mb-3"></div>
-
           <h2>Why source-level reduction is worth considering from the start</h2>
           <p>Most allergy management advice focuses on what happens after allergens are already in the environment: clean more, filter the air, avoid the cat. Those steps help, but they are reactive.</p>
           <p>A newer approach targets the allergen before it spreads. Pacagen's cat allergen reducing supplement is designed to neutralize <strong>98% of active cat allergens at the source</strong>—meaning less Fel d 1 leaving the cat in the first place. For a household welcoming a new cat, starting this from day one means the allergen baseline never gets as high to begin with.</p>
@@ -244,15 +242,6 @@
         imageAlt: 'Woman with kittens',
         dateText: 'Updated April 7, 2026',
         pageType: pageType
-      });
-      document.querySelectorAll('.pacagen-showcase').forEach(function (el) {
-        el.innerHTML = createProductShowcase({
-          image: '../assets/images/supplement-2versions.png',
-          alt: 'Cat Allergen Reducing Supplement',
-          description: 'Pacagen\'s cat allergen reducing supplement is designed to neutralize active cat allergens at the source—ideal for households welcoming a new cat and wanting to keep allergen levels low from day one.',
-          url: 'https://pacagen.com/products/cat-allergen-reducing-supplement',
-          pageType: pageType
-        });
       });
       document.getElementById('article-footer').innerHTML = createArticleFooter({ pageType: pageType });
     }, { waitForArticle: true, waitForProduct: true });
