@@ -242,9 +242,14 @@
   <script>
     initComponentsWhenReady(function () {
       const pageType = 'blog';
-      document.getElementById('article-fold').innerHTML = $1        imageSrc: 'pet-shampoo.png',
+      document.getElementById('article-fold').innerHTML = createFold({
+        title: 'Why Your Dog Still Smells After a Bath (And What to Do About It)',
+        authorName: 'Julie Arnold',
+        authorImage: 'JulieArnold.png',
+        leadingTitle: 'Bathing your dog is only part of the solution. Here\'s what veterinarians say is actually behind persistent dog odor—and the steps that make a real difference.',
+        imageSrc: 'pet-shampoo.png',
         imageAlt: 'Pet shampoo for dog bathing',
-        $2 'Updated April 7, 2026',
+        dateText: 'Updated April 7, 2026',
         pageType: pageType
       });
       document.getElementById('cleaning-ad').innerHTML = createAd({

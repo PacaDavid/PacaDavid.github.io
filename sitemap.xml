@@ -174,4 +174,34 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://healthpetinsider.com/blog/how-to-keep-your-home-fresh-with-pets.html</loc>
+        <lastmod>2026-04-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://healthpetinsider.com/blog/introducing-a-cat-to-an-allergy-home.html</loc>
+        <lastmod>2026-04-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://healthpetinsider.com/blog/signs-your-cat-is-stressed.html</loc>
+        <lastmod>2026-04-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://healthpetinsider.com/blog/truth-about-hypoallergenic-dog-breeds.html</loc>
+        <lastmod>2026-04-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://healthpetinsider.com/blog/why-your-dog-still-smells-after-a-bath.html</loc>
+        <lastmod>2026-04-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
