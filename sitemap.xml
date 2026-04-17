@@ -204,4 +204,22 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://healthpetinsider.com/why-househoulds-are-neutralizing-allergens.html</loc>
+        <lastmod>2026-04-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://healthpetinsider.com/new-breakthrough-ends-rehoming.html</loc>
+        <lastmod>2026-04-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://healthpetinsider.com/spring-kitten-season.html</loc>
+        <lastmod>2026-04-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
