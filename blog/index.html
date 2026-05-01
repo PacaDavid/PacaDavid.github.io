@@ -19,9 +19,14 @@
     cvg({ method: "link_domain", domain: "pacagen.com" });
     </script>
     
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Load main JavaScript -->
     <script src="../assets/js/main.js" defer></script>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         .body{
             background-color:#fefaf1 !important;
         }
@@ -51,33 +56,8 @@
             color: #fff;
         }
 
-        .blog-categories {
-            margin-bottom: 2rem;
-        }
-
-        .category-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            margin-bottom: 3rem;
-        }
-
-        .category-tag {
-            padding: 0.5rem 1rem;
-            background-color: #f4ffbe;
-            border: 1px solid #000;
-            border-radius: 25px;
-            text-decoration: none;
-            color: #495057;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-
-        .category-tag:hover {
-            background-color: #2c5aa0;
-            color: white;
-            border-color: #2c5aa0;
+        .blog-body {
+            scroll-margin-top: 0.75rem;
         }
 
         .blog-grid {
@@ -85,6 +65,12 @@
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
+        }
+
+        .blog-grid[data-filter="cat"] .blog-card:not([data-blog-category="cat"]),
+        .blog-grid[data-filter="dog"] .blog-card:not([data-blog-category="dog"]),
+        .blog-grid[data-filter="home-care"] .blog-card:not([data-blog-category="home-care"]) {
+            display: none;
         }
 
         .blog-card {
@@ -95,6 +81,10 @@
             transition: transform 0.3s ease;
             border-left: 4px solid #2c5aa0;
             min-height: 400px;
+        }
+
+        .blog-card[id] {
+            scroll-margin-top: 5.5rem;
         }
 
         .blog-card:hover {
@@ -161,10 +151,6 @@
                 font-size: 2rem;
             }
             
-            .category-tags {
-                justify-content: flex-start;
-            }
-            
             .blog-grid {
                 grid-template-columns: 1fr;
             }
@@ -178,8 +164,9 @@
             <h1>Insider Articles</h1>
             <p>Explore comprehensive guides, tips, and tricks for all things pet health & wellness.</p>
         </div>
-        <div class="blog-grid">
-            <article class="blog-card">
+        <div id="blog-articles" class="blog-body">
+            <div class="blog-grid">
+            <article class="blog-card" id="category-cat" tabindex="-1">
                 <div class="blog-meta">
                     <span class="category-badge">Cat Allergies</span>
                 </div>
@@ -251,7 +238,7 @@
                 <a href="can-allergies-cause-a-cough.html" class="read-more">Read Full Article →</a>
             </article>
 
-            <article class="blog-card">
+            <article class="blog-card" id="category-home-care" tabindex="-1">
                 <div class="blog-meta">
                     <span class="category-badge">Home Care</span>
                 </div>
@@ -262,15 +249,7 @@
 
             <article class="blog-card">
                 <div class="blog-meta">
-                    <span class="category-badge">Cat Allergies</span>
-                </div>
-                <h3><a href="how-cat-allergies-work.html">How Cat Allergies Work: The Science Behind Cat Allergies</a></h3>
-                <p class="blog-excerpt">A look at the science behind cat allergies, and how they work.</p>
-                <a href="how-cat-allergies-work.html" class="read-more">Read Full Article →</a>
-            </article>
-            <article class="blog-card">
-                <div class="blog-meta">
-                    <span class="category-badge">Recommended Products</span>
+                    <span class="category-badge">Home Care</span>
                 </div>
                 <h3><a href="/5-must-have-products.html">Top 5 Must-Have Products for Pet Owners with Allergies</a></h3>
                 <p class="blog-excerpt">Discover the top 5 must-have products every pet owner with allergies needs — from HEPA air purifiers to Pacagen’s allergen neutralizing spray.</p>
@@ -278,6 +257,15 @@
             </article>
 
             <article class="blog-card">
+                <div class="blog-meta">
+                    <span class="category-badge">Cat Allergies</span>
+                </div>
+                <h3><a href="how-cat-allergies-work.html">How Cat Allergies Work: The Science Behind Cat Allergies</a></h3>
+                <p class="blog-excerpt">A look at the science behind cat allergies, and how they work.</p>
+                <a href="how-cat-allergies-work.html" class="read-more">Read Full Article →</a>
+            </article>
+
+            <article class="blog-card" id="category-dog" tabindex="-1">
                 <div class="blog-meta">
                     <span class="category-badge">Dogs</span>
                 </div>
@@ -468,6 +456,7 @@
                 <p class="blog-excerpt">Spring and kitten season bring joy, but also overcrowded shelters and hard rehoming decisions. Learn practical ways families, fosters, and brands are helping more kittens find homes.</p>
                 <a href="/spring-kitten-season.html" class="read-more">Read Full Article →</a>
             </article>
+            </div>
         </div>
     </main>
 </body>

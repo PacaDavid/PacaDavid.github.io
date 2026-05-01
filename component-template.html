@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="Internal template: all component injection targets (create* functions).">
-  <title>Component injection template | HealthPetInsider</title>
+  <meta name="description" content="Internal template: component injectors, article shell (fold, related articles, footer), and main.js head/nav/footer behavior.">
+  <title>Component injection template | Health Pet Insider</title>
 
   <script src="assets/js/head-components.js"></script>
   <script src="assets/js/tracking.js"></script>
@@ -15,6 +15,7 @@
   <script src="assets/js/components/article/fold.js"></script>
   <script src="assets/js/components/article/breadcrumb.js"></script>
   <script src="assets/js/components/article/article-footer.js"></script>
+  <script src="assets/js/components/article/related-articles.js"></script>
   <script src="assets/js/product-components-bundle.js"></script>
   <script src="assets/js/components/ads/ad.js"></script>
   <script src="assets/js/components/comparison-table/comparison-table.js" defer></script>
@@ -40,7 +41,8 @@
   <main>
     <article class="main-article">
       <section class="w-70 mx-auto my-4">
-        <p class="text-muted small mb-4">Reference page for <code>create*</code> injectors. Exported globals: <code>createFold</code>, <code>createBreadcrumb</code> (used inside <code>createFold</code> when <code>breadcrumb: true</code>), <code>createArticleFooter</code>, <code>createProductShowcase</code>, <code>createProductCard</code>, <code>createComparisonTable</code>, <code>createAd</code>, <code>createTestimonialCarousel</code> (also auto-inits <code>[data-testimonial-carousel]</code>). Internal: <code>createCell</code> inside comparison-table.</p>
+        <p class="text-muted small mb-4"><strong>Article shell order</strong> (typical page): <code>#article-fold</code> → <code>.article-content</code> (body + ad/product slots) → <code>#related-articles</code> → <code>#article-footer</code> (reserved; often empty), all <strong>inside</strong> <code>&lt;section class="w-70 …"&gt;</code> so the related block stays the same width as the article column (do not close <code>.w-70</code> before those two slots). Site header, nav, and site footer are injected by <code>assets/js/main.js</code> (defer). That script’s <code>insertHeadElements</code> injects a Google Fonts link for <strong>Playfair Display</strong> when no Playfair stylesheet is already in <code>&lt;head&gt;</code> (so the wordmark matches <code>index.html</code> / blog pages that declare fonts in markup). If the page has no <code>link[rel="icon"]</code> yet, it also inserts favicon tags and loads <code>style.css</code> + Bootstrap (see <code>assets/js/main.js</code>).</p>
+        <p class="text-muted small mb-4"><strong>Injectors</strong> — <code>createFold</code> / <code>createBreadcrumb</code> (when <code>breadcrumb: true</code>); <code>createProductShowcase</code>, <code>createProductCard</code> (product card: green top bar + Playfair title in <code>style.css</code>); <code>createComparisonTable</code> + <code>initComparisonTable</code>; <code>createAd</code>; <code>createTestimonialCarousel</code> (also auto-inits <code>[data-testimonial-carousel]</code>). <code>createArticleFooter()</code> returns empty markup (slot reserved). <strong>Related articles:</strong> load <code>assets/js/components/article/related-articles.js</code> immediately after <code>article-footer.js</code>; it mounts on <code>DOMContentLoaded</code> into <code>#related-articles</code> using <code>RELATED_CATALOG</code> in that file—each row’s <code>image</code> should match the <strong>target article’s fold hero</strong> (<code>imageSrc</code>) or first in-content hero; <code>resolveImageSrc()</code> prefixes <code>../</code> for <code>assets/…</code> when the viewer is under <code>/blog/</code>. Optional on the slot: <code>data-related-heading</code>, <code>data-related-count</code> (1–6). Export: <code>createRelatedArticlesHtml</code>. Comparison table internal: <code>createCell</code>.</p>
 
         <p class="template-label">createFold → #article-fold</p>
         <div id="article-fold" class="template-slot"></div>
@@ -83,7 +85,10 @@
           <div data-testimonial-carousel></div>
         </section>
 
-        <p class="template-label">createArticleFooter → #article-footer</p>
+        <p class="template-label">#related-articles — <code>related-articles.js</code> (<code>RELATED_CATALOG</code> + hero thumbnails; optional <code>data-related-heading</code> / <code>data-related-count</code>)</p>
+        <div id="related-articles" class="template-slot related-articles-root" data-related-count="3" data-related-heading="Related articles"></div>
+
+        <p class="template-label">#article-footer — <code>createArticleFooter()</code> (reserved; returns empty)</p>
         <div id="article-footer" class="template-slot"></div>
       </section>
     </article>
@@ -111,9 +116,10 @@
         breadcrumb: true,
         homePath: 'index.html',
         homeText: 'Home',
-        dateText: 'Template · Updated April 2, 2026',
+        dateText: 'Template · Updated April 30, 2026',
         pageType: pageType
       });
+      document.getElementById('article-fold').classList.add('component-loaded');
 
       document.getElementById('pacagen-spray-showcase').innerHTML = createProductShowcase(showcaseConfig);
       document.getElementById('dog-spray-showcase').innerHTML = createProductShowcase({
@@ -206,7 +212,10 @@
         });
       }
 
-      document.getElementById('article-footer').innerHTML = createArticleFooter({ pageType: pageType });
+      const footerEl = document.getElementById('article-footer');
+      footerEl.innerHTML = createArticleFooter({ pageType: pageType });
+      footerEl.classList.add('component-loaded');
+      /* #related-articles: populated by related-articles.js on DOMContentLoaded — no call here. */
     }, { waitForArticle: true, waitForProduct: true, waitForAds: true });
   </script>
 </body>

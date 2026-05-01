@@ -31,6 +31,7 @@
     <!-- Component bundles -->
     <script src="assets/js/components/article/fold.js"></script>
     <script src="assets/js/components/article/article-footer.js"></script>
+    <script src="assets/js/components/article/related-articles.js"></script>
     <script src="assets/js/product-components-bundle.js"></script>
     <script src="assets/js/components/ads/ad.js"></script>
     <script src="assets/js/components/comparison-table/comparison-table.js" defer></script>
@@ -93,7 +94,7 @@
             <div class="article-section">
                 <h2>Choosing the Right Spray for Your Home</h2>
                 <ul><li><strong>For targeted allergy relief:</strong> Choose sprays designed specifically for Fel d 1 (like Pacagen).</li><li><strong>For routine cleaning:</strong> Regular surface cleaners can help, but should not substitute allergen neutralizers.</li><li><strong>For sensitive households:</strong> Avoid harsh disinfectants that are associated with higher rates of respiratory irritation, especially in enclosed indoor environments.</li></ul>
-                <div class="d-flex justify-content-center align-items-center mb-3"><a href="https://pacagen.com/products/cat-allergen-neutralizing-spray" class="d-flex w-md-65 justify-content-center align-items-center text-decoration-none"><div class="card p-2"><div class="row mx-auto"><div class="col-12 mb-2"><h3 class="card-title text-center"><b>Cat Allergen Neutralizing Spray</b></h3></div></div><div class="row mx-auto align-items-center"><div class="col-5 col-sm-4 col-md-4 p-0 px-md-2"><img src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/catbottle.png" class="rounded-4" alt="Cat Allergen Neutralizing Spray"></div><div class="col-7 col-sm-8 col-md-8"><p class="card-reviews mb-0">★★★★★ &nbsp; 4.72 out of 5 stars (700+ reviews)</p><p class="card-description mb-0 mt-2">Unlike surface cleaners that rely on dilution or removal, Pacagen works through direct molecular interaction with Fel d 1, rendering the allergen biologically inactive.</p></div></div></div></a></div>
+                <div id="pacagen-article-inline-card" class="d-flex justify-content-center align-items-center mb-3"></div>
             </div>
 
             <div id="travel-ad"></div>
@@ -110,6 +111,8 @@
           </section>
 
           <!-- Article footer component -->
+          <div id="related-articles" class="related-articles-root"></div>
+
           <div id="article-footer"></div>
         </section>
       </article>
@@ -193,6 +196,19 @@
           }
         }
         initComparisonTableComponent();
+
+        const pacagenInlineCard = document.getElementById('pacagen-article-inline-card');
+        if (pacagenInlineCard && typeof createProductCard !== 'undefined') {
+          pacagenInlineCard.innerHTML = createProductCard({
+            imagePath: 'https://cdn.shopify.com/s/files/1/0814/8369/4394/files/catbottle.png',
+            alt: 'Cat Allergen Neutralizing Spray',
+            url: 'https://pacagen.com/products/cat-allergen-neutralizing-spray',
+            description: 'Unlike surface cleaners that rely on dilution or removal, Pacagen works through direct molecular interaction with Fel d 1, rendering the allergen biologically inactive.',
+            reviewText: '★★★★★ &nbsp; 4.72 out of 5 stars (700+ reviews)',
+            clickable: true,
+            ctaLabel: 'Shop Pacagen — 15% off'
+          });
+        }
         
         // 2. Create ads
         if (typeof createAd !== 'undefined') {

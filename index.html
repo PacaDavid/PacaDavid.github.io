@@ -28,32 +28,65 @@
         cvg({ method: "link_domain", domain: "pacagen.com" });
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
     <!-- Load main JavaScript -->
     <script src="assets/js/main.js" defer></script>
 </head>
-<body>
+<body class="is-home">
     <main>
-        <section class="hero-section py-5">
-            <h1>Health Pet Insider</h1>
+        <section class="hero-section hero-section--editorial py-4 py-lg-5" aria-label="Featured introduction">
             <div class="container">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-6">
-                        <p class="mt-4 fs-5">
-                            Welcome to Health Pet Insider, your trusted guide to all things pet wellness.
-                            Whether you're a new pet parent or a seasoned owner, our mission is to empower
-                            you with expert advice, in-depth articles, and practical tips to ensure your
-                            furry, feathered, or scaled friend lives their best life. From understanding
-                            common behaviors to navigating nutritional needs and finding the best products,
-                            we're here to help you every step of the way.
-                        </p>
-                        <a href="#welcome" class="custom-btn btn-sm shadow-sm">Discover</a> 
+                <div class="hero-home">
+                    <div class="hero-home__primary">
+                        <div class="hero-editorial__top">
+                            <div class="hero-editorial__lead">
+                                <h1 class="hero-editorial__title">Science-backed guides for pet parents who want fewer allergies—and more cuddles.</h1>
+                                <p class="hero-editorial__dek">Expert articles on cats, dogs, home care, and the products that actually help you breathe easier together.</p>
+                            </div>
+                            <div class="hero-editorial__media">
+                                <div class="hero-editorial__media-inner">
+                                    <img class="hero-editorial__blur" src="assets/images/HPI-background.jpg" alt="" width="800" height="600" aria-hidden="true" decoding="async">
+                                    <img class="hero-editorial__photo" src="assets/images/HPI-background.jpg" width="800" height="600" alt="Cat and dog cuddling" decoding="async">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-trio" aria-labelledby="hero-trio-heading">
+                            <h2 id="hero-trio-heading" class="hero-trio__sr-only">Featured articles</h2>
+                            <div class="hero-trio__row">
+                                <a class="hero-trio__card" href="/living-with-a-cat-small-changes.html">
+                                    <div class="hero-trio__media">
+                                        <img src="assets/images/img-cat-polaroid.png" alt="Tabby cat in polaroid photo" width="640" height="360" loading="lazy" decoding="async">
+                                    </div>
+                                    <p class="hero-trio__meta">Cat allergies</p>
+                                    <h3 class="hero-trio__title">No One Told Me Living With a Cat Would Mean This Many Small Changes</h3>
+                                </a>
+                                <a class="hero-trio__card" href="/9-things-cat-parents-swear-by.html">
+                                    <div class="hero-trio__media">
+                                        <img src="assets/images/img-cat-product-hero.jpg" alt="Cat parent with cats" width="800" height="500" loading="lazy" decoding="async">
+                                    </div>
+                                    <p class="hero-trio__meta">Recommended products</p>
+                                    <h3 class="hero-trio__title">9 &ldquo;Why Didn&rsquo;t I Do This Sooner?&rdquo; Things Cat Parents Swear By</h3>
+                                </a>
+                                <a class="hero-trio__card" href="/best-gifts-for-cat-moms.html">
+                                    <div class="hero-trio__media">
+                                        <img src="assets/images/img-hero-cat-gift.jpg" alt="Cat mom with cats" width="800" height="500" loading="lazy" decoding="async">
+                                    </div>
+                                    <p class="hero-trio__meta">Recommended products</p>
+                                    <h3 class="hero-trio__title">Best Gifts for Cat Moms</h3>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-6 position-relative text-center">
-                        <img src="assets/images/HPI-background.jpg" class="img-fluid rounded"
-                            alt="Cat and dog cuddling">
-                    </div>
+                    <aside class="hero-editorial__popular hero-home__popular" aria-labelledby="hero-popular-heading">
+                        <h2 id="hero-popular-heading" class="hero-editorial__popular-title">Popular</h2>
+                        <ol class="hero-editorial__popular-list">
+                            <li><a href="/best-cat-allergy-sprays.html">The Best Cat Allergy Sprays In 2026</a></li>
+                            <li><a href="/real-reason-why-cat-allergies.html">The Real Reason Cats Trigger Allergies Isn&rsquo;t Just Fur</a></li>
+                            <li><a href="/hypoallergenic-dogs.html">I Thought Hypoallergenic Dogs Would Fix My Allergies &mdash; I Was Wrong</a></li>
+                            <li><a href="/best-gifts-for-cat-moms.html">Best Gifts for Cat Moms</a></li>
+                            <li><a href="/spring-kitten-season.html">Spring Kitten Season Is Here. Here&rsquo;s How More Cats Can Stay Home</a></li>
+                        </ol>
+                    </aside>
                 </div>
             </div>
         </section>
@@ -65,6 +98,57 @@
                 <p>In a world full of pet information, what makes us different? Our unique approach is built on a simple foundation: blending professional expertise with genuine, real-world experience.
                     Expert-Driven, Community-Focused: We're not just a collection of articles. Our content is a collaborative effort between veterinary professionals and dedicated pet owners, ensuring you get advice that is both medically sound and practically useful.
                 </p>
+            </div>
+        </section>
+
+        <section id="section-cat" class="home-showcase home-showcase--cat" aria-labelledby="home-showcase-cat-title">
+            <div class="home-showcase__inner">
+                <header class="home-showcase__head">
+                    <h2 id="home-showcase-cat-title" class="home-showcase__title">Cat</h2>
+                    <a class="home-showcase__see-all" href="/blog/index.html#category-cat">See cat articles →</a>
+                </header>
+                <div class="home-showcase__row">
+                    <a class="home-showcase__card" href="/blog/how-to-get-rid-of-cat-allergies.html">
+                        <div class="home-showcase__media">
+                            <img src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Man-Sneezing_1024x1024.jpg?v=1701804580" alt="" loading="lazy" width="400" height="500">
+                        </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Cat · Relief</p>
+                            <h3 class="home-showcase__card-title">How to get rid of cat allergies</h3>
+                            <p class="home-showcase__excerpt">What drives symptoms at home—and the steps that actually move the needle.</p>
+                        </div>
+                    </a>
+                    <a class="home-showcase__card" href="/blog/worst-cats-for-allergies.html">
+                        <div class="home-showcase__media">
+                            <img src="assets/images/allergiccat.png" alt="" loading="lazy" width="400" height="500">
+                        </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Cat · Breeds</p>
+                            <h3 class="home-showcase__card-title">Worst cats for allergies</h3>
+                            <p class="home-showcase__excerpt">Breeds that tend to trigger more sneezes—and what to watch for.</p>
+                        </div>
+                    </a>
+                    <a class="home-showcase__card" href="/blog/understanding-fel-d-1.html">
+                        <div class="home-showcase__media">
+                            <img src="assets/images/understanding_feld1.png" alt="" loading="lazy" width="400" height="500">
+                        </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Cat · Science</p>
+                            <h3 class="home-showcase__card-title">Understanding Fel d 1</h3>
+                            <p class="home-showcase__excerpt">The protein behind most “I’m allergic to cats” stories.</p>
+                        </div>
+                    </a>
+                    <a class="home-showcase__card" href="/blog/how-cat-allergies-work.html">
+                        <div class="home-showcase__media">
+                            <img src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Blog_Images_17.png?v=1751541168" alt="" loading="lazy" width="400" height="500">
+                        </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Cat · Science</p>
+                            <h3 class="home-showcase__card-title">How cat allergies work</h3>
+                            <p class="home-showcase__excerpt">Dander, saliva, and what sets off symptoms around cats.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -90,84 +174,149 @@
             </div>
         </section>
 
-        <!-- Articles -->
-        <div class="container my-5" id="articles">
-            <div class="row">
-                <div class="col-12">
-                    <section class="featured-content">
-                        <h3>Latest Articles</h3>
-                    </section>
+        <section id="section-dog" class="home-showcase home-showcase--dog" aria-labelledby="home-showcase-dog-title">
+            <div class="home-showcase__inner">
+                <header class="home-showcase__head">
+                    <h2 id="home-showcase-dog-title" class="home-showcase__title">Dog</h2>
+                    <a class="home-showcase__see-all" href="/blog/index.html#category-dog">See dog articles →</a>
+                </header>
+                <div class="home-showcase__row">
+                    <a class="home-showcase__card" href="/blog/best-hypoallergenic-dogs.html">
+                        <div class="home-showcase__media">
+                            <img src="assets/images/hypoallergenicdog.png" alt="" loading="lazy" width="400" height="500">
+                        </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Dog · Breeds</p>
+                            <h3 class="home-showcase__card-title">Best hypoallergenic dogs</h3>
+                            <p class="home-showcase__excerpt">Picks that tend to play nicer with sensitive noses.</p>
+                        </div>
+                    </a>
+                    <a class="home-showcase__card" href="/blog/how-dog-allergies-work.html">
+                        <div class="home-showcase__media">
+                            <img src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Dog_Allergies.png?v=1750374562" alt="" loading="lazy" width="400" height="500">
+                        </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Dog · Science</p>
+                            <h3 class="home-showcase__card-title">How dog allergies work</h3>
+                            <p class="home-showcase__excerpt">Dander, saliva, and what actually sets off symptoms.</p>
+                        </div>
+                    </a>
+                    <a class="home-showcase__card" href="/5-best-fixes-for-dog-allergies.html">
+                        <div class="home-showcase__media">
+                            <img src="assets/images/pacagen-dans.png" alt="" loading="lazy" width="400" height="500">
+                        </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Dog · Home</p>
+                            <h3 class="home-showcase__card-title">5 best fixes for dog allergies</h3>
+                            <p class="home-showcase__excerpt">Simple upgrades that make shared spaces easier to live in.</p>
+                        </div>
+                    </a>
+                    <a class="home-showcase__card" href="/blog/how-often-should-you-bathe-your-dog.html">
+                        <div class="home-showcase__media">
+                            <img src="https://cdn.shopify.com/s/files/1/0814/8369/4394/files/dog_in_bath.jpg" alt="" loading="lazy" width="400" height="500">
+                        </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Dog · Grooming</p>
+                            <h3 class="home-showcase__card-title">How often to bathe your dog</h3>
+                            <p class="home-showcase__excerpt">A practical bathing rhythm for skin, coat, and allergens.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="/assets/images/eggpowderforallergies.png" class="card-img-top" alt="Pet care">
-                        <div class="card-body m-2">
-                            <h5 class="card-title">Can Feeding Egg Powder Help With
-                                Cat Allergies?</h5>
-                            <p class="card-text">Discover the truth about egg powder and cat allergies.</p>
-                            <a href="/blog/egg-powder-for-cat-allergies.html" class="custom-btn btn-sm shadow-sm">Read More</a>
+        </section>
+
+        <section id="section-home-care" class="home-showcase home-showcase--home-care" aria-labelledby="home-showcase-home-care-title">
+            <div class="home-showcase__inner">
+                <header class="home-showcase__head">
+                    <h2 id="home-showcase-home-care-title" class="home-showcase__title">Home care</h2>
+                    <a class="home-showcase__see-all" href="/blog/index.html#category-home-care">See home care articles →</a>
+                </header>
+                <div class="home-showcase__row">
+                    <a class="home-showcase__card" href="/blog/best-home-air-purifiers.html">
+                        <div class="home-showcase__media">
+                            <img src="assets/images/best-air-purifier.png" alt="" loading="lazy" width="400" height="500">
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="/assets/images/hypoallergenicdog.png" class="card-img-top" alt="Pet care">
-                        <div class="card-body m-2">
-                            <h5 class="card-title">Best Hypoallergenic Dogs</h5>
-                            <p class="card-text">Not sure what dog to get because you're allergic? See our recommendations.</p>
-                            <a href="/blog/best-hypoallergenic-dogs.html" class="custom-btn btn-sm shadow-sm">Read More</a>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Home · Air</p>
+                            <h3 class="home-showcase__card-title">Best home air purifiers</h3>
+                            <p class="home-showcase__excerpt">What to look for in a purifier when pets share your space.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="/assets/images/allergiccat.png" class="card-img-top" alt="Pet care">
-                        <div class="card-body m-2">
-                            <h5 class="card-title">Worst Cats For Allergies</h5>
-                            <p class="card-text">Ever wonder what the worst cats for allergies are? Some breeds might surprise you.</p>
-                            <a href="/blog/worst-cats-for-allergies.html" class="custom-btn btn-sm shadow-sm">Read More</a>
+                    </a>
+                    <a class="home-showcase__card" href="/5-must-have-products.html">
+                        <div class="home-showcase__media">
+                            <img src="assets/images/pacagen-products.png" alt="" loading="lazy" width="400" height="500">
                         </div>
-                    </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Home · Essentials</p>
+                            <h3 class="home-showcase__card-title">Top 5 must-have products for allergic pet owners</h3>
+                            <p class="home-showcase__excerpt">From HEPA filters to sprays that target allergens at the source.</p>
+                        </div>
+                    </a>
+                    <a class="home-showcase__card" href="/blog/how-to-keep-your-home-fresh-with-pets.html">
+                        <div class="home-showcase__media">
+                            <img src="assets/images/cleaning-ad1.png" alt="" loading="lazy" width="400" height="500">
+                        </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Home · Fresh</p>
+                            <h3 class="home-showcase__card-title">How to keep your home fresh when you have pets</h3>
+                            <p class="home-showcase__excerpt">Where pet odor really comes from—and what actually works.</p>
+                        </div>
+                    </a>
+                    <a class="home-showcase__card" href="/5-ways-to-manage-allergens.html">
+                        <div class="home-showcase__media">
+                            <img src="assets/images/hepafilter.png" alt="" loading="lazy" width="400" height="500">
+                        </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Home · Allergens</p>
+                            <h3 class="home-showcase__card-title">5 ways to manage allergens in the home</h3>
+                            <p class="home-showcase__excerpt">HEPA, surfaces, and habits that lower what’s in the air.</p>
+                        </div>
+                    </a>
                 </div>
-                <!-- Repeat for more articles -->
             </div>
-            <div class="row align-items-center m-3">
-                <div class="col text-center fs-5">
-                  <a href="/blog/index.html" class="text-decoration-none fw-semibold">
-                    👉 Explore All Articles
-                  </a>
-                </div>
-            </div>
-        </div>
-        <section class="py-5 quote-section text-center">
+        </section>
+
+        <!-- Latest Articles (same card pattern as Cat / Dog showcase) -->
+        <section id="articles" class="home-latest my-5" aria-labelledby="home-latest-title">
             <div class="container">
-              <h2 class="fw-bold mb-2">Stay Connected With Us</h2>
-              <p class="text-muted mb-2">Join our Health Pet Insider for tips & tricks for all your healthy pet needs!</p>
-              <div class="d-flex justify-content-center gap-2">
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/people/Health-Pet-Insider/61579650292093/" target="_blank" class="text-decoration-none">
-                  <div class="p-4 bg-white shadow rounded-4 d-flex align-items-center gap-1 hover-card">
-                    <i class="bi bi-facebook fs-1 text-primary"></i>
-                    <div class="text-start">
-                      <h5 class="mb-0">Follow us on Facebook</h5>
-                    </div>
-                  </div>
-                </a>
-          
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/healthpetinsider" target="_blank" class="text-decoration-none">
-                  <div class="p-4 bg-white shadow rounded-4 d-flex align-items-center gap-3 hover-card">
-                    <i class="bi bi-instagram fs-1 text-danger"></i>
-                    <div class="text-start">
-                      <h5 class="mb-0">Follow us on Instagram</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
+                <header class="home-showcase__head">
+                    <h2 id="home-latest-title" class="home-showcase__title">Latest Articles</h2>
+                    <a class="home-showcase__see-all" href="/blog/index.html">See all articles →</a>
+                </header>
+                <div class="home-showcase__row home-latest__row">
+                    <a class="home-showcase__card" href="/blog/how-to-keep-your-home-fresh-with-pets.html">
+                        <div class="home-showcase__media">
+                            <img src="assets/images/cleaning-ad1.png" alt="" loading="lazy" width="640" height="427">
+                        </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Home · Fresh</p>
+                            <h3 class="home-showcase__card-title">How to Keep Your Home Fresh When You Have Pets</h3>
+                            <p class="home-showcase__excerpt">Pet odor is less about how often you clean and more about understanding where it actually comes from. Here&rsquo;s what works&mdash;and what doesn&rsquo;t.</p>
+                        </div>
+                    </a>
+                    <a class="home-showcase__card" href="/why-househoulds-are-neutralizing-allergens.html">
+                        <div class="home-showcase__media">
+                            <img src="assets/images/cat-spray.png" alt="" loading="lazy" width="640" height="427">
+                        </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Cat allergies · Science</p>
+                            <h3 class="home-showcase__card-title">Why More Sensitive Households Are Trying to Neutralize Allergens Before Symptoms Start</h3>
+                            <p class="home-showcase__excerpt">For people managing MCAS, histamine intolerance, mild COPD, and chronic environmental sensitivity, a scientist-developed approach is reframing the problem.</p>
+                        </div>
+                    </a>
+                    <a class="home-showcase__card" href="/spring-kitten-season.html">
+                        <div class="home-showcase__media">
+                            <img src="assets/images/img-cat-sleep.jpg" alt="" loading="lazy" width="640" height="427">
+                        </div>
+                        <div class="home-showcase__card-body">
+                            <p class="home-showcase__meta">Cat · Adoption</p>
+                            <h3 class="home-showcase__card-title">Spring Kitten Season Is Here. Here&rsquo;s How More Cats Can Stay Home</h3>
+                            <p class="home-showcase__excerpt">Spring and kitten season bring joy, but also overcrowded shelters and hard rehoming decisions. Learn practical ways families, fosters, and brands are helping more kittens find homes.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-          </section>
+        </section>
     </main>
 </body>
 </html>

@@ -20,7 +20,8 @@
             url,
             description,
             clickable = true,
-            pageType = 'root'
+            pageType = 'root',
+            ctaLabel
         } = config;
         
         if (!image || !alt) return '';
@@ -48,7 +49,8 @@
             url,
             description,
             reviewText,
-            clickable
+            clickable,
+            ctaLabel
         });
     }
     
