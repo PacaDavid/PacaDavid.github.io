@@ -1,0 +1,1069 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Short quiz for cat owners: late spring allergy flares may track heavy seasonal shedding and extra Fel d 1 in the home—not random bad luck. Learn the pattern and what you can spray."
+    />
+    <meta
+      name="keywords"
+      content="cat allergies spring, cat shedding summer, Fel d 1 seasonal, cat allergen spray, Pacagen, summer coat blow cat"
+    />
+    <title>
+      Is Your Late-Spring Allergy Flare Actually Your Cat’s Summer Shed? | Quiz
+      | Health Pet Insider
+    </title>
+    <script src="assets/js/head-components.js"></script>
+    <script src="assets/js/tracking.js"></script>
+    <script src="assets/js/component-init.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/components/article/fold.js"></script>
+    <script src="assets/js/components/article/article-footer.js"></script>
+    <script src="assets/js/components/article/related-articles.js"></script>
+    <script src="assets/js/product-components-bundle.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      #ssq-quiz-layout {
+        width: min(96vw, 1040px);
+        max-width: 1040px;
+      }
+      .ssq-sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      .ssq-wrap {
+        max-width: min(100%, 960px);
+        width: 100%;
+        margin: 0 auto 40px;
+        font-family: "Grift", serif;
+        color: #234436;
+      }
+      .ssq-card {
+        background: #fff;
+        border: 1px solid rgba(5, 104, 57, 0.14);
+        border-radius: 16px;
+        padding: 28px 24px 26px;
+        box-shadow: 0 8px 28px rgba(35, 68, 54, 0.06);
+      }
+      .ssq-eyebrow {
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #056839;
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+      .ssq-card h2 {
+        font-family: "Playfair Display", serif;
+        color: #056839;
+        font-size: 1.65rem;
+        line-height: 1.25;
+        margin: 0 0 14px;
+      }
+      .ssq-card p.lead {
+        font-size: 1rem;
+        line-height: 1.65;
+        margin: 0 0 20px;
+        color: #234436;
+      }
+      .ssq-progress {
+        height: 6px;
+        background: rgba(5, 104, 57, 0.12);
+        border-radius: 99px;
+        overflow: hidden;
+        margin-bottom: 22px;
+      }
+      .ssq-progress-bar {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(90deg, #056839, #0a8f4f);
+        border-radius: 99px;
+        transition: width 0.35s ease;
+      }
+      .ssq-step-label {
+        font-size: 0.88rem;
+        color: rgba(35, 68, 54, 0.75);
+        margin-bottom: 16px;
+      }
+      .ssq-q {
+        font-family: "Playfair Display", serif;
+        font-size: 1.28rem;
+        color: #234436;
+        line-height: 1.35;
+        margin: 0 0 18px;
+      }
+      .ssq-options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .ssq-opt {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 14px 16px;
+        border-radius: 12px;
+        border: 2px solid rgba(5, 104, 57, 0.18);
+        background: #fafdfb;
+        color: #234436;
+        font-size: 1rem;
+        line-height: 1.45;
+        cursor: pointer;
+        font-family: inherit;
+        transition:
+          border-color 0.2s,
+          background 0.2s,
+          transform 0.15s;
+      }
+      .ssq-opt:hover,
+      .ssq-opt:focus-visible {
+        border-color: #056839;
+        background: #fff;
+        outline: none;
+        transform: translateY(-1px);
+      }
+      .ssq-opt[aria-pressed="true"] {
+        border-color: #056839;
+        background: #f4ffbf;
+        box-shadow: 0 0 0 1px rgba(5, 104, 57, 0.08);
+      }
+      .ssq-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 22px;
+      }
+      .ssq-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 22px;
+        border-radius: 10px;
+        font-weight: 700;
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+        font-size: 1rem;
+        transition:
+          opacity 0.2s,
+          transform 0.15s;
+      }
+      .ssq-btn:disabled {
+        opacity: 0.45;
+        cursor: not-allowed;
+        transform: none;
+      }
+      .ssq-btn-primary {
+        background: #056839;
+        color: #fff;
+      }
+      .ssq-btn-primary:not(:disabled):hover,
+      .ssq-btn-primary:not(:disabled):focus-visible {
+        opacity: 0.94;
+        outline: 2px solid #056839;
+        outline-offset: 2px;
+      }
+      .ssq-btn-ghost {
+        background: transparent;
+        color: #056839;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        padding: 8px 12px;
+      }
+      .ssq-reframe {
+        background: linear-gradient(135deg, #056839 0%, #234436 100%);
+        color: #fff;
+        border-radius: 16px;
+        padding: 26px 22px;
+        margin: 28px 0 22px;
+      }
+      .ssq-reframe h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.45rem;
+        margin: 0 0 12px;
+        color: white;
+      }
+      .ssq-reframe p {
+        margin: 0 0 12px;
+        line-height: 1.65;
+        color: rgba(255, 255, 255, 0.94);
+        font-size: 1.02rem;
+      }
+      .ssq-reframe p:last-child {
+        margin-bottom: 0;
+      }
+      /* Beat `.content-large ul { padding-left: 20px }` from style.css */
+      .ssq-reframe ul.ssq-facts {
+        list-style: none;
+        padding: 0;
+        margin: 18px 0 0;
+        margin-left: 0;
+        display: grid;
+        gap: 12px;
+      }
+      .ssq-facts li {
+        background: rgba(255, 255, 255, 0.1);
+        border-left: 4px solid #f4ffbf;
+        padding: 12px 14px;
+        border-radius: 0 10px 10px 0;
+        line-height: 1.55;
+        color: rgb(255, 255, 255);
+      }
+      /* —— Quiz result visual —— */
+      .ssq-result-visual {
+        display: grid;
+        gap: 18px;
+        margin: 0 0 22px;
+        padding: 20px 18px 22px;
+        border-radius: 16px;
+        border: 2px solid rgba(5, 104, 57, 0.22);
+        background: linear-gradient(
+          145deg,
+          #f4ffbf 0%,
+          #e8f5ec 42%,
+          #dff0e6 100%
+        );
+        box-shadow: 0 10px 32px rgba(35, 68, 54, 0.08);
+      }
+      .ssq-result-visual.ssq-result--high {
+        border-color: #b71c1c;
+        background: linear-gradient(
+          145deg,
+          #fff5f5 0%,
+          #ffcdd2 45%,
+          #ef9a9a 100%
+        );
+        box-shadow: 0 10px 36px rgba(183, 28, 28, 0.18);
+      }
+      .ssq-result-visual.ssq-result--mid {
+        border-color: #d84315;
+        background: linear-gradient(
+          145deg,
+          #fff8f5 0%,
+          #ffccbc 48%,
+          #ffab91 100%
+        );
+        box-shadow: 0 10px 32px rgba(216, 67, 21, 0.12);
+      }
+      .ssq-result-visual.ssq-result--low {
+        border-color: rgba(5, 104, 57, 0.28);
+        background: linear-gradient(145deg, #f7faf8 0%, #eaf4ee 100%);
+        box-shadow: 0 8px 28px rgba(35, 68, 54, 0.06);
+      }
+      .ssq-result-visual.ssq-result--high .ssq-result-visual__figure {
+        border-color: rgba(183, 28, 28, 0.45);
+        box-shadow: 0 6px 22px rgba(183, 28, 28, 0.2);
+      }
+      .ssq-result-visual.ssq-result--mid .ssq-result-visual__figure {
+        border-color: rgba(216, 67, 21, 0.35);
+        box-shadow: 0 6px 20px rgba(216, 67, 21, 0.14);
+      }
+      .ssq-result-visual__grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+        gap: 18px;
+        align-items: center;
+      }
+      .ssq-result-visual__figure {
+        margin: 0;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 2px solid rgba(5, 104, 57, 0.18);
+        box-shadow: 0 6px 20px rgba(35, 68, 54, 0.12);
+        background: #fff;
+      }
+      .ssq-result-visual__figure img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .ssq-result-meter__title {
+        font-family: "Playfair Display", serif;
+        font-size: 0.98rem;
+        font-weight: 700;
+        color: #0a2e1c;
+        margin: 0 0 10px;
+        line-height: 1.35;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+      }
+      .ssq-result-meter-block {
+        min-width: 0;
+      }
+      .ssq-result-meter__track {
+        height: 14px;
+        border-radius: 99px;
+        background: rgba(35, 68, 54, 0.1);
+        overflow: hidden;
+        margin-bottom: 8px;
+      }
+      .ssq-result-visual.ssq-result--high .ssq-result-meter__track {
+        background: rgba(183, 28, 28, 0.15);
+      }
+      .ssq-result-visual.ssq-result--mid .ssq-result-meter__track {
+        background: rgba(216, 67, 21, 0.12);
+      }
+      .ssq-result-meter__fill {
+        height: 100%;
+        width: 0%;
+        border-radius: 99px;
+        background: linear-gradient(90deg, #056839, #0cb56a);
+        transition: width 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .ssq-result-meter__fill {
+          transition: none;
+        }
+      }
+      .ssq-result-meter__pct {
+        margin: 0;
+        font-size: 0.92rem;
+        font-weight: 700;
+        color: #056839;
+      }
+      .ssq-result-visual.ssq-result--high p.ssq-result-meter__pct {
+        color: #b71c1c;
+      }
+      .ssq-result-visual.ssq-result--mid p.ssq-result-meter__pct {
+        color: #d84315;
+      }
+      .ssq-result-visual.ssq-result--high .ssq-result-meter__title {
+        color: #4a1215;
+      }
+      .ssq-result-visual.ssq-result--mid .ssq-result-meter__title {
+        color: #5d210f;
+      }
+      .ssq-result-meter__hint {
+        margin: 6px 0 0;
+        font-size: 0.86rem;
+        line-height: 1.45;
+        color: rgba(35, 68, 54, 0.82);
+      }
+      .ssq-result-visual.ssq-result--high p.ssq-result-meter__hint {
+        color: rgba(74, 18, 21, 0.9);
+      }
+      .ssq-result-visual.ssq-result--mid p.ssq-result-meter__hint {
+        color: rgba(93, 33, 15, 0.9);
+      }
+      .ssq-result-visual p.ssq-result-meter__pct,
+      .ssq-result-visual p.ssq-result-meter__hint {
+        margin-bottom: 0;
+      }
+      .ssq-result-signals {
+        list-style: none;
+        padding: 0;
+        margin: 14px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .ssq-result-signals li {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 11px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid rgba(5, 104, 57, 0.16);
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: #123526;
+        line-height: 1.2;
+      }
+      .ssq-result-visual.ssq-result--high .ssq-result-signals li {
+        border-color: rgba(183, 28, 28, 0.28);
+        color: #4a1215;
+      }
+      .ssq-result-visual.ssq-result--mid .ssq-result-signals li {
+        border-color: rgba(216, 67, 21, 0.24);
+        color: #5d210f;
+      }
+      .ssq-result-visual.ssq-result--high .ssq-result-signals svg {
+        stroke: #b71c1c;
+      }
+      .ssq-result-visual.ssq-result--mid .ssq-result-signals svg {
+        stroke: #d84315;
+      }
+      .ssq-result-signals svg {
+        flex-shrink: 0;
+        opacity: 0.9;
+      }
+      @media (max-width: 576px) {
+        .ssq-result-visual__grid {
+          grid-template-columns: 1fr;
+        }
+        .ssq-result-visual__figure {
+          max-width: 280px;
+          margin: 0 auto;
+        }
+      }
+      .ssq-hidden {
+        display: none !important;
+      }
+      .ssq-intro-bullets {
+        margin: 0 0 20px;
+        padding-left: 1.15rem;
+        line-height: 1.65;
+      }
+      .ssq-intro-bullets li {
+        margin-bottom: 8px;
+      }
+      .ssq-did-you-know {
+        background: #e4f0e8;
+        border: 2px solid #2f6b4a;
+        border-radius: 14px;
+        padding: 12px 14px 14px;
+        margin: 0 0 14px;
+      }
+      .ssq-did-you-know p.ssq-did-you-know__label {
+        font-family: "Playfair Display", serif;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #0a2e1c;
+        margin: 0 0 4px;
+        letter-spacing: 0.01em;
+      }
+      .ssq-did-you-know p.ssq-did-you-know__text {
+        margin: 0;
+        margin-bottom: 0;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: #123526;
+        letter-spacing: 0.01em;
+      }
+      .ssq-intro {
+        text-align: center;
+      }
+      .ssq-intro > p.lead {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 36rem;
+        text-align: center;
+      }
+      .ssq-intro .ssq-did-you-know {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        max-width: 36rem;
+        text-align: center;
+      }
+      .ssq-intro .ssq-did-you-know p.ssq-did-you-know__label,
+      .ssq-intro .ssq-did-you-know p.ssq-did-you-know__text {
+        text-align: center;
+      }
+      .ssq-intro .ssq-actions {
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .ssq-intro #ssq-start.ssq-btn-primary {
+        font-size: 1.14rem;
+        padding: 17px 40px;
+        min-height: 54px;
+        min-width: min(100%, 300px);
+        border-radius: 12px;
+        box-shadow: 0 8px 26px rgba(5, 104, 57, 0.32);
+        letter-spacing: 0.03em;
+      }
+      .ssq-intro #ssq-start.ssq-btn-primary:hover,
+      .ssq-intro #ssq-start.ssq-btn-primary:focus-visible {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 32px rgba(5, 104, 57, 0.38);
+        opacity: 1;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .ssq-intro #ssq-start.ssq-btn-primary:hover,
+        .ssq-intro #ssq-start.ssq-btn-primary:focus-visible {
+          transform: none;
+        }
+      }
+      @media (max-width: 576px) {
+        .ssq-card {
+          padding: 22px 18px;
+        }
+        .ssq-q {
+          font-size: 1.12rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="main-article">
+        <section class="w-70 mx-auto mt-4" id="ssq-quiz-layout">
+          <div id="article-fold"></div>
+
+          <section class="article-content content-large mt-0">
+            <div class="ssq-wrap">
+              <div
+                class="ssq-card"
+                id="summer-shed-quiz"
+                role="region"
+                aria-labelledby="ssq-region-title"
+              >
+                <h2 id="ssq-region-title" class="ssq-sr-only">
+                  Summer shed and cat allergy quiz
+                </h2>
+
+                <!-- Intro -->
+                <div id="ssq-screen-intro" class="ssq-intro">
+                  <p class="ssq-eyebrow">
+                    Understand and fix your flare-up with a 1 minute quiz
+                  </p>
+                  <h2 class="mt-0 text-center">
+                    Is your cat making you stuffy?
+                  </h2>
+                  <p class="lead">
+                    Lots of cat owners feel worse in late spring and early
+                    summer and never quite know <em>why</em>. Often it isn’t
+                    only pollen: cats shed their winter coat then, which can
+                    flood your home with extra <strong>Fel d 1</strong>. This
+                    one-minute quiz helps you see if that pattern affects you.
+                  </p>
+                  <div class="ssq-did-you-know">
+                    <p class="ssq-did-you-know__label">Did you know?</p>
+                    <p class="ssq-did-you-know__text">
+                      Millions blame pollen and the weather first—while the same
+                      weeks often bring a jump in indoor
+                      <strong>Fel d 1</strong>
+                      from a cat shedding its winter coat.
+                    </p>
+                  </div>
+                  <div class="ssq-actions">
+                    <button
+                      type="button"
+                      class="ssq-btn ssq-btn-primary"
+                      id="ssq-start"
+                    >
+                      Start the quiz
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Questions -->
+                <div id="ssq-screen-questions" class="ssq-hidden">
+                  <div class="ssq-progress" aria-hidden="true">
+                    <div class="ssq-progress-bar" id="ssq-progress-bar"></div>
+                  </div>
+                  <p
+                    class="ssq-step-label"
+                    id="ssq-step-label"
+                    aria-live="polite"
+                  ></p>
+                  <p class="ssq-q" id="ssq-question-text" tabindex="-1"></p>
+                  <div
+                    class="ssq-options"
+                    id="ssq-options"
+                    role="group"
+                    aria-labelledby="ssq-question-text"
+                  ></div>
+                  <div class="ssq-actions">
+                    <button
+                      type="button"
+                      class="ssq-btn ssq-btn-ghost"
+                      id="ssq-back"
+                    >
+                      Back
+                    </button>
+                    <button
+                      type="button"
+                      class="ssq-btn ssq-btn-primary"
+                      id="ssq-next"
+                      disabled
+                    >
+                      Next
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Results -->
+                <div
+                  id="ssq-screen-result"
+                  class="ssq-hidden"
+                  aria-live="polite"
+                >
+                  <div class="ssq-result-visual" id="ssq-result-visual">
+                    <div class="ssq-result-visual__grid">
+                      <figure class="ssq-result-visual__figure">
+                        <img
+                          id="ssq-result-photo"
+                          src="assets/images/cat-on-couch.png"
+                          width="560"
+                          height="420"
+                          alt="Cat resting at home on soft furniture"
+                          decoding="async"
+                        />
+                      </figure>
+                      <div class="ssq-result-meter-block">
+                        <p
+                          class="ssq-result-meter__title"
+                          id="ssq-result-meter-title"
+                          aria-live="polite"
+                        ></p>
+                        <div class="ssq-result-meter" aria-hidden="true">
+                          <div class="ssq-result-meter__track">
+                            <div
+                              class="ssq-result-meter__fill"
+                              id="ssq-meter-fill"
+                            ></div>
+                          </div>
+                        </div>
+                        <p class="ssq-result-meter__pct" id="ssq-meter-pct"></p>
+                        <p
+                          class="ssq-result-meter__hint"
+                          id="ssq-meter-hint"
+                        ></p>
+                        <ul class="ssq-result-signals">
+                          <li>
+                            <svg
+                              width="18"
+                              height="18"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="#056839"
+                              stroke-width="2"
+                              aria-hidden="true"
+                            >
+                              <rect x="3" y="5" width="18" height="16" rx="2" />
+                              <path d="M16 3v4M8 3v4M3 11h18" />
+                            </svg>
+                            Late spring · early summer
+                          </li>
+                          <li>
+                            <svg
+                              width="18"
+                              height="18"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="#056839"
+                              stroke-width="2"
+                              aria-hidden="true"
+                            >
+                              <circle cx="12" cy="12" r="5" />
+                              <path
+                                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+                              />
+                            </svg>
+                            Warmer days, heavier shed
+                          </li>
+                          <li>
+                            <svg
+                              width="18"
+                              height="18"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="#056839"
+                              stroke-width="2"
+                              aria-hidden="true"
+                            >
+                              <path
+                                d="M4 14c2 4 5 6 8 6s6-2 8-6M6 10h2M16 10h2M8 6h8"
+                              />
+                            </svg>
+                            More Fel d 1 in the room
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ssq-reframe">
+                    <h3 class="text-white">This isn’t random—it’s a season</h3>
+                    <p>
+                      When days warm up, many cats shed the thick winter coat
+                      they grew when it was cold. Loose hair and skin flakes
+                      carry Fel d 1 into the air and onto couches, beds, and
+                      clothes. If your nose reads that jump as “mystery
+                      allergies,” you are in good company—but the calendar and
+                      the vacuum canister often tell a clearer story than pollen
+                      alone.
+                    </p>
+                    <ul class="ssq-facts">
+                      <li>
+                        <strong
+                          >Same cat, more allergen in the environment</strong
+                        >
+                        during heavy shed windows—not a new “allergy to your
+                        cat,” just more of the protein around you.
+                      </li>
+                      <li>
+                        <strong>Soft surfaces hold the payload</strong> where
+                        cats nap; that is where a neutralizing spray can
+                        complement brushing, baths (if your cat tolerates them),
+                        and washing bedding.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p class="lead" style="margin-bottom: 16px">
+                    If you want a science-minded tool aimed at Fel d 1 on
+                    surfaces, Pacagen’s
+                    <a
+                      href="https://pacagen.com/products/cat-allergen-neutralizing-spray"
+                      class="pacagen-link"
+                      >Cat Allergen Neutralizing Spray</a
+                    >
+                    is designed for that job. Their approach to this problem is
+                    to neutralize the allergen on contact, so it's safe to use
+                    on a variety of surfaces, including clothes, sheets, and
+                    other surfaces. This is a great way to target the root cause
+                    of your allergies, not just the symptoms.
+                  </p>
+
+                  <div
+                    class="pacagen-showcase d-flex justify-content-center align-items-center mb-3"
+                  ></div>
+
+                  <div class="ssq-actions">
+                    <button
+                      type="button"
+                      class="ssq-btn ssq-btn-ghost"
+                      id="ssq-restart"
+                    >
+                      Take quiz again
+                    </button>
+                    <a
+                      class="ssq-btn ssq-btn-primary"
+                      id="ssq-shop"
+                      href="https://pacagen.com/en-us/collections/all"
+                      style="text-decoration: none"
+                      >Explore all solutions</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p
+              style="
+                max-width: min(96vw, 960px);
+                margin: 0 auto 28px;
+                line-height: 1.65;
+                color: #234436;
+              "
+            >
+              For a deeper dive into the protein behind the sneeze, read our
+              guide to
+              <a href="blog/understanding-fel-d-1.html">Fel d 1</a> and how
+              <a href="blog/how-cat-allergies-work.html">cat allergies work</a>.
+              If you are comparing tools, our roundup of
+              <a href="best-cat-allergy-sprays.html">best cat allergy sprays</a>
+              walks through what to look for on the label.
+            </p>
+          </section>
+
+          <div id="related-articles" class="related-articles-root"></div>
+          <div id="article-footer"></div>
+        </section>
+      </article>
+    </main>
+
+    <script>
+      (function () {
+        var QUESTIONS = [
+          {
+            text: "What age group do you belong to?",
+            options: [
+              { label: "Under 20", score: 2 },
+
+              { label: "20-30", score: 2 },
+              { label: "31-60", score: 2 },
+              { label: "61+", score: 2 },
+            ],
+          },
+          {
+            text: "When do you most notice allergy-type symptoms sneaking in?",
+            options: [
+              { label: "Late spring through early summer", score: 4 },
+              { label: "Warm months in general", score: 3 },
+              { label: "Roughly year-round", score: 1 },
+              { label: "I rarely get flares", score: 0 },
+            ],
+          },
+          {
+            text: "How often is your everyday life around cats?",
+            options: [
+              { label: "I live with a cat (or cats)", score: 4 },
+              { label: "Several days a week", score: 3 },
+              { label: "Every once in a while", score: 2 },
+              { label: "Almost never", score: 0 },
+            ],
+          },
+          {
+            text: "From about May to July, do you ever notice more fur on clothes, floors, or furniture?",
+            options: [
+              { label: "Yes, and I find myself cleaning more often", score: 4 },
+              {
+                label: "I think so, but I've never thought about it",
+                score: 3,
+              },
+              { label: "Feels about the same as other months", score: 1 },
+              { label: "I’m not sure I’ve noticed", score: 0 },
+            ],
+          },
+          {
+            text: "When symptoms do show up, where do you feel them the most?",
+            options: [
+              { label: "Sleep or winding down at night", score: 4 },
+              { label: "Work, school, or focus time", score: 4 },
+              { label: "Comfort at home—couch, bed, stuffy rooms", score: 4 },
+              { label: "Mild—more of a background annoyance", score: 1 },
+            ],
+          },
+        ];
+
+        var intro = document.getElementById("ssq-screen-intro");
+        var questionsEl = document.getElementById("ssq-screen-questions");
+        var resultEl = document.getElementById("ssq-screen-result");
+        var stepLabel = document.getElementById("ssq-step-label");
+        var qText = document.getElementById("ssq-question-text");
+        var optsRoot = document.getElementById("ssq-options");
+        var nextBtn = document.getElementById("ssq-next");
+        var backBtn = document.getElementById("ssq-back");
+        var bar = document.getElementById("ssq-progress-bar");
+        var idx = 0;
+        var answers = [];
+        var selectedIndices = [];
+        var selected = null;
+
+        function show(el) {
+          el.classList.remove("ssq-hidden");
+        }
+        function hide(el) {
+          el.classList.add("ssq-hidden");
+        }
+
+        function totalScore() {
+          return answers.reduce(function (a, b) {
+            return a + b;
+          }, 0);
+        }
+
+        function clearFromIndex(start) {
+          answers.length = start;
+          selectedIndices.length = start;
+        }
+
+        function renderQuestion() {
+          var q = QUESTIONS[idx];
+          stepLabel.textContent =
+            "Question " + (idx + 1) + " of " + QUESTIONS.length;
+          qText.textContent = q.text;
+          optsRoot.innerHTML = "";
+          selected = selectedIndices[idx] != null ? selectedIndices[idx] : null;
+
+          var pct =
+            ((idx + (selected != null ? 0.35 : 0)) / QUESTIONS.length) * 100;
+          bar.style.width = Math.min(100, pct) + "%";
+
+          q.options.forEach(function (opt, i) {
+            var btn = document.createElement("button");
+            btn.type = "button";
+            btn.className = "ssq-opt";
+            btn.textContent = opt.label;
+            btn.setAttribute("aria-pressed", selected === i ? "true" : "false");
+            btn.addEventListener("click", function () {
+              selected = i;
+              selectedIndices[idx] = i;
+              answers[idx] = q.options[i].score;
+              Array.prototype.forEach.call(
+                optsRoot.querySelectorAll(".ssq-opt"),
+                function (b, j) {
+                  b.setAttribute("aria-pressed", j === i ? "true" : "false");
+                },
+              );
+              nextBtn.disabled = false;
+              bar.style.width = ((idx + 1) / QUESTIONS.length) * 100 + "%";
+            });
+            if (selected === i) {
+              btn.setAttribute("aria-pressed", "true");
+              nextBtn.disabled = false;
+            }
+            optsRoot.appendChild(btn);
+          });
+
+          if (selected == null) {
+            nextBtn.disabled = true;
+            bar.style.width = (idx / QUESTIONS.length) * 100 + "%";
+          }
+          backBtn.style.visibility = idx === 0 ? "hidden" : "visible";
+          nextBtn.textContent =
+            idx === QUESTIONS.length - 1 ? "See my result" : "Next";
+        }
+
+        function showResult() {
+          hide(questionsEl);
+          show(resultEl);
+          var raw = totalScore();
+          var maxScore = QUESTIONS.reduce(function (m, q) {
+            var rowMax = 0;
+            q.options.forEach(function (o) {
+              if (o.score > rowMax) rowMax = o.score;
+            });
+            return m + rowMax;
+          }, 0);
+          var bias = Math.max(2, Math.round(maxScore * 0.24));
+          var adjusted = Math.min(maxScore, raw + bias);
+          var pct = maxScore ? Math.round((adjusted / maxScore) * 100) : 0;
+
+          var fill = document.getElementById("ssq-meter-fill");
+          var pctEl = document.getElementById("ssq-meter-pct");
+          var hintEl = document.getElementById("ssq-meter-hint");
+          var visual = document.getElementById("ssq-result-visual");
+          var photo = document.getElementById("ssq-result-photo");
+
+          var tierCls;
+          var tierLabel;
+          var imgSrc;
+          var imgAlt;
+          if (adjusted >= 12) {
+            tierCls = "high";
+            tierLabel = "Strong match with seasonal heavy shed";
+            imgSrc = "assets/images/cat-on-couch.png";
+            imgAlt =
+              "Cat on soft furniture—where shed winter coat and Fel d 1 collect";
+          } else if (adjusted >= 7) {
+            tierCls = "mid";
+            tierLabel = "Seasonal shedding could be part of the picture";
+            imgSrc = "assets/images/img-cat-livingroom.png";
+            imgAlt = "Cat in a home living area";
+          } else {
+            tierCls = "low";
+            tierLabel = "Worth keeping coat season on your radar";
+            imgSrc = "assets/images/img-cat-sleep.jpg";
+            imgAlt =
+              "Resting cat—many cats still ramp up shedding in late spring";
+          }
+
+          var meterTitle = document.getElementById("ssq-result-meter-title");
+          if (meterTitle) {
+            meterTitle.textContent = tierLabel.toUpperCase();
+          }
+
+          if (visual) {
+            visual.className = "ssq-result-visual ssq-result--" + tierCls;
+          }
+          if (photo) {
+            photo.src = imgSrc;
+            photo.alt = imgAlt;
+          }
+          if (fill) {
+            var hue = Math.round(122 * (1 - pct / 100));
+            var hue2 = Math.max(0, hue - 20);
+            fill.style.background =
+              "linear-gradient(90deg, hsl(" +
+              hue +
+              ",74%,36%), hsl(" +
+              hue2 +
+              ",84%,46%))";
+            fill.style.width = "0%";
+            window.requestAnimationFrame(function () {
+              window.requestAnimationFrame(function () {
+                fill.style.width = pct + "%";
+              });
+            });
+          }
+          if (pctEl) {
+            pctEl.textContent = "Pattern alignment: about " + pct + "%";
+            pctEl.style.color = "";
+          }
+          if (hintEl) {
+            if (tierCls === "high") {
+              hintEl.textContent =
+                "Your answers line up closely with the classic late-spring / early-summer shed story.";
+            } else if (tierCls === "mid") {
+              hintEl.textContent =
+                "You’re in the “could be both” zone—pollen outside, more Fel d 1 inside from coat blowout.";
+            } else {
+              hintEl.textContent =
+                "Scores vary, but many cats still shed hard as days warm—worth watching that window anyway.";
+            }
+          }
+        }
+
+        document
+          .getElementById("ssq-start")
+          .addEventListener("click", function () {
+            hide(intro);
+            show(questionsEl);
+            idx = 0;
+            answers = [];
+            selectedIndices = [];
+            renderQuestion();
+            nextBtn.focus();
+          });
+
+        nextBtn.addEventListener("click", function () {
+          if (nextBtn.disabled) return;
+          if (idx < QUESTIONS.length - 1) {
+            idx++;
+            clearFromIndex(idx);
+            renderQuestion();
+            qText.focus();
+          } else {
+            showResult();
+          }
+        });
+
+        backBtn.addEventListener("click", function () {
+          if (idx > 0) {
+            idx--;
+            clearFromIndex(idx + 1);
+            renderQuestion();
+          }
+        });
+
+        document
+          .getElementById("ssq-restart")
+          .addEventListener("click", function () {
+            hide(resultEl);
+            show(intro);
+            idx = 0;
+            answers = [];
+            selectedIndices = [];
+            selected = null;
+            bar.style.width = "0%";
+            document.getElementById("ssq-start").focus();
+          });
+      })();
+    </script>
+
+    <script>
+      initComponentsWhenReady(
+        function () {
+          var pageType = "root";
+          document.getElementById("article-fold").innerHTML = createFold({
+            title:
+              "Quiz: Is Your Late-Spring Allergy Flare Your Cat’s Summer Shed?",
+            authorName: "Julie Arnold",
+            authorImage: "JulieArnold.png",
+            pageType: pageType,
+          });
+          document.querySelectorAll(".pacagen-showcase").forEach(function (el) {
+            el.innerHTML = createProductShowcase({
+              image: "CANS.png",
+              alt: "Pacagen Cat Allergen Neutralizing Spray",
+              description:
+                "A neutralizing spray designed to target Fel d 1 on soft surfaces and high-traffic areas—useful when seasonal shedding puts more allergen in your living space.",
+              url: "https://pacagen.com/products/cat-allergen-neutralizing-spray",
+              pageType: pageType,
+            });
+          });
+          document.getElementById("article-footer").innerHTML =
+            createArticleFooter({ pageType: pageType });
+        },
+        { waitForArticle: true, waitForProduct: true },
+      );
+    </script>
+  </body>
+</html>
