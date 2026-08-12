@@ -73,7 +73,7 @@
             category: 'Home care'
         },
         {
-            path: 'blog/pet-allergens-hiding-places.html',
+            path: 'blog/6-pet-allergens-hiding-places.html',
             title: 'The 6 Likely Places for Pet Allergens to Hide in Your Home',
             snippet: 'Carpets, couches, bedding, and the spots your pet keeps coming back to.',
             image: 'assets/images/pet-allergens-hiding-places.jpg',
