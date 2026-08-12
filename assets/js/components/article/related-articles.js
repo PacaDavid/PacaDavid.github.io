@@ -73,6 +73,13 @@
             category: 'Home care'
         },
         {
+            path: 'blog/pet-allergens-hiding-places.html',
+            title: 'The 6 Likely Places for Pet Allergens to Hide in Your Home',
+            snippet: 'Carpets, couches, bedding, and the spots your pet keeps coming back to.',
+            image: 'assets/images/pet-allergens-hiding-places.jpg',
+            category: 'Home care'
+        },
+        {
             path: 'best-supplement-for-cat-allergies.html',
             title: 'Best Supplement for Cat Allergies (2026)',
             snippet: 'What the science says about reducing Fel d 1 at the source.',
