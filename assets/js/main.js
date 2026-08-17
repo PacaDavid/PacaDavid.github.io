@@ -107,8 +107,8 @@ function insertNavigation(pageType = 'root', currentPage = '') {
         ? '#section-dog'
         : (onBlogIndex ? '#category-dog' : `${blogIndexBase}#category-dog`);
     const homeCarePillHref = currentPage === 'home'
-        ? '#section-home-care'
-        : (onBlogIndex ? '#category-home-care' : `${blogIndexBase}#category-home-care`);
+        ? '#section-home-and-wellness'
+        : (onBlogIndex ? '#category-home-and-wellness' : `${blogIndexBase}#category-home-and-wellness`);
 
     const allArticlesHref = onBlogIndex ? '#blog-articles' : blogPath;
     const allArticlesActive = currentPage === 'blog' && !onBlogIndex;
@@ -130,7 +130,7 @@ function insertNavigation(pageType = 'root', currentPage = '') {
                         <li><a class="site-header__pill${currentPage === 'home' ? ' is-active' : ''}" href="${homePath}">Home</a></li>
                         <li><a class="site-header__pill" href="${catPillHref}">Cat</a></li>
                         <li><a class="site-header__pill" href="${dogPillHref}">Dog</a></li>
-                        <li><a class="site-header__pill" href="${homeCarePillHref}">Home care</a></li>
+                        <li><a class="site-header__pill" href="${homeCarePillHref}">Home and Wellness</a></li>
                         <li><a class="site-header__pill${allArticlesActive ? ' is-active' : ''}" href="${allArticlesHref}">All articles</a></li>
                     </ul>
                 </div>
@@ -249,7 +249,7 @@ function isInBlogPath() {
 function badgeTextToBlogCategory(text) {
     const t = (text || '').trim();
     if (t === 'Dogs' || t === 'Dog Allergies') return 'dog';
-    if (t === 'Home Care' || t === 'Recommended Products') return 'home-care';
+    if (t === 'Home and Wellness' || t === 'Recommended Products') return 'home-and-wellness';
     if (t === 'Guest Contributor') return 'dog';
     return 'cat';
 }
@@ -263,12 +263,12 @@ function applyBlogArticleCategoryData() {
 
 function syncBlogListingFromHash() {
     if (!isBlogIndexPage()) return;
-    const validHashes = ['#blog-articles', '#category-cat', '#category-dog', '#category-home-care'];
+    const validHashes = ['#blog-articles', '#category-cat', '#category-dog', '#category-home-and-wellness'];
     const hashToFilter = {
         '#blog-articles': 'all',
         '#category-cat': 'cat',
         '#category-dog': 'dog',
-        '#category-home-care': 'home-care'
+        '#category-home-and-wellness': 'home-and-wellness'
     };
     let h = window.location.hash || '#blog-articles';
     if (validHashes.indexOf(h) === -1) h = '#blog-articles';
