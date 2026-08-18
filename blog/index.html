@@ -466,5 +466,29 @@
             </div>
         </div>
     </main>
+
+    <script>
+        // Handle category filtering based on URL hash
+        function applyFilter() {
+            const hash = window.location.hash.replace('#', '');
+            const blogGrid = document.querySelector('.blog-grid');
+            
+            if (hash === 'category-cat') {
+                blogGrid.setAttribute('data-filter', 'cat');
+            } else if (hash === 'category-dog') {
+                blogGrid.setAttribute('data-filter', 'dog');
+            } else if (hash === 'category-home-and-wellness') {
+                blogGrid.setAttribute('data-filter', 'home-and-wellness');
+            } else {
+                blogGrid.removeAttribute('data-filter');
+            }
+        }
+
+        // Apply filter on page load
+        applyFilter();
+
+        // Apply filter when hash changes (back/forward buttons)
+        window.addEventListener('hashchange', applyFilter);
+    </script>
 </body>
 </html>
