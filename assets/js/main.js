@@ -248,10 +248,10 @@ function isInBlogPath() {
 
 function badgeTextToBlogCategory(text) {
     const t = (text || '').trim();
-    if (t === 'Dogs' || t === 'Dog Allergies') return 'dog';
-    if (t === 'Home and Wellness' || t === 'Recommended Products') return 'home-and-wellness';
+    if (t === 'Dogs' || t === 'Dog Allergies' || t === 'Dog Care') return 'dog';
+    if (t === 'Cats' || t === 'Cat Allergies' || t === 'Cat Health') return 'home-and-wellness';
     if (t === 'Guest Contributor') return 'dog';
-    return 'cat';
+    return 'home-and-wellness'; // Default to home-and-wellness if unknown
 }
 
 function applyBlogArticleCategoryData() {
