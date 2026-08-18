@@ -248,7 +248,7 @@ function isInBlogPath() {
 
 function badgeTextToBlogCategory(text) {
     const t = (text || '').trim();
-    if (t === 'Dogs' || t === 'Dog Allergies' || t === 'Dog Care') return 'dog';
+    if (t === 'Dogs' || t === 'Dog Allergies' || t === 'Dog Care' || t === 'Dog Health') return 'dog';
     if (t === 'Cats' || t === 'Cat Allergies' || t === 'Cat Health') return 'cat';
     if (t === 'Guest Contributor') return 'dog';
     return 'home-and-wellness'; // Default to home-and-wellness if unknown
