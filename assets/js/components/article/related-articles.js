@@ -127,6 +127,13 @@
             snippet: 'Environment-first ideas that pair well with medical guidance.',
             image: 'https://cdn.shopify.com/s/files/1/0814/8369/4394/files/Blog_Images_16.png?v=1752441156',
             category: 'Cat allergies'
+        },
+        {
+            path: 'blog/does-grooming-help-with-pet-allergies.html',
+            title: 'Does Grooming and Brushing Your Pet Actually Help With Allergies?',
+            snippet: 'What brushing and bathing can reduce—and what they can’t.',
+            image: 'assets/images/grooming-pet-allergies-cover.png',
+            category: 'Home and Wellness'
         }
     ];
 
