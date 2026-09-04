@@ -134,6 +134,13 @@
             snippet: 'What brushing and bathing can reduce—and what they can’t.',
             image: 'assets/images/grooming-pet-allergies-cover.png',
             category: 'Home and Wellness'
+        },
+        {
+            path: 'blog/can-you-develop-a-cat-allergy-later.html',
+            title: 'Can You Develop a Cat Allergy Years After Owning a Cat?',
+            snippet: 'Why symptoms can start after years together—and what to do next.',
+            image: 'assets/images/develop-cat-allergy-cover.png',
+            category: 'Cat allergies'
         }
     ];
 
