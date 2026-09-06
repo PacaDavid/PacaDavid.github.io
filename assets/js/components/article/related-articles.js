@@ -141,6 +141,13 @@
             snippet: 'Why symptoms can start after years together—and what to do next.',
             image: 'assets/images/develop-cat-allergy-cover.png',
             category: 'Cat allergies'
+        },
+        {
+            path: 'blog/why-pet-allergies-worse-at-night.html',
+            title: 'Why Do Pet Allergies Seem Worse at Night?',
+            snippet: 'Why bedtime feels worse—and how to make your bedroom a lower-allergen zone.',
+            image: 'assets/images/pet-allergies-night-cover.png',
+            category: 'Home and Wellness'
         }
     ];
 
