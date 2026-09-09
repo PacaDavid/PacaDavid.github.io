@@ -87,6 +87,34 @@
         align-items: start;
       }
 
+      .rehome-hero-split {
+        max-width: 920px;
+        margin: 0 auto 40px;
+      }
+
+      .rehome-hero-split .fold-section {
+        text-align: left;
+        margin-bottom: 1rem;
+      }
+
+      .rehome-hero-split .fold-title {
+        text-align: left;
+        font-size: clamp(1.75rem, 3.2vw, 2.35rem);
+      }
+
+      .rehome-hero-split .fold-leading-title {
+        text-align: left;
+        margin-bottom: 0.75rem;
+      }
+
+      .rehome-hero-split .rehome-deck {
+        max-width: none;
+      }
+
+      .rehome-hero-split .rehome-meta {
+        margin-bottom: 0;
+      }
+
       .rehome-split--flip {
         grid-template-columns: 0.85fr 1.15fr;
       }
@@ -412,67 +440,64 @@
     <main>
       <article class="main-article rehome-article">
         <section class="w-70 mx-auto my-4">
-          <div id="article-fold"></div>
+          <div class="rehome-split rehome-hero-split">
+            <div class="rehome-copy">
+              <div id="article-fold"></div>
+              <p class="rehome-deck">
+                For cat-allergic households, rehoming rarely becomes a question
+                overnight. It usually starts with closed doors, fewer cuddles and
+                more cleaning. But a newer approach to cat allergies is shifting
+                the focus from avoiding the cat to addressing the allergen itself.
+              </p>
+              <p class="rehome-meta">
+                By Health Pet Insider Editorial Team · 3 min read
+              </p>
+            </div>
+            <aside class="rehome-side-image">
+              <!-- Needs to replace picture -->
+              <div
+                class="rehome-side-placeholder"
+                role="img"
+                aria-label="Image placeholder"
+              >
+                Needs to replace picture
+              </div>
+              <span class="rehome-image-note">Placeholder — tall image</span>
+            </aside>
+          </div>
 
           <section class="article-content content-large">
-            <p class="rehome-deck">
-              For cat-allergic households, rehoming rarely becomes a question
-              overnight. It usually starts with closed doors, fewer cuddles and
-              more cleaning. But a newer approach to cat allergies is shifting
-              the focus from avoiding the cat to addressing the allergen itself.
-            </p>
-            <p class="rehome-meta">
-              By Health Pet Insider Editorial Team · 3 min read
-            </p>
-
-            <!-- Section 1: tall image -->
+            <!-- Section 1 -->
             <section class="rehome-section">
-              <div class="rehome-split">
-                <div class="rehome-copy">
-                  <h2>It usually starts small.</h2>
-                  <p>First, the cat stops sleeping in the bedroom.</p>
-                  <p>
-                    Then maybe cuddles on the couch get shorter. Blankets get
-                    washed more often. The lint roller becomes a permanent
-                    fixture beside the sofa.
-                  </p>
-                  <p>None of these changes feels like a major decision.</p>
-                  <p>
-                    They’re simply ways of making allergies easier to live with.
-                  </p>
-                  <p>But over time, the rules can add up.</p>
-                  <p>
-                    <strong
-                      >Where can the cat sleep? How close is too close? How much
-                      cleaning comes afterward?</strong
-                    >
-                  </p>
-                  <p>
-                    Long before rehoming ever becomes a serious question,
-                    allergies may already be changing what life with your cat
-                    feels like.
-                  </p>
-                  <p>
-                    <strong>
-                      And that’s exactly why it may be worth looking at the
-                      problem differently before another door closes.
-                    </strong>
-                  </p>
-                </div>
-                <aside class="rehome-side-image">
-                  <!-- Needs to replace picture -->
-                  <div
-                    class="rehome-side-placeholder"
-                    role="img"
-                    aria-label="Image placeholder"
-                  >
-                    Needs to replace picture
-                  </div>
-                  <span class="rehome-image-note"
-                    >Placeholder — tall image</span
-                  >
-                </aside>
-              </div>
+              <h2>It usually starts small.</h2>
+              <p>First, the cat stops sleeping in the bedroom.</p>
+              <p>
+                Then maybe cuddles on the couch get shorter. Blankets get
+                washed more often. The lint roller becomes a permanent
+                fixture beside the sofa.
+              </p>
+              <p>None of these changes feels like a major decision.</p>
+              <p>
+                They’re simply ways of making allergies easier to live with.
+              </p>
+              <p>But over time, the rules can add up.</p>
+              <p>
+                <strong
+                  >Where can the cat sleep? How close is too close? How much
+                  cleaning comes afterward?</strong
+                >
+              </p>
+              <p>
+                Long before rehoming ever becomes a serious question,
+                allergies may already be changing what life with your cat
+                feels like.
+              </p>
+              <p>
+                <strong>
+                  And that’s exactly why it may be worth looking at the
+                  problem differently before another door closes.
+                </strong>
+              </p>
             </section>
 
             <!-- Section 2: stats -->
