@@ -148,6 +148,13 @@
             snippet: 'Why bedtime feels worse—and how to make your bedroom a lower-allergen zone.',
             image: 'assets/images/pet-allergies-night-cover.png',
             category: 'Home and Wellness'
+        },
+        {
+            path: 'blog/cat-items-for-home-decor.html',
+            title: '5 Cat Items You Can Actually Incorporate Into Your Home Decor',
+            snippet: 'Cat trees, scratchers, and feeding stations that fit the room you already have.',
+            image: 'assets/images/img-cat-livingroom.png',
+            category: 'Cat life'
         }
     ];
 
