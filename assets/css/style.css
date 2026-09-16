@@ -1758,31 +1758,25 @@ div[id$="-ad"].component-loaded {
    GIFT STYLE SECTIONS
    ============================================ */
 .gift-card {
-    background: white;
-    border-radius: 12px;
-    padding: 1.25rem;
-    margin-bottom: 1.25rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #e0e0e0;
-}
-
-.gift-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 2.5rem;
+    box-shadow: none;
+    border: none;
 }
 
 .gift-card .article-content-image {
     margin-bottom: 0.25rem;
-    border-radius: 8px;
-    overflow: hidden;
+    border-radius: 0;
+    overflow: visible;
 }
 
 .gift-card .article-content-image img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
+    border-radius: 0;
 }
 
 .gift-card h2 {
@@ -2440,8 +2434,8 @@ div[id$="-ad"].component-loaded {
     }
 
     .gift-card {
-        padding: 1rem;
-        margin-bottom: 1rem;
+        padding: 0;
+        margin-bottom: 2rem;
     }
 
     .gift-card .article-content-image img {

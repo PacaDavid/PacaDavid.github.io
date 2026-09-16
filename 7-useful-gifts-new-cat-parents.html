@@ -36,13 +36,36 @@
     <script src="assets/js/components/ads/ad.js"></script>
     <script src="assets/js/product-components-bundle.js"></script>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css?v=gift-flat-1" />
 
     <style>
-      /* Page-specific styles: smaller gift images on desktop */
+      /* Flat gift sections — no card chrome or hover lift */
+      .article-section.gift-card {
+        background: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin-bottom: 4.5rem;
+        transform: none !important;
+        transition: none !important;
+      }
+
+      .article-section.gift-card:hover {
+        transform: none !important;
+        box-shadow: none !important;
+      }
+
+      /* Consistent gift product image size */
       .gift-card .article-content-image img {
-        max-width: 50%;
+        width: 100%;
+        max-width: 420px;
+        aspect-ratio: 4 / 3;
+        height: auto;
+        object-fit: contain;
         margin: 0 auto;
+        display: block;
+        background: #fff;
       }
 
       /* Ensure image container displays caption below image */
@@ -107,7 +130,7 @@
       .gift-duo-item img {
         width: 100%;
         max-width: 80%;
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 4 / 3;
         height: auto;
         object-fit: contain;
         display: block;
@@ -136,6 +159,10 @@
           margin: 0 auto;
         }
 
+        .gift-duo-item img {
+          max-width: 100%;
+        }
+
         .img-placeholder {
           max-width: 100%;
         }
@@ -148,10 +175,6 @@
         /* Make product cards wider on mobile */
         .w-70 {
           padding: 0 5px !important;
-        }
-
-        .gift-card {
-          padding: 1rem !important;
         }
       }
     </style>
@@ -250,13 +273,8 @@
               bedding, and throughout the home.
             </p>
             <p>
-              That's why
-              <a
-                href="https://pacagen.com/products/cat-allergen-reducing-supplement"
-                class="pacagen-link"
-                >Pacagen Cat Allergen Solutions</a
-              >
-              make a surprisingly practical
+              That's why Pacagen Cat Allergen Solutions make a surprisingly
+              practical
               <strong
                 >"just in case" gift for new cat parents who love to
                 host.</strong
@@ -270,7 +288,8 @@
             <p>
               <strong
                 >It's the kind of gift they may not think to buy themselves—but
-                could be very glad to have before their next get-together.</strong
+                could be very glad to have before their next
+                get-together.</strong
               >
             </p>
             <div class="gift-duo">
