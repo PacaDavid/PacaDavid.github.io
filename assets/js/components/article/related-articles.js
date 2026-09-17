@@ -162,6 +162,20 @@
             snippet: 'How to set up boundaries, filtration, and grooming habits before the dog arrives.',
             image: 'assets/images/new-dog-allergy-home-cover.png',
             category: 'Dog allergies'
+        },
+        {
+            path: 'blog/pet-hair-vs-dander-vs-allergens.html',
+            title: 'The Difference Between Pet Hair, Dander and Allergens',
+            snippet: 'Why the hair you see isn\'t the thing your immune system reacts to.',
+            image: 'assets/images/pet-hair-dander-allergens-cover.png',
+            category: 'Cat allergies'
+        },
+        {
+            path: 'blog/are-hypoallergenic-pets-actually-hypoallergenic.html',
+            title: 'Are Hypoallergenic Pets Actually Hypoallergenic?',
+            snippet: 'Why hypoallergenic and allergen-free aren\'t the same thing.',
+            image: 'assets/images/hypoallergenic-pets-cover.png',
+            category: 'Cat allergies'
         }
     ];
 
