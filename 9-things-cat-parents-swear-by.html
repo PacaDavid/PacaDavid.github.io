@@ -1,351 +1,484 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover 9 essential products that cat parents swear by - from interactive toys to allergen-reducing supplements."
+    />
+    <meta
+      name="keywords"
+      content="cat products, cat essentials, cat parents, cat toys, cat carriers, cat water fountain, cat grooming, cat supplements, Pacagen"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Discover 9 essential products that cat parents swear by - from interactive toys to allergen-reducing supplements.">
-    <meta name="keywords"
-        content="cat products, cat essentials, cat parents, cat toys, cat carriers, cat water fountain, cat grooming, cat supplements, Pacagen">
-
-    <title>9 "Why Didn't I Do This Sooner?" Things Cat Parents Swear By | Health Pet Insider</title>
+    <title>
+      9 "Why Didn't I Do This Sooner?" Things Cat Parents Swear By | Health Pet
+      Insider
+    </title>
 
     <!-- Head components (FOUC prevention, tracking init) -->
     <script src="assets/js/head-components.js"></script>
-    
+
     <!-- Tracking utilities (makes f() and getCookie() available) -->
     <script src="assets/js/tracking.js"></script>
-    
+
     <!-- Component initialization helper (must load before bundles) -->
     <script src="assets/js/component-init.js"></script>
-    
+
     <!-- Main JavaScript (navigation, footer) -->
     <script src="assets/js/main.js" defer></script>
-    
+
     <!-- Component bundles -->
     <script src="assets/js/components/article/fold.js"></script>
     <script src="assets/js/components/article/article-footer.js"></script>
     <script src="assets/js/components/article/related-articles.js"></script>
     <script src="assets/js/product-components-bundle.js"></script>
     <script src="assets/js/components/ads/ad.js"></script>
-    
-    <link rel="stylesheet" href="assets/css/style.css">
-    
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <style>
-        /* Mobile-First Product Section Styling */
+      /* Mobile-First Product Section Styling */
+      .w-70 .article-section {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        border: 1px solid #e5e7eb;
+      }
+
+      /* Title Styling */
+      .w-70 .article-section h2 {
+        color: #284b40;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid #5a9f7a;
+        line-height: 1.3;
+      }
+
+      /* Paragraph Styling */
+      .w-70 .article-section p {
+        color: #374151;
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 1.25rem;
+        font-weight: 400;
+      }
+
+      .w-70 .article-section p:last-of-type {
+        margin-bottom: 1.5rem;
+      }
+
+      /* Button Styling - Mobile Optimized */
+      .w-70 .article-section a[href],
+      .w-70 .article-section button {
+        display: block;
+        width: 100%;
+        background: #284b40;
+        color: #ffffff;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1rem;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+      }
+
+      .w-70 .article-section a[href]:active,
+      .w-70 .article-section button:active {
+        background: #1a3329;
+      }
+
+      /* Image Styling */
+      .w-70 .article-section .article-content-image {
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .w-70 .article-section .article-content-image img {
+        max-width: 60%;
+        width: auto;
+        height: auto;
+        display: block;
+      }
+
+      /* Image Caption Styling */
+      .w-70 .article-section .content-section-caption {
+        color: #6b7280;
+        font-size: 0.875rem;
+        font-style: italic;
+        text-align: center;
+        margin-top: 0.75rem;
+        margin-bottom: 0;
+        width: 100%;
+      }
+
+      /* Alternating Background Colors for Visual Interest */
+      .w-70 #content-section-1 .article-section,
+      .w-70 #content-section-3 .article-section,
+      .w-70 #content-section-5 .article-section,
+      .w-70 #content-section-7 .article-section,
+      .w-70 #content-section-9 .article-section {
+        background: #f9fafb;
+      }
+
+      .w-70 #content-section-2 .article-section,
+      .w-70 #content-section-4 .article-section,
+      .w-70 #content-section-6 .article-section,
+      .w-70 #content-section-8 .article-section {
+        background: #ffffff;
+      }
+
+      /* Mobile Image Sizing - Larger on mobile */
+      @media (max-width: 767px) {
+        .w-70 .article-section .article-content-image img {
+          max-width: 95%;
+        }
+      }
+
+      /* Tablet and Desktop Enhancements */
+      @media (min-width: 768px) {
         .w-70 .article-section {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            border: 1px solid #e5e7eb;
+          padding: 2rem;
+          margin-bottom: 2rem;
+          border-radius: 16px;
         }
 
-        /* Title Styling */
         .w-70 .article-section h2 {
-            color: #284b40;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 2px solid #5a9f7a;
-            line-height: 1.3;
+          font-size: 1.75rem;
+          margin-bottom: 1.25rem;
         }
 
-        /* Paragraph Styling */
         .w-70 .article-section p {
-            color: #374151;
-            font-size: 1rem;
-            line-height: 1.7;
-            margin-bottom: 1.25rem;
-            font-weight: 400;
+          font-size: 1.1rem;
+          line-height: 1.8;
+          margin-bottom: 1.5rem;
         }
 
-        .w-70 .article-section p:last-of-type {
-            margin-bottom: 1.5rem;
-        }
-
-        /* Button Styling - Mobile Optimized */
         .w-70 .article-section a[href],
         .w-70 .article-section button {
-            display: block;
-            width: 100%;
-            background: #284b40;
-            color: #ffffff;
-            padding: 1rem 1.5rem;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 1rem;
-            text-align: center;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-            -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
+          display: inline-block;
+          width: auto;
+          padding: 0.875rem 2rem;
         }
+      }
 
-        .w-70 .article-section a[href]:active,
-        .w-70 .article-section button:active {
-            background: #1a3329;
+      @media (min-width: 1024px) {
+        .w-70 .article-section {
+          padding: 2.5rem;
         }
+      }
 
-        /* Image Styling */
-        .w-70 .article-section .article-content-image {
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            overflow: visible;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+      /* Content section spacing */
+      .w-70 > div[id^="content-section"] {
+        margin-bottom: 0;
+      }
 
-        .w-70 .article-section .article-content-image img {
-            max-width: 60%;
-            width: auto;
-            height: auto;
-            display: block;
-        }
+      /* Ad placement styling */
+      #meal-kit-ad {
+        margin: 2rem 0;
+      }
 
-        /* Image Caption Styling */
-        .w-70 .article-section .content-section-caption {
-            color: #6b7280;
-            font-size: 0.875rem;
-            font-style: italic;
-            text-align: center;
-            margin-top: 0.75rem;
-            margin-bottom: 0;
-            width: 100%;
-        }
-
-        /* Alternating Background Colors for Visual Interest */
-        .w-70 #content-section-1 .article-section,
-        .w-70 #content-section-3 .article-section,
-        .w-70 #content-section-5 .article-section,
-        .w-70 #content-section-7 .article-section,
-        .w-70 #content-section-9 .article-section {
-            background: #f9fafb;
-        }
-
-        .w-70 #content-section-2 .article-section,
-        .w-70 #content-section-4 .article-section,
-        .w-70 #content-section-6 .article-section,
-        .w-70 #content-section-8 .article-section {
-            background: #ffffff;
-        }
-
-        /* Mobile Image Sizing - Larger on mobile */
-        @media (max-width: 767px) {
-            .w-70 .article-section .article-content-image img {
-                max-width: 95%;
-            }
-        }
-
-        /* Tablet and Desktop Enhancements */
-        @media (min-width: 768px) {
-            .w-70 .article-section {
-                padding: 2rem;
-                margin-bottom: 2rem;
-                border-radius: 16px;
-            }
-
-            .w-70 .article-section h2 {
-                font-size: 1.75rem;
-                margin-bottom: 1.25rem;
-            }
-
-            .w-70 .article-section p {
-                font-size: 1.1rem;
-                line-height: 1.8;
-                margin-bottom: 1.5rem;
-            }
-
-            .w-70 .article-section a[href],
-            .w-70 .article-section button {
-                display: inline-block;
-                width: auto;
-                padding: 0.875rem 2rem;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .w-70 .article-section {
-                padding: 2.5rem;
-            }
-        }
-
-        /* Content section spacing */
-        .w-70 > div[id^="content-section"] {
-            margin-bottom: 0;
-        }
-
-        /* Ad placement styling */
-        #meal-kit-ad {
-            margin: 2rem 0;
-        }
-
-        /* Smooth scroll behavior */
-        html {
-            scroll-behavior: smooth;
-        }
+      /* Smooth scroll behavior */
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
+    <main>
+      <article class="main-article">
+        <section class="w-70 mx-auto my-4">
+          <!-- Fold component (title + author + date + image, no breadcrumb) -->
+          <div id="article-fold"></div>
 
-<main>
-<article class="main-article">
-<section class="w-70 mx-auto my-4">
+          <div class="article-section">
+            <div class="article-content-image d-flex">
+              <img
+                src="assets/images/img-cat-product-1.png"
+                class="article-img"
+                alt="Interactive Bird Simulation Cat Toy Set"
+              />
+              <p class="content-section-caption mt-1">Courtesy of brand</p>
+            </div>
+            <h2>The Interactive Toy</h2>
+            <p>
+              A slow-moving, battery-powered toy that keeps cats engaged even
+              when no one's home. The kind that doesn't get ignored after five
+              minutes and somehow stays interesting.
+            </p>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://whiskertons.com/products/interactive-bird-simulation-cat-toy-set?variant=43801290440934&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gad_campaignid=19016605148&gbraid=0AAAAABeCHhI6wMxAUcOiX-WM0YM4CSMpY&gclid=CjwKCAiAssfLBhBDEiwAcLpwflgxXqUty2uJ41pu-W_B1kOJJlQiUKtmOHG9c_rWVgy3_GUAZbpvNRoCFVAQAvD_BwE"
+                class="shop-button"
+                >Shop Interactive Toys</a
+              >
+            </div>
+          </div>
+          <div class="article-section">
+            <div class="article-content-image d-flex">
+              <img
+                src="assets/images/pacagen_supplement_new.png"
+                class="article-img"
+                alt="Pacagen Cat Allergen Reducing Supplement"
+              />
+              <p class="content-section-caption mt-1">Courtesy of brand</p>
+            </div>
+            <h2>Cat Allergen Reducing Supplement</h2>
+            <p>
+              A science-backed, pet-safe powder that you can mix into your cat's
+              food to reduce the amount of cat allergens they spread. Drug-free,
+              non-toxic, and supports cat gut health. Available in two flavors
+              cats love: chicken and salmon. Safe for cats, adults, and
+              children.
+            </p>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://pacagen.com/products/cat-allergen-reducing-supplement"
+                class="shop-button"
+                >Shop Pacagen Supplement</a
+              >
+            </div>
+          </div>
+          <div class="article-section">
+            <div class="article-content-image d-flex">
+              <img
+                src="assets/images/img-cat-product-2.png"
+                class="article-img"
+                alt="The Fat Cat Cat Backpack"
+              />
+              <p class="content-section-caption mt-1">Courtesy of brand</p>
+            </div>
+            <h2>The Carry-All Cat Bag</h2>
+            <p>
+              A structured, breathable carrier that makes vet visits, short
+              trips, and travel days feel less chaotic. Once cats feel secure
+              inside, leaving the house stops being such a production.
+            </p>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://yourcatbackpack.com/products/the-fat-cat-cat-backpack?variant=51624760181108&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&glCountry=US&srsltid=AfmBOorudXUwhCybBAU9Ec2f-lBSYounvplXPcgHjA_FEjHZWKPSOjaZTgs"
+                class="shop-button"
+                >Shop Cat Carriers</a
+              >
+            </div>
+          </div>
+          <div class="article-section">
+            <div class="article-content-image d-flex">
+              <img
+                src="assets/images/img-cat-product-3.png"
+                class="article-img"
+                alt="KittySpout Stainless Water Fountain"
+              />
+              <p class="content-section-caption mt-1">Courtesy of brand</p>
+            </div>
+            <h2>The Water Fountain</h2>
+            <p>
+              A quiet, stainless steel fountain that encourages cats to drink
+              more water. Less refilling, fewer spills, and noticeably better
+              hydration.
+            </p>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://www.kittyspout.com/products/4l-fountain1?currency=USD&variant=44022554067164&utm_source=google&utm_medium=cpc&utm_campaign=Google+Shopping&stkn=94e8cdfd6d47&nbt=nb%3Aadwords%3Ax%3A20384404537%3A%3A&nb_adtype=pla&nb_kwd=&nb_ti=&nb_mi=480924670&nb_pc=online&nb_pi=shopify_US_7687835353308_44022554067164&nb_ppi=&nb_placement=&nb_li_ms=&nb_lp_ms=&nb_fii=&nb_ap=&nb_mt=&tw_source=google&tw_adid=&tw_campaign=20384404537&gad_source=1&gad_campaignid=20374963587&gbraid=0AAAAABYDLaEp7WD7yl_yLCtySXkArfLBZ&gclid=CjwKCAiAssfLBhBDEiwAcLpwfiJ-IsLtXJDpnBKApW5HCbYlSgxYF8w4bivuyWR9zvE_AC1UYDHO6BoClF8QAvD_BwE"
+                class="shop-button"
+                >Shop Water Fountains</a
+              >
+            </div>
+          </div>
+          <div class="article-section">
+            <div class="article-content-image d-flex">
+              <img
+                src="assets/images/img-cat-product-4.png"
+                class="article-img"
+                alt="Necoichi Extra Wide Raised Basic Bowl"
+              />
+              <p class="content-section-caption mt-1">Courtesy of brand</p>
+            </div>
+            <h2>The Elevated Food Bowl</h2>
+            <p>
+              A simple raised bowl that's easier on a cat's neck and digestion.
+              It also keeps feeding areas cleaner and looks nicer than expected.
+            </p>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://www.chewy.com/necoichi-extra-wide-raised-basic/dp/3309926?utm_source=google-product&utm_medium=cpc&utm_campaign=20207612288&utm_content=&gad_source=1&gad_campaignid=20211474655&gbraid=0AAAAADmQ2V1caKh0hY0rzkTpHwrBGG9SG&gclid=CjwKCAiAssfLBhBDEiwAcLpwfjxrf5E956L-Xt6uHvyCNmeCFaGnmN0XwSJ-gqCLEf1lLcz-hYwGdBoCGsUQAvD_BwE"
+                class="shop-button"
+                >Shop Elevated Bowls</a
+              >
+            </div>
+          </div>
+          <div class="article-section">
+            <div class="article-content-image d-flex">
+              <img
+                src="assets/images/img-cat-product-5.png"
+                class="article-img"
+                alt="3 In-1 Cat Grooming Brush"
+              />
+              <p class="content-section-caption mt-1">Courtesy of brand</p>
+            </div>
+            <h2>The Gentle Grooming Brush</h2>
+            <p>
+              A soft brush cats tolerate instead of immediately running away
+              from. Regular grooming suddenly feels possible instead of
+              stressful.
+            </p>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://gentlepawsupplies.com/products/cat-hair-brush-3-in-1?variant=45272762351858&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOorL2Jeg-n0r30MtukwGjF9W2a8sSbojTR5VWH18j7wMw4Eafuwh_qk"
+                class="shop-button"
+                >Shop Grooming Brushes</a
+              >
+            </div>
+          </div>
+          <div class="article-section">
+            <div class="article-content-image d-flex">
+              <img
+                src="assets/images/img-cat-product-7.png"
+                class="article-img"
+                alt="Modkat Litter Mat"
+              />
+              <p class="content-section-caption mt-1">Courtesy of brand</p>
+            </div>
+            <h2>The Low-Tracking Litter Mat</h2>
+            <p>
+              A textured mat that actually catches litter before it spreads
+              across the house. One of those things you don't think about until
+              you stop stepping on grit.
+            </p>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://modkat.com/products/litter-mat?variant=42468104700097&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_source=google-ads&utm_network=x&utm_medium=cpc&utm_campaignname={campaignname}&utm_term=&gad_source=1&gad_campaignid=22470424314&gbraid=0AAAAAD3_iPaJx-mc9RBzulmn7fuvpJ-jD&gclid=CjwKCAiAssfLBhBDEiwAcLpwfkR1H1jkuSIOJOvWA9yHilLJ-nJWbxneJGo2n463JIfOMajoHPm_KxoCjLEQAvD_BwE"
+                class="shop-button"
+                >Shop Litter Mats</a
+              >
+            </div>
+          </div>
 
-<!-- Fold component (title + author + date + image, no breadcrumb) -->
-<div id="article-fold"></div>
+          <!-- Meal Kit Delivery Ad -->
+          <div id="meal-kit-ad"></div>
+          <div class="article-section">
+            <div class="article-content-image d-flex">
+              <img
+                src="assets/images/img-cat-product-8.png"
+                class="article-img"
+                alt="Cordless Cat Hammock Window Perch"
+              />
+              <p class="content-section-caption mt-1">Courtesy of brand</p>
+            </div>
+            <h2>The Cozy Window Perch</h2>
+            <p>
+              A secure perch that gives cats their favorite thing: a sunny spot
+              to watch the world. It frees up the couch and instantly becomes
+              their go-to place.
+            </p>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://pawkitty.com/shop/cordless-cat-hammock/?attribute_style=Cozy+Fur&gad_source=1&gad_campaignid=23388079907&gbraid=0AAAAAq58qUzJZz7YROWV0HfDrqsUcJhGm&gclid=CjwKCAiAssfLBhBDEiwAcLpwfiTIVWp9UOssIVpTTveytXmykKDiFvnepcmZZFddIzjbsIpS2vQC6hoC5HgQAvD_BwE"
+                class="shop-button"
+                >Shop Window Perches</a
+              >
+            </div>
+          </div>
+          <div class="article-section">
+            <div class="article-content-image d-flex">
+              <img
+                src="assets/images/img-cat-product-9.png"
+                class="article-img"
+                alt="Multifunctional Cat Scratching Carpet"
+              />
+              <p class="content-section-caption mt-1">Courtesy of brand</p>
+            </div>
+            <h2>The Scratch Pad That Saved the Couch</h2>
+            <p>
+              A simple scratcher placed exactly where the cat already wanted to
+              scratch. Turns out placement matters more than design.
+            </p>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://calmlypaws.com/products/multifunctional-cat-scratching-carpet?variant=50565320245529&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gad_campaignid=22927688604&gbraid=0AAAAA9gyg4G7bj9B2X5eiHHJmhRkiYBuv&gclid=CjwKCAiAssfLBhBDEiwAcLpwfmCpwZ-OVJAv2DxkhuKawy08kINzXp-lXu03NDMpFSfgFHcNIP-NWxoCWC4QAvD_BwE"
+                class="shop-button"
+                >Shop Scratch Pads</a
+              >
+            </div>
+          </div>
 
-<div class="article-section">
-    <div class="article-content-image d-flex">
-        <img src="assets/images/img-cat-product-1.png" class="article-img" alt="Interactive Bird Simulation Cat Toy Set">
-        <p class="content-section-caption mt-1">Courtesy of brand</p>
-    </div>
-    <h2>The Interactive Toy</h2>
-    <p>A slow-moving, battery-powered toy that keeps cats engaged even when no one's home. The kind that doesn't get ignored after five minutes and somehow stays interesting.</p>
-    <div class="shop-button-wrapper"><a href="https://whiskertons.com/products/interactive-bird-simulation-cat-toy-set?variant=43801290440934&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gad_campaignid=19016605148&gbraid=0AAAAABeCHhI6wMxAUcOiX-WM0YM4CSMpY&gclid=CjwKCAiAssfLBhBDEiwAcLpwflgxXqUty2uJ41pu-W_B1kOJJlQiUKtmOHG9c_rWVgy3_GUAZbpvNRoCFVAQAvD_BwE" class="shop-button">Shop Interactive Toys</a></div>
-</div>
-<div class="article-section">
-    <div class="article-content-image d-flex">
-        <img src="assets/images/img-cat-product-2.png" class="article-img" alt="The Fat Cat Cat Backpack">
-        <p class="content-section-caption mt-1">Courtesy of brand</p>
-    </div>
-    <h2>The Carry-All Cat Bag</h2>
-    <p>A structured, breathable carrier that makes vet visits, short trips, and travel days feel less chaotic. Once cats feel secure inside, leaving the house stops being such a production.</p>
-    <div class="shop-button-wrapper"><a href="https://yourcatbackpack.com/products/the-fat-cat-cat-backpack?variant=51624760181108&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&glCountry=US&srsltid=AfmBOorudXUwhCybBAU9Ec2f-lBSYounvplXPcgHjA_FEjHZWKPSOjaZTgs" class="shop-button">Shop Cat Carriers</a></div>
-</div>
-<div class="article-section">
-    <div class="article-content-image d-flex">
-        <img src="assets/images/img-cat-product-3.png" class="article-img" alt="KittySpout Stainless Water Fountain">
-        <p class="content-section-caption mt-1">Courtesy of brand</p>
-    </div>
-    <h2>The Water Fountain</h2>
-    <p>A quiet, stainless steel fountain that encourages cats to drink more water. Less refilling, fewer spills, and noticeably better hydration.</p>
-    <div class="shop-button-wrapper"><a href="https://www.kittyspout.com/products/4l-fountain1?currency=USD&variant=44022554067164&utm_source=google&utm_medium=cpc&utm_campaign=Google+Shopping&stkn=94e8cdfd6d47&nbt=nb%3Aadwords%3Ax%3A20384404537%3A%3A&nb_adtype=pla&nb_kwd=&nb_ti=&nb_mi=480924670&nb_pc=online&nb_pi=shopify_US_7687835353308_44022554067164&nb_ppi=&nb_placement=&nb_li_ms=&nb_lp_ms=&nb_fii=&nb_ap=&nb_mt=&tw_source=google&tw_adid=&tw_campaign=20384404537&gad_source=1&gad_campaignid=20374963587&gbraid=0AAAAABYDLaEp7WD7yl_yLCtySXkArfLBZ&gclid=CjwKCAiAssfLBhBDEiwAcLpwfiJ-IsLtXJDpnBKApW5HCbYlSgxYF8w4bivuyWR9zvE_AC1UYDHO6BoClF8QAvD_BwE" class="shop-button">Shop Water Fountains</a></div>
-</div>
-<div class="article-section">
-    <div class="article-content-image d-flex">
-        <img src="assets/images/img-cat-product-4.png" class="article-img" alt="Necoichi Extra Wide Raised Basic Bowl">
-        <p class="content-section-caption mt-1">Courtesy of brand</p>
-    </div>
-    <h2>The Elevated Food Bowl</h2>
-    <p>A simple raised bowl that's easier on a cat's neck and digestion. It also keeps feeding areas cleaner and looks nicer than expected.</p>
-    <div class="shop-button-wrapper"><a href="https://www.chewy.com/necoichi-extra-wide-raised-basic/dp/3309926?utm_source=google-product&utm_medium=cpc&utm_campaign=20207612288&utm_content=&gad_source=1&gad_campaignid=20211474655&gbraid=0AAAAADmQ2V1caKh0hY0rzkTpHwrBGG9SG&gclid=CjwKCAiAssfLBhBDEiwAcLpwfjxrf5E956L-Xt6uHvyCNmeCFaGnmN0XwSJ-gqCLEf1lLcz-hYwGdBoCGsUQAvD_BwE" class="shop-button">Shop Elevated Bowls</a></div>
-</div>
-<div class="article-section">
-    <div class="article-content-image d-flex">
-        <img src="assets/images/img-cat-product-5.png" class="article-img" alt="3 In-1 Cat Grooming Brush">
-        <p class="content-section-caption mt-1">Courtesy of brand</p>
-    </div>
-    <h2>The Gentle Grooming Brush</h2>
-    <p>A soft brush cats tolerate instead of immediately running away from. Regular grooming suddenly feels possible instead of stressful.</p>
-    <div class="shop-button-wrapper"><a href="https://gentlepawsupplies.com/products/cat-hair-brush-3-in-1?variant=45272762351858&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOorL2Jeg-n0r30MtukwGjF9W2a8sSbojTR5VWH18j7wMw4Eafuwh_qk" class="shop-button">Shop Grooming Brushes</a></div>
-</div>
-<div class="article-section">
-    <div class="article-content-image d-flex">
-        <img src="assets/images/pacagen-supplement.png" class="article-img" alt="Pacagen Cat Allergen Reducing Supplement">
-        <p class="content-section-caption mt-1">Courtesy of brand</p>
-    </div>
-    <h2>Cat Allergen Reducing Supplement</h2>
-    <p>A science-backed, pet-safe powder that you can mix into your cat's food to reduce the amount of cat allergens they spread. Drug-free, non-toxic, and supports cat gut health. Available in two flavors cats love: chicken and salmon. Safe for cats, adults, and children.</p>
-    <div class="shop-button-wrapper"><a href="https://pacagen.com/products/cat-allergen-reducing-supplement" class="shop-button">Shop Pacagen Supplement</a></div>
-</div>
-<div class="article-section">
-    <div class="article-content-image d-flex">
-        <img src="assets/images/img-cat-product-7.png" class="article-img" alt="Modkat Litter Mat">
-        <p class="content-section-caption mt-1">Courtesy of brand</p>
-    </div>
-    <h2>The Low-Tracking Litter Mat</h2>
-    <p>A textured mat that actually catches litter before it spreads across the house. One of those things you don't think about until you stop stepping on grit.</p>
-    <div class="shop-button-wrapper"><a href="https://modkat.com/products/litter-mat?variant=42468104700097&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_source=google-ads&utm_network=x&utm_medium=cpc&utm_campaignname={campaignname}&utm_term=&gad_source=1&gad_campaignid=22470424314&gbraid=0AAAAAD3_iPaJx-mc9RBzulmn7fuvpJ-jD&gclid=CjwKCAiAssfLBhBDEiwAcLpwfkR1H1jkuSIOJOvWA9yHilLJ-nJWbxneJGo2n463JIfOMajoHPm_KxoCjLEQAvD_BwE" class="shop-button">Shop Litter Mats</a></div>
-</div>
+          <!-- Article footer component -->
+          <div id="related-articles" class="related-articles-root"></div>
 
-<!-- Meal Kit Delivery Ad -->
-<div id="meal-kit-ad"></div>
-<div class="article-section">
-    <div class="article-content-image d-flex">
-        <img src="assets/images/img-cat-product-8.png" class="article-img" alt="Cordless Cat Hammock Window Perch">
-        <p class="content-section-caption mt-1">Courtesy of brand</p>
-    </div>
-    <h2>The Cozy Window Perch</h2>
-    <p>A secure perch that gives cats their favorite thing: a sunny spot to watch the world. It frees up the couch and instantly becomes their go-to place.</p>
-    <div class="shop-button-wrapper"><a href="https://pawkitty.com/shop/cordless-cat-hammock/?attribute_style=Cozy+Fur&gad_source=1&gad_campaignid=23388079907&gbraid=0AAAAAq58qUzJZz7YROWV0HfDrqsUcJhGm&gclid=CjwKCAiAssfLBhBDEiwAcLpwfiTIVWp9UOssIVpTTveytXmykKDiFvnepcmZZFddIzjbsIpS2vQC6hoC5HgQAvD_BwE" class="shop-button">Shop Window Perches</a></div>
-</div>
-<div class="article-section">
-    <div class="article-content-image d-flex">
-        <img src="assets/images/img-cat-product-9.png" class="article-img" alt="Multifunctional Cat Scratching Carpet">
-        <p class="content-section-caption mt-1">Courtesy of brand</p>
-    </div>
-    <h2>The Scratch Pad That Saved the Couch</h2>
-    <p>A simple scratcher placed exactly where the cat already wanted to scratch. Turns out placement matters more than design.</p>
-    <div class="shop-button-wrapper"><a href="https://calmlypaws.com/products/multifunctional-cat-scratching-carpet?variant=50565320245529&country=US&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gad_campaignid=22927688604&gbraid=0AAAAA9gyg4G7bj9B2X5eiHHJmhRkiYBuv&gclid=CjwKCAiAssfLBhBDEiwAcLpwfmCpwZ-OVJAv2DxkhuKawy08kINzXp-lXu03NDMpFSfgFHcNIP-NWxoCWC4QAvD_BwE" class="shop-button">Shop Scratch Pads</a></div>
-</div>
+          <div id="article-footer"></div>
+        </section>
+      </article>
+    </main>
 
-            <!-- Article footer component -->
-<div id="related-articles" class="related-articles-root"></div>
+    <script>
+      initComponentsWhenReady(
+        function () {
+          const pageType = window.location.pathname.includes("/blog/")
+            ? "blog"
+            : "root";
 
-<div id="article-footer"></div>
-
-
-</section>
-
-</article>
-</main>
-
-<script>
-    initComponentsWhenReady(function() {
-        const pageType = window.location.pathname.includes('/blog/') ? 'blog' : 'root';
-        
-        // 1. Create fold component
-        document.getElementById('article-fold').innerHTML = createFold({
-            title: '9 "Why Didn\'t I Do This Sooner?" Things Cat Parents Swear By',
-            authorName: 'Julie Arnold',
-            authorImage: 'JulieArnold.png',
-            imageSrc: 'img-cat-product-hero.jpg',
-            imageAlt: 'Cat parent with cats',
-            imageCaption: 'Simple products that make life with cats easier, calmer, and more enjoyable.',
+          // 1. Create fold component
+          document.getElementById("article-fold").innerHTML = createFold({
+            title:
+              '9 "Why Didn\'t I Do This Sooner?" Things Cat Parents Swear By',
+            authorName: "Julie Arnold",
+            authorImage: "JulieArnold.png",
+            imageSrc: "img-cat-product-hero.jpg",
+            imageAlt: "Cat parent with cats",
+            imageCaption:
+              "Simple products that make life with cats easier, calmer, and more enjoyable.",
             breadcrumb: false,
-            dateText: 'Updated on January 15, 2026',
-            pageType: pageType
-        });
-        
-        // Create Meal Kit Delivery Ad
-        function createMealKitAd() {
-            if (typeof createAd !== 'undefined') {
-                document.getElementById('meal-kit-ad').innerHTML = createAd({
-                    backgroundImage: 'img-ad-fresh-meal.png',
-                    logo: 'MEAL KIT',
-                    logoDark: 'DELIVERY',
-                    headline: 'Fresh Ingredients Delivered',
-                    body: 'Get chef-curated recipes with pre-portioned ingredients delivered right to your door. Save time on meal planning and grocery shopping while enjoying restaurant-quality meals at home. Perfect for busy cat parents who want to eat well without the hassle. $50 Off First Box.',
-                    productName: 'Meal Kit Delivery',
-                    ctaText: 'Learn More',
-                    ctaUrl: 'cleanhomehacks.com',
-                    pageType: pageType
-                });
+            dateText: "Updated on January 15, 2026",
+            pageType: pageType,
+          });
+
+          // Create Meal Kit Delivery Ad
+          function createMealKitAd() {
+            if (typeof createAd !== "undefined") {
+              document.getElementById("meal-kit-ad").innerHTML = createAd({
+                backgroundImage: "img-ad-fresh-meal.png",
+                logo: "MEAL KIT",
+                logoDark: "DELIVERY",
+                headline: "Fresh Ingredients Delivered",
+                body: "Get chef-curated recipes with pre-portioned ingredients delivered right to your door. Save time on meal planning and grocery shopping while enjoying restaurant-quality meals at home. Perfect for busy cat parents who want to eat well without the hassle. $50 Off First Box.",
+                productName: "Meal Kit Delivery",
+                ctaText: "Learn More",
+                ctaUrl: "cleanhomehacks.com",
+                pageType: pageType,
+              });
             }
-        }
-        
-        window.addEventListener('adsComponentsLoaded', createMealKitAd);
-        
-        // Fallback if ads are already loaded
-        if (typeof createAd !== 'undefined') {
+          }
+
+          window.addEventListener("adsComponentsLoaded", createMealKitAd);
+
+          // Fallback if ads are already loaded
+          if (typeof createAd !== "undefined") {
             createMealKitAd();
-        }
-        
-        // 3. Create article footer
-        document.getElementById('article-footer').innerHTML = createArticleFooter({
-            pageType: pageType
-        });
-    }, { waitForArticle: true });
-</script>
+          }
 
-</body>
+          // 3. Create article footer
+          document.getElementById("article-footer").innerHTML =
+            createArticleFooter({
+              pageType: pageType,
+            });
+        },
+        { waitForArticle: true },
+      );
+    </script>
+  </body>
 </html>
-
