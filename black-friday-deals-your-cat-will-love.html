@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Black Friday deals your cat (and your wallet) will love — heated beds, allergen solutions, self-cleaning litter boxes, smart cameras, and immune support supplements on sale."
+    />
+    <meta
+      name="keywords"
+      content="Black Friday cat deals, cat warming bed, Pacagen, cat allergen spray, cat allergen supplement, self-cleaning litter box, Furbo cat camera, Wonder Paws L-Lysine"
+    />
+
+    <title>
+      Black Friday Deals Your Cat (And Your Wallet) Will Love | Health Pet
+      Insider
+    </title>
+
+    <script src="assets/js/head-components.js"></script>
+    <script src="assets/js/tracking.js"></script>
+    <script src="assets/js/component-init.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/components/article/article-footer.js"></script>
+    <script src="assets/js/components/article/related-articles.js"></script>
+    <script src="assets/js/product-components-bundle.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      /* Full-bleed page: override global main/article max-width: 1200px */
+      main,
+      article.main-article {
+        width: 100% !important;
+        max-width: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: visible;
+      }
+
+      .bf-page {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 1.5rem 0 3rem;
+        box-sizing: border-box;
+      }
+
+      /* Restore pre–full-bleed column width (same as .w-70 in a 1200px article) */
+      .bf-page > #related-articles,
+      .bf-page > #article-footer {
+        width: 70%;
+        max-width: 840px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+      }
+
+      /* Centered content column for text / CTAs */
+      .bf-wrap {
+        width: 100%;
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        box-sizing: border-box;
+      }
+
+      .bf-hero {
+        text-align: center;
+        margin: 0 auto 2.75rem;
+        max-width: 920px;
+        padding: 0 1.25rem;
+        box-sizing: border-box;
+      }
+
+      .bf-hero::after {
+        content: "";
+        display: block;
+        width: 100%;
+        max-width: 780px;
+        height: 2px;
+        background: #439f68;
+        margin: 2.5rem auto 0;
+      }
+
+      .bf-hero h1 {
+        font-family:
+          "Playfair Display", Georgia, "Times New Roman", serif !important;
+        color: #1f2a24;
+        font-size: clamp(1.85rem, 4.2vw, 2.75rem);
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0.5rem 0 1.5rem;
+        letter-spacing: -0.01em;
+      }
+
+      .bf-hero-image {
+        width: 75%;
+        max-width: 860px;
+        margin: 0 auto;
+      }
+
+      .bf-hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .bf-hero-dek {
+        font-family: "Montserrat", sans-serif !important;
+        font-style: italic;
+        font-size: 0.95rem;
+        line-height: 1.55;
+        text-align: left;
+        padding-left: 0.85rem;
+        margin: 1rem 0 0;
+        color: #2c3330;
+      }
+
+      .bf-hero-intro {
+        font-family: "Montserrat", sans-serif !important;
+        text-align: left;
+        padding-left: 0.85rem;
+        margin: 1.15rem 0 0;
+        color: #2c3330;
+        font-size: 1.02rem;
+        line-height: 1.7;
+      }
+
+      .bf-hero-intro p {
+        margin: 0 0 1rem;
+      }
+
+      .bf-hero-intro p:last-child {
+        margin-bottom: 0;
+      }
+
+      .bf-deal {
+        width: 100%;
+        max-width: none;
+        margin: 0 0 2.75rem;
+        padding-bottom: 0;
+        box-sizing: border-box;
+      }
+
+      /* Match hero divider width, not full viewport */
+      .bf-deal:not(:last-of-type)::after {
+        content: "";
+        display: block;
+        width: 100%;
+        max-width: 780px;
+        height: 2px;
+        background: #439f68;
+        margin: 2.5rem auto 0;
+      }
+
+      .bf-deal:last-of-type {
+        margin-bottom: 1rem;
+      }
+
+      .bf-deal h2 {
+        font-family:
+          "Playfair Display", Georgia, "Times New Roman", serif !important;
+        color: #1f2a24;
+        font-size: clamp(1.35rem, 2.8vw, 1.85rem);
+        font-weight: 700;
+        line-height: 1.25;
+        text-align: center;
+        margin: 0 auto 3.5rem;
+        margin-top: 3.5rem;
+        max-width: 920px;
+        padding: 0 1.25rem;
+        box-sizing: border-box;
+      }
+
+      /* Full-viewport cream band; inner grid stays in the content column */
+      .bf-deal-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 1.75rem 2rem;
+        align-items: center;
+        background-color: #f4f2dc;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 2.75rem max(1.25rem, calc((100% - 920px) / 2));
+      }
+
+      .bf-deal-row.is-reversed .bf-media {
+        order: 2;
+      }
+
+      .bf-deal-row.is-reversed .bf-copy {
+        order: 1;
+      }
+
+      /* Cream band with a row + text below it */
+      .bf-deal-row.bf-deal-row--with-below {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.35rem;
+      }
+
+      .bf-deal-cols {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 1.75rem 2rem;
+        align-items: center;
+        width: 100%;
+      }
+
+      .bf-deal-cols.is-reversed .bf-media {
+        order: 2;
+      }
+
+      .bf-deal-cols.is-reversed .bf-copy {
+        order: 1;
+      }
+
+      .bf-deal-below {
+        font-family: "Montserrat", sans-serif !important;
+        color: #2c3330;
+        font-size: 1.02rem;
+        line-height: 1.7;
+        margin: 0;
+        max-width: 920px;
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .bf-media {
+        overflow: visible;
+        position: relative;
+      }
+
+      .bf-media > img:not(.bf-badge) {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 0;
+        object-fit: cover;
+        aspect-ratio: 5 / 4;
+        background: #fff;
+      }
+
+      .bf-badge {
+        position: absolute;
+        top: -5.55rem;
+        z-index: 2;
+        width: 4.6rem;
+        height: 4.6rem;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        background: #8b4a6f;
+        color: #fff;
+        font-family: "Montserrat", sans-serif !important;
+        font-weight: 800;
+        font-size: 0.78rem;
+        line-height: 1.05;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        clip-path: polygon(
+          50% 0%,
+          61% 12%,
+          76% 6%,
+          78% 22%,
+          94% 22%,
+          88% 36%,
+          100% 48%,
+          88% 60%,
+          94% 74%,
+          78% 74%,
+          76% 90%,
+          61% 84%,
+          50% 100%,
+          39% 84%,
+          24% 90%,
+          22% 74%,
+          6% 74%,
+          12% 60%,
+          0% 48%,
+          12% 36%,
+          6% 22%,
+          22% 22%,
+          24% 6%,
+          39% 12%
+        );
+        box-shadow: 0 2px 8px rgba(74, 40, 58, 0.25);
+      }
+
+      img.bf-badge {
+        display: block;
+        width: 11rem;
+        height: auto;
+        aspect-ratio: auto;
+        padding: 0;
+        background: none;
+        color: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: normal;
+        letter-spacing: normal;
+        text-transform: none;
+        clip-path: none;
+        box-shadow: none;
+        object-fit: contain;
+      }
+
+      img.bf-badge.bf-badge--pacagen {
+        width: 12.75rem;
+      }
+
+      .bf-deal-row:not(.is-reversed) .bf-badge,
+      .bf-deal-cols:not(.is-reversed) .bf-badge {
+        left: -1.5rem;
+      }
+
+      .bf-deal-row.is-reversed .bf-badge,
+      .bf-deal-cols.is-reversed .bf-badge {
+        right: -0.35rem;
+        left: auto;
+      }
+
+      /* Spray upTo32%: keep on the right (outer row isn't reversed, so don't use left) */
+      .bf-badge--pacagen-spray {
+        top: -7.75rem;
+        right: -3.25rem !important;
+        left: auto !important;
+      }
+
+      /* Supplement upTo32%: nudge further left; same top as spray */
+      .bf-badge--pacagen-supp {
+        top: -7.75rem;
+        left: -6rem;
+        right: auto;
+      }
+
+      .bf-copy p {
+        font-family: "Montserrat", sans-serif !important;
+        color: #2c3330;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin: 0;
+        text-align: center;
+      }
+
+      .bf-deal .shop-button-wrapper {
+        margin-top: 1.6rem;
+        margin-bottom: 0;
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1.25rem;
+        box-sizing: border-box;
+      }
+
+      .bf-deal .shop-button {
+        background-color: #439f68;
+        border-color: #439f68;
+        border-radius: 999px;
+        padding: 0.65rem 2rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+        letter-spacing: 0.01em;
+        min-width: 12rem;
+      }
+
+      .bf-deal .shop-button:hover {
+        background-color: #378555;
+        border-color: #378555;
+      }
+
+      @media (max-width: 767.98px) {
+        main {
+          padding: 0 !important;
+        }
+
+        .bf-hero-image {
+          width: calc(100% + 2.5rem);
+          max-width: none;
+          margin-left: -1.25rem;
+          margin-right: -1.25rem;
+        }
+
+        .bf-hero::after,
+        .bf-deal:not(:last-of-type)::after {
+          width: 80vw;
+          max-width: 80vw;
+        }
+
+        .bf-hero h1 br,
+        .bf-deal h2 br {
+          display: none;
+        }
+
+        .bf-page > #related-articles,
+        .bf-page > #article-footer {
+          width: 100% !important;
+          max-width: 100%;
+          padding: 0 15px;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+
+        .bf-deal-row,
+        .bf-deal-row.is-reversed,
+        .bf-deal-cols,
+        .bf-deal-cols.is-reversed {
+          grid-template-columns: 1fr;
+          gap: 1.15rem;
+        }
+
+        .bf-deal-row .bf-media,
+        .bf-deal-row .bf-copy,
+        .bf-deal-row.is-reversed .bf-media,
+        .bf-deal-row.is-reversed .bf-copy,
+        .bf-deal-cols .bf-media,
+        .bf-deal-cols .bf-copy,
+        .bf-deal-cols.is-reversed .bf-media,
+        .bf-deal-cols.is-reversed .bf-copy {
+          order: initial;
+        }
+
+        .bf-deal-row.is-reversed .bf-media,
+        .bf-deal-cols.is-reversed .bf-media {
+          order: -1;
+        }
+
+        .bf-media > img:not(.bf-badge) {
+          aspect-ratio: 4 / 3;
+        }
+
+        .bf-badge {
+          width: 4rem;
+          height: 4rem;
+          font-size: 0.7rem;
+        }
+
+        img.bf-badge {
+          width: 9.5rem;
+          height: auto;
+        }
+
+        img.bf-badge.bf-badge--pacagen {
+          width: 11rem;
+        }
+
+        .bf-badge--pacagen-spray {
+          top: -5.75rem;
+          right: -2.25rem !important;
+          left: auto !important;
+        }
+
+        .bf-badge--pacagen-supp {
+          top: -5.75rem;
+          left: -5rem;
+          right: auto;
+        }
+
+        .bf-deal .shop-button {
+          width: 100%;
+          max-width: 22rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <article class="main-article">
+        <section class="bf-page">
+          <header class="bf-hero">
+            <h1>Black Friday Deals Your Cat (And Your Wallet) Will Love</h1>
+            <p>By Phoebe Lee</p>
+            <div class="bf-hero-image">
+              <img
+                src="assets/images/HPI_1.png"
+                alt="Person holding a sleeping kitten wrapped in a soft blanket"
+                width="1685"
+                height="1052"
+              />
+              <p class="bf-hero-dek">
+                Products I use everyday for less cat worries and more cat
+                cuddles
+              </p>
+            </div>
+
+            <div class="bf-hero-intro">
+              <p>
+                As a fellow cat mom, I know how quickly our fur babies can take
+                over our homes (and our wallets). I've rounded up my
+                <strong>favorite Black Friday pet deals!</strong> From clever
+                gadgets to everyday essentials that make life with pets a little
+                easier.
+              </p>
+              <p>
+                No endless scrolling or guesswork. Just products worth checking
+                out, savings worth grabbing, and more time for cuddles!
+              </p>
+            </div>
+          </header>
+
+          <!-- 1. Warming bed — image left -->
+          <section class="bf-deal">
+            <h2>
+              Tovve's Electric Cat Warming Bed <br />(the cheapest it's been all
+              year!)
+            </h2>
+            <div class="bf-deal-row">
+              <div class="bf-media">
+                <img
+                  class="bf-badge"
+                  src="assets/images/upTo33%25.png"
+                  alt="Up to 33% off"
+                  width="274"
+                  height="251"
+                />
+                <img
+                  src="assets/images/HPI_2.avif"
+                  alt="Electric heated cat warming bed"
+                  width="1500"
+                  height="1325"
+                />
+              </div>
+              <div class="bf-copy">
+                <p style="width: 90%">
+                  If your cats are anything like mine, they always want the
+                  <strong>warmest, coziest</strong> spot in the house. <br />
+                  <br />I found this heated donut bed and it's become their new
+                  <strong>favorite nap spot!</strong> You can <span>adjust the heat
+                  with 11 temperature settings</span> and set a timer so it
+                <span>automatically shuts off.</span> Plus, the heating pad comes out when
+                  the weather gets warmer, so my cats can keep using it all
+                  year. What a way to spoil my fur babies!
+                </p>
+              </div>
+            </div>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://www.amazon.com/dp/B0H7BCB25X/ref=sspa_dk_detail_3?pd_rd_i=B0H7BCB25X&pd_rd_w=jfBWO&content-id=amzn1.sym.ac210bc5-f6e8-418c-8a77-e0c4ca3bcd7f&pf_rd_p=ac210bc5-f6e8-418c-8a77-e0c4ca3bcd7f&pf_rd_r=TPB59FBZTVCWFFKP32K0&pd_rd_wg=BQGDq&pd_rd_r=056aca92-3e11-4b03-878c-4951cc48dc06&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1"
+                class="shop-button"
+                target="_blank"
+                rel="noopener"
+                >Shop now!</a
+              >
+            </div>
+          </section>
+
+          <!-- 2. Pacagen spray — image right -->
+          <section class="bf-deal">
+            <h2>
+              Pacagen's Cat Allergen Neutralizing Spray <br />(the GAME CHANGER
+              of the list!)
+            </h2>
+            <div class="bf-deal-row bf-deal-row--with-below">
+              <div class="bf-deal-cols is-reversed">
+                <div class="bf-media">
+                  <img
+                    class="bf-badge bf-badge--pacagen bf-badge--pacagen-spray"
+                    src="assets/images/upTo32%25.png"
+                    alt="Up to 32% off"
+                    width="274"
+                    height="251"
+                  />
+                  <img
+                    src="assets/images/HPI_3.png"
+                    alt="Pacagen Cat Allergen Neutralizing Spray misted onto bedding"
+                    width="1633"
+                    height="1269"
+                  />
+                </div>
+                <div class="bf-copy">
+                  <p>
+                    I love my cats more than anything, but honestly, my
+                    <strong>allergies</strong> got so bad that I was sneezing,
+                    wheezing, itching constantly. I even considered finding them
+                    another home. It broke my heart. <br />
+                    <br />Then I found <strong>Pacagen!</strong> Pacagen’s spray
+                    <strong>neutralizes up to 98% of cat allergens</strong>.
+                    <span style="font-style: italic"
+                      >No bathing your cat, no constantly wiping down every
+                      surface.</span
+                    >
+                    You just mix the powder and solution, spray every 2-3 day
+                    around the places your cat spends the most time.
+                  </p>
+                </div>
+              </div>
+              <p class="bf-deal-below">
+                I can finally enjoy all those cuddles without constantly
+                worrying about the allergens. If you or someone you love has
+                <strong>cat allergies, PLEASE look into this.</strong> I would
+                get this regardless of a sale. You don't have to give up your
+                fur baby!
+              </p>
+            </div>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://pacagen.com/products/cat-allergen-neutralizing-spray"
+                class="shop-button"
+                target="_blank"
+                rel="noopener"
+                >Shop before they sell out!</a
+              >
+            </div>
+          </section>
+
+          <!-- 3. Pacagen supplement — image left -->
+          <section class="bf-deal">
+            <h2>
+              Pacagen's Cat Allergen Reducing Supplement <br />(this brand could
+              do no wrong!)
+            </h2>
+            <div class="bf-deal-row">
+              <div class="bf-media">
+                <img
+                  class="bf-badge bf-badge--pacagen bf-badge--pacagen-supp"
+                  src="assets/images/upTo32%25.png"
+                  alt="Up to 32% off"
+                  width="274"
+                  height="251"
+                />
+                <img
+                  src="assets/images/HPI_4.png"
+                  alt="Hand holding Pacagen Cat Allergen Reducing Supplement jar"
+                  width="1765"
+                  height="1406"
+                />
+              </div>
+              <div class="bf-copy">
+                <p>
+                  Pacagen just keeps getting better. Instead of constantly
+                  cleaning up allergens after they've spread around the house,
+                  this supplement works to
+                  <strong>neutralize cat allergens at the source!</strong>
+                  <br />
+                  <br />
+                  I just add
+                  <span style="font-style: italic">two scoops to my cats’
+                  food</span> throughout the day, and they don’t even notice. Plus, it
+                  has
+                  <strong
+                    >added gut and immune health benefits from post-biotics and
+                    pre-biotics.</strong
+                  >
+                  Such an easy addition for something that makes a difference
+                  around the house!
+                </p>
+              </div>
+            </div>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://pacagen.com/products/cat-allergen-reducing-supplement"
+                class="shop-button"
+                target="_blank"
+                rel="noopener"
+                >You won’t regret buying this!</a
+              >
+            </div>
+          </section>
+
+          <!-- 4. Litter box — image right -->
+          <section class="bf-deal">
+            <h2>
+              Petcove PurrTek Automatic Self Cleaning Litter <br />Box (the
+              future of pet care!)
+            </h2>
+            <div class="bf-deal-row is-reversed">
+              <div class="bf-media">
+                <img
+                  class="bf-badge"
+                  src="assets/images/upTo30%25.png"
+                  alt="Up to 30% off"
+                  width="274"
+                  height="251"
+                />
+                <img
+                  src="assets/images/HPI_5.png"
+                  alt="Petcove PurrTek smart self-cleaning litter box next to its packaging"
+                  width="2013"
+                  height="1353"
+                />
+              </div>
+              <div class="bf-copy">
+                <p>
+                  Okay, I'll admit I hesitated at the price because $269 is
+                  definitely an investment!
+                  <br />
+                  <br />
+                  But with multiple cats, I was getting so
+                  <strong>tired of scooping litter every single day.</strong>
+                  This one cleans itself, helps keep the
+                  <strong>smell contained</strong>, and even sends me
+                  <span style="font-style: italic">notifications</span> through an app when the bin is full.</span> It's also
+                  such a relief when I <strong>travel</strong> for a few days,
+                  one less thing to worry about while I’m away. Honestly, I wish
+                  I'd gotten one sooner!
+                </p>
+              </div>
+            </div>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://petcoveshop.com/products/purrtek-cat-litter-robot"
+                class="shop-button"
+                target="_blank"
+                rel="noopener"
+                >Buy now and save!</a
+              >
+            </div>
+          </section>
+
+          <!-- 5. Furbo — image left -->
+          <section class="bf-deal">
+            <h2>Furbo 360° Cat Camera <br />(worry less and spend less!)</h2>
+            <div class="bf-deal-row">
+              <div class="bf-media">
+                <img
+                  class="bf-badge"
+                  src="assets/images/upTo43%25.png"
+                  alt="Up to 43% off"
+                  width="274"
+                  height="251"
+                />
+                <img
+                  src="assets/images/HPI_6.png"
+                  alt="Furbo 360 degree pet camera on a wooden surface"
+                  width="1859"
+                  height="1575"
+                />
+              </div>
+              <div class="bf-copy">
+                <p>
+                  Okay, I didn't realize how much I needed this until I got one!
+                  I can
+                  <strong>check in on my fur babies from anywhere</strong>, see
+                  what they're up to with the
+                  <span style="font-style: italic"
+                    >360° rotating camera, and even talk to them through the
+                    app.</span
+                  >
+                  My favorite part? I can
+                  <span style="font-style: italic"
+                    >toss them treats remotely!</span
+                  >
+                  It also
+                  <strong>sends me alerts and saves video clips</strong>, so I
+                  don't miss all their little antics while I'm out.
+                  <br />
+                  <br />
+                  <span style="font-style: italic">Setup was super easy</span>,
+                  and honestly, having that extra peace of mind when I'm away
+                  from home is worth so much to me!
+                </p>
+              </div>
+            </div>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://www.furbo.com/us/products/furbo-mini-360"
+                class="shop-button"
+                target="_blank"
+                rel="noopener"
+                >Buy now and save!</a
+              >
+            </div>
+          </section>
+
+          <!-- 6. Wonder Paws — image right -->
+          <section class="bf-deal">
+            <h2>
+              Wonder Paw's L-Lysine Cat Supplement for <br />Immune Support (now
+              this is a sale!)
+            </h2>
+            <div class="bf-deal-row is-reversed">
+              <div class="bf-media">
+                <img
+                  class="bf-badge"
+                  src="assets/images/upTo47%25.png"
+                  alt="Up to 47% off"
+                  width="274"
+                  height="251"
+                />
+                <img
+                  src="assets/images/HPI_7.png"
+                  alt="Hand holding Wonder Paws Superhero L-Lysine supplement for cats"
+                  width="1312"
+                  height="1134"
+                />
+              </div>
+              <div class="bf-copy">
+                <p>
+                  Saved me hundreds in vet bills! One of my cats had a
+                  <span style="font-style: italic"
+                    >bad cold, wouldn’t stop coughing and wheezing.</span
+                  >
+                  <br />
+                  <br />
+                  Using this as
+                  <strong>directed for a week and administered daily</strong>,
+                  she hasn’t coughed once since! This supplement also has
+                  <strong>taurine to support eye, heart</strong>, and overall
+                  health, which is a nice bonus. Love
+                  <span style="font-style: italic"
+                    >not having to deal with messy powders or hard-to-swallow
+                    pills!</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="shop-button-wrapper">
+              <a
+                href="https://www.amazon.com/dp/B0GCBG878X/"
+                class="shop-button"
+                target="_blank"
+                rel="noopener"
+                >Shop here!</a
+              >
+            </div>
+          </section>
+
+          <div id="related-articles" class="related-articles-root"></div>
+          <div id="article-footer"></div>
+        </section>
+      </article>
+    </main>
+
+    <script>
+      initComponentsWhenReady(
+        function () {
+          const pageType = window.location.pathname.includes("/blog/")
+            ? "blog"
+            : "root";
+
+          document.getElementById("article-footer").innerHTML =
+            createArticleFooter({
+              pageType: pageType,
+            });
+        },
+        { waitForArticle: true },
+      );
+    </script>
+  </body>
+</html>
