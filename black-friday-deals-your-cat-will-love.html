@@ -373,6 +373,26 @@
         border-color: #378555;
       }
 
+      /* Badge positioning for tablet + mobile */
+      @media (max-width: 1072.98px) {
+        .bf-badge {
+          top: -5.75rem;
+        }
+
+        .bf-deal-row:not(.is-reversed) > .bf-media > .bf-badge,
+        .bf-deal-cols:not(.is-reversed) > .bf-media > .bf-badge {
+          top: -3.75rem !important;
+          left: -1.5rem !important;
+          right: auto !important;
+        }
+
+        .bf-deal-row.is-reversed .bf-badge,
+        .bf-deal-cols.is-reversed .bf-badge {
+          right: -1.5rem !important;
+          left: auto !important;
+        }
+      }
+
       @media (max-width: 767.98px) {
         main {
           padding: 0 !important;
@@ -439,7 +459,6 @@
         }
 
         .bf-badge {
-          top: -5.75rem;
           width: 4rem;
           height: 4rem;
           font-size: 0.7rem;
@@ -448,19 +467,6 @@
         img.bf-badge {
           width: 9.5rem;
           height: calc(9.5rem * 251 / 274);
-        }
-
-        .bf-deal-row:not(.is-reversed) > .bf-media > .bf-badge,
-        .bf-deal-cols:not(.is-reversed) > .bf-media > .bf-badge {
-          top: -3.75rem !important;
-          left: -1.5rem !important;
-          right: auto !important;
-        }
-
-        .bf-deal-row.is-reversed .bf-badge,
-        .bf-deal-cols.is-reversed .bf-badge {
-          right: -1.5rem !important;
-          left: auto !important;
         }
 
         .bf-deal .shop-button {
