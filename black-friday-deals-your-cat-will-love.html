@@ -228,7 +228,7 @@
       .bf-deal-below {
         font-family: "Montserrat", sans-serif !important;
         color: #2c3330;
-        font-size: 1.02rem;
+        font-size: 1.1rem;
         line-height: 1.7;
         margin: 0;
         max-width: 920px;
@@ -261,7 +261,7 @@
 
       .bf-badge {
         position: absolute;
-        top: -5.55rem;
+        top: -7.75rem;
         z-index: 2;
         width: 4.6rem;
         height: 4.6rem;
@@ -308,8 +308,8 @@
       img.bf-badge {
         display: block;
         width: 11rem;
-        height: auto;
-        aspect-ratio: auto;
+        height: 10.08rem; /* 274x251 */
+        aspect-ratio: 274 / 251;
         padding: 0;
         background: none;
         color: inherit;
@@ -323,33 +323,19 @@
         object-fit: contain;
       }
 
-      img.bf-badge.bf-badge--pacagen {
-        width: 12.75rem;
+      /* Left badges — match upTo32%2.png (supplement) */
+      .bf-deal-row:not(.is-reversed) > .bf-media > .bf-badge,
+      .bf-deal-cols:not(.is-reversed) > .bf-media > .bf-badge {
+        top: -5rem !important;
+        left: -5.25rem !important;
+        right: auto !important;
       }
 
-      .bf-deal-row:not(.is-reversed) .bf-badge,
-      .bf-deal-cols:not(.is-reversed) .bf-badge {
-        left: -1.5rem;
-      }
-
+      /* Right badges — match upTo32%.png (spray); cols.is-reversed covers nested spray row */
       .bf-deal-row.is-reversed .bf-badge,
       .bf-deal-cols.is-reversed .bf-badge {
-        right: -0.35rem;
-        left: auto;
-      }
-
-      /* Spray upTo32%: keep on the right (outer row isn't reversed, so don't use left) */
-      .bf-badge--pacagen-spray {
-        top: -7.75rem;
         right: -3.25rem !important;
         left: auto !important;
-      }
-
-      /* Supplement upTo32%: nudge further left; same top as spray */
-      .bf-badge--pacagen-supp {
-        top: -7.75rem;
-        left: -6rem;
-        right: auto;
       }
 
       .bf-copy p {
@@ -453,6 +439,7 @@
         }
 
         .bf-badge {
+          top: -5.75rem;
           width: 4rem;
           height: 4rem;
           font-size: 0.7rem;
@@ -460,23 +447,20 @@
 
         img.bf-badge {
           width: 9.5rem;
-          height: auto;
+          height: calc(9.5rem * 251 / 274);
         }
 
-        img.bf-badge.bf-badge--pacagen {
-          width: 11rem;
+        .bf-deal-row:not(.is-reversed) > .bf-media > .bf-badge,
+        .bf-deal-cols:not(.is-reversed) > .bf-media > .bf-badge {
+          top: -3.75rem !important;
+          left: -3.75rem !important;
+          right: auto !important;
         }
 
-        .bf-badge--pacagen-spray {
-          top: -5.75rem;
+        .bf-deal-row.is-reversed .bf-badge,
+        .bf-deal-cols.is-reversed .bf-badge {
           right: -2.25rem !important;
           left: auto !important;
-        }
-
-        .bf-badge--pacagen-supp {
-          top: -5.75rem;
-          left: -5rem;
-          right: auto;
         }
 
         .bf-deal .shop-button {
@@ -637,7 +621,7 @@
               <div class="bf-media">
                 <img
                   class="bf-badge bf-badge--pacagen bf-badge--pacagen-supp"
-                  src="assets/images/upTo32%25.png"
+                  src="assets/images/upTo32%252.png"
                   alt="Up to 32% off"
                   width="274"
                   height="251"
@@ -690,7 +674,7 @@
             <div class="bf-deal-row is-reversed">
               <div class="bf-media">
                 <img
-                  class="bf-badge"
+                  class="bf-badge bf-badge--30"
                   src="assets/images/upTo30%25.png"
                   alt="Up to 30% off"
                   width="274"
